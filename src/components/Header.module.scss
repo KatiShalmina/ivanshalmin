@@ -3,13 +3,40 @@
   top: 0;
   right: 0;
   left: 0;
+  z-index: 1;
   width: 100%;
 }
 
 .headerWrapper {
-  padding: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 12px;
+
+  @media (min-width: 800px) {
+    padding: 1.4rem;
+  }
 }
 
 .logo {
+  padding: 8px;
   text-transform: uppercase;
+  transition: opacity 0.4s ease;
+
+  @media (min-width: 800px) {
+    &:hover {
+      opacity: 0.7;
+    }
+  }
+}
+
+.burger {
+  width: 40px;
+  height: 40px;
+  padding: 8px;
+  background: transparent;
+
+  @media (min-width: 800px) {
+    display: none;
+  }
 }

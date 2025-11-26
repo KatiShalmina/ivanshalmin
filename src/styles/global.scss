@@ -1,11 +1,16 @@
-@use './reset';
-@use './typography';
-@use './variables';
+@use './base/reset';
+@use './base/typography';
+@use './base/variables';
 
 *,
 *::before,
 *::after {
   box-sizing: border-box;
+}
+
+html,
+body {
+  height: 100%;
 }
 
 img {
@@ -28,7 +33,7 @@ a {
   text-decoration: none;
 }
 
-.visually-hidden {
+.visuallyHidden {
   position: absolute;
   width: 1px;
   height: 1px;

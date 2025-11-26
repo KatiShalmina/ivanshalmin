@@ -14,11 +14,10 @@ import PaintingDetail from './pages/Art/PaintingDetail'
 import Exhibitions from './pages/Art/Exhibitions'
 import ExhibitionDetail from './pages/Art/ExhibitionDetail'
 import VideoArt from './pages/Art/VideoArt'
-import Contacts from './pages/Art/Contacts'
 
 import Bio from './pages/About/Bio'
 import Stories from './pages/About/Stories'
-
+import Contacts from './pages/About/Contacts'
 
 const router = createBrowserRouter([
   {
@@ -48,6 +47,7 @@ const router = createBrowserRouter([
 
       { path: 'bio', element: <Bio /> },
       { path: 'stories', element: <Stories /> },
+      { path: 'contacts', element: <Contacts /> },
     ],
   },
 ])

@@ -2,65 +2,95 @@ import styles from './Footer.module.scss'
 import { NavLink } from 'react-router-dom'
 
 export default function Footer() {
+  const activeStyle = {
+		fontWeight: '600',
+		border: '1px solid #ffffff'
+	}
+
   return (
     <footer className={styles.footer}>
-      <div className={styles.footerWrapper}>
-        <div className={styles.footerInfoWrapper}>
-          <div className={styles.footerContacts}>
-            <a href='mailto:sasha.shalmina@gmail.com' target='_blank' rel='noopener noreferrer'>
-              sasha.shalmina@gmail.com
-            </a>
-            <a href='tel:+447472063877'>
-              +44 747 206 38 77
-            </a>
-          </div>
-          <p>© IvanShalmin. All rights reserved.</p>
-        </div>
-        
+      <div className={styles.footerWrapper}>        
         <nav className={styles.footerNav}>
-          <div className={styles.footerNavUnit}>
-            <h2>architecture</h2>
-            <ul className={styles.footerNavList}>
+          <div className={styles.footerUnit}>
+            <h2 className={styles.footerTitle}>architecture</h2>
+            <ul className={styles.footerList}>
               <li>
-                <NavLink to='objects'>objects</NavLink>
+                <NavLink 
+                  to='objects' 
+                  className={styles.footerLink}
+                  style={({ isActive }) => isActive ? activeStyle : null}
+                >objects</NavLink>
               </li>
               <li>
-                <NavLink to='laconism'>laconism</NavLink>
+                <NavLink 
+                  to='laconism' 
+                  className={styles.footerLink}
+                  style={({ isActive }) => isActive ? activeStyle : null}
+                >laconism</NavLink>
               </li>
               <li>
-                <NavLink to='publications'>publications</NavLink>
-              </li>
-            </ul>
-          </div>
-          <div className={styles.footerNavUnit}>
-            <h2>digital art</h2>
-            <ul className={styles.footerNavList}>
-              <li>
-                <NavLink to='paintings'>paintings</NavLink>
-              </li>
-              <li>
-                <NavLink to='exhibitions'>exhibitions</NavLink>
-              </li>
-              <li>
-                <NavLink to='video-art'>video art</NavLink>
-              </li>
-              <li>
-                <NavLink to='contacts'>buy</NavLink>
+                <NavLink 
+                  to='publications' 
+                  className={styles.footerLink}
+                  style={({ isActive }) => isActive ? activeStyle : null}
+                >publications</NavLink>
               </li>
             </ul>
           </div>
-          <div className={styles.footerNavUnit}>
-            <h2>about</h2>
-            <ul className={styles.footerNavList}>
+          <div className={styles.footerUnit}>
+            <h2 className={styles.footerTitle}>digital art</h2>
+            <ul className={styles.footerList}>
               <li>
-                <NavLink to='bio'>bio</NavLink>
+                <NavLink 
+                  to='paintings' 
+                  className={styles.footerLink}
+                  style={({ isActive }) => isActive ? activeStyle : null}
+                >paintings</NavLink>
               </li>
               <li>
-                <NavLink to='stories'>stories</NavLink>
+                <NavLink 
+                  to='exhibitions' 
+                  className={styles.footerLink}
+                  style={({ isActive }) => isActive ? activeStyle : null}
+                >exhibitions</NavLink>
+              </li>
+              <li>
+                <NavLink 
+                  to='video-art' 
+                  className={styles.footerLink}
+                  style={({ isActive }) => isActive ? activeStyle : null}
+                >video art</NavLink>
+              </li>
+            </ul>
+          </div>
+          <div className={styles.footerUnit}>
+            <h2 className={styles.footerTitle}>about</h2>
+            <ul className={styles.footerList}>
+              <li>
+                <NavLink 
+                  to='bio' 
+                  className={styles.footerLink}
+                  style={({ isActive }) => isActive ? activeStyle : null}
+                >bio</NavLink>
+              </li>
+              <li>
+                <NavLink 
+                  to='stories' 
+                  className={styles.footerLink}
+                  style={({ isActive }) => isActive ? activeStyle : null}
+                >stories</NavLink>
+              </li>
+              <li>
+                <NavLink 
+                  to='contacts' 
+                  className={styles.footerLink}
+                  style={({ isActive }) => isActive ? activeStyle : null}
+                >contacts</NavLink>
               </li>
             </ul>
           </div>
         </nav>
+        <p className={styles.copyright}>© IvanShalmin. All rights reserved.</p>
       </div>
     </footer>
   )
