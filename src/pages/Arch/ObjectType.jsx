@@ -1,8 +1,9 @@
 import { Link } from 'react-router-dom'
+import styles from './ObjectType.module.scss'
 
 export default function ObjectType() {
   return (
-    <section>
+    <section className={styles.objectType}>
       <Link 
         to='..'
         relative='path'

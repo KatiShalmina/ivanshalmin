@@ -6,7 +6,7 @@ export default function Home() {
   const [activeBg, setActiveBg] = useState(null)
 
   const backgrounds = {
-    architect: '/images/objects/propylaeum/desktop/propylaeum-1.webp',
+    architect: '/images/objects/propylaeum/original/propylaeum-4.webp',
     artist: '/images/paintings/desktop/splash.jpg'
   }
 

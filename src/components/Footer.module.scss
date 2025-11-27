@@ -1,5 +1,7 @@
 .footer {
   display: none;
+  color: var(--color-secondary);
+  background: var(--color-primary);
 
   @media (min-width: 800px) {
     position: fixed;
@@ -12,7 +14,7 @@
 }
 
 .footerWrapper {
-  padding: 1.4rem;
+  padding: 1.4rem 1.4rem 1rem;
 }
 
 .copyright {

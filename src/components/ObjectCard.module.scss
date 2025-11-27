@@ -1,0 +1,19 @@
+.objectCard {
+  position: relative;
+}
+
+.objectInfo {
+  position: absolute;
+  bottom: 1rem;
+  left: 1rem;
+  background: rgba(0, 0, 0, 0.25);
+  backdrop-filter: blur(4px);     
+  -webkit-backdrop-filter: blur(4px);
+  padding: 8px;
+}
+
+.objectTitle {
+  font-size: 2rem;
+  font-weight: 300;
+  font-stretch: 115%;
+}

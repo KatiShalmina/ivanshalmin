@@ -27,21 +27,21 @@ const router = createBrowserRouter([
       { index: true, element: <Home /> },
 
       { path: 'objects', element: <Objects /> },
-      { path: 'objects/:id', element: <ObjectType /> },
+      { path: 'objects/:slug', element: <ObjectType /> },
       { path: 'laconism', element: <Laconism /> },
       {
         path: 'publications',
         element: <PublicationsLayout />,
         children: [
           { index: true, element: <Publications /> },         
-          { path: ':id', element: <PublicationObject /> },
+          { path: ':slug', element: <PublicationObject /> },
         ]
       },
 
       { path: 'paintings', element: <Paintings /> },
       { path: 'paintings/:id', element: <PaintingDetail /> },
       { path: 'exhibitions', element: <Exhibitions /> },
-      { path: 'exhibitions/:id', element: <ExhibitionDetail /> },
+      { path: 'exhibitions/:slug', element: <ExhibitionDetail /> },
       { path: 'video-art', element: <VideoArt /> },
       { path: 'contacts', element: <Contacts /> },
 
