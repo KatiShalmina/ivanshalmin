@@ -26,7 +26,7 @@ export const objects = [
   {
     slug: 'ghost',
     title: 'ghost',
-    year: 2021,
+    year: 2019,
     index: 26,
     cover: '/images/objects/ghost',
     originalWidth: 2050

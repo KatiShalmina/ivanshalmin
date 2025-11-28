@@ -1,23 +1,55 @@
 .hero {
   position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   height: 100vh;
   width: 100vw;
+
+  &::before,
+  &::after {
+    position: fixed;
+    inset: 0;
+    z-index: 1;
+    content: '';
+    background-size: cover;
+    background-position: center;
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 1s ease;
+  }
+
+  &::before {
+    background-image: url("/images/objects/propylaeum/original/propylaeum-4.webp");
+  }
+
+  &::after {
+    background-image: url("/images/paintings/desktop/splash.jpg");
+  }
+}
+
+.heroVisible::before,
+.heroVisible::after {
+  opacity: 0;
+}
+
+.show_architect::before,
+.show_artist::after {
+  opacity: 0.7;
 }
 
 .heroWrapper {
   display: flex;
-  flex-wrap: wrap;
-  gap: 3rem;
-  padding: 300px 1.2rem;
+  flex-direction: column;
+  gap: clamp(3rem, 10vw, 10.7rem);
+  padding-right: clamp(1.2rem, 2vw, 3rem);
+  padding-left: clamp(1.2rem, 2vw, 3rem);
 
-  @media (min-width: 800px) {
+  @media (min-width: 1024px) {
+    flex-direction: row;
     justify-content: center;
-    gap: 6.2rem;
-    padding: 500px 1.4rem;
-  }
-
-  @media (min-width: 1280px) {
-    gap: 10.7rem;
+    padding-top: 104px;
+    padding-bottom: 184px;
   }
 }
 
@@ -39,22 +71,5 @@
 
   @media (min-width: 1280px) {
     font-size: 7.4rem;
-  }
-}
-
-.heroBackground {
-  @media (min-width: 800px) {
-    position: absolute;
-    inset: 0;
-    background-size: cover;
-    background-position: center;
-    opacity: 0;
-    transition: opacity 1s ease;
-  }
-}
-
-.heroBackgroundVisible {
-  @media (min-width: 800px) {
-    opacity: 0.7;
   }
 }

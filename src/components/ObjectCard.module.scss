@@ -1,5 +1,6 @@
 .objectCard {
   position: relative;
+  overflow: hidden;
 }
 
 .objectInfo {
@@ -10,10 +11,49 @@
   backdrop-filter: blur(4px);     
   -webkit-backdrop-filter: blur(4px);
   padding: 8px;
+
+  @media (min-width: 1024px) {
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(8px);
+    transition: 
+      opacity .4s ease,
+      visibility .4s ease,
+      transform .4s ease;
+  }
+}
+
+.objectCard:hover .objectInfo,
+.objectCard:focus-visible .objectInfo {
+  @media (min-width: 800px) {
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0);
+  }
 }
 
 .objectTitle {
-  font-size: 2rem;
+  font-size: clamp(2rem, 6vw, 10.7rem);;
   font-weight: 300;
   font-stretch: 115%;
+}
+
+.objectYear {
+  font-size: clamp(1rem, 2.5vw, 3rem);
+}
+
+.objectCard:hover .objectCover,
+.objectCard:focus-visible .objectCover {
+  @media (min-width: 1024px) {
+    transform: scale(1.02);         
+  }
+}
+
+.objectCover {
+  width: 100%;
+  height: auto;
+
+  @media (min-width: 1024px) {
+    transition: transform .4s ease;
+  }
 }

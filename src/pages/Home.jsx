@@ -1,4 +1,4 @@
-import { useState } from 'react'
+import { useEffect, useState } from 'react'
 import { Link } from 'react-router-dom'
 import styles from './Home.module.scss'
 
@@ -10,12 +10,23 @@ export default function Home() {
     artist: '/images/paintings/desktop/splash.jpg'
   }
 
-  const bgUrl = activeBg ? backgrounds[activeBg] : null
+  useEffect(() => {
+    Object.values(backgrounds).forEach(src => {
+      const img = new Image();
+      img.src = src;
+    });
+  }, []);
 
   return (
-    <section className={styles.hero}>
+    <section 
+      className={`
+        ${styles.hero} 
+        ${activeBg ? styles.heroVisible : ''} 
+        ${activeBg ? styles[`show_${activeBg}`] : ''}
+      `}
+    >
+      <h1 className='visuallyHidden'>Ivan Shalmin — Architect and Artist</h1>
       <div className={styles.heroWrapper}>
-        <h1 className='visuallyHidden'>Ivan Shalmin — Architect and Artist</h1>
         <Link
           to='objects'
           className={styles.heroLink}
@@ -33,13 +44,6 @@ export default function Home() {
           artist
         </Link>
       </div>
-      <div
-          className={`${styles.heroBackground} ${
-            bgUrl ? styles.heroBackgroundVisible : ''
-          }`}
-          style={bgUrl ? { backgroundImage: `url(${bgUrl})` } : {}}
-          aria-hidden='true'
-        />
     </section>
   )
 }
