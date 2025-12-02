@@ -16,7 +16,6 @@ import ExhibitionDetail from './pages/Art/ExhibitionDetail'
 import VideoArt from './pages/Art/VideoArt'
 
 import Bio from './pages/About/Bio'
-import Stories from './pages/About/Stories'
 import Contacts from './pages/About/Contacts'
 
 const router = createBrowserRouter([
@@ -46,7 +45,6 @@ const router = createBrowserRouter([
       { path: 'contacts', element: <Contacts /> },
 
       { path: 'bio', element: <Bio /> },
-      { path: 'stories', element: <Stories /> },
       { path: 'contacts', element: <Contacts /> },
     ],
   },

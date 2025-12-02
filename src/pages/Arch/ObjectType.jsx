@@ -1,9 +1,9 @@
 import { useState } from 'react'
-import { useParams, Link } from 'react-router-dom'
+import { useParams } from 'react-router-dom'
 import GalleryLightbox from '../../components/GalleryLightbox'
 import { types } from '../../data/object-types'
 import styles from './ObjectType.module.scss'
-import ArrowBack from '../../assets/icons/arrow.svg?react'
+import BackButton from '../../components/BackButton'
 
 export default function ObjectType() {
   const { slug } = useParams();
@@ -16,14 +16,7 @@ export default function ObjectType() {
 
   return (
     <section className={styles.type}>
-      <Link 
-        to='..'
-        relative='path'
-        className={styles.backButton}
-      >
-        <ArrowBack className={styles.backIcon} />
-        all objects
-      </Link>
+      <BackButton>all objects</BackButton>
       <h1 className={styles.typeTitle}>{type.title}</h1>
       <p className={styles.typeSubtitle}>{type.subtitle}</p>
       <div className={styles.typeDescription}>
@@ -65,7 +58,6 @@ export default function ObjectType() {
         index={index}
         onClose={() => setOpen(false)}
         gallery={type.gallery}
-        slug={type.slug}
         title={type.title}
       />
     </section>

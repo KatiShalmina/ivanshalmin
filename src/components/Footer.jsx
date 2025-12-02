@@ -75,13 +75,6 @@ export default function Footer() {
               </li>
               <li>
                 <NavLink 
-                  to='stories' 
-                  className={styles.footerLink}
-                  style={({ isActive }) => isActive ? activeStyle : null}
-                >stories</NavLink>
-              </li>
-              <li>
-                <NavLink 
                   to='contacts' 
                   className={styles.footerLink}
                   style={({ isActive }) => isActive ? activeStyle : null}

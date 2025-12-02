@@ -70,13 +70,6 @@ export default function MenuOverlay({ menuOpen, setMenuOpen }) {
             </li>
             <li>
               <Link
-                to='stories'
-                className={styles.navLink}
-                onClick={() => setMenuOpen(false)}
-              >stories</Link>
-            </li>
-            <li>
-              <Link
                 to='contacts'
                 className={styles.navLink}
                 onClick={() => setMenuOpen(false)}
@@ -89,6 +82,7 @@ export default function MenuOverlay({ menuOpen, setMenuOpen }) {
         className={styles.closeButton}
         onClick={() => setMenuOpen(false)}
         aria-label='Close menu'
+        type='button'
       >
         <img src={closeIcon} alt='' />
       </button>

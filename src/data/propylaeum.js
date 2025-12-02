@@ -1,4 +1,4 @@
-const propylaeum = {
+export const propylaeum = {
   slug: 'propylaeum',
 
   title: 'Propylaeum',
@@ -184,5 +184,3 @@ const propylaeum = {
     The concept of the propylaeum was so successful that with few alterations, this project has since been built on another 6 sites.
   `,
 };
-
-export default propylaeum;

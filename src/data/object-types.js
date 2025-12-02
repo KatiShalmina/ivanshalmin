@@ -1,4 +1,4 @@
-import propylaeum from './propylaeum'
+import { propylaeum } from './propylaeum'
 
 export const types = [
   propylaeum,

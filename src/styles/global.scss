@@ -43,3 +43,17 @@ a {
   clip: rect(0 0 0 0);
   overflow: hidden;
 }
+
+.mainWrapper {
+  padding-top: 79px;
+  padding-bottom: 3rem;
+  padding-right: clamp(1.2rem, 2vw, 3rem);
+  padding-left: clamp(1.2rem, 2vw, 3rem);
+
+  @media (min-width: 1024px) {
+    max-width: 2000px;
+    margin: 0 auto;
+    padding-top: 104px;
+    padding-bottom: 184px;
+  }
+}

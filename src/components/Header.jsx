@@ -11,6 +11,7 @@ export default function Header({ setMenuOpen }) {
           className={styles.burger}
           onClick={() => setMenuOpen(true)}
           aria-label="Open menu"
+          type='button'
         >
           <img src={burgerIcon} alt='' />
         </button>

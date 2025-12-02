@@ -1,0 +1,15 @@
+.laconism {
+  display: flex;
+  flex-direction: column;
+  gap: clamp(10px, 2vw, 1.4rem);
+}
+
+.presentationWrapper {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.shortItem {
+  margin-bottom: clamp(1.2rem, 2vw, 3rem);
+}

@@ -1,0 +1,22 @@
+.backButton {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  width: max-content;
+  margin-bottom: clamp(2rem, 4vw, 4.3rem);
+  padding: 4px 0;
+
+  @media (min-width: 1024px) {
+    transition: opacity .4s ease;
+
+    &:hover {
+      opacity: 0.7;
+    }
+  }
+}
+
+.backIcon {
+  width: 14px;
+  height: 14px;
+  transform: rotate(90deg)
+}
