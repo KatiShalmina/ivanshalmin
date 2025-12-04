@@ -45,6 +45,7 @@ a {
 }
 
 .mainWrapper {
+  margin-bottom: 2rem;
   padding-top: 79px;
   padding-bottom: 3rem;
   padding-right: clamp(1.2rem, 2vw, 3rem);
@@ -52,8 +53,13 @@ a {
 
   @media (min-width: 1024px) {
     max-width: 2000px;
-    margin: 0 auto;
+    margin-left: auto;
+    margin-right: auto;
     padding-top: 104px;
     padding-bottom: 184px;
   }
+}
+
+.nowrap {
+  white-space: nowrap;
 }

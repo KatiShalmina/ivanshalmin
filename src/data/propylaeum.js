@@ -171,7 +171,7 @@ export const propylaeum = {
   ],
 
   text: `
-    In this project, Ivan Shalmin reinterprets the idea of the ancient greek propylaeum. The main space - the propylaeum, is formed at the intersection of the two main volumes and manifests itself as a large double height living area (around 6m in height). This architectural motif can also be seen in other areas of the project. For example, on the outside gates and in the window frames. Just like in antiquity, the structural principle is turned into a consistent theme that can be seen throughout the project.
+    In this project, Ivan Shalmin reinterprets the idea of the ancient greek propylaeum. The main space — the propylaeum, is formed at the intersection of the two main volumes and manifests itself as a large double height living area (around 6m in height). This architectural motif can also be seen in other areas of the project. For example, on the outside gates and in the window frames. Just like in antiquity, the structural principle is turned into a consistent theme that can be seen throughout the project.
 
     What's different about this building is the architect's philosophy — to eliminate the so-called interim spaces. This modern propylaeum is situated at the intersection of the two main volumes and it forms the main living area, the heart of the project. One of the key practical tasks was to keep all the trees on the land and so the architect designed a form that reflects its surroundings as well as itself. In this way, two volumes appeared, one clad in clinker brick, the other in wood and the intersection between them has turned into glass. More specifically, Plainbel Grey, a specialist type of glass that gives a one-way mirror effect.
 
@@ -179,7 +179,7 @@ export const propylaeum = {
 
     Another key element of this house is the custom open staircase in the living area, made up of self-supporting steps; identical units made up of a rust-proof steel frame that carries a piece of Planibel Grey. When bolted together to overlap with one another, these units become self-supporting and therefore structural. Each step, due to its transparency, evokes an illusion of weightlessness. But there's more; as the spectator moves across the stairs, their viewing angle changes. Thus, every step becomes an additional device to further activate the ongoing play between those ever-changing reflections.
 
-    The architect used 'dense' cladding materials - dark wood and black clinker brick, specifically to further blend the building into the surroundings. 'Had the house been clad in different materials, it would have been an eye-sore; but this way the building dissolves into the pine forest'. And it also has its own transparent volume - the propylaeum.
+    The architect used 'dense' cladding materials - dark wood and black clinker brick, specifically to further blend the building into the surroundings. 'Had the house been clad in different materials, it would have been an eye-sore; but this way the building dissolves into the pine forest'. And it also has its own transparent volume — the propylaeum.
 
     The concept of the propylaeum was so successful that with few alterations, this project has since been built on another 6 sites.
   `,

@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import Lightbox from 'yet-another-react-lightbox'
 import Inline from 'yet-another-react-lightbox/plugins/inline'
 import Thumbnails from 'yet-another-react-lightbox/plugins/thumbnails'
@@ -8,6 +8,8 @@ import 'yet-another-react-lightbox/plugins/thumbnails.css'
 export default function GalleryWithCover({ slides, title, className }) {
   const [open, setOpen] = useState(false)
   const [index, setIndex] = useState(0)
+  const [isMobile, setIsMobile] = useState(false)
+  const [refresh, setRefresh] = useState(0)
 
   const toggleOpen = (state) => () => setOpen(state)
 
@@ -15,12 +17,28 @@ export default function GalleryWithCover({ slides, title, className }) {
     if (when === open) setIndex(current)
   }
 
-  const isMobile = window.matchMedia('(max-width: 800px)').matches
+  useEffect(() => {
+    const mq = window.matchMedia('(max-width: 800px)')
+
+    const update = () => setIsMobile(mq.matches)
+
+    update()
+    mq.addEventListener('change', update)
+
+    return () => mq.removeEventListener('change', update)
+  }, [])
+
+  useEffect(() => {
+    const handleResize = () => setRefresh(prev => prev + 1)
+    window.addEventListener('resize', handleResize)
+    return () => window.removeEventListener('resize', handleResize)
+  }, [])
 
   return (
     <>
       <div className={className}>
         <Lightbox
+          key={refresh}
           index={index}
           slides={slides.map(img => ({
             src: img.src,
@@ -38,9 +56,9 @@ export default function GalleryWithCover({ slides, title, className }) {
             buttonPrev: isMobile ? () => null : undefined,
             buttonNext: isMobile ? () => null : undefined,
           }}
-          carousel={{ 
-            padding: 0, 
-            spacing: 0, 
+          carousel={{
+            padding: 0,
+            spacing: 0,
             imageFit: 'cover',
           }}
           inline={{
@@ -63,8 +81,8 @@ export default function GalleryWithCover({ slides, title, className }) {
         plugins={[Thumbnails]}
         animation={{ fade: 0 }}
         controller={{
-          closeOnPullDown: true, 
-          closeOnBackdropClick: true, 
+          closeOnPullDown: true,
+          closeOnBackdropClick: true,
         }}
         render={{
           buttonPrev: isMobile ? () => null : undefined,

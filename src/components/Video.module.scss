@@ -1,7 +1,6 @@
 .videoContainer {
   position: relative;
   width: 100%;
-  max-width: 1024px;
   aspect-ratio: 16 / 9;
   overflow: hidden;
 
@@ -41,15 +40,16 @@
 
 .videoTitle {
   position: absolute;
-  right: clamp(8px, 2vw, 1.2rem);
-  bottom: clamp(8px, 2vw, 1.2rem);
+  right: clamp(4px, 2vw, 1rem);
+  bottom: clamp(4px, 2vw, 1rem);
+  padding: 4px 8px;
   font-size: clamp(1.7rem, 4vw, 2.5rem);
   line-height: 1.2;
   font-weight: 300;
   font-stretch: 115%;
-  text-shadow:
-    0 2px 4px rgba(0, 0, 0, 0.4),
-    0 4px 12px rgba(0, 0, 0, 0.2);
+  background: rgba(0, 0, 0, 0.25);
+  backdrop-filter: blur(4px);     
+  -webkit-backdrop-filter: blur(4px);
 }
 
 .playButton {
@@ -64,10 +64,20 @@
   border: none;
   background: transparent;
   cursor: pointer;
+
+  @media (min-width: 800px) {
+    width: 140px;
+    height: 140px;
+  }
 }
 
 .playIcon {
   display: block;
-  width: clamp(80px, 10vw, 140px);
-  height: clamp(80px, 10vw, 140px);
+  width: 80px;
+  height: 80px;
+
+  @media (min-width: 800px) {
+    width: 140px;
+    height: 140px;
+  }
 }

@@ -1,6 +1,6 @@
 import { useState } from 'react'
 import styles from './Video.module.scss'
-import PlayButton from '../assets/icons/play-full.svg?react'
+import PlayButton from '../assets/icons/play.svg?react'
 
 export default function Video({
   videoId,
