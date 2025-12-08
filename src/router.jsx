@@ -8,6 +8,9 @@ import Laconism from './pages/Arch/Laconism'
 import PublicationsLayout from './pages/Arch/PublicationsLayout'
 import Publications from './pages/Arch/Publications'
 import PublicationObject from './pages/Arch/PublicationObject'
+import InteriorsLayout from './pages/Arch/InteriorsLayout'
+import Interiors from './pages/Arch/Interiors'
+import InteriorObject from './pages/Arch/InteriorObject'
 
 import Paintings from './pages/Art/Paintings'
 import PaintingDetail from './pages/Art/PaintingDetail'
@@ -32,7 +35,15 @@ const router = createBrowserRouter([
         path: 'publications',
         element: <PublicationsLayout />,
         children: [
-          { index: true, element: <Publications /> },         
+          { index: true, element: <Publications /> },
+          {
+            path: 'interiors',
+            element: <InteriorsLayout />,
+            children: [
+              { index: true, element: <Interiors /> },
+              { path: ':subslug', element: <InteriorObject /> }
+            ]
+          },
           { path: ':slug', element: <PublicationObject /> },
         ]
       },

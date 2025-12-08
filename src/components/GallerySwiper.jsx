@@ -16,7 +16,6 @@ export default function GallerySwiper({ slides }) {
         scrollbar={{ draggable: true }}
         spaceBetween={20}
         slidesPerView={1}
-        onSlideChange={(swiper) => setIndex(swiper.activeIndex)}
       >
         {slides.map((slide, i) => (
           <SwiperSlide key={i}>

@@ -7,7 +7,7 @@ export default function ObjectCard({ slug, title, year, cover, index, originalWi
       <Link to={`/objects/${slug}`}>
         <img
           className={styles.objectCover}
-          src={`${cover}1024.webp`}
+          src={`${cover}/480/${slug}480-${index}.webp`}
           srcSet={`
             ${cover}/480/${slug}480-${index}.webp 480w,
             ${cover}/1024/${slug}1024-${index}.webp 1024w,
@@ -15,9 +15,8 @@ export default function ObjectCard({ slug, title, year, cover, index, originalWi
             ${cover}/original/${slug}-${index}.webp ${originalWidth}w
           `}
           sizes='
-            (max-width: 640px) 480px,
-            (max-width: 1200px) 1024px,
-            1920px
+            (max-width: 640px) 100vw,
+            1440px
           '
           alt={title}
           loading='lazy'

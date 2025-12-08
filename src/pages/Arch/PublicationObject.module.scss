@@ -1,0 +1,50 @@
+.pubTitle {
+  margin-bottom: clamp(1rem, 4vw, 2rem);
+  font-size: clamp(2.5rem, 7vw, 5.2rem);
+  line-height: 1.2;
+  font-weight: 300;
+  font-stretch: 115%;
+  opacity: 0.5;
+}
+
+.pubSubtitle {
+  font-size: clamp(1.2rem, 3vw, 2.5rem);
+  text-transform: uppercase;
+  margin-bottom: clamp(1.7rem, 4vw, 3rem);
+  opacity: 0.5;
+}
+
+.pubTagline {
+  max-width: 57ch;
+  margin-bottom: clamp(3rem, 4vw, 4.3rem);
+  font-size: clamp(1.2rem, 2vw, 1.7rem);
+}
+
+.pubText {
+  margin-bottom: clamp(10px, 4vw, 1.7rem);
+}
+
+.pubParagraph {
+  max-width: 64ch;
+  margin-bottom: clamp(1rem, 4vw, 1.7rem);
+  font-size: clamp(1rem, 2vw, 1.4rem);
+}
+
+.pubAuthor {
+  margin-bottom: clamp(1.7rem, 4vw, 3rem);
+  font-size: clamp(1.2rem, 2vw, 1.7rem);
+  text-transform: uppercase;
+}
+
+.pubOriginalLink {
+  padding: 8px 0;
+  font-size: clamp(1rem, 2vw, 1.2rem);
+
+  @media (min-width: 1024px) {
+    transition: opacity .4s ease;
+
+    &:hover {
+      opacity: 0.7;
+    }
+  }
+}

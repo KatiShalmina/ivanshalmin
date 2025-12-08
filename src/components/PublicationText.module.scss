@@ -1,0 +1,15 @@
+.textContainer {
+  margin-bottom: clamp(10px, 4vw, 1.7rem);
+}
+
+.textContainer p {
+  max-width: 64ch;
+  font-size: clamp(1rem, 2vw, 1.4rem);
+}
+
+.sectionTitle {
+  max-width: 40ch;
+  font-size: clamp(1.7rem, 4vw, 2.5rem);
+  line-height: 1.2;
+  font-weight: 400;
+}

@@ -1,4 +1,4 @@
-import { objects } from '../../data/objects'
+import { objects } from '../../data/objects/objects'
 import ObjectCard from '../../components/ObjectCard'
 import styles from './Objects.module.scss'
 

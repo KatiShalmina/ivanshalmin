@@ -4,7 +4,7 @@ import { NavLink } from 'react-router-dom'
 export default function Footer() {
   const activeStyle = {
 		fontWeight: '600',
-		border: '1px solid #ffffff'
+		border: '1px solid var(--color-secondary)'
 	}
 
   return (

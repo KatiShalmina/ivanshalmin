@@ -1,5 +1,7 @@
+import { Navigate } from 'react-router-dom'
+
 export default function Publications() {
   return (
-    <h1>Publications</h1>
+    <Navigate to='violinist' replace />
   )
 }
