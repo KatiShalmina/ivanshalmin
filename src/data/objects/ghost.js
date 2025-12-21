@@ -19,7 +19,29 @@ export const ghost = {
     The subject of this building is the ‘destruction’ of the wall.
   `,
 
-  gallery: [ 
+  text: `
+    The facades of this building were given a unique aesthetic function — to defy the laws of physics. As you walk down the path along the house, you can see separate fragments of the clinker brick walls with small projections. They appear to be either hanging in mid air, or growing out of the landscape. Glass surfaces become the backdrop, they also act as a mirror, reflecting their surroundings. The solid walls, clad in german clinker brick appear from nowhere and seem to exist independently, because the whole volume of the house dissolves in the reflections of the mirror-like, glass walls. The climax of this ‘suprematist’ landscape is the fragment of the facade on the third floor. It hangs unsupported in mid air.
+
+    The boundaries between the internal and the external are completely blurred. The areas situated directly behind the glass facade are residential and that’s the beauty of the building — behind this glass facade, you are invisible. At the same time, the surroundings of the house penetrate the interior and become a part of it. From the inside this ‘magic glass’ looks lightly tinted and in certain lighting conditions, it becomes completely invisible.
+
+    ‘The walls are actually inside our heads,’ — explains Ivan Shalmin. The true size and scale of the building can only be fully appreciated when you are inside, standing on the mezzanine of the second floor, looking down on the double height space of the living area with a large two way fireplace clad in leather. The height of the mezzanine is 2.45 m and the double height living area is 6 m high. There is a grand lighting feature, reminiscent of an organ in a catholic church and a glass hand railing around the mezzanine.
+
+    To design the void — is not that the culmination of mastery? The Interiors seem to expand infinitely. The glass appears to be absent in most of the spaces on the first, second and third floor and you are left with the illusion of being outside. At the same time, you are confident that you are in a private space and you feel protected.
+
+    Perhaps the most vivid oxymoron is the feature ‘solid water’ swimming pool — a concept originally designed by the architect 12 years ago. This swimming pool design is already present in several other realised projects. Perspective creates the illusion that the swimming pool extends through the glass, beyond the building. Structural glass strengthens the illusion that this interior has no exterior walls. The wooden ceiling above the pool appears to hang unsupported in thin air. It’s also important to note that the architect’s design makes it nearly impossible to see the bathers from the outside.
+
+    In addition to the existing composition, there will be a large pool-like water feature outside, mirroring the interior swimming pool. The surface of the water was conceived to be flush with the surrounding grass. Due to the fact that the edging of the outside pool is designed to have a 45 degree angle, the grass will appear to grow right next to the waters edge. The outside pool was created to contain fish in the summer but it will be used for ice skating in the winter. It will also be used to water the garden, where fruit trees will be planted in future.
+
+    There’s one more architectural argument to support the use of reflections. Looking out from the third floor, it would have been very easy to see the neighbours, but the glass terrace was fenced with black, glazed porcelain stoneware. In this way, the dark surface reflects the garden, whilst the neighbouring property visually recedes away from the grounds of the house.
+
+    ‘Everyone wants to live behind a stone wall. Here, I’ve managed to achieve the presence of the wall, but as soon as you go through it, it dissolves, it disappears.’ Static architecture becomes dynamic, the composition shifts from open to closed and the building remains in a state of flux.
+
+    This begs the question: this glass facade — is it a wall or a window? As for the walls suspended in thin air — do they protect or do they open up that curtain of privacy? The answer is both and neither. According to Ivan Shalmin, this is the necessary sufficiency of functionality, strength and beauty. In other words, laconism in architecture.
+  `,
+
+  more: '/publications/violinist',
+
+  gallery: [
     {
       id: 1,
       src: '/images/objects/ghost/original/ghost-1.webp',
@@ -47,7 +69,7 @@ export const ghost = {
       ],
     },
     {
-      id: 3, 
+      id: 3,
       src: '/images/objects/ghost/original/ghost-3.webp',
       srcSet: [
         { src: '/images/objects/ghost/original/ghost-3.webp', width: 1024 },
@@ -399,23 +421,11 @@ export const ghost = {
     },
   ],
 
-  text: `
-    The facades of this building were given a unique aesthetic function — to defy the laws of physics. As you walk down the path along the house, you can see separate fragments of the clinker brick walls with small projections. They appear to be either hanging in mid air, or growing out of the landscape. Glass surfaces become the backdrop, they also act as a mirror, reflecting their surroundings. The solid walls, clad in german clinker brick appear from nowhere and seem to exist independently, because the whole volume of the house dissolves in the reflections of the mirror-like, glass walls. The climax of this ‘suprematist’ landscape is the fragment of the facade on the third floor. It hangs unsupported in mid air.
-
-    The boundaries between the internal and the external are completely blurred. The areas situated directly behind the glass facade are residential and that’s the beauty of the building — behind this glass facade, you are invisible. At the same time, the surroundings of the house penetrate the interior and become a part of it. From the inside this ‘magic glass’ looks lightly tinted and in certain lighting conditions, it becomes completely invisible.
-
-    ‘The walls are actually inside our heads,’ — explains Ivan Shalmin. The true size and scale of the building can only be fully appreciated when you are inside, standing on the mezzanine of the second floor, looking down on the double height space of the living area with a large two way fireplace clad in leather. The height of the mezzanine is 2.45m and the double height living area is 6m high. There is a grand lighting feature, reminiscent of an organ in a catholic church and a glass hand railing around the mezzanine.
-
-    To design the void — is not that the culmination of mastery? The Interiors seem to expand infinitely. The glass appears to be absent in most of the spaces on the first, second and third floor and you are left with the illusion of being outside. At the same time, you are confident that you are in a private space and you feel protected.
-
-    Perhaps the most vivid oxymoron is the feature ‘solid water’ swimming pool — a concept originally designed by the architect 12 years ago. This swimming pool design is already present in several other realised projects. Perspective creates the illusion that the swimming pool extends through the glass, beyond the building. Structural glass strengthens the illusion that this interior has no exterior walls. The wooden ceiling above the pool appears to hang unsupported in thin air. It’s also important to note that the architect’s design makes it nearly impossible to see the bathers from the outside.
-
-    In addition to the existing composition, there will be a large pool-like water feature outside, mirroring the interior swimming pool. The surface of the water was conceived to be flush with the surrounding grass. Due to the fact that the edging of the outside pool is designed to have a 45 degree angle, the grass will appear to grow right next to the waters edge. The outside pool was created to contain fish in the summer but it will be used for ice skating in the winter. It will also be used to water the garden, where fruit trees will be planted in future.
-
-    There’s one more architectural argument to support the use of reflections. Looking out from the third floor, it would have been very easy to see the neighbours, but the glass terrace was fenced with black, glazed porcelain stoneware. In this way, the dark surface reflects the garden, whilst the neighbouring property visually recedes away from the grounds of the house.
-
-    ‘Everyone wants to live behind a stone wall. Here, I’ve managed to achieve the presence of the wall, but as soon as you go through it, it dissolves, it disappears.’ Static architecture becomes dynamic, the composition shifts from open to closed and the building remains in a state of flux.
-
-    This begs the question: this glass facade — is it a wall or a window? As for the walls suspended in thin air — do they protect or do they open up that curtain of privacy? The answer is both and neither. According to Ivan Shalmin, this is the necessary sufficiency of functionality, strength and beauty. In other words, laconism in architecture.
-  `,
+  video: {
+    id: 'tvZQxQfsuj0',
+    title: 'review',
+    coverOriginal: '/images/video-covers/original/ghost.webp',
+    cover1024: '/images/video-covers/1024/ghost1024.webp',
+    cover480: '/images/video-covers/480/ghost480.webp'
+  },
 };

@@ -1,38 +1,37 @@
 import { NavLink, Outlet } from 'react-router-dom'
-import styles from './PublicationsLayout.module.scss'
+import styles from './InteriorsLayout.module.scss'
 
 export default function InteriorsLayout() {
   const activeStyle = {
-    fontWeight: '600',
-    border: '1px solid var(--color-secondary)'
+    fontWeight: '600'
   }
 
   return (
-    <div>
-      <nav className={styles.navPub}>
-        <ul className={styles.navPubList}>
-          <li className={styles.navPubItem}>
+    <div className={styles.interiors}>
+      <nav className={styles.navInt}>
+        <ul className={styles.navIntList}>
+          <li className={styles.navIntItem}>
             <NavLink
               to='glass'
-              className={styles.navPubLink}
+              className={styles.navIntLink}
               style={({ isActive }) => isActive ? activeStyle : null}
             >
-              looking glass
+              glass
             </NavLink>
           </li>
-          <li className={styles.navPubItem}>
+          <li className={styles.navIntItem}>
             <NavLink
               to='beginning'
-              className={styles.navPubLink}
+              className={styles.navIntLink}
               style={({ isActive }) => isActive ? activeStyle : null}
             >
               the beginning
             </NavLink>
           </li>
-          <li className={styles.navPubItem}>
+          <li className={styles.navIntItem}>
             <NavLink
-              to='nsk'
-              className={styles.navPubLink}
+              to='love'
+              className={styles.navIntLink}
               style={({ isActive }) => isActive ? activeStyle : null}
             >
               with love

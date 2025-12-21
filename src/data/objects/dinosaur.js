@@ -19,6 +19,20 @@ export const dinosaur = {
     And flew up 5 meters off the ground, to face the forest and to turn his back onto the pseudo-baroque settlement of the village of Ysovo.
   `,
 
+  text: `
+    The proportions of the house are well and truly reminiscent of a giant prehistoric reptile. The main interior double height volume is 10 m x 9 m, the length of the facade is 65 m and this volume is lifted to hover 5 m above the ground. The length of the span above the exterior terrace is 27 m, with zero additional visible support structures. A span of this magnitude was a challenge for the engineers and that’s why the project also carries a second nickname ‘The Unbearable Lightness of Being’.
+
+    The two main volumes of the building intersect, thereby forming a void — a window into the forest. In terms of engineering solutions, this building certainly defies the ordinary. How can a structure the size of a boeing be resting on glass planes?
+
+    Indeed, the house has turned its back on the village, consisting of solely of pseudo-baroque dwellings. Fragments of solid brick, windowless wall are the only aspects of the building that the neighbours can see. The main reason for this design decision is orientation. Ivan Shalmin’s houses are always oriented in the same way, with all the glass facades facing north and the solid brick walls facing south. In this way, the architect protects the houses from the heat and from excess light. ‘When the main glass facades face north, it’s as though you are wearing a cap. There is a lot of light but it doesn’t blind you, because you are shielded from it’.
+
+    Instead of traditional windows, the architect designed an original lighting feature on the south facade — a network of individual LED lights, intended to mimic and compliment the stars in the night sky. In order to create it, he had to experiment to find the optimum diameter of openings to house the LEDs.
+
+    ‘I listen to the client but I never give him what he wants, because my job is to define and to design what the client needs. That’s the whole point of being an architect.’ The glass facade always looks out onto the forest, onto the ‘interim space’ according to the theory of Ivan Shalmin. But in this case, the forest behind glass is just an artistic device, a technique used by Ivan to create an infinite and boundless interior. Specialist tinted glass is used by the architect in quite a lot of his projects. This glass is almost invisible from the inside and the forest becomes a part of the interior, thereby endlessly expanding the boundaries of the building.
+  `,
+
+  more: '/publications/latvia',
+
   gallery: [ 
     {
       id: 1,
@@ -291,16 +305,4 @@ export const dinosaur = {
       ],
     },
   ],
-
-  text: `
-    The proportions of the house are well and truly reminiscent of a giant prehistoric reptile. The main interior double height volume is 10m x 9m, the length of the facade is 65m and this volume is lifted to hover 5m above the ground. The length of the span above the exterior terrace is 27m, with zero additional visible support structures. A span of this magnitude was a challenge for the engineers and that’s why the project also carries a second nickname ‘The Unbearable Lightness of Being’.
-
-    The two main volumes of the building intersect, thereby forming a void — a window into the forest. In terms of engineering solutions, this building certainly defies the ordinary. How can a structure the size of a boeing be resting on glass planes?
-
-    Indeed, the house has turned its back on the village, consisting of solely of pseudo-baroque dwellings. Fragments of solid brick, windowless wall are the only aspects of the building that the neighbours can see. The main reason for this design decision is orientation. Ivan Shalmin’s houses are always oriented in the same way, with all the glass facades facing north and the solid brick walls facing south. In this way, the architect protects the houses from the heat and from excess light. ‘When the main glass facades face north, it’s as though you are wearing a cap. There is a lot of light but it doesn’t blind you, because you are shielded from it’.
-
-    Instead of traditional windows, the architect designed an original lighting feature on the south facade — a network of individual LED lights, intended to mimic and compliment the stars in the night sky. In order to create it, he had to experiment to find the optimum diameter of openings to house the LEDs.
-
-    ‘I listen to the client but I never give him what he wants, because my job is to define and to design what the client needs. That’s the whole point of being an architect.’ The glass facade always looks out onto the forest, onto the ‘interim space’ according to the theory of Ivan Shalmin. But in this case, the forest behind glass is just an artistic device, a technique used by Ivan to create an infinite and boundless interior. Specialist tinted glass is used by the architect in quite a lot of his projects. This glass is almost invisible from the inside and the forest becomes a part of the interior, thereby endlessly expanding the boundaries of the building.
-  `,
 };

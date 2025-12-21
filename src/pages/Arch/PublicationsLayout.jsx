@@ -26,7 +26,7 @@ export default function PublicationsLayout() {
               className={styles.navPubLink}
               style={({ isActive }) => isActive ? activeStyle : null}
             >
-              fabric of reality
+              fabric
             </NavLink>
           </li>
           <li className={styles.navPubItem}>
@@ -49,20 +49,20 @@ export default function PublicationsLayout() {
           </li>
           <li className={styles.navPubItem}>
             <NavLink
-              to='interiors'
-              className={styles.navPubLink}
-              style={({ isActive }) => isActive ? activeStyle : null}
-            >
-              interiors
-            </NavLink>
-          </li>
-          <li className={styles.navPubItem}>
-            <NavLink
               className={styles.navPubLink}
               to='paper'
               style={({ isActive }) => isActive ? activeStyle : null}
             >
               paper
+            </NavLink>
+          </li>
+          <li className={styles.navPubItem}>
+            <NavLink
+              to='interiors'
+              className={styles.navPubLink}
+              style={({ isActive }) => isActive ? activeStyle : null}
+            >
+              interiors
             </NavLink>
           </li>
         </ul>

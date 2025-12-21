@@ -5,87 +5,72 @@ export const beginning = {
 
   subtitle: `
     salon
-    moscow | feb 2009
+    moscow | february 2009
   `,
 
-  tagline: 'Project author Ivan Shalmin: ‘All our lives, we surround ourselves with walls. These very walls ruin our lives but at the same time, we cannot live without them. Transparent glass partitions help solve this problem. At the same time, there is zoning and the ability to see the entire space. In this project, I used tinted glass, which creates a deep mirror effect.’',
+  tagline: 'Project author Ivan Shalmin: ‘I am a proponent of laconism. Yes, sometimes classics are well made, but they also require a certain lifestyle — by candlelight... Living in a museum? Trying to catch up with a bygone era? It’s possible. But why? Modern people live in the present, and they need something completely different. What exactly? Each of my projects is an attempt to answer this question.’',
 
   text: `
-    Ivan Shalmin is a conceptual architect. For many years, he has been creating objects in his own style. The 200 sqm apartment in Molochny Lane [Moscow] is an interesting example of an interior in the laconism style.
+    Ivan Shalmin believes that the most beautiful space is a project at its very beginning. The architect has a blank slate, and everything is still ahead.
+
+    When work on a project is still ahead, when an apartment stands without a single partition, this, according to Ivan Shalmin, is the most exciting moment: everything is just beginning! The architect is convinced that there is nothing more beautiful than such a space — free and, by definition, open. Looking ahead, let’s say that the finished project we are going to discuss, that is, the definite result of the architect’s work, is arranged in such a way that it retains the features of its beginnings. And the most important feature is the free space. It is played up with the help of sliding partitions, reflective surfaces — glass and lacquered, panoramic windows, light grey walls and ceiling. The impression is completed by a huge photograph with a view of the city. ‘I always leave the space as open as possible,’ says Ivan Shalmin, ‘and it’s the same here. In my opinion, one bedroom and a studio is the ideal interior solution.’ 
+
+    The owners requested two bedrooms. The architect planned the rooms so that one bedroom with an adjoining bathroom is located to the right of the entrance, and the second is at the far end of the apartment, behind the living room. 
     
-    The apartment got its name, ‘Through the Looking Glass,’ because the interior design makes extensive use of semi-transparent partitions made of tinted glass.
-    
-    ‘I enjoy designing interior items myself, including lighting fixtures,’ says Ivan Shalmin. ‘I designed the Korpusuly dining table specifically for this project. I once designed a lamp made of polished metal bars for a table by the Porro factory. The Italians have a very interesting table model, but it is difficult to find a lamp to match it, so I designed one myself. It turned out to be quite successful, so I used it in this project as well.’
-    
-    The dining room, also serving as a kitchen, is located behind semi-transparent partitions. In this flat, the hallway function is performed by a dressing room, through which you can walk from the children's room to the entrance hall and the dining room-kitchen.
-    
-    Behind the tinted glass partitions in the master bedroom are the wardrobe and bathroom.
-    
-    SALON: CONTEMPORARY INTERIORS ARE EITHER MINIMALIST OR ECLECTIC. WHAT DO YOU MEAN BY THE TERM ‘LACONISM’?
+    The kitchen, living room and dining room are designed as a single space; at the same time, the kitchen, made according to the architect’s original design, stretches along the wall and is practically indistinguishable as a kitchen. The sink is hidden, and the hob is seamlessly integrated into the worktop. The openness of the space is emphasised by smoky grey glass partitions that create deep ‘three-dimensional’ reflections, giving the impression that the space is dissolving.
 
-    Ivan Shalmin: For me, laconism is a set of special rules that I have developed for myself over years of designing houses and interiors. What are these rules? I take all of the client’s wishes and ‘compress’ them until they become a necessary sufficiency. That is, what the client needs in this particular case and what can actually be implemented. When working with a client, I don’t look for options, but try to find the only correct solution. I take into account the totality of resources, possibilities, materials and other components. The main thing is that it should be correct and laconic, and it will turn out beautiful on its own. This is what unconditional laconism is all about.
+    The living room has a TV area with a plasma screen and seven-channel sound system. The column covered with cowhide is actually a load-bearing structure.
 
-    S: TELL US MORE ABOUT THIS INTERIOR: HOW DOES IT DIFFER FROM OTHER INTERIORS IN THIS STYLE?
+    The hallway appears significantly larger thanks to the mirror and glass partitions. The main principle uniting the rooms is the conciseness of form and colour. The light grey colour of the walls and ceiling provides a backdrop against which warm, natural colours such as brown, red and beige look so striking.
 
-    Ivan: I named the project ‘Through the Looking Glass’ because instead of the usual walls, it features semi-transparent partitions made of tinted glass. A regular mirror provides a simple reflection, but tinted glass, when used in large quantities, can act as a ‘deep’ mirror depending on the lighting. It creates the feeling that you are looking through a mirror. One thing is reflected in another, and sometimes you get lost: are you seeing a reflection or the real picture? As a result, there are almost no walls in the flat, most of them are glass, and the rooms are organised according to the principle of flowing spaces. In general, glass walls are also a necessary necessity and, in this sense, part of the concept of laconicism. The fact is that, on the one hand, walls are a necessity, a closed territory. On the other hand, the customer wants to see the entire space they own. Glass walls appeared as an alternative: they provide a good view and divide the rooms.
+    In contrast to the cold glass used in the wall finishes, Ivan Shalmin used warm materials, such as cork wood wall panels in the home cinema and cowhide covering the supporting structure. ‘I like to use materials in unusual ways,’ says the architect. ‘For example, this cork is a flooring material, but it looks even better on the walls [and, by the way, dampens unwanted sound vibrations in the home cinema area]. The panoramic photograph in the living room shows a view of Smolenskaya Embankment, which is actually nearby. If the floor were higher, the view would be roughly the same. So I ‘corrected’ the view from the window somewhat by hanging this photograph.’
 
-    The interior design was created for a family of four: parents, a child, and a nanny who lives with them. I don’t usually design corridors, but in this interior, a corridor was added because it was necessary to provide the nanny with access to certain rooms without passing through the public area. The result is two apartments in one: the owners’ area [living room, dining room-kitchen, study, bedroom, bathroom] and the children’s area are separated by a corridor. And it’s not even a corridor, but rather a full-fledged dressing room that you can walk through. In addition, there is a utility room - a laundry and ironing room.
-
-    S: TINTED GLASS PARTITIONS CREATE A TWILIGHT EFFECT, AS IF THE COLOURS ARE BLURRED. WHAT IS THE OVERALL COLOUR SCHEME?
-
-    Ivan: For ten years, I have been using the same paint for walls and ceilings in all my projects. It is the most versatile option for Moscow. The paint is neutral in colour, but it absorbs the sun’s rays like a sponge and changes shades depending on the lighting. In the morning it can be greenish, in the evening reddish, and in the afternoon orange. It does not add anything, but rather reveals the shades of natural light, and because of this, the interior works in halftones.
+    It remains to add that the furniture selected by the architect is classic minimalism. The MINOTTI sofa with light upholstery and light metal chairs designed by Harry Bertoia are ideal for a laconic interior: with such furniture, the space seems light, open and free.
   `,
 
   slides: [
     {
       id: 1,
-      src: '/images/publications/interiors/glass/original/glass-1.webp',
+      src: '/images/publications/interiors/beginning/original/beginning-1.webp',
       srcSet: `
-        /images/publications/interiors/glass/480/glass-1.webp 480w,
-        /images/publications/interiors/glass/original/glass-1.webp 700w
+        /images/publications/interiors/beginning/480/beginning-1.webp 480w,
+        /images/publications/interiors/beginning/original/beginning-1.webp 700w
       `,
-      alt: 'Through the looking glass slide 1'
+      alt: 'The beginning slide 1'
     },
     {
       id: 2,
-      src: '/images/publications/interiors/glass/original/glass-2.webp',
+      src: '/images/publications/interiors/beginning/original/beginning-2.webp',
       srcSet: `
-        /images/publications/interiors/glass/480/glass-2.webp 480w,
-        /images/publications/interiors/glass/original/glass-2.webp 700w
+        /images/publications/interiors/beginning/480/beginning-2.webp 480w,
+        /images/publications/interiors/beginning/original/beginning-2.webp 700w
       `,
-      alt: 'Through the looking glass slide 2'
+      alt: 'The beginning slide 2'
     },
     {
       id: 3,
-      src: '/images/publications/interiors/glass/original/glass-3.webp',
+      src: '/images/publications/interiors/beginning/original/beginning-3.webp',
       srcSet: `
-        /images/publications/interiors/glass/480/glass-3.webp 480w,
-        /images/publications/interiors/glass/original/glass-3.webp 700w
+        /images/publications/interiors/beginning/480/beginning-3.webp 480w,
+        /images/publications/interiors/beginning/original/beginning-3.webp 700w
       `,
-      alt: 'Through the looking glass slide 3'
+      alt: 'The beginning slide 3'
     },
     {
       id: 4,
-      src: '/images/publications/interiors/glass/original/glass-4.webp',
+      src: '/images/publications/interiors/beginning/original/beginning-4.webp',
       srcSet: `
-        /images/publications/interiors/glass/480/glass-4.webp 480w,
-        /images/publications/interiors/glass/original/glass-4.webp 700w
+        /images/publications/interiors/beginning/480/beginning-4.webp 480w,
+        /images/publications/interiors/beginning/original/beginning-4.webp 700w
       `,
-      alt: 'Through the looking glass slide 4'
-    },
-    {
-      id: 5,
-      src: '/images/publications/interiors/glass/original/glass-5.webp',
-      srcSet: `
-        /images/publications/interiors/glass/480/glass-5.webp 480w,
-        /images/publications/interiors/glass/original/glass-5.webp 700w
-      `,
-      alt: 'Through the looking glass slide 5'
+      alt: 'The beginning slide 4'
     },
   ],
 
   author: `
-    text: Nadejda Plotnikova
+    text: Yulia Sakharova
     photography: Ivan Shalmin 
   `,
+
+  originalUrl: 'https://salon.ru/article/nachalo-10182'
 }

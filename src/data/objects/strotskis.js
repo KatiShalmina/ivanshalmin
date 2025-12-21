@@ -21,6 +21,22 @@ export const strotskis = {
     It was commissioned to enhance the image of the client’s growing company but sadly, the local infrastructure does not match the standard of this new building.  
   `,
 
+  text: `
+    ‘In this area, the task was to create a dominant architectural landmark, that will inspire and motivate this whole territory to begin to function in a different way; that is to develop, to grow.’
+
+    Why ‘on a plate’? Because the ‘plate’ is the stylobate, where the parking block is located; it’s split into 3 levels and provides 300 parking spaces. On top of the ‘plate’ there are 3 more volumes which differ in form, according to their function. First is the rectangular prism, 75 m in height. It has 18 floors and the capacity to house 1300 workers. Next is the cylinder containing 4 floors, filled with multiple eateries and cafes. One of the canteens, ‘Free Flow’ plans to open its doors to the general public as a restaurant every night. Finally, the cube will house a leisure centre for 100 visitors, a conference hall, an exhibition centre and much needed storage spaces.
+
+    As you approach from a nearby road, the facades appear to be quite modest, but they are very elegant. This elegance will become more apparent once the building sheds its scaffolding and protective plastic. Sooner or later, the rows of warehouses that surround the north side of the complex will disappear, which is advantageous as that space offers the best view of the new development.
+
+    One more secret to mention is that the facade of the rectangular prism does not fully express the true structural grid. From level five, the openings within the facade start to follow a grid of their own, thereby hiding the true location of the floors within. The reason for this decision is simple — an illusion designed to visually reduce the height of the building.
+
+    According to the architect, when it comes to office buildings, artistic vision is not as important as function and durability. As we examine the facades, we see Planibel Grey tinted glass [already present in the architect’s signature houses], transparent structural elements by Reynaers, NBK Terracotta panels by Hunter Douglas and high quality structural concrete, executed by Uninova Construction. This general contractor has done an excellent job and the concrete within the stylobate will remain as it is, with no additional exterior cladding or finish.
+
+    In time this building will change its environment, it will set the new standard of quality for contemporary architecture in this developing area. Today, the glass facades reflect the clouds and the sky, but in years to come, these reflections will change into quality new architecture. Fortunately, there are already plans for future developments. The old warehouses are to be replaced by excellent housing and a new project for a large modern shopping centre is already underway. Hopefully, the inhabitants of Sherbinka will gain a better quality of life.
+  `,
+
+  more: '/laconism',
+
   gallery: [ 
     {
       id: 1,
@@ -245,17 +261,11 @@ export const strotskis = {
     },
   ],
 
-  text: `
-    ‘In this area, the task was to create a dominant architectural landmark, that will inspire and motivate this whole territory to begin to function in a different way; that is to develop, to grow.’
-
-    Why ‘on a plate’? Because the ‘plate’ is the stylobate, where the parking block is located; it’s split into 3 levels and provides 300 parking spaces. On top of the ‘plate’ there are 3 more volumes which differ in form, according to their function. First is the rectangular prism, 75m in height. It has 18 floors and the capacity to house 1300 workers. Next is the cylinder containing 4 floors, filled with multiple eateries and cafes. One of the canteens, ‘Free Flow’ plans to open its doors to the general public as a restaurant every night. Finally, the cube will house a leisure centre for 100 visitors, a conference hall, an exhibition centre and much needed storage spaces.
-
-    As you approach from a nearby road, the facades appear to be quite modest, but they are very elegant. This elegance will become more apparent once the building sheds its scaffolding and protective plastic. Sooner or later, the rows of warehouses that surround the north side of the complex will disappear, which is advantageous as that space offers the best view of the new development.
-
-    One more secret to mention is that the facade of the rectangular prism does not fully express the true structural grid. From level five, the openings within the facade start to follow a grid of their own, thereby hiding the true location of the floors within. The reason for this decision is simple — an illusion designed to visually reduce the height of the building.
-
-    According to the architect, when it comes to office buildings, artistic vision is not as important as function and durability. As we examine the facades, we see Planibel Grey tinted glass [already present in the architect’s signature houses], transparent structural elements by Reynaers, NBK Terracotta panels by Hunter Douglas and high quality structural concrete, executed by Uninova Construction. This general contractor has done an excellent job and the concrete within the stylobate will remain as it is, with no additional exterior cladding or finish.
-
-    In time this building will change its environment, it will set the new standard of quality for contemporary architecture in this developing area. Today, the glass facades reflect the clouds and the sky, but in years to come, these reflections will change into quality new architecture. Fortunately, there are already plans for future developments. The old warehouses are to be replaced by excellent housing and a new project for a large modern shopping centre is already underway. Hopefully, the inhabitants of Sherbinka will gain a better quality of life.
-  `,
+  video: {
+    id: 'UfxHe8mR0C4',
+    title: 'interview',
+    coverOriginal: '/images/video-covers/original/strotskis.webp',
+    cover1024: '/images/video-covers/1024/strotskis1024.webp',
+    cover480: '/images/video-covers/480/strotskis480.webp'
+  },
 };

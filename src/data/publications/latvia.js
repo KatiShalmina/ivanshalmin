@@ -8,7 +8,7 @@ export const latvia = {
     novosibirsk | 2021
   `,
 
-  tagline: 'Family house. Date of completion: 2018. Location: Marupe [Latvia]. Structure: reinforced concrete frame. Facades: clinker brick. Architectural lighting, interior lighting fixtures — based on Ivan Shalmin’s original drawings',
+  tagline: 'Family house. Date of completion: 2018. Location: Marupe [Latvia]. Structure: reinforced concrete frame. Facades: clinker brick. Architectural lighting, interior lighting fixtures — based on Ivan Shalmin’s original drawings.',
 
   text: `
     The house has an area of 800 sqm and is built on a plot of 0.47 hectares. Nearby, on a plot of the same size, there is a regular park, also designed by Ivan Shalmin. The house in Marupe was built before The Ghost. Here, as in other projects, the architect uses techniques of visual transformation of space based on the principle of necessary sufficiency. There is a play of reflections on the facade, and the boundaries of the house are blurred by nature, with the glazing ‘letting in’ the interior but ‘not letting out’ the exterior, and a swimming pool with ‘solid’ water.

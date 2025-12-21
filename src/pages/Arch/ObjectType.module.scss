@@ -65,7 +65,7 @@
 
   @media (min-width: 1024px) {
     grid-column: 2;
-    grid-row: 4 / -1;
+    grid-row: 4 / 8;
     margin: 0;
   }
 }
@@ -74,7 +74,7 @@
   cursor: pointer;
 }
 
-.typeText {
+.textWrapper {
   @media (min-width: 1024px) {
     grid-column: 1;
     grid-row: 6;

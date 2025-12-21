@@ -4,6 +4,8 @@ import GalleryLightbox from '../../components/GalleryLightbox'
 import { types } from '../../data/objects/object-types'
 import styles from './ObjectType.module.scss'
 import BackButton from '../../components/BackButton'
+import MoreButton from '../../components/MoreButton'
+import Video from '../../components/Video'
 
 export default function ObjectType() {
   const { slug } = useParams()
@@ -58,15 +60,29 @@ export default function ObjectType() {
             />
           )
         })}
+        <div className={styles.typeVideo}>
+          {type.video && (
+            <Video
+              videoId={type.video.id}
+              title={type.video.title}
+              coverOriginal={type.video.coverOriginal}
+              cover1024={type.video.cover1024}
+              cover480={type.video.cover480}
+            />
+          )}
+        </div>
       </div>
-      <div className={styles.typeText}>
-        {type.text
-          .trim()
-          .split('\n\n')
-          .map((paragraph, i) => (
-            <p className={styles.typeParagraph} key={i}>{paragraph.trim()}</p>
-          ))
-        }
+      <div className={styles.textWrapper}>
+        <div className={styles.typeText}>
+          {type.text
+            .trim()
+            .split('\n\n')
+            .map((paragraph, i) => (
+              <p className={styles.typeParagraph} key={i}>{paragraph.trim()}</p>
+            ))
+          }
+        </div>
+        <MoreButton to={type.more} />
       </div>
       <GalleryLightbox
         open={open}

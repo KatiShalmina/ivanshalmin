@@ -8,11 +8,9 @@ export const arch = {
     novosibirsk | may 2010
   `,
 
-  tagline: 'His built works, namely his bespoke private houses, when analysed in chronological succession, reflect the different stages of evolution of the client’s aesthetic preferences. Interestingly, there is a clear transition from the époque of ‘developed socialism’ to the realities of the present day.',
+  tagline: 'Architect Ivan Shalmin had studied architecture in Novosibirsk. Since then, he has been living and working in Moscow. Ivan has received numerous awards for his work at various architectural competitions and exhibitions, and his works continue to be published in prestigious architectural magazines. His built works, namely his bespoke private houses, when analysed in chronological succession, reflect the different stages of evolution of the client’s aesthetic preferences. Interestingly, there is a clear transition from the époque of ‘developed socialism’ to the realities of the present day.',
 
   text: `
-    Architect Ivan Shalmin had studied architecture in Novosibirsk. Since then, he has been living and working in Moscow. Ivan has received numerous awards for his work at various architectural competitions and exhibitions, and his works continue to be published in prestigious architectural magazines.
-
     In 2004, at the International Festival of Architecture and Interior Design, Ivan Shalmin received a laureate diploma for the design of his villa, titled ‘Arch’. For the same project, he also received a special recognition prize at the exhibition of Suburban Construction for ‘the clarity and simplicity of his design solution’ by the Moscow Committee of Architecture. Both events took place at the Brestskaya House in Moscow.
 
     The villa ‘Arch’ on Rublevskoye Shosse, with a total area of 890 sqm, was built in 2003. With this project, we are opening an anthology of Ivan Shalmin’s Moscow works in the pages of our magazine. 

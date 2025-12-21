@@ -5,20 +5,20 @@ export const glass = {
 
   subtitle: `
     salon
-    moscow | nov 2009
+    moscow | november 2009
   `,
 
   tagline: 'Project author Ivan Shalmin: ‘All our lives, we surround ourselves with walls. These very walls ruin our lives but at the same time, we cannot live without them. Transparent glass partitions help solve this problem. At the same time, there is zoning and the ability to see the entire space. In this project, I used tinted glass, which creates a deep mirror effect.’',
 
   text: `
     Ivan Shalmin is a conceptual architect. For many years, he has been creating objects in his own style. The 200 sqm apartment in Molochny Lane [Moscow] is an interesting example of an interior in the laconism style.
-    
+
     The apartment got its name, ‘Through the Looking Glass,’ because the interior design makes extensive use of semi-transparent partitions made of tinted glass.
-    
+
     ‘I enjoy designing interior items myself, including lighting fixtures,’ says Ivan Shalmin. ‘I designed the Korpusuly dining table specifically for this project. I once designed a lamp made of polished metal bars for a table by the Porro factory. The Italians have a very interesting table model, but it is difficult to find a lamp to match it, so I designed one myself. It turned out to be quite successful, so I used it in this project as well.’
-    
+
     The dining room, also serving as a kitchen, is located behind semi-transparent partitions. In this flat, the hallway function is performed by a dressing room, through which you can walk from the children's room to the entrance hall and the dining room-kitchen.
-    
+
     Behind the tinted glass partitions in the master bedroom are the wardrobe and bathroom.
 
     SALON: CONTEMPORARY INTERIORS ARE EITHER MINIMALIST OR ECLECTIC. WHAT DO YOU MEAN BY THE TERM ‘LACONISM’?

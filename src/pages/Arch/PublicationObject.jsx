@@ -24,6 +24,7 @@ export default function PublicationObject() {
       </div>
       <p className={styles.pubTagline}>{pub.tagline}</p>
       <GallerySwiper
+        key={slug}
         slides={pub.slides}
       />
       <PublicationText text={pub.text} />

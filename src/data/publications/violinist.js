@@ -5,7 +5,7 @@ export const violinist = {
 
   subtitle: `
     contemporary interior
-    siberia | nov 2020
+    siberia | november 2020
   `,
 
   tagline: 'Born in Novosibirsk in 1959, Ivan Shalmin lives and works in Moscow. He studied architecture within the town planning faculty at Kyibishev NISI [Novosibirsk institute of engineering]. Over the last 20 years he has designed and built [with assistance] more than 70 architectural and interior design projects. In 2016, Ivan began to create digital paintings. Currently, he is overseeing the final stages and the finishing works for two of his latest projects — a villa called ‘Ghost’ and the Strotskis cluster, containing offices, 145 000 sqm of flats and a business centre. In 2020 also he held his first solo exhibitions of art and architecture in Moscow and Novosibirsk.',
