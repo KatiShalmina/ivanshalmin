@@ -1,10 +1,10 @@
-import styles from './Contacts.module.scss'
+import styles from './Contact.module.scss'
 
-export default function Contacts() {
+export default function Contact() {
   return (
     <section>
       <h1>Contacts</h1>
-      <div className={styles.contactsWrapper}>
+      <div className={styles.contactWrapper}>
         <a href='mailto:sasha.shalmina@gmail.com' target='_blank' rel='noopener noreferrer'>
           sasha.shalmina@gmail.com
         </a>

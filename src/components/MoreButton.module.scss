@@ -1,6 +1,6 @@
 .moreButton {
   padding: 4px 0;
-  font-size: clamp(1.2rem, 2vw, 1.7rem);
+  font-size: clamp(1rem, 2vw, 1.2rem);
 
   @media (min-width: 1024px) {
     transition: opacity .4s ease;

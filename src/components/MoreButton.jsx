@@ -4,7 +4,7 @@ import styles from './MoreButton.module.scss';
 export default function MoreButton({ to }) {
   return (
     <Link to={to} className={styles.moreButton}>
-      read more
+      find out more
     </Link>
   );
 }

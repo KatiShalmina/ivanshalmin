@@ -1,12 +1,12 @@
 import { Link } from 'react-router-dom'
-import styles from './ObjectCard.module.scss'
+import styles from './ProjectCard.module.scss'
 
-export default function ObjectCard({ slug, title, year, cover, index, originalWidth }) {
+export default function ProjectCard({ slug, title, year, cover, index, originalWidth }) {
   return (
-    <div className={styles.objectCard}>
-      <Link to={`/objects/${slug}`}>
+    <div className={styles.projectCard}>
+      <Link to={`/projects/${slug}`}>
         <img
-          className={styles.objectCover}
+          className={styles.projectCover}
           src={`${cover}/480/${slug}480-${index}.webp`}
           srcSet={`
             ${cover}/480/${slug}480-${index}.webp 480w,
@@ -21,9 +21,9 @@ export default function ObjectCard({ slug, title, year, cover, index, originalWi
           alt={title}
           loading='lazy'
         />
-        <div className={styles.objectInfo}>
-          <h2 className={styles.objectTitle}>{title}</h2>
-          <p className={styles.objectYear}>{year}</p>
+        <div className={styles.projectInfo}>
+          <h2 className={styles.projectTitle}>{title}</h2>
+          <p className={styles.projectYear}>{year}</p>
         </div>
       </Link>
     </div>

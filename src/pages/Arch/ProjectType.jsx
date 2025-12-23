@@ -1,15 +1,15 @@
 import { useState } from 'react'
 import { useParams } from 'react-router-dom'
 import GalleryLightbox from '../../components/GalleryLightbox'
-import { types } from '../../data/objects/object-types'
-import styles from './ObjectType.module.scss'
+import { types } from '../../data/projects/project-types'
+import styles from './ProjectType.module.scss'
 import BackButton from '../../components/BackButton'
 import MoreButton from '../../components/MoreButton'
 import Video from '../../components/Video'
 
-export default function ObjectType() {
+export default function ProjectType() {
   const { slug } = useParams()
-  const type = types.find(o => o.slug === slug)
+  const type = types.find(p => p.slug === slug)
 
   const [open, setOpen] = useState(false)
   const [index, setIndex] = useState(0)
@@ -18,7 +18,7 @@ export default function ObjectType() {
 
   return (
     <section className={styles.type}>
-      <BackButton>all objects</BackButton>
+      <BackButton>all projects</BackButton>
       <h1 className={styles.typeTitle}>{type.title}</h1>
       <p className={styles.typeSubtitle}>{type.subtitle}</p>
       <div className={styles.typeDescription}>

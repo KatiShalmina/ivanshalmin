@@ -2,8 +2,8 @@ import { createBrowserRouter } from 'react-router-dom'
 import Layout from './components/Layout'
 import Home from './pages/Home'
 
-import Objects from './pages/Arch/Objects'
-import ObjectType from './pages/Arch/ObjectType'
+import Projects from './pages/Arch/Projects'
+import ProjectType from './pages/Arch/ProjectType'
 import Laconism from './pages/Arch/Laconism'
 import PublicationsLayout from './pages/Arch/PublicationsLayout'
 import Publications from './pages/Arch/Publications'
@@ -19,7 +19,7 @@ import ExhibitionDetail from './pages/Art/ExhibitionDetail'
 import VideoArt from './pages/Art/VideoArt'
 
 import Bio from './pages/About/Bio'
-import Contacts from './pages/About/Contacts'
+import Contact from './pages/About/Contact'
 
 const router = createBrowserRouter([
   {
@@ -28,8 +28,8 @@ const router = createBrowserRouter([
     children: [
       { index: true, element: <Home /> },
 
-      { path: 'objects', element: <Objects /> },
-      { path: 'objects/:slug', element: <ObjectType /> },
+      { path: 'projects', element: <Projects /> },
+      { path: 'projects/:slug', element: <ProjectType /> },
       { path: 'laconism', element: <Laconism /> },
       {
         path: 'publications',
@@ -53,10 +53,9 @@ const router = createBrowserRouter([
       { path: 'exhibitions', element: <Exhibitions /> },
       { path: 'exhibitions/:slug', element: <ExhibitionDetail /> },
       { path: 'video-art', element: <VideoArt /> },
-      { path: 'contacts', element: <Contacts /> },
 
       { path: 'bio', element: <Bio /> },
-      { path: 'contacts', element: <Contacts /> },
+      { path: 'contact', element: <Contact /> },
     ],
   },
 ])

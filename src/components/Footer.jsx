@@ -16,10 +16,10 @@ export default function Footer() {
             <ul className={styles.footerList}>
               <li>
                 <NavLink 
-                  to='objects' 
+                  to='projects' 
                   className={styles.footerLink}
                   style={({ isActive }) => isActive ? activeStyle : null}
-                >objects</NavLink>
+                >projects</NavLink>
               </li>
               <li>
                 <NavLink 
@@ -75,7 +75,7 @@ export default function Footer() {
               </li>
               <li>
                 <NavLink 
-                  to='contacts' 
+                  to='contact' 
                   className={styles.footerLink}
                   style={({ isActive }) => isActive ? activeStyle : null}
                 >contacts</NavLink>

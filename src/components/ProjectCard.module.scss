@@ -1,9 +1,9 @@
-.objectCard {
+.projectCard {
   position: relative;
   overflow: hidden;
 }
 
-.objectInfo {
+.projectInfo {
   position: absolute;
   bottom: 1rem;
   left: 1rem;
@@ -12,7 +12,7 @@
   -webkit-backdrop-filter: blur(4px);
   padding: 8px;
 
-  @media (min-width: 1024px) {
+  @media (min-width: 1366px) {
     opacity: 0;
     visibility: hidden;
     transform: translateY(8px);
@@ -23,37 +23,37 @@
   }
 }
 
-.objectCard:hover .objectInfo,
-.objectCard:focus-visible .objectInfo {
-  @media (min-width: 800px) {
+.projectCard:hover .projectInfo,
+.projectCard:focus-visible .projectInfo {
+  @media (min-width: 1366px) {
     opacity: 1;
     visibility: visible;
     transform: translateY(0);
   }
 }
 
-.objectTitle {
-  font-size: clamp(2rem, 6vw, 10.7rem);
+.projectTitle {
+  font-size: clamp(1.4rem, 4vw, 2.5rem);
   font-weight: 300;
   font-stretch: 115%;
 }
 
-.objectYear {
-  font-size: clamp(1rem, 2.5vw, 3rem);
+.projectYear {
+  font-size: clamp(1rem, 2vw, 1.7rem);
 }
 
-.objectCard:hover .objectCover,
-.objectCard:focus-visible .objectCover {
-  @media (min-width: 1024px) {
+.projectCard:hover .projectCover,
+.projectCard:focus-visible .projectCover {
+  @media (min-width: 1366px) {
     transform: scale(1.02);         
   }
 }
 
-.objectCover {
+.projectCover {
   width: 100%;
   height: auto;
 
-  @media (min-width: 1024px) {
+  @media (min-width: 1366px) {
     transition: transform .4s ease;
   }
 }

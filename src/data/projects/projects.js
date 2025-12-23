@@ -1,10 +1,10 @@
-export const objects = [
+export const projects = [
   {
     slug: 'propylaeum',
     title: 'propylaeum',
     year: 2009,
     index: 4,
-    cover: '/images/objects/propylaeum/',
+    cover: '/images/projects/propylaeum/',
     originalWidth: 2362
   },
   {
@@ -12,7 +12,7 @@ export const objects = [
     title: 'dinosaur',
     year: 2013,
     index: 5,
-    cover: '/images/objects/dinosaur',
+    cover: '/images/projects/dinosaur',
     originalWidth: 2362
   },
   {
@@ -20,7 +20,7 @@ export const objects = [
     title: 'glabrous',
     year: 2015,
     index: 3,
-    cover: '/images/objects/glabrous',
+    cover: '/images/projects/glabrous',
     originalWidth: 2362
   },
   {
@@ -28,7 +28,7 @@ export const objects = [
     title: 'ghost',
     year: 2019,
     index: 25,
-    cover: '/images/objects/ghost',
+    cover: '/images/projects/ghost',
     originalWidth: 2050
   },
   {
@@ -36,7 +36,7 @@ export const objects = [
     title: 'strotskis',
     year: 2021,
     index: 8,
-    cover: '/images/objects/strotskis',
+    cover: '/images/projects/strotskis',
     originalWidth: 2500
   }
 ]

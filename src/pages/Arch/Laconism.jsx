@@ -64,9 +64,9 @@ export default function Laconism() {
         <Video
           videoId='iheO9xoTCdc'
           title='novosibirsk'
-          coverOriginal='/images/video-covers/original/nsk.webp'
-          cover1024='/images/video-covers/1024/nsk1024.webp'
-          cover480='/images/video-covers/480/nsk480.webp'
+          coverOriginal='/images/video-covers/original/novosibirsk.webp'
+          cover1024='/images/video-covers/1024/novosibirsk1024.webp'
+          cover480='/images/video-covers/480/novosibirsk480.webp'
         />
         <Video
           videoId='zBI22kyMwNY'

@@ -11,10 +11,10 @@ export default function MenuOverlay({ menuOpen, setMenuOpen }) {
           <ul className={styles.navList}>
             <li>
               <Link
-                to='objects'
+                to='projects'
                 className={styles.navLink}
                 onClick={() => setMenuOpen(false)}
-              >objects</Link>
+              >projects</Link>
             </li>
             <li>
               <Link
@@ -70,7 +70,7 @@ export default function MenuOverlay({ menuOpen, setMenuOpen }) {
             </li>
             <li>
               <Link
-                to='contacts'
+                to='contact'
                 className={styles.navLink}
                 onClick={() => setMenuOpen(false)}
               >contacts</Link>

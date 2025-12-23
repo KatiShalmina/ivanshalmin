@@ -23,6 +23,7 @@ export default function PublicationObject() {
       </div>
       <p className={styles.pubTagline}>{interior.tagline}</p>
       <GallerySwiper
+        key={subslug}
         slides={interior.slides}
       />
       <div className={styles.pubText}>

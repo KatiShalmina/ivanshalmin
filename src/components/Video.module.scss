@@ -21,11 +21,11 @@
   background-image: var(--cover480);
 
   @media (min-width: 600px) {
-    background-image: var(--coverOriginal);
+    background-image: var(--cover1024);
   }
 
-  @media (min-width: 1024px) {
-    
+  @media (min-width: 1100px) {
+    background-image: var(--coverOriginal);
   }
 }
 
@@ -47,7 +47,7 @@
   right: clamp(4px, 2vw, 1rem);
   bottom: clamp(4px, 2vw, 1rem);
   padding: 4px 8px;
-  font-size: clamp(1.7rem, 4vw, 2.5rem);
+  font-size: clamp(1.4rem, 4vw, 2.5rem);
   line-height: 1.2;
   font-weight: 300;
   font-stretch: 115%;
