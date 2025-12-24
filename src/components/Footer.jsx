@@ -78,7 +78,7 @@ export default function Footer() {
                   to='contact' 
                   className={styles.footerLink}
                   style={({ isActive }) => isActive ? activeStyle : null}
-                >contacts</NavLink>
+                >contact</NavLink>
               </li>
             </ul>
           </div>

@@ -2,8 +2,7 @@
   font-size: clamp(1.2rem, 2vw, 1.7rem);
 }
 
-.pageTitle,
-.shortTitle {
+.laconismTitle {
   margin-bottom: clamp(1rem, 4vw, 2rem);
   font-size: clamp(2.5rem, 7vw, 5.2rem);
   line-height: 1.2;
@@ -12,35 +11,35 @@
   opacity: 0.5;
 }
 
-.shortWrapper {
+.laconismWrapper {
   display: flex;
   flex-direction: column;
   gap: clamp(2rem, 4vw, 4.3rem);
   margin-bottom: clamp(2rem, 4vw, 4.3rem);
 }
 
-.shortList {
+.laconismList {
   display: flex;
   flex-direction: column;
   gap: clamp(1.7rem, 2vw, 4.3rem);
-  counter-reset: shortCounter;
+  counter-reset: laconismCounter;
 }
 
-.shortItem {
+.laconismItem {
   position: relative;
   display: flex;
   flex-direction: column;
   gap: clamp(10px, 2vw, 1.2rem);
   padding-left: clamp(5.2rem, 7vw, 8.9rem);
-  counter-increment: shortCounter;
+  counter-increment: laconismCounter;
 }
 
-.shortItem::before {
+.laconismItem::before {
   position: absolute;
   top: 50%;
   left: 0;
   transform: translateY(-50%);
-  content: counter(shortCounter);
+  content: counter(laconismCounter);
   font-size: clamp(5.2rem, 7vw, 8.9rem);
   line-height: 1;
   font-weight: 300;
@@ -48,12 +47,12 @@
   opacity: 0.3;
 }
 
-.shortUnit p {
+.laconismUnit p {
   max-width: 64ch;
   margin-bottom: clamp(1rem, 4vw, 1.7rem);
 }
 
-.shortItem p {
+.laconismItem p {
   margin: 0;
 }
 

@@ -73,7 +73,7 @@ export default function MenuOverlay({ menuOpen, setMenuOpen }) {
                 to='contact'
                 className={styles.navLink}
                 onClick={() => setMenuOpen(false)}
-              >contacts</Link>
+              >contact</Link>
             </li>
           </ul>
         </div>

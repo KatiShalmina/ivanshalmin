@@ -27,7 +27,7 @@ export const projects = [
     slug: 'ghost',
     title: 'ghost',
     year: 2019,
-    index: 25,
+    index: 29,
     cover: '/images/projects/ghost',
     originalWidth: 2050
   },

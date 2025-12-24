@@ -4,7 +4,7 @@ export const paper = {
   title: 'architecture — paper and reality',
 
   subtitle: `
-    alexander lojkin
+    alexander lozkin
     novosibirsk | november 2009
   `,
 
@@ -64,6 +64,8 @@ export const paper = {
   ],
 
   author: `
-    text: Alexander Lojkin 
+    text: Alexander Lozkin 
   `,
+
+  originalUrl: 'https://alexander-loz.livejournal.com/94596.html'
 }
