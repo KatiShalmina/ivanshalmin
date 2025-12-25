@@ -3,10 +3,14 @@ import GallerySwiper from '../../components/GallerySwiper'
 import { publications } from '../../data/publications/publications'
 import styles from './PublicationObject.module.scss'
 import PublicationText from '../../components/PublicationText'
+import useMediaQuery from '../../hooks/useMediaQuery'
+import MobTabSlides from '../../components/MobTabSlides'
 
 export default function PublicationObject() {
   const { slug } = useParams()
   const pub = publications.find(p => p.slug === slug)
+
+  const isDesktop = useMediaQuery('(min-width: 1024px)')
 
   if (!pub) return <p>Not found</p>
 
@@ -23,10 +27,11 @@ export default function PublicationObject() {
         }
       </div>
       <p className={styles.pubTagline}>{pub.tagline}</p>
-      <GallerySwiper
-        key={slug}
-        slides={pub.slides}
-      />
+      {isDesktop ? (
+        <GallerySwiper key={slug} slides={pub.slides} />
+      ) : (
+        <MobTabSlides key={slug} slides={pub.slides} />
+      )}
       <PublicationText text={pub.text} />
       <div className={styles.pubAuthor}>
         {pub.author

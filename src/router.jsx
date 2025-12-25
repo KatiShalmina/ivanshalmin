@@ -1,23 +1,22 @@
-import { createBrowserRouter } from 'react-router-dom'
-import Layout from './components/Layout'
+import { createBrowserRouter, Navigate } from 'react-router-dom'
+import Layout from './pages/AppLayout'
 import Home from './pages/Home'
 
+import ArchitectureLayout from './pages/Arch/ArchitectureLayout'
 import Projects from './pages/Arch/Projects'
 import ProjectType from './pages/Arch/ProjectType'
 import Laconism from './pages/Arch/Laconism'
-import PublicationsLayout from './pages/Arch/PublicationsLayout'
 import Publications from './pages/Arch/Publications'
 import PublicationObject from './pages/Arch/PublicationObject'
-import InteriorsLayout from './pages/Arch/InteriorsLayout'
-import Interiors from './pages/Arch/Interiors'
-import InteriorObject from './pages/Arch/InteriorObject'
 
-import Paintings from './pages/Art/Paintings'
-import PaintingDetail from './pages/Art/PaintingDetail'
+import PaintingsLayout from './pages/Art/PaintingsLayout'
+import Collections from './pages/Art/Collections'
+import CollectionDetail from './pages/Art/CollectionDetail'
 import Exhibitions from './pages/Art/Exhibitions'
 import ExhibitionDetail from './pages/Art/ExhibitionDetail'
 import VideoArt from './pages/Art/VideoArt'
 
+import AboutLayout from './pages/About/AboutLayout'
 import Bio from './pages/About/Bio'
 import Contact from './pages/About/Contact'
 
@@ -28,36 +27,50 @@ const router = createBrowserRouter([
     children: [
       { index: true, element: <Home /> },
 
-      { path: 'projects', element: <Projects /> },
-      { path: 'projects/:slug', element: <ProjectType /> },
-      { path: 'laconism', element: <Laconism /> },
       {
-        path: 'publications',
-        element: <PublicationsLayout />,
+        path: 'architecture',
+        element: <ArchitectureLayout />,
         children: [
-          { index: true, element: <Publications /> },
-          {
-            path: 'interiors',
-            element: <InteriorsLayout />,
-            children: [
-              { index: true, element: <Interiors /> },
-              { path: ':subslug', element: <InteriorObject /> }
-            ]
-          },
-          { path: ':slug', element: <PublicationObject /> },
+          { index: true, element: <Navigate to='projects' replace /> },
+
+          { path: 'projects', element: <Projects /> },
+          { path: 'projects/:slug', element: <ProjectType /> },
+
+          { path: 'laconism', element: <Laconism /> },
+
+          { path: 'publications', element: <Publications /> },
+          { path: 'publications/:slug', element: <PublicationObject /> },
         ]
       },
 
-      { path: 'paintings', element: <Paintings /> },
-      { path: 'paintings/:id', element: <PaintingDetail /> },
-      { path: 'exhibitions', element: <Exhibitions /> },
-      { path: 'exhibitions/:slug', element: <ExhibitionDetail /> },
-      { path: 'video-art', element: <VideoArt /> },
+      {
+        path: 'paintings',
+        element: <PaintingsLayout />,
+        children: [
+          { index: true, element: <Navigate to='collections' replace /> },
 
-      { path: 'bio', element: <Bio /> },
-      { path: 'contact', element: <Contact /> },
-    ],
-  },
+          { path: 'collections', element: <Collections /> },
+          { path: 'collections/:slug', element: <CollectionDetail /> },
+
+          { path: 'exhibitions', element: <Exhibitions /> },
+          { path: 'exhibitions/:slug', element: <ExhibitionDetail /> },
+
+          { path: 'video-art', element: <VideoArt /> },
+        ]
+      },
+
+      {
+        path: 'about',
+        element: <AboutLayout />,
+        children: [
+          { index: true, element: <Navigate to='bio' replace /> },
+
+          { path: 'bio', element: <Bio /> },
+          { path: 'contact', element: <Contact /> },
+        ]
+      },
+    ]
+  }
 ])
 
 export default router

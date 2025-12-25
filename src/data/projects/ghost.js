@@ -39,7 +39,7 @@ export const ghost = {
     This begs the question: this glass facade — is it a wall or a window? As for the walls suspended in thin air — do they protect or do they open up that curtain of privacy? The answer is both and neither. According to Ivan Shalmin, this is the necessary sufficiency of functionality, strength and beauty. In other words, laconism in architecture.
   `,
 
-  more: '/publications/violinist',
+  more: '/architecture/publications/violinist',
 
   gallery: [
     {

@@ -28,7 +28,7 @@ export default function Home() {
       <h1 className='visuallyHidden'>Ivan Shalmin — Architect and Artist</h1>
       <div className={styles.heroWrapper}>
         <Link
-          to='objects'
+          to='/architecture/projects'
           className={styles.heroLink}
           onMouseEnter={() => setActiveBg('architect')}
           onMouseLeave={() => setActiveBg(null)}
@@ -36,7 +36,7 @@ export default function Home() {
           architect
         </Link>
         <Link
-          to='paintings'
+          to='/paintings/collections'
           className={styles.heroLink}
           onMouseEnter={() => setActiveBg('artist')}
           onMouseLeave={() => setActiveBg(null)}

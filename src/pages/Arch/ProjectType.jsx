@@ -82,7 +82,7 @@ export default function ProjectType() {
             ))
           }
         </div>
-        <MoreButton to={type.more} />
+        <MoreButton to={type.more}>find out more</MoreButton>
       </div>
       <GalleryLightbox
         open={open}

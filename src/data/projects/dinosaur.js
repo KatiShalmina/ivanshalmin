@@ -31,7 +31,7 @@ export const dinosaur = {
     ‘I listen to the client but I never give him what he wants, because my jpro is to define and to design what the client needs. That’s the whole point of being an architect.’ The glass facade always looks out onto the forest, onto the ‘interim space’ according to the theory of Ivan Shalmin. But in this case, the forest behind glass is just an artistic device, a technique used by Ivan to create an infinite and boundless interior. Specialist tinted glass is used by the architect in quite a lot of his projects. This glass is almost invisible from the inside and the forest becomes a part of the interior, thereby endlessly expanding the boundaries of the building.
   `,
 
-  more: '/publications/latvia',
+  more: '/architecture/publications/latvia',
 
   gallery: [ 
     {

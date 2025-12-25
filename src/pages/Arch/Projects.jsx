@@ -1,19 +1,16 @@
 import { projects } from '../../data/projects/projects'
-import ProjectCard from '../../components/ProjectCard'
-import styles from './Projects.module.scss'
+import Card from '../../components/Card'
+import styles from '../../components/Card.module.scss'
 
 export default function Projects() {
   return (
-    <div className={styles.projectsList}>
-      {projects.map(pr => (
-        <ProjectCard
-          key={pr.slug}
-          slug={pr.title}
-          title={pr.title}
-          year={pr.year}
-          cover={pr.cover}
-          index={pr.index}
-          originalWidth={pr.originalWidth} 
+    <div className={styles.cardsList}>
+      {projects.map(p => (
+        <Card
+          key={p.slug}
+          slug={p.slug}
+          year={p.year}
+          originalWidth={p.originalWidth} 
         />
       ))}
     </div>

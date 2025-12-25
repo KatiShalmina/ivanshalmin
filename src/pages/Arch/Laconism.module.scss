@@ -1,5 +1,6 @@
 .laconism {
   font-size: clamp(1.2rem, 2vw, 1.7rem);
+  overflow: hidden;
 }
 
 .laconismTitle {
@@ -18,42 +19,35 @@
   margin-bottom: clamp(2rem, 4vw, 4.3rem);
 }
 
-.laconismList {
-  display: flex;
-  flex-direction: column;
-  gap: clamp(1.7rem, 2vw, 4.3rem);
-  counter-reset: laconismCounter;
-}
-
-.laconismItem {
-  position: relative;
-  display: flex;
-  flex-direction: column;
-  gap: clamp(10px, 2vw, 1.2rem);
-  padding-left: clamp(5.2rem, 7vw, 8.9rem);
-  counter-increment: laconismCounter;
-}
-
-.laconismItem::before {
-  position: absolute;
-  top: 50%;
-  left: 0;
-  transform: translateY(-50%);
-  content: counter(laconismCounter);
-  font-size: clamp(5.2rem, 7vw, 8.9rem);
-  line-height: 1;
-  font-weight: 300;
-  font-stretch: 115%;
-  opacity: 0.3;
-}
-
 .laconismUnit p {
   max-width: 64ch;
   margin-bottom: clamp(1rem, 4vw, 1.7rem);
 }
 
-.laconismItem p {
-  margin: 0;
+.laconismList {
+  max-width: 64ch;
+  margin-left: clamp(2rem, 4vw, 4.3rem);
+  margin-bottom: clamp(1rem, 4vw, 1.7rem);
+}
+
+.laconismItem {
+  margin-bottom: 1rem;
+}
+
+.laconismShortItem {
+  margin-bottom: clamp(1.7rem, 4vw, 3rem);
+}
+
+.laconismShortItem p {
+  margin-bottom: clamp(10px, 4vw, 1rem);
+}
+
+.laconismHighlight {
+  text-transform: uppercase;
+}
+
+.quoteAuthor {
+  font-style: normal;
 }
 
 .videoWrapper {
