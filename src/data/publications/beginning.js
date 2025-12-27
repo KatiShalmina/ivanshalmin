@@ -31,37 +31,37 @@ export const beginning = {
   slides: [
     {
       id: 1,
-      src: '/images/publications/interiors/beginning/original/beginning-1.webp',
+      src: '/images/publications/beginning/original/beginning-1.webp',
       srcSet: `
-        /images/publications/interiors/beginning/480/beginning-1.webp 480w,
-        /images/publications/interiors/beginning/original/beginning-1.webp 700w
+        /images/publications/beginning/480/beginning-1.webp 480w,
+        /images/publications/beginning/original/beginning-1.webp 700w
       `,
       alt: 'The beginning slide 1'
     },
     {
       id: 2,
-      src: '/images/publications/interiors/beginning/original/beginning-2.webp',
+      src: '/images/publications/beginning/original/beginning-2.webp',
       srcSet: `
-        /images/publications/interiors/beginning/480/beginning-2.webp 480w,
-        /images/publications/interiors/beginning/original/beginning-2.webp 700w
+        /images/publications/beginning/480/beginning-2.webp 480w,
+        /images/publications/beginning/original/beginning-2.webp 700w
       `,
       alt: 'The beginning slide 2'
     },
     {
       id: 3,
-      src: '/images/publications/interiors/beginning/original/beginning-3.webp',
+      src: '/images/publications/beginning/original/beginning-3.webp',
       srcSet: `
-        /images/publications/interiors/beginning/480/beginning-3.webp 480w,
-        /images/publications/interiors/beginning/original/beginning-3.webp 700w
+        /images/publications/beginning/480/beginning-3.webp 480w,
+        /images/publications/beginning/original/beginning-3.webp 700w
       `,
       alt: 'The beginning slide 3'
     },
     {
       id: 4,
-      src: '/images/publications/interiors/beginning/original/beginning-4.webp',
+      src: '/images/publications/beginning/original/beginning-4.webp',
       srcSet: `
-        /images/publications/interiors/beginning/480/beginning-4.webp 480w,
-        /images/publications/interiors/beginning/original/beginning-4.webp 700w
+        /images/publications/beginning/480/beginning-4.webp 480w,
+        /images/publications/beginning/original/beginning-4.webp 700w
       `,
       alt: 'The beginning slide 4'
     },

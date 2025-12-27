@@ -1,16 +1,18 @@
-import { publications } from '../../data/publications/publications'
+import { publicationsList } from '../../data/publications/publications'
 import Card from '../../components/Card'
 import styles from '../../components/Card.module.scss'
 
 export default function Publications() {
   return (
     <div className={styles.cardsList}>
-      {publications.map(p => (
+      {publicationsList.map(p => (
         <Card
           key={p.slug}
+          to={`/architecture/publications/${p.slug}`}
           slug={p.slug}
+          title={p.title}
           year={p.year}
-          originalWidth={p.originalWidth}
+          cover={p.cover}
         />
       ))}
     </div>

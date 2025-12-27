@@ -66,9 +66,10 @@
 }
 
 .heroLink {
-  font-size: clamp(3rem, 6vw, 10.7rem);
+  font-size: clamp(3rem, 6vw, 7.4rem);
   font-weight: 300;
-  font-stretch: 115%;
+  // font-stretch: 115%;
+  text-transform: uppercase;
   z-index: 2;
   user-select: none;
 

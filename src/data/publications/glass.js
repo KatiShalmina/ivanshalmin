@@ -39,64 +39,64 @@ export const glass = {
   slides: [
     {
       id: 1,
-      src: '/images/publications/interiors/glass/original/glass-1.webp',
+      src: '/images/publications/glass/original/glass-1.webp',
       srcSet: `
-        /images/publications/interiors/glass/480/glass-1.webp 480w,
-        /images/publications/interiors/glass/original/glass-1.webp 700w
+        /images/publications/glass/480/glass-1.webp 480w,
+        /images/publications/glass/original/glass-1.webp 700w
       `,
       alt: 'Through the looking glass slide 1'
     },
     {
       id: 2,
-      src: '/images/publications/interiors/glass/original/glass-2.webp',
+      src: '/images/publications/glass/original/glass-2.webp',
       srcSet: `
-        /images/publications/interiors/glass/480/glass-2.webp 480w,
-        /images/publications/interiors/glass/original/glass-2.webp 700w
+        /images/publications/glass/480/glass-2.webp 480w,
+        /images/publications/glass/original/glass-2.webp 700w
       `,
       alt: 'Through the looking glass slide 2'
     },
     {
       id: 3,
-      src: '/images/publications/interiors/glass/original/glass-3.webp',
+      src: '/images/publications/glass/original/glass-3.webp',
       srcSet: `
-        /images/publications/interiors/glass/480/glass-3.webp 480w,
-        /images/publications/interiors/glass/original/glass-3.webp 700w
+        /images/publications/glass/480/glass-3.webp 480w,
+        /images/publications/glass/original/glass-3.webp 700w
       `,
       alt: 'Through the looking glass slide 3'
     },
     {
       id: 4,
-      src: '/images/publications/interiors/glass/original/glass-4.webp',
+      src: '/images/publications/glass/original/glass-4.webp',
       srcSet: `
-        /images/publications/interiors/glass/480/glass-4.webp 480w,
-        /images/publications/interiors/glass/original/glass-4.webp 700w
+        /images/publications/glass/480/glass-4.webp 480w,
+        /images/publications/glass/original/glass-4.webp 700w
       `,
       alt: 'Through the looking glass slide 4'
     },
     {
       id: 5,
-      src: '/images/publications/interiors/glass/original/glass-5.webp',
+      src: '/images/publications/glass/original/glass-5.webp',
       srcSet: `
-        /images/publications/interiors/glass/480/glass-5.webp 480w,
-        /images/publications/interiors/glass/original/glass-5.webp 700w
+        /images/publications/glass/480/glass-5.webp 480w,
+        /images/publications/glass/original/glass-5.webp 700w
       `,
       alt: 'Through the looking glass slide 5'
     },
     {
       id: 7,
-      src: '/images/publications/interiors/glass/original/glass-7.webp',
+      src: '/images/publications/glass/original/glass-7.webp',
       srcSet: `
-        /images/publications/interiors/glass/480/glass-7.webp 480w,
-        /images/publications/interiors/glass/original/glass-7.webp 700w
+        /images/publications/glass/480/glass-7.webp 480w,
+        /images/publications/glass/original/glass-7.webp 700w
       `,
       alt: 'Through the looking glass slide 7'
     },
     {
       id: 8,
-      src: '/images/publications/interiors/glass/original/glass-8.webp',
+      src: '/images/publications/glass/original/glass-8.webp',
       srcSet: `
-        /images/publications/interiors/glass/480/glass-8.webp 480w,
-        /images/publications/interiors/glass/original/glass-8.webp 700w
+        /images/publications/glass/480/glass-8.webp 480w,
+        /images/publications/glass/original/glass-8.webp 700w
       `,
       alt: 'Through the looking glass slide 8'
     },

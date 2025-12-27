@@ -5,11 +5,11 @@ export default function Footer() {
   const activeStyle = {
     fontWeight: '600',
     border: '1px solid var(--color-secondary)',
-    opacity: '1'
+    opacity: '0.5'
   }
 
   const activeMain = {
-    opacity: '1'
+    opacity: '0.5'
   }
 
   return (

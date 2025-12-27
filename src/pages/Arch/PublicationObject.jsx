@@ -1,14 +1,15 @@
 import { useParams } from 'react-router-dom'
 import GallerySwiper from '../../components/GallerySwiper'
-import { publications } from '../../data/publications/publications'
+import { pubObjects } from '../../data/publications/pub-objects'
 import styles from './PublicationObject.module.scss'
 import PublicationText from '../../components/PublicationText'
 import useMediaQuery from '../../hooks/useMediaQuery'
 import MobTabSlides from '../../components/MobTabSlides'
+import BackButton from '../../components/BackButton' 
 
 export default function PublicationObject() {
   const { slug } = useParams()
-  const pub = publications.find(p => p.slug === slug)
+  const pub = pubObjects.find(p => p.slug === slug)
 
   const isDesktop = useMediaQuery('(min-width: 1024px)')
 
@@ -16,6 +17,7 @@ export default function PublicationObject() {
 
   return (
     <section className={styles.pub}>
+      <BackButton>all publications</BackButton>
       <h1 className={styles.pubTitle}>{pub.title}</h1>
       <div className={styles.pubSubtitle}>
         {pub.subtitle

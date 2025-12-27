@@ -25,41 +25,41 @@ export const love = {
   slides: [
     {
       id: 1,
-      src: '/images/publications/interiors/with-love/original/with-love-1.webp',
+      src: '/images/publications/with-love/original/with-love-1.webp',
       srcSet: `
-        /images/publications/interiors/with-love/480/with-love-1.webp 480w,
-        /images/publications/interiors/with-love/1024/with-love-1.webp 1024w,
-        /images/publications/interiors/with-love/original/with-love-1.webp 1920w
+        /images/publications/with-love/480/with-love-1.webp 480w,
+        /images/publications/with-love/1024/with-love-1.webp 1024w,
+        /images/publications/with-love/original/with-love-1.webp 1920w
       `,
       alt: 'From the capital with love side 1'
     },
     {
       id: 2,
-      src: '/images/publications/interiors/with-love/original/with-love-2.webp',
+      src: '/images/publications/with-love/original/with-love-2.webp',
       srcSet: `
-        /images/publications/interiors/with-love/480/with-love-2.webp 480w,
-        /images/publications/interiors/with-love/1024/with-love-2.webp 1024w,
-        /images/publications/interiors/with-love/original/with-love-2.webp 1920w
+        /images/publications/with-love/480/with-love-2.webp 480w,
+        /images/publications/with-love/1024/with-love-2.webp 1024w,
+        /images/publications/with-love/original/with-love-2.webp 1920w
       `,
       alt: 'From the capital with love slide 2'
     },
     {
       id: 3,
-      src: '/images/publications/interiors/with-love/original/with-love-3.webp',
+      src: '/images/publications/with-love/original/with-love-3.webp',
       srcSet: `
-        /images/publications/interiors/with-love/480/with-love-3.webp 480w,
-        /images/publications/interiors/with-love/1024/with-love-3.webp 1024w,
-        /images/publications/interiors/with-love/original/with-love-3.webp 1920w
+        /images/publications/with-love/480/with-love-3.webp 480w,
+        /images/publications/with-love/1024/with-love-3.webp 1024w,
+        /images/publications/with-love/original/with-love-3.webp 1920w
       `,
       alt: 'From the capital with love slide 3'
     },
     {
       id: 4,
-      src: '/images/publications/interiors/with-love/original/with-love-4.webp',
+      src: '/images/publications/with-love/original/with-love-4.webp',
       srcSet: `
-        /images/publications/interiors/with-love/480/with-love-4.webp 480w,
-        /images/publications/interiors/with-love/1024/with-love-4.webp 1024w,
-        /images/publications/interiors/with-love/original/with-love-4.webp 1920w
+        /images/publications/with-love/480/with-love-4.webp 480w,
+        /images/publications/with-love/1024/with-love-4.webp 1024w,
+        /images/publications/with-love/original/with-love-4.webp 1920w
       `,
       alt: 'From the capital with love slide 4'
     },

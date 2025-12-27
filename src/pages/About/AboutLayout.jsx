@@ -5,7 +5,7 @@ export default function AboutLayout() {
   const activeStyle = {
     fontWeight: '600',
     border: '1px solid var(--color-secondary)',
-    opacity: '1'
+    opacity: '0.5'
   }
 
   return (

@@ -8,9 +8,11 @@ export default function Projects() {
       {projects.map(p => (
         <Card
           key={p.slug}
+          to={`/architecture/projects/${p.slug}`}
           slug={p.slug}
+          title={p.title}
           year={p.year}
-          originalWidth={p.originalWidth} 
+          cover={p.cover}
         />
       ))}
     </div>

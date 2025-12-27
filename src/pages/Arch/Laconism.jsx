@@ -277,6 +277,7 @@ export default function Laconism() {
           </p>
           <p className={styles.laconismHighlight}>If you don’t want to have a heart attack or go insane, you should paint. Paper is patient, the canvas can take anything, For me, there is no difference between figurative and abstract art.</p>
           <p>The art is either there or it is not.</p>
+          <MoreButton to='/paintings/collections'>more about paintings</MoreButton>
         </div>
       </div>
       <div className={styles.videoWrapper}>
