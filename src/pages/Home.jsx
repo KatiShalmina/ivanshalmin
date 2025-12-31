@@ -1,21 +1,9 @@
-import { useEffect, useState } from 'react'
+import { useState } from 'react'
 import { Link } from 'react-router-dom'
 import styles from './Home.module.scss'
 
 export default function Home() {
   const [activeBg, setActiveBg] = useState(null)
-
-  const backgrounds = {
-    architect: '/images/objects/propylaeum/original/propylaeum-4.webp',
-    artist: '/images/paintings/desktop/splash.jpg'
-  }
-
-  useEffect(() => {
-    Object.values(backgrounds).forEach(src => {
-      const img = new Image();
-      img.src = src;
-    });
-  }, []);
 
   return (
     <section 

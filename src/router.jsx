@@ -11,7 +11,7 @@ import PublicationObject from './pages/Arch/PublicationObject'
 
 import PaintingsLayout from './pages/Art/PaintingsLayout'
 import Collections from './pages/Art/Collections'
-import CollectionDetail from './pages/Art/CollectionDetail'
+import PaintingDetail from './pages/Art/PaintingDetail'
 import Exhibitions from './pages/Art/Exhibitions'
 import ExhibitionDetail from './pages/Art/ExhibitionDetail'
 import VideoArt from './pages/Art/VideoArt'
@@ -48,9 +48,8 @@ const router = createBrowserRouter([
         element: <PaintingsLayout />,
         children: [
           { index: true, element: <Navigate to='collections' replace /> },
-
           { path: 'collections', element: <Collections /> },
-          { path: 'collections/:slug', element: <CollectionDetail /> },
+          { path: 'collections/:slug', element: <PaintingDetail /> },
 
           { path: 'exhibitions', element: <Exhibitions /> },
           { path: 'exhibitions/:slug', element: <ExhibitionDetail /> },

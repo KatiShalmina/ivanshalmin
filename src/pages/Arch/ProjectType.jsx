@@ -78,7 +78,9 @@ export default function ProjectType() {
             .trim()
             .split('\n\n')
             .map((paragraph, i) => (
-              <p className={styles.typeParagraph} key={i}>{paragraph.trim()}</p>
+              <p className={styles.typeParagraph} key={i}>
+                {paragraph.trim()}
+              </p>
             ))
           }
         </div>

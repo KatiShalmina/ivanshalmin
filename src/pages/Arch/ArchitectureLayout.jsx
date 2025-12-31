@@ -5,7 +5,7 @@ export default function ArchitectureLayout() {
   const activeStyle = {
     fontWeight: '600',
     border: '1px solid var(--color-secondary)',
-    opacity: '0.5'
+    color: 'var(--color-secondary)'
   }
 
   return (

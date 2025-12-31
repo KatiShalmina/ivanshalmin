@@ -7,7 +7,7 @@ export default function Header({ setMenuOpen }) {
   const isHome = location.pathname === '/'
 
   const activeMain = {
-    opacity: '0.5'
+    color: 'var(--color-secondary)'
   }
 
   return (

@@ -9,9 +9,8 @@ export default function Publications() {
         <Card
           key={p.slug}
           to={`/architecture/publications/${p.slug}`}
-          slug={p.slug}
           title={p.title}
-          year={p.year}
+          // year={p.year}
           cover={p.cover}
         />
       ))}

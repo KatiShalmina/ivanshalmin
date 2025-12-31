@@ -25,7 +25,9 @@ export default function AppLayout() {
           </div>
         )}
       </main>
-      <Footer />
+      {!isHome && (
+        <Footer />
+      )}
     </div>
   )
 }

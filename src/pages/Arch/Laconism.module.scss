@@ -9,7 +9,7 @@
   line-height: 1.2;
   font-weight: 300;
   font-stretch: 115%;
-  opacity: 0.5;
+  color: var(--color-highlight);
 }
 
 .laconismWrapper {
@@ -48,15 +48,4 @@
 
 .quoteAuthor {
   font-style: normal;
-}
-
-.videoWrapper {
-  display: flex;
-  flex-direction: column;
-  gap: clamp(10px, 2vw, 1.4rem);
-
-  @media (min-width: 1024px) {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(600px, 1fr));
-  }
 }

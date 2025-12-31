@@ -2,7 +2,7 @@ export const publicationsList = [
   {
     slug: 'latvia',
     title: 'fabric of reality',
-    year: 2021,
+    // year: 2021,
     cover: {
       mobile: {
         src: '/images/publications/latvia/480/latvia-3.webp',
@@ -23,7 +23,7 @@ export const publicationsList = [
   {
     slug: 'violinist',
     title: 'the violinist',
-    year: 2020,
+    // year: 2020,
     cover: {
       mobile: {
         src: '/images/publications/violinist/480/violinist-1.webp',
@@ -44,7 +44,7 @@ export const publicationsList = [
   {
     slug: 'domus',
     title: 'propylaeum',
-    year: 2010,
+    // year: 2010,
     cover: {
       mobile: {
         src: '/images/publications/domus/480/domus-1.webp',
@@ -65,7 +65,7 @@ export const publicationsList = [
   {
     slug: 'arch',
     title: 'arch',
-    year: 2010,
+    // year: 2010,
     cover: {
       mobile: {
         src: '/images/publications/arch/480/arch-1.webp',
@@ -86,7 +86,7 @@ export const publicationsList = [
   {
     slug: 'paper',
     title: 'paper architecture',
-    year: 2009,
+    // year: 2009,
     cover: {
       mobile: {
         src: '/images/publications/paper/480/paper-3.webp',
@@ -107,7 +107,7 @@ export const publicationsList = [
   {
     slug: 'glass',
     title: 'the glass',
-    year: 2009,
+    // year: 2009,
     cover: {
       mobile: {
         src: '/images/publications/covers/glass480-full.webp',
@@ -128,7 +128,7 @@ export const publicationsList = [
   {
     slug: 'beginning',
     title: 'the beginning',
-    year: 2009,
+    // year: 2009,
     cover: {
       mobile: {
         src: '/images/publications/covers/beginning480-full.webp',
@@ -149,7 +149,7 @@ export const publicationsList = [
   {
     slug: 'love',
     title: 'with love',
-    year: 2007,
+    // year: 2007,
     cover: {
       mobile: {
         src: '/images/publications/with-love/480/with-love-1.webp',

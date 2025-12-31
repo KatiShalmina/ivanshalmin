@@ -2,7 +2,7 @@ export const projects = [
   {
     slug: 'propylaeum',
     title: 'propylaeum',
-    year: 2009,
+    // year: 2009,
     cover: {
       mobile: {
         src: '/images/projects/propylaeum/480/propylaeum480-4.webp',
@@ -23,13 +23,13 @@ export const projects = [
   {
     slug: 'dinosaur',
     title: 'dinosaur',
-    year: 2013,
+    // year: 2013,
     cover: {
       mobile: {
-        src: '/images/projects/dinosaur/480/dinosaur480-4.webp',
+        src: '/images/projects/dinosaur/480/dinosaur480-5.webp',
         srcSet: `
-          /images/projects/dinosaur/480/dinosaur480-4.webp 480w,
-          /images/projects/dinosaur/1024/dinosaur1024-4.webp 1024w
+          /images/projects/dinosaur/480/dinosaur480-5.webp 480w,
+          /images/projects/dinosaur/1024/dinosaur1024-5.webp 1024w
         `,
       },
       desktop: {
@@ -44,13 +44,13 @@ export const projects = [
   {
     slug: 'glabrous',
     title: 'glabrous',
-    year: 2015,
+    // year: 2015,
     cover: {
       mobile: {
-        src: '/images/projects/glabrous/480/glabrous480-4.webp',
+        src: '/images/projects/glabrous/480/glabrous480-3.webp',
         srcSet: `
-          /images/projects/glabrous/480/glabrous480-4.webp 480w,
-          /images/projects/glabrous/1024/glabrous1024-4.webp 1024w
+          /images/projects/glabrous/480/glabrous480-3.webp 480w,
+          /images/projects/glabrous/1024/glabrous1024-3.webp 1024w
         `,
       },
       desktop: {
@@ -65,13 +65,13 @@ export const projects = [
   {
     slug: 'ghost',
     title: 'ghost',
-    year: 2019,
+    // year: 2019,
     cover: {
       mobile: {
-        src: '/images/projects/ghost/480/ghost480-4.webp',
+        src: '/images/projects/ghost/480/ghost480-29.webp',
         srcSet: `
-          /images/projects/ghost/480/ghost480-4.webp 480w,
-          /images/projects/ghost/1024/ghost1024-4.webp 1024w
+          /images/projects/ghost/480/ghost480-29.webp 480w,
+          /images/projects/ghost/1024/ghost1024-29.webp 1024w
         `,
       },
       desktop: {
@@ -86,13 +86,13 @@ export const projects = [
   {
     slug: 'strotskis',
     title: 'strotskis',
-    year: 2021,
+    // year: 2021,
     cover: {
       mobile: {
-        src: '/images/projects/strotskis/480/strotskis480-4.webp',
+        src: '/images/projects/strotskis/480/strotskis480-8.webp',
         srcSet: `
-          /images/projects/strotskis/480/strotskis480-4.webp 480w,
-          /images/projects/strotskis/1024/strotskis1024-4.webp 1024w
+          /images/projects/strotskis/480/strotskis480-8.webp 480w,
+          /images/projects/strotskis/1024/strotskis1024-8.webp 1024w
         `,
       },
       desktop: {

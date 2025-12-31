@@ -1,109 +1,141 @@
 import styles from './Footer.module.scss'
-import { NavLink } from 'react-router-dom'
+import { NavLink, useLocation } from 'react-router-dom'
 
 export default function Footer() {
-  const activeStyle = {
-    fontWeight: '600',
-    border: '1px solid var(--color-secondary)',
-    opacity: '0.5'
-  }
+  const { pathname } = useLocation()
 
-  const activeMain = {
-    opacity: '0.5'
-  }
+  const isArch = pathname.startsWith('/architecture')
+  const isPaintings = pathname.startsWith('/paintings')
+  const isAbout = pathname.startsWith('/about')
+
+  const unitClass = isActive =>
+    `${styles.footerUnit} ${isActive ? styles.footerUnitActive : ''}`
 
   return (
     <footer className={styles.footer}>
       <div className={styles.footerWrapper}>
         <nav className={styles.footerNav}>
-          <div className={styles.footerUnit}>
+          <div className={unitClass(isArch)}>
             <NavLink
               to='/architecture'
               className={styles.footerMainLink}
-              style={({ isActive }) => isActive ? activeMain : null}>              
+            >
               architecture
             </NavLink>
             <ul className={styles.footerList}>
               <li>
                 <NavLink
                   to='/architecture/projects'
-                  className={styles.footerSubLink}
-                  style={({ isActive }) => isActive ? activeStyle : null}>
+                  className={({ isActive }) =>
+                    isActive
+                      ? `${styles.footerSubLink} ${styles.footerSubLinkActive}`
+                      : styles.footerSubLink
+                  }
+                >
                   projects
                 </NavLink>
               </li>
               <li>
                 <NavLink
                   to='/architecture/laconism'
-                  className={styles.footerSubLink}
-                  style={({ isActive }) => isActive ? activeStyle : null}>
+                  className={({ isActive }) =>
+                    isActive
+                      ? `${styles.footerSubLink} ${styles.footerSubLinkActive}`
+                      : styles.footerSubLink
+                  }
+                >
                   laconism
                 </NavLink>
               </li>
               <li>
                 <NavLink
                   to='/architecture/publications'
-                  className={styles.footerSubLink}
-                  style={({ isActive }) => isActive ? activeStyle : null}>
+                  className={({ isActive }) =>
+                    isActive
+                      ? `${styles.footerSubLink} ${styles.footerSubLinkActive}`
+                      : styles.footerSubLink
+                  }
+                >
                   publications
                 </NavLink>
               </li>
             </ul>
           </div>
-          <div className={styles.footerUnit}>
+          <div className={unitClass(isPaintings)}>
             <NavLink
               to='/paintings'
               className={styles.footerMainLink}
-              style={({ isActive }) => isActive ? activeMain : null}>              
+            >
               paintings
             </NavLink>
             <ul className={styles.footerList}>
               <li>
                 <NavLink
                   to='/paintings/collections'
-                  className={styles.footerSubLink}
-                  style={({ isActive }) => isActive ? activeStyle : null}>
+                  className={({ isActive }) =>
+                    isActive
+                      ? `${styles.footerSubLink} ${styles.footerSubLinkActive}`
+                      : styles.footerSubLink
+                  }
+                >
                   collections
                 </NavLink>
               </li>
               <li>
                 <NavLink
                   to='/paintings/exhibitions'
-                  className={styles.footerSubLink}
-                  style={({ isActive }) => isActive ? activeStyle : null}>
+                  className={({ isActive }) =>
+                    isActive
+                      ? `${styles.footerSubLink} ${styles.footerSubLinkActive}`
+                      : styles.footerSubLink
+                  }
+                >
                   exhibitions
                 </NavLink>
               </li>
               <li>
                 <NavLink
                   to='/paintings/video-art'
-                  className={styles.footerSubLink}
-                  style={({ isActive }) => isActive ? activeStyle : null}>
+                  className={({ isActive }) =>
+                    isActive
+                      ? `${styles.footerSubLink} ${styles.footerSubLinkActive}`
+                      : styles.footerSubLink
+                  }
+                >
                   video art
                 </NavLink>
               </li>
             </ul>
           </div>
-          <div className={styles.footerUnit}>
+          <div className={unitClass(isAbout)}>
             <NavLink
               to='/about'
-              className={styles.footerMainLink}style={({ isActive }) => isActive ? activeMain : null}>
+              className={styles.footerMainLink}
+            >
               about
             </NavLink>
             <ul className={styles.footerList}>
               <li>
                 <NavLink
                   to='/about/bio'
-                  className={styles.footerSubLink}
-                  style={({ isActive }) => isActive ? activeStyle : null}>
+                  className={({ isActive }) =>
+                    isActive
+                      ? `${styles.footerSubLink} ${styles.footerSubLinkActive}`
+                      : styles.footerSubLink
+                  }
+                >
                   bio
                 </NavLink>
               </li>
               <li>
                 <NavLink
                   to='/about/contact'
-                  className={styles.footerSubLink}
-                  style={({ isActive }) => isActive ? activeStyle : null}>
+                  className={({ isActive }) =>
+                    isActive
+                      ? `${styles.footerSubLink} ${styles.footerSubLinkActive}`
+                      : styles.footerSubLink
+                  }
+                >
                   contact
                 </NavLink>
               </li>

@@ -32,14 +32,11 @@
   border: 1px solid transparent;
 
   @media (min-width: 1024px) {
-    transition: 
-    border-color 0.4s ease,
-    opacity 0.4s ease;
+    transition: border-color 0.4s ease;
 
     &:hover,
     &:focus-visible {
-      border: 1px solid var(--color-secondary);
-      opacity: 0.5;
+      border-color: var(--color-highlight);
     }
   }
 }

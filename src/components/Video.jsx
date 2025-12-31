@@ -4,7 +4,6 @@ import PlayButton from '../assets/icons/play.svg?react'
 
 export default function Video({
   videoId,
-  title,
   cover480,
   cover1024,
   coverOriginal,
@@ -16,7 +15,6 @@ export default function Video({
       <div className={styles.videoContainer}>
         <iframe
           src={`https://www.youtube.com/embed/${videoId}?autoplay=1`}
-          title={title}
           allow='accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture'
           allowFullScreen
         />
@@ -36,7 +34,6 @@ export default function Video({
         }}
       >
         <div className={styles.videoOverlay}></div>
-        <h3 className={styles.videoTitle}>{title}</h3>
         <button className={styles.playButton} type='button'>
           <PlayButton className={styles.playIcon} />
         </button>

@@ -280,50 +280,12 @@ export default function Laconism() {
           <MoreButton to='/paintings/collections'>more about paintings</MoreButton>
         </div>
       </div>
-      <div className={styles.videoWrapper}>
-        <Video
-          videoId='kUtD1xkwEjI'
-          title='laconism'
-          coverOriginal='/images/video-covers/original/laconism.webp'
-          cover1024='/images/video-covers/1024/laconism1024.webp'
-          cover480='/images/video-covers/480/laconism480.webp'
-        />
-        <Video
-          videoId='tr66ctBXim0'
-          title='architecture'
-          coverOriginal='/images/video-covers/original/architecture.webp'
-          cover1024='/images/video-covers/1024/architecture1024.webp'
-          cover480='/images/video-covers/480/architecture480.webp'
-        />
-        <Video
-          videoId='iheO9xoTCdc'
-          title='novosibirsk'
-          coverOriginal='/images/video-covers/original/novosibirsk.webp'
-          cover1024='/images/video-covers/1024/novosibirsk1024.webp'
-          cover480='/images/video-covers/480/novosibirsk480.webp'
-        />
-        <Video
-          videoId='zBI22kyMwNY'
-          title='cube.moscow 1'
-          coverOriginal='/images/video-covers/original/cube-1.webp'
-          cover1024='/images/video-covers/1024/cube1024-1.webp'
-          cover480='/images/video-covers/480/cube480-1.webp'
-        />
-        <Video
-          videoId='AiCg08FO8AY'
-          title='cube.moscow 2'
-          coverOriginal='/images/video-covers/original/cube-2.webp'
-          cover1024='/images/video-covers/1024/cube1024-2.webp'
-          cover480='/images/video-covers/480/cube480-2.webp'
-        />
-        <Video
-          videoId='uWJyeehJ29Y'
-          title='ivan shalmin'
-          coverOriginal='/images/video-covers/original/ivanshalmin.webp'
-          cover1024='/images/video-covers/1024/ivanshalmin1024.webp'
-          cover480='/images/video-covers/480/ivanshalmin480.webp'
-        />
-      </div>
+      <Video
+        videoId='kUtD1xkwEjI'
+        coverOriginal='/images/video-covers/original/laconism.webp'
+        cover1024='/images/video-covers/1024/laconism1024.webp'
+        cover480='/images/video-covers/480/laconism480.webp'
+      />
     </section>
   )
 }
