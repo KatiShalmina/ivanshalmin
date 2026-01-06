@@ -1,12 +1,12 @@
 export const glabrous = {
   slug: 'glabrous',
 
-  title: 'Glabrous',
+  title: 'glabrous',
 
   subtitle: 'the principle of necessary sufficiency',
 
   description: `
-    family house
+    type: family house
     date of completion: 2015
     location: Chekhov Region, Russia
     building area: 210 sqm

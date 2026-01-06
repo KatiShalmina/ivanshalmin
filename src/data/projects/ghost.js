@@ -1,12 +1,12 @@
 export const ghost = {
   slug: 'ghost',
 
-  title: 'Ghost',
+  title: 'ghost',
 
   subtitle: 'the equilibrium of flying walls',
 
   description: `
-    family house
+    type: family house
     date of completion: 2019—2021
     location: Moscow Region, Russia
     building area: 1500 sqm

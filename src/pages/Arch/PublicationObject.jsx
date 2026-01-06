@@ -5,7 +5,7 @@ import styles from './PublicationObject.module.scss'
 import PublicationText from '../../components/PublicationText'
 import useMediaQuery from '../../hooks/useMediaQuery'
 import MobTabSlides from '../../components/MobTabSlides'
-import BackButton from '../../components/BackButton' 
+import BackButton from '../../components/BackButton'
 
 export default function PublicationObject() {
   const { slug } = useParams()
@@ -33,6 +33,16 @@ export default function PublicationObject() {
         <GallerySwiper key={slug} slides={pub.slides} />
       ) : (
         <MobTabSlides key={slug} slides={pub.slides} />
+      )}
+      {slug === 'paper' && (
+        <a
+          href="/pdf/paper-architecture-catalogue.pdf"
+          target="_blank"
+          rel="noopener noreferrer"
+          className={styles.pubPdfLink}
+        >
+          paper architecture full catalogue
+        </a>
       )}
       <PublicationText text={pub.text} />
       <div className={styles.pubAuthor}>

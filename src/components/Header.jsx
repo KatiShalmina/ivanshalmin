@@ -13,7 +13,12 @@ export default function Header({ setMenuOpen }) {
   return (
     <header className={styles.header}>
       <div className={styles.headerWrapper}>
-        <Link to='/' className={styles.logo}>Ivan Shalmin</Link>
+        <Link 
+          to='/' 
+          className={`${styles.logo} ${isHome ? styles.logoHome : ''}`}
+        >
+          Ivan Shalmin
+        </Link>
         {!isHome && (
           <nav className={styles.mainNav}>
             <NavLink

@@ -2,7 +2,6 @@ export const projects = [
   {
     slug: 'propylaeum',
     title: 'propylaeum',
-    // year: 2009,
     cover: {
       mobile: {
         src: '/images/projects/propylaeum/480/propylaeum480-4.webp',
@@ -23,7 +22,6 @@ export const projects = [
   {
     slug: 'dinosaur',
     title: 'dinosaur',
-    // year: 2013,
     cover: {
       mobile: {
         src: '/images/projects/dinosaur/480/dinosaur480-5.webp',
@@ -44,7 +42,6 @@ export const projects = [
   {
     slug: 'glabrous',
     title: 'glabrous',
-    // year: 2015,
     cover: {
       mobile: {
         src: '/images/projects/glabrous/480/glabrous480-3.webp',
@@ -65,7 +62,6 @@ export const projects = [
   {
     slug: 'ghost',
     title: 'ghost',
-    // year: 2019,
     cover: {
       mobile: {
         src: '/images/projects/ghost/480/ghost480-29.webp',
@@ -86,7 +82,6 @@ export const projects = [
   {
     slug: 'strotskis',
     title: 'strotskis',
-    // year: 2021,
     cover: {
       mobile: {
         src: '/images/projects/strotskis/480/strotskis480-8.webp',

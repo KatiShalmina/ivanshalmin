@@ -1,12 +1,12 @@
 export const dinosaur = {
   slug: 'dinosaur',
 
-  title: 'Dinosaur',
+  title: 'dinosaur',
 
   subtitle: 'in flight',
 
   description: `
-    family house
+    type: family house
     date of completion: 2013
     location: Moscow Region, Ysovo, Russia
     building area: 1800 sqm

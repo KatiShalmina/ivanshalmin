@@ -15,7 +15,7 @@ export default function Laconism() {
       <div className={styles.laconismWrapper}>
         <div className={styles.laconismUnit}>
           <h2 className={styles.laconismTitle}>the beginning</h2>
-          <p>Our parents were geologists, so they taught us to love nature from early childhood. Every summer we went to our dacha — 60 km away from Novosibirsk, down the river Ob, where we could do whatever we wanted, under granddad’s supervision. Back then we built shelters and huts, made of branches and twigs. This was our first experience of construction.</p>
+          <p>My parents were geologists, so they taught me to love nature from early childhood. Every summer, my older brother and I went to our dacha, 60 km away from Novosibirsk, down the Ob River, where we could do whatever we wanted, under granddad’s supervision. Back then we built shelters and huts, made of branches and twigs. This was our first experience of construction.</p>
           <p className={styles.laconismHighlight}>Even then we understood that it’s very difficult to build anything without a sketch. This was our first experience of understanding design and construction technology.</p>
 
           <p>The structures were as it was possible for children to build. Our first shelter [on third attempt] was 4 meters tall.</p>
@@ -240,6 +240,12 @@ export default function Laconism() {
           <p>In terms of profit, art is a minus, and business is a plus.</p>
           <p className={styles.laconismHighlight}>Architecture always has and always will develop according to the needs of man and society, with a caring attitude towards nature.</p>
         </div>
+        <Video
+          videoId='kUtD1xkwEjI'
+          coverOriginal='/images/video-covers/original/laconism.webp'
+          cover1024='/images/video-covers/1024/laconism1024.webp'
+          cover480='/images/video-covers/480/laconism480.webp'
+        />
         <div className={styles.laconismUnit}>
           <h2 className={styles.laconismTitle}>laconism <span className='nowrap'>[in short]</span></h2>
           <ol className={styles.laconismList}>
@@ -280,12 +286,6 @@ export default function Laconism() {
           <MoreButton to='/paintings/collections'>more about paintings</MoreButton>
         </div>
       </div>
-      <Video
-        videoId='kUtD1xkwEjI'
-        coverOriginal='/images/video-covers/original/laconism.webp'
-        cover1024='/images/video-covers/1024/laconism1024.webp'
-        cover480='/images/video-covers/480/laconism480.webp'
-      />
     </section>
   )
 }

@@ -1,12 +1,12 @@
 export const strotskis = {
   slug: 'strotskis',
 
-  title: 'Strotskis',
+  title: 'strotskis',
 
   subtitle: 'on a plate',
 
   description: `
-    business centre
+    type: business centre
     date of completion: 2014—2021
     location: New Moscow, Russia
     building area: 45 000 sqm

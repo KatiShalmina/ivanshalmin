@@ -10,7 +10,6 @@ export default function Projects() {
           key={p.slug}
           to={`/architecture/projects/${p.slug}`}
           title={p.title}
-          // year={p.year}
           cover={p.cover}
         />
       ))}

@@ -4,7 +4,7 @@ import styles from './AppLayout.module.scss'
 import Header from '../components/Header'
 import Footer from '../components/Footer'
 import MenuOverlay from '../components/MenuOverlay'
-import ScrollToTop from '../components/ScrollToTop';
+import ScrollRestoration from '../components/ScrollRestoration'
 
 export default function AppLayout() {
   const [menuOpen, setMenuOpen] = useState(false)
@@ -13,7 +13,7 @@ export default function AppLayout() {
 
   return (
     <div className={styles.page}>
-      <ScrollToTop />
+      <ScrollRestoration />
       <Header setMenuOpen={setMenuOpen} />
       <MenuOverlay menuOpen={menuOpen} setMenuOpen={setMenuOpen} />
       <main className={isHome ? styles.mainHome : null}>

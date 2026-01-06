@@ -2,9 +2,10 @@ import { useState, useMemo } from 'react'
 import { COLLECTIONS, COLLECTION_TEXT, PAINTINGS } from '../../data/paintings/paintings'
 import Card from '../../components/Card'
 import styles from './Collections.module.scss'
+import BuyButton from '../../components/BuyButton'
 
 export default function Collections() {
-  const [filter, setFilter] = useState('landscapes')
+  const [filter, setFilter] = useState('all')
 
   const filteredPaintings = useMemo(() => {
     if (filter === 'all') return PAINTINGS
@@ -13,6 +14,7 @@ export default function Collections() {
 
   return (
     <section className={styles.collections}>
+      <h1 className='visuallyHidden'>Collections</h1>
       <div>
         <ul className={styles.filterList}>
           {COLLECTIONS.map(c => (
@@ -33,18 +35,18 @@ export default function Collections() {
         {filteredPaintings.map(p => (
           <Card
             key={p.slug}
-            to={`/paintings/${p.slug}`}
+            to={`/paintings/collections/${p.slug}`}
             title={p.title}
             cover={p.cover}
           />
         ))}
       </div>
       {filter !== 'all' && (
-        <div className={styles.collectionTextWrapper}>
-          <p className={styles.collectionTagline}>
+        <div className={styles.colTextWrapper}>
+          <p className={styles.colTagline}>
             {COLLECTION_TEXT[filter]?.tagline}
           </p>    
-          <div className={styles.collectionText}>     
+          <div className={styles.colText}>     
             {COLLECTION_TEXT[filter]?.body
               .trim()
               .split(/\n\s*\n/)
@@ -54,9 +56,13 @@ export default function Collections() {
                 </p>
               ))}
           </div>
-          <p className={styles.textAuthor}>text: Kirill Svetliyakov, art expert and critic, responsible for the latest trends and developments at the Tretiyakov Art Gallery, Moscow, Russia.</p>
+          <div className={styles.authorWrapper}>
+            <p className={styles.authorName}><span >Kirill Svetliyakov,</span></p> 
+            <p>art expert and critic, responsible for the latest trends and developments at the Tretiyakov Art Gallery, Moscow, Russia</p>
+          </div>
         </div>
       )}
+      <BuyButton>buy a painting</BuyButton>
     </section>
   )
 }

@@ -1,12 +1,12 @@
 export const propylaeum = {
   slug: 'propylaeum',
 
-  title: 'Propylaeum',
+  title: 'propylaeum',
 
   subtitle: 'on the outskirts of Moscow',
 
   description: `
-    family house
+    type: family house
     date of completion: 2009
     location: Moscow Region, Russia
     building area: 1300 sqm

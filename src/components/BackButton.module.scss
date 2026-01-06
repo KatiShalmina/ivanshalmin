@@ -6,13 +6,15 @@
   margin-bottom: clamp(2rem, 4vw, 4.3rem);
   padding: 4px 0;
   font-size: clamp(1rem, 2vw, 1.2rem);
+  color: var(--color-secondary);
 
   @media (min-width: 1024px) {
+    color: var(--color-highlight);
     transition: color .4s ease;
 
     &:hover,
     &:focus-visible {
-      color: var(--color-highlight);
+      color: var(--color-secondary);
     }
   }
 }
@@ -26,4 +28,8 @@
     width: 20px;
     height: 20px;
   }
+}
+
+.backIcon path {
+  fill: currentColor;
 }
