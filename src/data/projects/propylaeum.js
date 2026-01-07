@@ -1,12 +1,12 @@
 export const propylaeum = {
   slug: 'propylaeum',
 
-  title: 'Propylaeum',
+  title: 'propylaeum',
 
   subtitle: 'on the outskirts of Moscow',
 
   description: `
-    family house
+    type: family house
     date of completion: 2009
     location: Moscow Region, Russia
     building area: 1300 sqm
@@ -35,7 +35,7 @@ export const propylaeum = {
     The concept of the propylaeum was so successful that with few alterations, this project has since been built on another 6 sites.
   `,
 
-  more: '/publications/domus',
+  more: '/architecture/publications/domus',
 
   gallery: [ 
     {

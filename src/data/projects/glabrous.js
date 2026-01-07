@@ -1,12 +1,12 @@
 export const glabrous = {
   slug: 'glabrous',
 
-  title: 'Glabrous',
+  title: 'glabrous',
 
   subtitle: 'the principle of necessary sufficiency',
 
   description: `
-    family house
+    type: family house
     date of completion: 2015
     location: Chekhov Region, Russia
     building area: 210 sqm
@@ -33,7 +33,7 @@ export const glabrous = {
     The architect’s house is located in an ordinary village, around 70 km away from Moscow. There is no fence, only planted shrubbery; but you can’t see the neighbours and you feel as though you are alone in the middle of the forest. When inside the building, you are not bound by it, because it’s not possible to detect its boundaries. Instead, you feel a sense of ease, a sense of unity and harmony with the surroundings. These buildings fit so well into their environment that they look like beech mushrooms that have suddenly sprung up from the ground, growing around the wooden paths in this beautiful forest.
   `,
 
-  more: '/publications/violinist',
+  more: '/architecture/publications/violinist',
 
   gallery: [ 
     {

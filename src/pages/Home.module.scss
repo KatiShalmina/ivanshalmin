@@ -2,8 +2,7 @@
   position: relative;
   display: flex;
   align-items: center;
-  height: 100vh;
-  width: 100vw;
+  flex: 1;
 
   @media (min-width: 700px) {
     justify-content: center;
@@ -25,11 +24,11 @@
     }
 
     &::before {
-      background-image: url("/images/projects/propylaeum/original/propylaeum-4.webp");
+      background-image: url('/images/projects/propylaeum/original/propylaeum-4.webp');
     }
 
     &::after {
-      background-image: url("/images/paintings/desktop/splash.jpg");
+      background-image: url('/images/paintings/original/discussion.webp');
     }
   }
 }
@@ -52,34 +51,28 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
-  gap: clamp(3rem, 10vw, 10.7rem);
+  gap: clamp(3rem, 10vw, 12.8rem);
   padding-right: clamp(1.2rem, 2vw, 3rem);
   padding-left: clamp(1.2rem, 2vw, 3rem);
 
   @media (min-width: 700px) {
     flex-direction: row;
-    justify-content: center;
-  }
-
-  @media (min-width: 1024px) {
-    max-width: 2000px;
-    margin: 0 auto;
-    padding-top: 104px;
-    padding-bottom: 184px;
+    align-items: center;
   }
 }
 
 .heroLink {
-  font-size: clamp(3rem, 6vw, 10.7rem);
+  font-size: clamp(3rem, 6vw, 7.4rem);
   font-weight: 300;
-  font-stretch: 115%;
+  text-transform: uppercase;
   z-index: 2;
   user-select: none;
 
   @media (min-width: 800px) {
     transition: opacity .4s ease;
 
-    &:hover {
+    &:hover,
+    &:focus-visible {
       opacity: 0.7;
     }
   }

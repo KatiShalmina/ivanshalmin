@@ -28,11 +28,43 @@
 .logo {
   padding: 8px 0;
   text-transform: uppercase;
-  transition: opacity 0.4s ease;
 
   @media (min-width: 1024px) {
-    &:hover {
-      opacity: 0.7;
+    color: var(--color-highlight);
+    transition: color 0.4s ease;
+
+    &:hover,
+    &:focus-visible {
+      color: var(--color-secondary);
+    }
+  }
+}
+
+.logoHome {
+  color: var(--color-secondary);
+}
+
+.mainNav {
+  display: none;
+
+  @media (min-width: 1024px) {
+    color: var(--color-highlight);
+    display: flex;
+    gap: clamp(1.7rem, 2vw, 3rem);
+  }
+}
+
+.mainNavLink {
+  @media (min-width: 1024px) {
+    font-size: 2rem;
+    line-height: 1;
+    font-weight: 300;
+    font-stretch: 115%;
+    transition: color 0.4s ease;
+
+    &:hover,
+    &:focus-visible {      
+      color: var(--color-secondary);
     }
   }
 }

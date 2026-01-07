@@ -1,21 +1,9 @@
-import { useEffect, useState } from 'react'
+import { useState } from 'react'
 import { Link } from 'react-router-dom'
 import styles from './Home.module.scss'
 
 export default function Home() {
   const [activeBg, setActiveBg] = useState(null)
-
-  const backgrounds = {
-    architect: '/images/objects/propylaeum/original/propylaeum-4.webp',
-    artist: '/images/paintings/desktop/splash.jpg'
-  }
-
-  useEffect(() => {
-    Object.values(backgrounds).forEach(src => {
-      const img = new Image();
-      img.src = src;
-    });
-  }, []);
 
   return (
     <section 
@@ -28,7 +16,7 @@ export default function Home() {
       <h1 className='visuallyHidden'>Ivan Shalmin — Architect and Artist</h1>
       <div className={styles.heroWrapper}>
         <Link
-          to='objects'
+          to='/architecture/projects'
           className={styles.heroLink}
           onMouseEnter={() => setActiveBg('architect')}
           onMouseLeave={() => setActiveBg(null)}
@@ -36,7 +24,7 @@ export default function Home() {
           architect
         </Link>
         <Link
-          to='paintings'
+          to='/paintings/collections'
           className={styles.heroLink}
           onMouseEnter={() => setActiveBg('artist')}
           onMouseLeave={() => setActiveBg(null)}

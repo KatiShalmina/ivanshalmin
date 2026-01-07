@@ -5,73 +5,88 @@ import closeIcon from '../assets/icons/close.svg'
 export default function MenuOverlay({ menuOpen, setMenuOpen }) {
   return (
     <div className={`${styles.overlay} ${menuOpen ? styles.open : ''}`}>
-      <nav className={styles.nav}>
-        <div className={styles.navUnit}>
-          <h2 className={styles.navTitle}>architecture</h2>
-          <ul className={styles.navList}>
+      <nav className={styles.overlayNav}>
+        <div className={styles.overlayNavUnit}>
+          <Link
+            to='/architecture'
+            className={styles.overlayMainLink}
+            onClick={() => setMenuOpen(false)}>            
+            architecture
+          </Link>
+          <ul className={styles.overlaySubList}>
             <li>
               <Link
-                to='projects'
-                className={styles.navLink}
+                to='/architecture/projects'
+                className={styles.overlaySubLink}
                 onClick={() => setMenuOpen(false)}
               >projects</Link>
             </li>
             <li>
               <Link
-                to='laconism'
-                className={styles.navLink}
+                to='/architecture/laconism'
+                className={styles.overlaySubLink}
                 onClick={() => setMenuOpen(false)}
               >laconism</Link>
             </li>
             <li>
               <Link
-                to='publications'
-                className={styles.navLink}
+                to='/architecture/publications'
+                className={styles.overlaySubLink}
                 onClick={() => setMenuOpen(false)}
               >publications</Link>
             </li>
           </ul>
         </div>
-        <div className={styles.navUnit}>
-          <h2 className={styles.navTitle}>digital art</h2>
-          <ul className={styles.navList}>
+        <div className={styles.overlayNavUnit}>
+          <Link
+            to='/paintings'
+            className={styles.overlayMainLink}
+            onClick={() => setMenuOpen(false)}>
+            paintings
+          </Link>
+          <ul className={styles.overlaySubList}>
             <li>
               <Link
-                to='paintings'
-                className={styles.navLink}
+                to='/paintings/collections'
+                className={styles.overlaySubLink}
                 onClick={() => setMenuOpen(false)}
-              >paintings</Link>
+              >collections</Link>
             </li>
             <li>
               <Link
-                to='exhibitions'
-                className={styles.navLink}
+                to='/paintings/exhibitions'
+                className={styles.overlaySubLink}
                 onClick={() => setMenuOpen(false)}
               >exhibitions</Link>
             </li>
             <li>
               <Link
-                to='video-art'
-                className={styles.navLink}
+                to='/paintings/video-art'
+                className={styles.overlaySubLink}
                 onClick={() => setMenuOpen(false)}
               >video art</Link>
             </li>
           </ul>
         </div>
-        <div className={styles.navUnit}>
-          <h2 className={styles.navTitle}>about</h2>
-          <ul className={styles.navList}>
+        <div className={styles.overlayNavUnit}>
+          <Link
+            to='/about'
+            className={styles.overlayMainLink}
+            onClick={() => setMenuOpen(false)}>
+            about
+          </Link>
+          <ul className={styles.overlaySubList}>
             <li>
               <Link
-                to='bio'
-                className={styles.navLink}
+                to='/about/bio'
+                className={styles.overlaySubLink}
                 onClick={() => setMenuOpen(false)}
               >bio</Link>
             </li>
             <li>
               <Link
-                to='contact'
-                className={styles.navLink}
+                to='/about/contact'
+                className={styles.overlaySubLink}
                 onClick={() => setMenuOpen(false)}
               >contact</Link>
             </li>

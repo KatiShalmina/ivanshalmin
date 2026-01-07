@@ -1,12 +1,12 @@
 export const strotskis = {
   slug: 'strotskis',
 
-  title: 'Strotskis',
+  title: 'strotskis',
 
   subtitle: 'on a plate',
 
   description: `
-    business centre
+    type: business centre
     date of completion: 2014—2021
     location: New Moscow, Russia
     building area: 45 000 sqm
@@ -35,7 +35,7 @@ export const strotskis = {
     In time this building will change its environment, it will set the new standard of quality for contemporary architecture in this developing area. Today, the glass facades reflect the clouds and the sky, but in years to come, these reflections will change into quality new architecture. Fortunately, there are already plans for future developments. The old warehouses are to be replaced by excellent housing and a new project for a large modern shopping centre is already underway. Hopefully, the inhabitants of Sherbinka will gain a better quality of life.
   `,
 
-  more: '/laconism',
+  more: '/architecture/laconism',
 
   gallery: [ 
     {

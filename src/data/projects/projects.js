@@ -2,41 +2,101 @@ export const projects = [
   {
     slug: 'propylaeum',
     title: 'propylaeum',
-    year: 2009,
-    index: 4,
-    cover: '/images/projects/propylaeum/',
-    originalWidth: 2362
+    cover: {
+      mobile: {
+        src: '/images/projects/propylaeum/480/propylaeum480-4.webp',
+        srcSet: `
+          /images/projects/propylaeum/480/propylaeum480-4.webp 480w,
+          /images/projects/propylaeum/1024/propylaeum1024-4.webp 1024w
+        `,
+      },
+      desktop: {
+        srcSet: `
+          /images/projects/covers/propylaeum1024-cut.webp 1024w,
+          /images/projects/covers/propylaeum-orig-cut.webp 2362w
+        `,
+        sizes: '1440px',
+      }
+    }
   },
   {
     slug: 'dinosaur',
     title: 'dinosaur',
-    year: 2013,
-    index: 5,
-    cover: '/images/projects/dinosaur',
-    originalWidth: 2362
+    cover: {
+      mobile: {
+        src: '/images/projects/dinosaur/480/dinosaur480-5.webp',
+        srcSet: `
+          /images/projects/dinosaur/480/dinosaur480-5.webp 480w,
+          /images/projects/dinosaur/1024/dinosaur1024-5.webp 1024w
+        `,
+      },
+      desktop: {
+        srcSet: `
+          /images/projects/covers/dinosaur1024-cut.webp 1024w,
+          /images/projects/covers/dinosaur-orig-cut.webp 2362w
+        `,
+        sizes: '1440px',
+      }
+    }
   },
   {
     slug: 'glabrous',
     title: 'glabrous',
-    year: 2015,
-    index: 3,
-    cover: '/images/projects/glabrous',
-    originalWidth: 2362
+    cover: {
+      mobile: {
+        src: '/images/projects/glabrous/480/glabrous480-3.webp',
+        srcSet: `
+          /images/projects/glabrous/480/glabrous480-3.webp 480w,
+          /images/projects/glabrous/1024/glabrous1024-3.webp 1024w
+        `,
+      },
+      desktop: {
+        srcSet: `
+          /images/projects/covers/glabrous1024-cut.webp 1024w,
+          /images/projects/covers/glabrous-orig-cut.webp 2362w
+        `,
+        sizes: '1440px',
+      }
+    }
   },
   {
     slug: 'ghost',
     title: 'ghost',
-    year: 2019,
-    index: 29,
-    cover: '/images/projects/ghost',
-    originalWidth: 2050
+    cover: {
+      mobile: {
+        src: '/images/projects/ghost/480/ghost480-29.webp',
+        srcSet: `
+          /images/projects/ghost/480/ghost480-29.webp 480w,
+          /images/projects/ghost/1024/ghost1024-29.webp 1024w
+        `,
+      },
+      desktop: {
+        srcSet: `
+          /images/projects/covers/ghost1024-cut.webp 1024w,
+          /images/projects/covers/ghost-orig-cut.webp 2500w
+        `,
+        sizes: '1440px',
+      }
+    }
   },
   {
     slug: 'strotskis',
     title: 'strotskis',
-    year: 2021,
-    index: 8,
-    cover: '/images/projects/strotskis',
-    originalWidth: 2500
+    cover: {
+      mobile: {
+        src: '/images/projects/strotskis/480/strotskis480-8.webp',
+        srcSet: `
+          /images/projects/strotskis/480/strotskis480-8.webp 480w,
+          /images/projects/strotskis/1024/strotskis1024-8.webp 1024w
+        `,
+      },
+      desktop: {
+        srcSet: `
+          /images/projects/covers/strotskis1024-cut.webp 1024w,
+          /images/projects/covers/strotskis-orig-cut.webp 2500w
+        `,
+        sizes: '1440px',
+      }
+    }
   }
 ]

@@ -14,7 +14,7 @@ export default function GallerySwiper({ slides }) {
         modules={[Navigation, Scrollbar, A11y]}
         navigation
         scrollbar={{ draggable: true }}
-        spaceBetween={20}
+        spaceBetween={0}
         slidesPerView={1}
       >
         {slides.map((slide, i) => (

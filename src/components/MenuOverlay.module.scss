@@ -16,7 +16,7 @@
   pointer-events: auto;
 }
 
-.nav {
+.overlayNav {
   display: flex;
   flex-direction: column;
   padding: 1.2rem;
@@ -33,15 +33,14 @@
   background: transparent;
 }
 
-.navTitle {
+.overlayMainLink {
   margin: 0 0 10px;
   font-size: 2.5rem;
-  font-weight: 600;
+  font-weight: 300;
   font-stretch: 115%;
-  opacity: 0.5;
 }
 
-.navLink {
+.overlaySubLink {
   display: inline-block;
   margin: 0 0 8px;
   font-size: 1.2rem;
