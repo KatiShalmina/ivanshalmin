@@ -1,4 +1,4 @@
-import { useParams } from 'react-router-dom'
+import { useParams, useLocation } from 'react-router-dom'
 import BackButton from '../../components/BackButton'
 import BuyButton from '../../components/BuyButton'
 import styles from './PaintingDetail.module.scss'
@@ -6,13 +6,23 @@ import { paintingDetail } from '../../data/paintings/painting-detail'
 
 export default function PaintingDetail() {
   const { slug } = useParams()
+  const location = useLocation()
+
   const painting = paintingDetail.find(p => p.slug === slug)
 
   if (!painting) return <p>Not found</p>
 
+  const backTo = location.state?.from ?? '/paintings/collections'
+  const focusSlug = location.state?.focusSlug
+
   return (
     <section className={styles.paintingDetail}>
-      <BackButton>collections</BackButton>
+      <BackButton 
+        to={backTo}
+        state={focusSlug ? { focusSlug } : null}
+      >
+          collections
+      </BackButton>
       <h1 className={styles.paintingTitle}>{painting.title}</h1>
       <div className={styles.paintingDescription}>
         {painting.description
