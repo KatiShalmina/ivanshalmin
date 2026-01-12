@@ -12,6 +12,7 @@ export default function Card({ to, state, title, cover }) {
         to={to}
         state={state} 
         className={styles.cardLink}
+        data-painting-slug={state?.focusSlug}
       >
         {isPaintingsCover ? (
           <img

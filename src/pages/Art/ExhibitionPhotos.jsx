@@ -1,19 +1,25 @@
-import styles from './CubePhotos.module.scss'
+import styles from './ExhibitionPhotos.module.scss'
 import { useState } from 'react'
+import { useParams } from 'react-router-dom'
 import Lightbox from 'yet-another-react-lightbox'
 import 'yet-another-react-lightbox/styles.css'
-import { cubePhotos } from '../../data/exhibitions/cube-photos'
+import { EXHIBITION_PHOTOS } from '../../data/exhibitions/exhibition-photos'
 import BackButton from '../../components/BackButton'
 
-export default function CubePhotos() {
+export default function ExhibitionPhotos() {
+  const { slug } = useParams()
   const [index, setIndex] = useState(-1)
 
+  const exhibition = EXHIBITION_PHOTOS[slug]
+
+  if (!exhibition) return <p>Not found</p>
+
   return (
-    <section className={styles.cubePhotos}>
-      <BackButton>exhibitions</BackButton>
-      <h1 className='visuallyHidden'>Cube Photos</h1>
+    <section className={styles.exhPhotos}>
+      <BackButton>all exhibitions</BackButton>
+      <h1 className='visuallyHidden'>More photos</h1>
       <div className={styles.masonry}>
-        {cubePhotos.map((p, i) => (
+        {exhibition.photos.map((p, i) => (
           <button
             key={p.src}
             type='button'
@@ -34,7 +40,10 @@ export default function CubePhotos() {
         open={index >= 0}
         close={() => setIndex(-1)}
         index={index}
-        slides={cubePhotos.map(p => ({ src: p.src, alt: p.alt }))}
+        slides={exhibition.photos.map(p => ({ 
+          src: p.src, 
+          alt: p.alt 
+        }))}
       />
     </section>
   )

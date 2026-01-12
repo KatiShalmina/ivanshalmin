@@ -21,7 +21,7 @@ export default function PaintingDetail() {
         to={backTo}
         state={focusSlug ? { focusSlug } : null}
       >
-          collections
+        all collections
       </BackButton>
       <h1 className={styles.paintingTitle}>{painting.title}</h1>
       <div className={styles.paintingDescription}>

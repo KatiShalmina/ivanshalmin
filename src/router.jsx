@@ -13,7 +13,7 @@ import PaintingsLayout from './pages/Art/PaintingsLayout'
 import Collections from './pages/Art/Collections'
 import PaintingDetail from './pages/Art/PaintingDetail'
 import Exhibitions from './pages/Art/Exhibitions'
-import CubePhotos from './pages/Art/CubePhotos'
+import ExhibitionPhotos from './pages/Art/ExhibitionPhotos'
 import VideoArt from './pages/Art/VideoArt'
 
 import AboutLayout from './pages/About/AboutLayout'
@@ -52,7 +52,7 @@ const router = createBrowserRouter([
           { path: 'collections/:slug', element: <PaintingDetail /> },
 
           { path: 'exhibitions', element: <Exhibitions /> },
-          { path: 'exhibitions/cube-photos', element: <CubePhotos /> },
+          { path: 'exhibitions/:slug', element: <ExhibitionPhotos /> },
 
           { path: 'video-art', element: <VideoArt /> },
         ]
