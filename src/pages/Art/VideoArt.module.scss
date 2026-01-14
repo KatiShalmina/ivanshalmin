@@ -1,0 +1,29 @@
+.videoWrapper {
+  display: flex;
+  flex-direction: column;
+  gap: clamp(10px, 2vw, 1.4rem);
+  margin-bottom: clamp(1.7rem, 4vw, 3rem);
+
+  @media (min-width: 1024px) {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(600px, 1fr));
+  }
+}
+
+.videoArtText {
+  margin-bottom: clamp(10px, 4vw, 1.7rem);
+}
+
+.videoArtText p {
+  max-width: 64ch;
+  margin-bottom: clamp(1rem, 4vw, 1.7rem);
+  font-size: clamp(1.2rem, 2vw, 1.7rem);
+}
+
+.videoArtText blockquote {
+  text-transform: uppercase;
+}
+
+.videoArtText cite {
+  font-style: normal ;
+}

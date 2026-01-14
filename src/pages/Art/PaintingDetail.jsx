@@ -1,18 +1,29 @@
-import { useParams } from 'react-router-dom'
+import { useParams, useLocation } from 'react-router-dom'
 import BackButton from '../../components/BackButton'
 import BuyButton from '../../components/BuyButton'
 import styles from './PaintingDetail.module.scss'
 import { paintingDetail } from '../../data/paintings/painting-detail'
+import MoreButton from '../../components/MoreButton'
 
 export default function PaintingDetail() {
   const { slug } = useParams()
+  const location = useLocation()
+
   const painting = paintingDetail.find(p => p.slug === slug)
 
   if (!painting) return <p>Not found</p>
 
+  const backTo = location.state?.from ?? '/paintings/collections'
+  const focusSlug = location.state?.focusSlug
+
   return (
     <section className={styles.paintingDetail}>
-      <BackButton>collections</BackButton>
+      <BackButton
+        to={backTo}
+        state={focusSlug ? { focusSlug } : null}
+      >
+        all collections
+      </BackButton>
       <h1 className={styles.paintingTitle}>{painting.title}</h1>
       <div className={styles.paintingDescription}>
         {painting.description
@@ -49,6 +60,16 @@ export default function PaintingDetail() {
       <p className={styles.paintingWarning}>*The final artwork is delivered in high resolution, suitable for large-format printing or digital use.
       </p>
       <BuyButton>buy this painting</BuyButton>
+      <div className={styles.paintingVideoLink}>
+        {painting.link && (
+          <MoreButton 
+            to={painting.link}
+            external
+          >
+            view painting in motion
+          </MoreButton>    
+        )}
+      </div>
     </section>
   )
 }

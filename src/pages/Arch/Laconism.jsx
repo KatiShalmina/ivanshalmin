@@ -14,10 +14,35 @@ export default function Laconism() {
       <h1 className='visuallyHidden'>Laconism</h1>
       <div className={styles.laconismWrapper}>
         <div className={styles.laconismUnit}>
+          <h2 className={styles.laconismTitle}>awards</h2>
+          <div className={styles.awardsWrapper}>
+            <div className={styles.awardsUnit}>
+              <h2 className={styles.awardsTitle}>international architectural festival ‘zodchestvo’ 2020</h2>
+              <p>laureate</p>
+            </div>
+            <div className={styles.awardsUnit}>
+              <h2 className={styles.awardsTitle}>international festival of architecture <span className='nowrap'>and interior</span> design</h2>
+              <p>2019: third place</p>
+              <p>2018: first place</p>
+              <p>2009: first place</p>
+              <p>2008: first place</p>
+              <p>2007: first place</p>
+              <p>2006: second place</p>
+              <p>2005: second place</p>
+              <p>2003: first place, third place</p>
+              <p>2002: first place</p>
+              <p>2001: third place</p>
+            </div>
+            <div className={styles.awardsUnit}>
+              <h2 className={styles.awardsTitle}>a-z of rural construction 2003</h2>
+              <p>first place</p>
+            </div>
+          </div>
+        </div>
+        <div className={styles.laconismUnit}>
           <h2 className={styles.laconismTitle}>the beginning</h2>
           <p>My parents were geologists, so they taught me to love nature from early childhood. Every summer, my older brother and I went to our dacha, 60 km away from Novosibirsk, down the Ob River, where we could do whatever we wanted, under granddad’s supervision. Back then we built shelters and huts, made of branches and twigs. This was our first experience of construction.</p>
           <p className={styles.laconismHighlight}>Even then we understood that it’s very difficult to build anything without a sketch. This was our first experience of understanding design and construction technology.</p>
-
           <p>The structures were as it was possible for children to build. Our first shelter [on third attempt] was 4 meters tall.</p>
           <p>My first teacher was my older brother [3 years older that me]. In his childhood he drew a lot, whilst I preferred to make 3D objects out of modelling clay.</p>
         </div>

@@ -10,7 +10,6 @@
   font-weight: 300;
   font-stretch: 115%;
   line-height: 1.1;
-  // color: var(--color-highlight);
 }
 
 .paintingDescription {
@@ -18,7 +17,6 @@
   font-weight: 300;
   font-stretch: 115%;
   margin-bottom: clamp(1.7rem, 4vw, 3rem);
-  // color: var(--color-highlight);
 }
 
 .paintingPicture {
@@ -44,6 +42,10 @@
 }
 
 .paintingWarning {
-  margin-bottom: clamp(1rem, 4vw, 1.7rem);
+  margin-bottom: 2rem;
   font-size: 1rem;
+}
+
+.paintingVideoLink {
+  margin-top: clamp(1.7rem, 4vw, 2.5rem);
 }

@@ -64,7 +64,6 @@ export default function ProjectType() {
           {type.video && (
             <Video
               videoId={type.video.id}
-              title={type.video.title}
               coverOriginal={type.video.coverOriginal}
               cover1024={type.video.cover1024}
               cover480={type.video.cover480}

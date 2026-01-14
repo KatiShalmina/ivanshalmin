@@ -23,8 +23,12 @@ export default function ScrollRestoration() {
       return
     }
 
+    if (location.state?.focusSlug) {
+      return
+    }
+
     window.scrollTo(0, 0)
-  }, [location.key, navigationType])
+  }, [location.key, navigationType, location.state])
 
   return null
 }

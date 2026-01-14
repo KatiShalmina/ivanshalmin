@@ -1,14 +1,19 @@
 import { Link } from 'react-router-dom'
 import styles from './Card.module.scss'
 
-export default function Card({ to, title, cover }) {
+export default function Card({ to, state, title, cover }) {
   if (!cover) return null;
 
   const isPaintingsCover = Boolean(cover.src || cover.srcSet)
 
   return (
     <div className={styles.card}>
-      <Link to={to} className={styles.cardLink}>
+      <Link 
+        to={to}
+        state={state} 
+        className={styles.cardLink}
+        data-painting-slug={state?.focusSlug}
+      >
         {isPaintingsCover ? (
           <img
             className={styles.cardImg}

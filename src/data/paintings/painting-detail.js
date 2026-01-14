@@ -35,7 +35,8 @@ export const paintingDetail = [
     Gradually, the still life turned into a landscape inspired by the work of William Turner. For me, Turner is the father of laconism. With his academic education and technique, he broke all the laws of aerial perspective that existed at the time. For example, the further away an object is, the more blue you need to make it, because the density of the atmosphere colours all distant objects. Turner used other techniques: scale, foreground and background detail, and so on.
 
     Turner’s work challenged the traditional ideas about painting, just as I was about to challenge the client’s idea about the project. The two monsters on the left and right represent the future of the day that is coming. And in the centre is an image of Marilyn Monroe in the clouds.
-    `
+    `,
+    link: 'https://www.youtube.com/watch?v=-NZLgXOv5n0&t=1s'
   },
   {
     slug: 'blazing-heat',
@@ -101,7 +102,8 @@ export const paintingDetail = [
     This is a period of equilibrium in illumination, when the real and the imaginary begin to merge. The dark forces have not yet appeared, the light ones have not yet departed. Mystery. It is unknown what is there in the black, it is unknown what is there in the white. The state of fading light and approaching darkness is mesmerising.
       
     I rewrote this painting five times, from 2017 to 2019.
-    `
+    `,
+    link: 'https://www.youtube.com/watch?v=OC0T951qrtI&t=2s'
   },
   {
     slug: 'fears',
@@ -121,7 +123,8 @@ export const paintingDetail = [
     This work really scared me. After the last stroke and the final calibration, I got scared and turned off the computer.
       
     A family drama is unfolding before us. In the centre is a skull, an image of death, flowing into a female image. In the lower right corner is a lover in a top hat, in the left corner is a murderous husband, and above are suffering children.
-    `
+    `,
+    link: 'https://www.youtube.com/watch?v=0BRWulNSjOM'
   },
   {
     slug: 'iron-man',
@@ -163,7 +166,8 @@ export const paintingDetail = [
     This is an example of how changing the colour balance and colour temperature changes the image. In traditional painting, such a change would require repainting the entire picture. In digital format, you don’t repaint, but capture these states, fix them and save them. And then you can use them for various purposes, including animation.
 
     An interesting point: according to all the rules of painting, the foreground and centre should be very detailed and sharp, while the background is usually blurred. In ‘The Race’, it’s the opposite: the centre is blurred, and the edges are very clear. Because of this, it flies out of the plane. It’s in front, and everything else is behind it. It's amazing to see it in motion.
-    `
+    `,
+    link: 'https://www.youtube.com/watch?v=QTTmEaZZlrI'
   },
   {
     slug: 'gwynplaine',
@@ -253,7 +257,8 @@ export const paintingDetail = [
     And while ‘Gwynplaine’ has sharpness in the centre and blurred edges, in ‘Secret’, ‘Ghoul’ and ‘The Race’ it is the opposite — they have come to the fore. There should have been a reversal of space, but the composition still holds.
 
     At one point, ‘Ghoul’ was called ‘Kiss’.
-    `
+    `,
+    link: 'https://www.youtube.com/watch?v=nV4A2A6UF6M'
   },
   {
     slug: 'faculty',
@@ -577,7 +582,8 @@ export const paintingDetail = [
     I remember the time before I went to university, when my older brother and I would wet paper, take watercolours and throw these rich colours, this paint, onto the wet paper. And it was stunningly beautiful. 
     
     But when it dried, disaster struck: the colours faded, the magic evaporated right before our eyes.
-    `
+    `,
+    link: 'https://www.youtube.com/watch?v=FNTpDKkcKew'
   },
   {
     slug: 'crazy-color',
@@ -657,7 +663,8 @@ export const paintingDetail = [
     Digital paintings are the emotional outburst of an architect onto a two dimensional plane as frustrated protection from the two-legged brainless creatures that are everywhere. 
 
     They make our heads explode because they always want to ruin everything with self indulgence, as though they are in awe of themselves.
-    `
+    `,
+    link: 'https://www.youtube.com/watch?v=3fGxLXT1a6Y'
   },
   {
     slug: 'dream',
@@ -847,13 +854,13 @@ export const paintingDetail = [
       price: $ 1790
     `,
     src: '/images/paintings/480/oceania.webp',
-      srcSet: `
+    srcSet: `
         /images/paintings/480/oceania.webp 480w,
         /images/paintings/1024/oceania.webp 1024w,
         /images/paintings/original/oceania.webp 1754w
     `,
     sizes: '1440px',
-    quote:'In the modern interior that I create in a minimalist style, if the artwork covers the entire wall, you will not have the illusion that it is some kind of decoration. It will immediately break down the wall and open up a path to infinite contemplation.'
+    quote: 'In the modern interior that I create in a minimalist style, if the artwork covers the entire wall, you will not have the illusion that it is some kind of decoration. It will immediately break down the wall and open up a path to infinite contemplation.'
   },
   {
     slug: 'wave',
@@ -979,7 +986,8 @@ export const paintingDetail = [
     In reality, a concept is the thoughts that the author wants to convey to the viewer in a concise form. This point is not as hackneyed as the definition itself.
 
     I think in the future we will see a return to the aesthetic principle in art.
-    `
+    `,
+    link: 'https://www.youtube.com/watch?v=kxPIzW30n6Y'
   },
   {
     slug: 'leaf',
@@ -1179,7 +1187,8 @@ export const paintingDetail = [
     While creating architectural objects, at some point I realized that contemporary art — the kind that surrounds us — cannot decorate even a simple interior. That is why I started painting myself.
     
     It was also a form of visual therapy for my ageing mother, whom I brought from Novosibirsk to Moscow to take care of her. These paintings helped lift her out of her depression a little. She said that everyone should see them, not just her.
-    `
+    `,
+    link: 'https://www.youtube.com/watch?v=NCQjDa1muRQ'
   },
   {
     slug: 'waterfall',
@@ -1199,7 +1208,8 @@ export const paintingDetail = [
     There is a difference in the perception and transmission of colour in digital format, when light comes from inside the screen towards you, and in physical format, when you make a print on paper, when the light falls in the opposite direction — from above onto the image.
     
     Often, additional work is required in dark tones, as the gradations of dark, dense tones are disrupted. Everything may stick together and turn out simply black, and important details will not be drawn.
-    `
+    `,
+    link: 'https://www.youtube.com/watch?v=mnv56IH672s'
   },
   {
     slug: 'grail',

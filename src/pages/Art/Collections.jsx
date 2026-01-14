@@ -1,16 +1,36 @@
-import { useState, useMemo } from 'react'
+import { useMemo, useLayoutEffect } from 'react'
+import { useLocation, useSearchParams } from 'react-router-dom'
 import { COLLECTIONS, COLLECTION_TEXT, PAINTINGS } from '../../data/paintings/paintings'
 import Card from '../../components/Card'
 import styles from './Collections.module.scss'
 import BuyButton from '../../components/BuyButton'
 
 export default function Collections() {
-  const [filter, setFilter] = useState('all')
+  const location = useLocation()
+  const [searchParams, setSearchParams] = useSearchParams()
+
+  const filter = searchParams.get('filter') ?? 'all'
 
   const filteredPaintings = useMemo(() => {
     if (filter === 'all') return PAINTINGS
     return PAINTINGS.filter(p => p.collections.includes(filter))
   }, [filter])
+
+  useLayoutEffect(() => {
+    const focusSlug = location.state?.focusSlug
+    if (!focusSlug) return
+
+    const el = document.querySelector(`[data-painting-slug='${focusSlug}']`)
+    if (el) el.scrollIntoView({ block: 'center' })
+  }, [location.state])
+
+  const setFilter = (next) => {
+    if (next === 'all') {
+      setSearchParams({}, { replace: true })
+    } else {
+      setSearchParams({ filter: next }, { replace: true })
+    }
+  }
 
   return (
     <section className={styles.collections}>
@@ -38,6 +58,10 @@ export default function Collections() {
             to={`/paintings/collections/${p.slug}`}
             title={p.title}
             cover={p.cover}
+            state={{
+              from: `${location.pathname}${location.search}`,
+              focusSlug: p.slug,
+            }}
           />
         ))}
       </div>
@@ -57,7 +81,7 @@ export default function Collections() {
               ))}
           </div>
           <div className={styles.authorWrapper}>
-            <p className={styles.authorName}><span >Kirill Svetliyakov,</span></p> 
+            <p className={styles.authorName}><span >Kirill Svetlyakov,</span></p> 
             <p>art expert and critic, responsible for the latest trends and developments at the Tretiyakov Art Gallery, Moscow, Russia</p>
           </div>
         </div>
