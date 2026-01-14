@@ -3,6 +3,7 @@ import BackButton from '../../components/BackButton'
 import BuyButton from '../../components/BuyButton'
 import styles from './PaintingDetail.module.scss'
 import { paintingDetail } from '../../data/paintings/painting-detail'
+import MoreButton from '../../components/MoreButton'
 
 export default function PaintingDetail() {
   const { slug } = useParams()
@@ -17,7 +18,7 @@ export default function PaintingDetail() {
 
   return (
     <section className={styles.paintingDetail}>
-      <BackButton 
+      <BackButton
         to={backTo}
         state={focusSlug ? { focusSlug } : null}
       >
@@ -59,6 +60,16 @@ export default function PaintingDetail() {
       <p className={styles.paintingWarning}>*The final artwork is delivered in high resolution, suitable for large-format printing or digital use.
       </p>
       <BuyButton>buy this painting</BuyButton>
+      <div className={styles.paintingVideoLink}>
+        {painting.link && (
+          <MoreButton 
+            to={painting.link}
+            external
+          >
+            view painting in motion
+          </MoreButton>    
+        )}
+      </div>
     </section>
   )
 }

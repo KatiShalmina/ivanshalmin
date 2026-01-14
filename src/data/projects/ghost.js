@@ -423,7 +423,6 @@ export const ghost = {
 
   video: {
     id: 'tvZQxQfsuj0',
-    title: 'view',
     coverOriginal: '/images/video-covers/original/ghost.webp',
     cover1024: '/images/video-covers/1024/ghost1024.webp',
     cover480: '/images/video-covers/480/ghost480.webp'

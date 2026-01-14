@@ -263,7 +263,6 @@ export const strotskis = {
 
   video: {
     id: 'UfxHe8mR0C4',
-    title: 'interview',
     coverOriginal: '/images/video-covers/original/strotskis.webp',
     cover1024: '/images/video-covers/1024/strotskis1024.webp',
     cover480: '/images/video-covers/480/strotskis480.webp'

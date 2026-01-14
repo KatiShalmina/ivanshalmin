@@ -21,7 +21,7 @@ export default function Laconism() {
               <p>laureate</p>
             </div>
             <div className={styles.awardsUnit}>
-              <h2 className={styles.awardsTitle}>international festival of architecture and interior design</h2>
+              <h2 className={styles.awardsTitle}>international festival of architecture <span className='nowrap'>and interior</span> design</h2>
               <p>2019: third place</p>
               <p>2018: first place</p>
               <p>2009: first place</p>
