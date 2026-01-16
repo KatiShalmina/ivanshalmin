@@ -10,6 +10,10 @@
   background-color: var(--color-primary);
 }
 
+:lang(ru) .page {
+  font-family: var(--font-secondary);
+}
+
 .mainHome {
   display: flex;
   flex-direction: column;

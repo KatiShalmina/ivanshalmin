@@ -36,15 +36,14 @@
   position: absolute;
   bottom: 1rem;
   left: 1rem;
-  background: rgba(0, 0, 0, 0.4);
-  backdrop-filter: blur(4px);     
-  -webkit-backdrop-filter: blur(4px);
+  background: var(--color-primary);
   padding: 8px 1rem;
+  box-shadow: 0 0 0 1px var(--color-secondary);
 
   @media (min-width: 1280px) {
     opacity: 0;
     visibility: hidden;
-    transform: translateY(8px);
+    transform: translate3d(0, 8px, 0);
     transition: 
       opacity .3s ease,
       visibility .3s ease,
@@ -66,4 +65,8 @@
   line-height: 1.2;
   font-weight: 300;
   font-stretch: 115%;
+}
+
+:lang(ru) .cardTitle {
+  font-family: var(--font-secondary);
 }

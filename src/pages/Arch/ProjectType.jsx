@@ -83,7 +83,12 @@ export default function ProjectType() {
             ))
           }
         </div>
-        <MoreButton to={type.more}>find out more</MoreButton>
+        <MoreButton
+          to={typeof type.more === 'string' ? type.more : type.more.href}
+          external={typeof type.more === 'object' && type.more.external}
+        >
+          find out more
+        </MoreButton>
       </div>
       <GalleryLightbox
         open={open}

@@ -69,6 +69,37 @@
   }
 }
 
+:lang(ru) .mainNavLink {
+  font-family: var(--font-secondary);
+}
+
+.buttonWrapper {
+  display: flex;
+}
+
+.langSwitch {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  text-transform: uppercase;
+
+  @media (min-width: 1024px) {
+    color: var(--color-highlight);
+    transition: color 0.4s ease;
+
+    &:hover,
+    &:focus-visible {
+      color: var(--color-secondary);
+    }
+  }
+}
+
+.langHome {
+  color: var(--color-secondary);
+}
+
 .burger {
   width: 40px;
   height: 40px;

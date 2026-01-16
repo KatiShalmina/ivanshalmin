@@ -1,7 +1,7 @@
 .exhibitions {
   display: flex;
   flex-direction: column;
-  gap: clamp(4.3rem, 10vw, 7.4rem);
+  gap: clamp(4.3rem, 7vw, 7.4rem);
 }
 
 .exhUnit {
@@ -12,7 +12,7 @@
 
 .exhTitle {
   margin-bottom: clamp(2rem, 4vw, 3rem);
-  font-size: clamp(2.5rem, 10vw, 8.9rem);
+  font-size: clamp(2.5rem, 7vw, 7.4rem);
   line-height: 1.1;
   font-weight: 300;
   font-stretch: 115%;

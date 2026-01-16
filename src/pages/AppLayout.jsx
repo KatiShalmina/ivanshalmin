@@ -5,11 +5,19 @@ import Header from '../components/Header'
 import Footer from '../components/Footer'
 import MenuOverlay from '../components/MenuOverlay'
 import ScrollRestoration from '../components/ScrollRestoration'
+import { useEffect } from 'react'
 
 export default function AppLayout() {
   const [menuOpen, setMenuOpen] = useState(false)
   const location = useLocation()
-  const isHome = location.pathname === '/'
+
+  const isRu = location.pathname === '/ru' || location.pathname.startsWith('/ru/')
+
+  const isHome = location.pathname === '/' || location.pathname === '/ru'
+
+  useEffect(() => {
+    document.documentElement.lang = isRu ? 'ru' : 'en'
+  }, [isRu])
 
   return (
     <div className={styles.page}>

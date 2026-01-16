@@ -3,3 +3,8 @@
   --color-secondary: #ffffff;
   --color-highlight: #999999;
 }
+
+:lang(ru) {
+  --font-primary: 'OpenSansVariable', system-ui, sans-serif;
+  --font-secondary: 'IBM Plex Mono', monospace;
+}
