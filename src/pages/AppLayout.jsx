@@ -13,7 +13,8 @@ export default function AppLayout() {
 
   const isRu = location.pathname === '/ru' || location.pathname.startsWith('/ru/')
 
-  const isHome = location.pathname === '/' || location.pathname === '/ru'
+  const isHome = location.pathname === '/' || location.pathname === '/ru' ||
+  location.pathname === '/ru/'
 
   useEffect(() => {
     document.documentElement.lang = isRu ? 'ru' : 'en'

@@ -18,11 +18,21 @@
   font-stretch: 115%;
 }
 
+:lang(ru) .exhTitle {
+  font-family: var(--font-secondary);
+  font-weight: 300;
+}
+
 .exhSubtitle {
   margin-bottom: clamp(4px, 4vw, 1rem);
   font-size: clamp(1.2rem, 2vw, 2.5rem);
   font-weight: 300;
   font-stretch: 115%;
+}
+
+:lang(ru) .exhSubtitle {
+  font-family: var(--font-secondary);
+  font-weight: 300;
 }
 
 .exhDescription {

@@ -1,35 +1,64 @@
 export const dinosaur = {
   slug: 'dinosaur',
 
-  title: 'dinosaur',
+  title: {
+    en: 'dinosaur',
+    ru: 'динозавр'
+  }, 
 
-  subtitle: 'in flight',
+  subtitle: {
+    en: 'in flight',
+    ru: 'летающий'
+  },
+    
+  description: {
+    en: `
+      type: family house
+      date of completion: 2013
+      location: Moscow Region, Ysovo, Russia
+      building area: 1800 sqm
+      photography: Ivan Shalmin
+      text: Nadejda Plotnikova
+    `,
+    ru: `
+      тип: дом для семьи 
+      год постройки: 2013
+      локация: Московская область, Усово
+      общая площадь: 1800 кв.м
+      фото: Иван Шалмин
+      текст: Надежда Плотникова
+    `
+  },
 
-  description: `
-    type: family house
-    date of completion: 2013
-    location: Moscow Region, Ysovo, Russia
-    building area: 1800 sqm
-    photography: Ivan Shalmin
-    text: Nadejda Plotnikova
-  `,
+  tagline: {
+    en: 'Dinosaurs don’t fly, but this one was really keen... And flew up 5 meters off the ground, to face the forest and to turn his back onto the pseudo-baroque settlement of the village of Ysovo.',
+    ru: 'Динозавры не летают, но этот сильно захотел… И взлетел на 5 метров от земли. Повернулся лицом к лесу, а задом к псевдобарочному поселку, деревне Усово.'
+  },
 
-  tagline: `
-    Dinosaurs don’t fly, but this one was really keen...
-    And flew up 5 meters off the ground, to face the forest and to turn his back onto the pseudo-baroque settlement of the village of Ysovo.
-  `,
+  text: {
+    en: `
+      The proportions of the house are well and truly reminiscent of a giant prehistoric reptile. The main interior double height volume is 10 m x 9 m, the length of the facade is 65 m and this volume is lifted to hover 5 m above the ground. The length of the span above the exterior terrace is 27 m, with zero additional visible support structures. A span of this magnitude was a challenge for the engineers and that’s why the project also carries a second nickname ‘The Unbearable Lightness of Being’.
 
-  text: `
-    The proportions of the house are well and truly reminiscent of a giant prehistoric reptile. The main interior double height volume is 10 m x 9 m, the length of the facade is 65 m and this volume is lifted to hover 5 m above the ground. The length of the span above the exterior terrace is 27 m, with zero additional visible support structures. A span of this magnitude was a challenge for the engineers and that’s why the project also carries a second nickname ‘The Unbearable Lightness of Being’.
+      The two main volumes of the building intersect, thereby forming a void — a window into the forest. In terms of engineering solutions, this building certainly defies the ordinary. How can a structure the size of a boeing be resting on glass planes?
 
-    The two main volumes of the building intersect, thereby forming a void — a window into the forest. In terms of engineering solutions, this building certainly defies the ordinary. How can a structure the size of a boeing be resting on glass planes?
+      Indeed, the house has turned its back on the village, consisting of solely of pseudo-baroque dwellings. Fragments of solid brick, windowless wall are the only aspects of the building that the neighbours can see. The main reason for this design decision is orientation. Ivan Shalmin’s houses are always oriented in the same way, with all the glass facades facing north and the solid brick walls facing south. In this way, the architect protects the houses from the heat and from excess light. ‘When the main glass facades face north, it’s as though you are wearing a cap. There is a lot of light but it doesn’t blind you, because you are shielded from it’.
 
-    Indeed, the house has turned its back on the village, consisting of solely of pseudo-baroque dwellings. Fragments of solid brick, windowless wall are the only aspects of the building that the neighbours can see. The main reason for this design decision is orientation. Ivan Shalmin’s houses are always oriented in the same way, with all the glass facades facing north and the solid brick walls facing south. In this way, the architect protects the houses from the heat and from excess light. ‘When the main glass facades face north, it’s as though you are wearing a cap. There is a lot of light but it doesn’t blind you, because you are shielded from it’.
+      Instead of traditional windows, the architect designed an original lighting feature on the south facade — a network of individual LED lights, intended to mimic and compliment the stars in the night sky. In order to create it, he had to experiment to find the optimum diameter of openings to house the LEDs.
 
-    Instead of traditional windows, the architect designed an original lighting feature on the south facade — a network of individual LED lights, intended to mimic and compliment the stars in the night sky. In order to create it, he had to experiment to find the optimum diameter of openings to house the LEDs.
+      ‘I listen to the client but I never give him what he wants, because my jpro is to define and to design what the client needs. That’s the whole point of being an architect.’ The glass facade always looks out onto the forest, onto the ‘interim space’ according to the theory of Ivan Shalmin. But in this case, the forest behind glass is just an artistic device, a technique used by Ivan to create an infinite and boundless interior. Specialist tinted glass is used by the architect in quite a lot of his projects. This glass is almost invisible from the inside and the forest becomes a part of the interior, thereby endlessly expanding the boundaries of the building.
+    `,
+    ru: `
+      Своими пропорциями дом действительно напоминает огромное доисторическое пресмыкающееся. Внутреннее пространство основного двухэтажного объема — 10 х 9 м, длина фасада — 65 м. Объем поднят на высоту  5 м, а длина пролета между  опорными точками — 27 метров, и под ним нет ни одной опоры. Для конструкторов это была непростая задача, потому проект обрел еще одно говорящее название — “Невыносимая легкость бытия”. 
 
-    ‘I listen to the client but I never give him what he wants, because my jpro is to define and to design what the client needs. That’s the whole point of being an architect.’ The glass facade always looks out onto the forest, onto the ‘interim space’ according to the theory of Ivan Shalmin. But in this case, the forest behind glass is just an artistic device, a technique used by Ivan to create an infinite and boundless interior. Specialist tinted glass is used by the architect in quite a lot of his projects. This glass is almost invisible from the inside and the forest becomes a part of the interior, thereby endlessly expanding the boundaries of the building.
-  `,
+      Два объема  строения “пересекаются”, образуя  просвет — окно в  лес. Конструктивные решения, кажется, вообще нарушают общепринятые законы и правила. Как может строение размером с боинг опираться на  стекло?
+
+      Дом “отвернулся” от поселка с псевдобарочным строениями. На соседей выходят только глухие поверхности. Но сделано это лишь потому, что там находится юг. Все дома Иван Шалмин ориентирует в строгом соответствии со сторонами света. Причем главные — стеклянные —  фасады всегда обращает на север, а глухие стены — на юг. Таким образом архитектор защищает дома от жары, от перенасыщения интерьеров солнечным светом. “Когда стекло смотрит на север, ты как будто всегда в кепке, у тебя есть козырек. Света много, но он не слепит”.
+
+      Взамен окон на южном фасаде здания появилась оригинальная архитектурная подсветка — еще одно изобретение Ивана Шалмина. Чтобы ее создать, архитектору пришлось опытным путем искать нужный диаметр отверстий, в которые будет попадать свет от светодиодов. Подходящий размер был найден лишь на третий раз, но в итоге на фасад “спроецировано” звездное небо.
+
+      “Я слушаю клиента, но никогда не делаю то, что он хочет. Потому  что он не знает, что ему нужно. Я стараюсь найти это единственно правильное решение для  заказчика. В этом смысл работы архитектора”. Стеклянный фасад смотрит на лес — на “промежуточное пространство”, согласно теории Ивана Шалмина. Но в данном случае лес за стеклом – лишь художественный прием, инструмент для создания “бескрайнего” интерьера. “Волшебного стекла”, которое архитектор использует во всех своих проектах, изнутри практически не видно, и лес становится частью внутреннего пространства, расширяя его границы до бесконечности.
+    `
+  },
 
   more: '/architecture/publications/latvia',
 

@@ -1,7 +1,10 @@
 export const projects = [
   {
     slug: 'propylaeum',
-    title: 'propylaeum',
+    title: {
+      en: 'propylaeum',
+      ru: 'пропилеи',
+    },
     cover: {
       mobile: {
         src: '/images/projects/propylaeum/480/propylaeum480-4.webp',
@@ -21,7 +24,10 @@ export const projects = [
   },
   {
     slug: 'dinosaur',
-    title: 'dinosaur',
+    title: {
+      en: 'dinosaur',
+      ru: 'динозавр',
+    },
     cover: {
       mobile: {
         src: '/images/projects/dinosaur/480/dinosaur480-5.webp',
@@ -41,7 +47,10 @@ export const projects = [
   },
   {
     slug: 'glabrous',
-    title: 'glabrous',
+    title: {
+      en: 'glabrous',
+      ru: 'лысые',
+    },
     cover: {
       mobile: {
         src: '/images/projects/glabrous/480/glabrous480-3.webp',
@@ -61,7 +70,10 @@ export const projects = [
   },
   {
     slug: 'ghost',
-    title: 'ghost',
+    title: {
+      en: 'ghost',
+      ru: 'призрак',
+    },
     cover: {
       mobile: {
         src: '/images/projects/ghost/480/ghost480-29.webp',
@@ -81,7 +93,10 @@ export const projects = [
   },
   {
     slug: 'strotskis',
-    title: 'strotskis',
+    title: {
+      en: 'strotskis',
+      ru: 'строцкис',
+    },
     cover: {
       mobile: {
         src: '/images/projects/strotskis/480/strotskis480-8.webp',

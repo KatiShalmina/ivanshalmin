@@ -1,7 +1,7 @@
 export const domus = {
   slug: 'domus',
 
-  title: 'propylaeum',
+  title: 'propylaeum on the outskirts of moscow',
 
   subtitle: `
     domus

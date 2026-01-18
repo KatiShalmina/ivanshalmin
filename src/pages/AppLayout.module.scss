@@ -3,7 +3,7 @@
   flex-direction: column;
   min-width: 320px;
   min-height: 100vh;
-  font-family: 'ArchivoVariable', system-ui, sans-serif;
+  font-family: var(--font-en);
   font-size: 1rem;
   line-height: 1.5;
   color: var(--color-secondary);
@@ -11,7 +11,7 @@
 }
 
 :lang(ru) .page {
-  font-family: var(--font-secondary);
+  font-family: var(--font-primary);
 }
 
 .mainHome {

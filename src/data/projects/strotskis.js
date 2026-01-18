@@ -1,39 +1,68 @@
 export const strotskis = {
   slug: 'strotskis',
 
-  title: 'strotskis',
+  title: {
+    en: 'strotskis',
+    ru: 'строцкис'
+  },
 
-  subtitle: 'on a plate',
+  subtitle: {
+    en: 'on a plate',
+    ru: 'на блюдечке'
+  },
 
-  description: `
-    type: business centre
-    date of completion: 2014—2021
-    location: New Moscow, Russia
-    building area: 45 000 sqm
-    land area: 1.3 ha
-    constructor: Uninova Construction
-    photography: Olga Alexeyenko, Ivan Shalmin
-    text: Nadejda Plotnikova
-  `,
+  description: {
+    en: `
+      type: business centre
+      date of completion: 2014—2021
+      location: New Moscow, Russia
+      building area: 45 000 sqm
+      land area: 1.3 ha
+      constructor: Uninova Construction
+      photography: Olga Alexeyenko, Ivan Shalmin
+      text: Nadejda Plotnikova
+    `,
+    ru: `
+      тип: бизнес-центр
+      год постройки: 2014—2021
+      локация: Новая Москва
+      общая площадь: 45 000 кв.м
+      площадь участка: 1,3 га
+      генподрядчик: Uninova Construction
+      фото: Ольга Алексеенко, Иван Шалмин
+      текст: Надежда Плотникова
+    `
+  },
 
-  tagline: `
-    The Strotskis Business Centre is a class a office block currently under construction in new Moscow, Sherbinka.
-    It was commissioned to enhance the image of the client’s growing company but sadly, the local infrastructure does not match the standard of this new building.  
-  `,
+  tagline: {
+    en: 'The Strotskis Business Centre is a class a office block currently under construction in new Moscow, Sherbinka. It was commissioned to enhance the image of the client’s growing company but sadly, the local infrastructure does not match the standard of this new building.',
+    ru: 'Проект возводится в Новой Москве, в Щербинке. Имиджевое офисное здание — офисный центр класса А. К сожалению, ни окружение постройки, ни инфраструктура пока совершенно не соответствуют уровню архитектуры этого бизнес-центра.'
+  },
 
-  text: `
-    ‘In this area, the task was to create a dominant architectural landmark, that will inspire and motivate this whole territory to begin to function in a different way; that is to develop, to grow.’
+  text: {
+    en: `
+      ‘In this area, the task was to create a dominant architectural landmark, that will inspire and motivate this whole territory to begin to function in a different way; that is to develop, to grow.’
 
-    Why ‘on a plate’? Because the ‘plate’ is the stylobate, where the parking block is located; it’s split into 3 levels and provides 300 parking spaces. On top of the ‘plate’ there are 3 more volumes which differ in form, according to their function. First is the rectangular prism, 75 m in height. It has 18 floors and the capacity to house 1300 workers. Next is the cylinder containing 4 floors, filled with multiple eateries and cafes. One of the canteens, ‘Free Flow’ plans to open its doors to the general public as a restaurant every night. Finally, the cube will house a leisure centre for 100 visitors, a conference hall, an exhibition centre and much needed storage spaces.
+      Why ‘on a plate’? Because the ‘plate’ is the stylobate, where the parking block is located; it’s split into 3 levels and provides 300 parking spaces. On top of the ‘plate’ there are 3 more volumes which differ in form, according to their function. First is the rectangular prism, 75 m in height. It has 18 floors and the capacity to house 1300 workers. Next is the cylinder containing 4 floors, filled with multiple eateries and cafes. One of the canteens, ‘Free Flow’ plans to open its doors to the general public as a restaurant every night. The cube is a leisure centre for 100 visitors, a conference hall, an exhibition centre and much needed storage spaces.
 
-    As you approach from a nearby road, the facades appear to be quite modest, but they are very elegant. This elegance will become more apparent once the building sheds its scaffolding and protective plastic. Sooner or later, the rows of warehouses that surround the north side of the complex will disappear, which is advantageous as that space offers the best view of the new development.
+      As you approach from a nearby road, the facades appear to be quite modest, but they are very elegant. One more secret to mention is that the facade of the rectangular prism does not fully express the true structural grid. From level five, the openings within the facade start to follow a grid of their own, thereby hiding the true location of the floors within. The reason for this decision is simple — an illusion designed to visually reduce the height of the building.
 
-    One more secret to mention is that the facade of the rectangular prism does not fully express the true structural grid. From level five, the openings within the facade start to follow a grid of their own, thereby hiding the true location of the floors within. The reason for this decision is simple — an illusion designed to visually reduce the height of the building.
+      According to the architect, when it comes to office buildings, artistic vision is not as important as function and durability. As we examine the facades, we see Planibel Grey tinted glass [already present in the architect’s signature houses], transparent structural elements by Reynaers, NBK Terracotta panels by Hunter Douglas and high quality structural concrete, executed by Uninova Construction. This general contractor has done an excellent job and the concrete within the stylobate remain as it is, with no additional exterior cladding or finish.
 
-    According to the architect, when it comes to office buildings, artistic vision is not as important as function and durability. As we examine the facades, we see Planibel Grey tinted glass [already present in the architect’s signature houses], transparent structural elements by Reynaers, NBK Terracotta panels by Hunter Douglas and high quality structural concrete, executed by Uninova Construction. This general contractor has done an excellent job and the concrete within the stylobate will remain as it is, with no additional exterior cladding or finish.
+      In time this building will change its environment, it will set the new standard of quality for contemporary architecture in this developing area. Today, the glass facades reflect the clouds and the sky, but in years to come, these reflections will change into quality new architecture. Fortunately, there are already plans for future developments. The old warehouses are to be replaced by excellent housing and a new project for a large modern shopping centre is already underway. Hopefully, the inhabitants of Sherbinka will gain a better quality of life.
+    `,
+    ru: `
+      “В этом месте нельзя было оглядываться на окружение, здесь нужно было строить “aрх-aкцент”, чтобы он вдохновлял, мотивировал, заставлял эту территорию по-новому функционировать, жить, застраиваться”, — объясняет Иван. 
 
-    In time this building will change its environment, it will set the new standard of quality for contemporary architecture in this developing area. Today, the glass facades reflect the clouds and the sky, but in years to come, these reflections will change into quality new architecture. Fortunately, there are already plans for future developments. The old warehouses are to be replaced by excellent housing and a new project for a large modern shopping centre is already underway. Hopefully, the inhabitants of Sherbinka will gain a better quality of life.
-  `,
+      Почему “На блюдечке”? “Блюдечко” — это стилобатная часть, в которой расположена трехуровневая парковка на 300 машиномест. На нем расположены три разные по форме и функциональному назначению постройки. 18-этажный параллелепипед высотой 75 м — это офисное пространство, рассчитанное на 1300 сотрудников. В четырехэтажном цилиндре находится “общепит”: летнее кафе, кухня и столовая free flow, которая вечером функционирует как ресторан. Куб — это досугово-деловой центр: в нем расположен фитнес-центр на 100 посетителей, конференц-зал, выставочное пространство, складские помещения.
+
+      С дороги фасады выглядят скромными, но они пластичные. Есть у здания еще один секрет. Фасад параллелепипеда сделан с увеличенным шагом, то есть не за всеми глухими “лентами” на самом деле есть перекрытия. Сбивка начинается на уровне пятого этажа — там они уже сделаны скрытыми. Увеличенный шаг позволил визуально уменьшить масштабы — постройка на самом деле выше, чем кажется. 
+
+      В офисных зданиях, по мнению Ивана Шалмина, важен не столько художественный образ, сколько функциональность и высочайшее качество строительства. Потому, как и в проектах частных домов, вновь видим на фасадах тонированное в массе стекло Planibel Grey, светопрозрачные конструкции Reynaers, которые примыкают к фасадным панелям NBK Terracotta компании Hunter Douglas и очень качественный архитектурный бетон — спасибо генеральному подрядчику Uninova Construction. Бетон настолько хорош, что стилобатная часть такой и осталась — без всякой отделки.
+
+      Рано или поздно это здание обязательно обрастет соответствующим окружением  и станет образцом архитектуры Новой Москвы. При определенном свете в “волшебном стекле” будут отражаться не только облака, контейнеры и ветхое жилье, но и качественная современная архитектура. И, к счастью, предпосылки для развития территории есть. На месте старых складов будет построен жилой район, и уже разрабатывается проект нового торгового центра, который вырастет по соседству. Возможно, скоро жители Щербинки обретут новое качество жизни. 
+    `
+  },
 
   more: '/architecture/laconism',
 

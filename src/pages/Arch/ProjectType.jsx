@@ -1,5 +1,5 @@
 import { useState } from 'react'
-import { useParams } from 'react-router-dom'
+import { useParams, useLocation } from 'react-router-dom'
 import GalleryLightbox from '../../components/GalleryLightbox'
 import { types } from '../../data/projects/project-types'
 import styles from './ProjectType.module.scss'
@@ -9,6 +9,12 @@ import Video from '../../components/Video'
 
 export default function ProjectType() {
   const { slug } = useParams()
+  const location = useLocation()
+
+  const isRu =
+    location.pathname === '/ru' ||
+    location.pathname.startsWith('/ru/')
+
   const type = types.find(p => p.slug === slug)
 
   const [open, setOpen] = useState(false)
@@ -16,28 +22,34 @@ export default function ProjectType() {
 
   if (!type) return <p>Not found</p>
 
+  const pick = value =>
+    typeof value === 'string'
+      ? value
+      : value?.[isRu ? 'ru' : 'en'] ?? value?.en ?? ''
+
+  const tTitle = pick(type.title)
+  const tSubtitle = pick(type.subtitle)
+  const tDescription = pick(type.description)
+  const tTagline = pick(type.tagline)
+  const tText = pick(type.text)
+
+  const moreLabel = isRu ? 'узнать больше' : 'find out more'
+  const backLabel = isRu ? 'все проекты' : 'all projects'
+
   return (
     <section className={styles.type}>
-      <BackButton>all projects</BackButton>
-      <h1 className={styles.typeTitle}>{type.title}</h1>
-      <p className={styles.typeSubtitle}>{type.subtitle}</p>
+      <BackButton>{backLabel}</BackButton>
+      <h1 className={styles.typeTitle}>{tTitle}</h1>
+      <p className={styles.typeSubtitle}>{tSubtitle}</p>
       <div className={styles.typeDescription}>
-        {type.description
+        {tDescription
           .trim()
           .split('\n')
           .map((line, i) => (
             <p key={i}>{line.trim()}</p>
           ))}
       </div>
-      <div className={styles.typeTagline}>
-        {type.tagline
-          .trim()
-          .split('\n')
-          .map((line, i) => (
-            <p key={i}>{line.trim()}</p>
-          ))
-        }
-      </div>
+      <p className={styles.typeTagline}>{tTagline}</p>
       <div className={styles.typeGallery}>
         {type.gallery.map((img, i) => {
           const img480 = img.srcSet.find(pic => pic.width === 480)
@@ -73,7 +85,7 @@ export default function ProjectType() {
       </div>
       <div className={styles.textWrapper}>
         <div className={styles.typeText}>
-          {type.text
+          {tText
             .trim()
             .split('\n\n')
             .map((paragraph, i) => (
@@ -87,7 +99,7 @@ export default function ProjectType() {
           to={typeof type.more === 'string' ? type.more : type.more.href}
           external={typeof type.more === 'object' && type.more.external}
         >
-          find out more
+          {moreLabel}
         </MoreButton>
       </div>
       <GalleryLightbox
@@ -95,7 +107,7 @@ export default function ProjectType() {
         index={index}
         onClose={() => setOpen(false)}
         gallery={type.gallery}
-        title={type.title}
+        title={tTitle}
       />
     </section>
   )

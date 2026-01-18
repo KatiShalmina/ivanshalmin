@@ -2,9 +2,11 @@
   --color-primary: #000000;
   --color-secondary: #ffffff;
   --color-highlight: #999999;
+
+  --font-en: 'ArchivoVariable', system-ui, sans-serif;
 }
 
 :lang(ru) {
-  --font-primary: 'OpenSansVariable', system-ui, sans-serif;
-  --font-secondary: 'IBM Plex Mono', monospace;
+  --font-primary: 'InterVariable', system-ui, sans-serif;
+  --font-secondary: 'MontserratVariable', monospace;
 }

@@ -1,70 +1,112 @@
-import { Link } from 'react-router-dom'
+import { Link, useLocation } from 'react-router-dom'
 import styles from './MenuOverlay.module.scss'
 import closeIcon from '../assets/icons/close.svg'
 
 export default function MenuOverlay({ menuOpen, setMenuOpen }) {
+  const location = useLocation()
+
+  const isRu =
+    location.pathname === '/ru' ||
+    location.pathname.startsWith('/ru/')
+
+  const base = isRu ? '/ru' : ''
+
+  const nav = isRu
+    ? {
+        architecture: 'архитектура',
+        projects: 'проекты',
+        laconism: 'лаконизм',
+        publications: 'публикации',
+
+        paintings: 'живопись',
+        collections: 'коллекции',
+        exhibitions: 'выставки',
+        videoArt: 'видео-арт',
+
+        about: 'о петровиче',
+        bio: 'биография',
+        contact: 'контакты',
+      }
+    : {
+        architecture: 'architecture',
+        projects: 'projects',
+        laconism: 'laconism',
+        publications: 'publications',
+
+        paintings: 'paintings',
+        collections: 'collections',
+        exhibitions: 'exhibitions',
+        videoArt: 'video art',
+
+        about: 'about',
+        bio: 'bio',
+        contact: 'contact',
+      }
+    
+  const close = () => setMenuOpen(false)
+
   return (
     <div className={`${styles.overlay} ${menuOpen ? styles.open : ''}`}>
       <nav className={styles.overlayNav}>
         <div className={styles.overlayNavUnit}>
           <Link
-            to='/architecture'
+            to={`${base}/architecture`}
             className={styles.overlayMainLink}
-            onClick={() => setMenuOpen(false)}>            
-            architecture
+            onClick={close}>            
+            {nav.architecture}
           </Link>
           <ul className={styles.overlaySubList}>
             <li>
               <Link
-                to='/architecture/projects'
+                to={`${base}/architecture/projects`}
                 className={styles.overlaySubLink}
-                onClick={() => setMenuOpen(false)}
-              >projects</Link>
+                onClick={close}
+              >{nav.projects}</Link>
             </li>
             <li>
               <Link
-                to='/architecture/laconism'
+                to={`${base}/architecture/laconism`}
                 className={styles.overlaySubLink}
-                onClick={() => setMenuOpen(false)}
-              >laconism</Link>
+                onClick={close}
+              >{nav.laconism}</Link>
             </li>
             <li>
               <Link
-                to='/architecture/publications'
+                to={`${base}/architecture/publications`}
                 className={styles.overlaySubLink}
-                onClick={() => setMenuOpen(false)}
-              >publications</Link>
+                onClick={close}
+              >{nav.publications}</Link>
             </li>
           </ul>
         </div>
         <div className={styles.overlayNavUnit}>
           <Link
-            to='/paintings'
+            to={`${base}/paintings`}
             className={styles.overlayMainLink}
-            onClick={() => setMenuOpen(false)}>
-            paintings
+            onClick={close}>
+            {nav.paintings}
           </Link>
           <ul className={styles.overlaySubList}>
             <li>
               <Link
-                to='/paintings/collections'
+                to={`${base}/paintings/collections`}
                 className={styles.overlaySubLink}
-                onClick={() => setMenuOpen(false)}
-              >collections</Link>
+                onClick={close}
+              >{nav.collections}</Link>
             </li>
             <li>
               <Link
-                to='/paintings/exhibitions'
+                to={`${base}/paintings/exhibitions`}
                 className={styles.overlaySubLink}
-                onClick={() => setMenuOpen(false)}
-              >exhibitions</Link>
+                onClick={close}
+              >{nav.exhibitions}</Link>
             </li>
             <li>
               <Link
-                to='/paintings/video-art'
+                to={`${base}/paintings/video-art`}
                 className={styles.overlaySubLink}
-                onClick={() => setMenuOpen(false)}
-              >video art</Link>
+                onClick={close}
+              >{nav.videoArt}</Link>
             </li>
           </ul>
         </div>
@@ -72,30 +114,30 @@ export default function MenuOverlay({ menuOpen, setMenuOpen }) {
           <Link
             to='/about'
             className={styles.overlayMainLink}
-            onClick={() => setMenuOpen(false)}>
-            about
+            onClick={close}>
+            {nav.about}
           </Link>
           <ul className={styles.overlaySubList}>
             <li>
               <Link
-                to='/about/bio'
+                to={`${base}/about`}
                 className={styles.overlaySubLink}
-                onClick={() => setMenuOpen(false)}
-              >bio</Link>
+                onClick={close}
+              >{nav.bio}</Link>
             </li>
             <li>
               <Link
-                to='/about/contact'
+                to={`${base}/about/bio`}
                 className={styles.overlaySubLink}
-                onClick={() => setMenuOpen(false)}
-              >contact</Link>
+                onClick={close}
+              >{nav.contact}</Link>
             </li>
           </ul>
         </div>
       </nav>
       <button
         className={styles.closeButton}
-        onClick={() => setMenuOpen(false)}
+        onClick={close}
         aria-label='Close menu'
         type='button'
       >

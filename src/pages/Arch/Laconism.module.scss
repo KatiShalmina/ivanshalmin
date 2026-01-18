@@ -17,11 +17,9 @@
   font-stretch: 115%;
 }
 
-.laconismSubtitle {
-  margin-bottom: clamp(4px, 4vw, 1rem);
-  font-size: clamp(1.2rem, 2vw, 2.5rem);
+:lang(ru) .laconismTitle {
+  font-family: var(--font-secondary);
   font-weight: 300;
-  font-stretch: 115%;
 }
 
 .laconismUnit p {
@@ -43,6 +41,11 @@
   font-stretch: 115%;
 }
 
+:lang(ru) .awardsTitle {
+  font-family: var(--font-secondary);
+  font-weight: 300;
+}
+
 .awardsUnit p {
   margin-bottom: 10px;
   font-size: clamp(1.2rem, 2vw, 1.7rem);
@@ -59,11 +62,11 @@
   margin-bottom: 1rem;
 }
 
-.laconismShortItem {
+.laconismShortList li {
   margin-bottom: clamp(1.7rem, 4vw, 3rem);
 }
 
-.laconismShortItem p {
+.laconismShortList li p {
   margin-bottom: clamp(10px, 4vw, 1rem);
 }
 

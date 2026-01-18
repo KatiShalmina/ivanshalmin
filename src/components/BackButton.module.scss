@@ -4,8 +4,11 @@
   gap: 4px;
   width: max-content;
   margin-bottom: clamp(2rem, 4vw, 4.3rem);
-  padding: 4px 0;
+  padding: 8px 0;
   font-size: clamp(1rem, 2vw, 1.2rem);
+  line-height: 1.1;
+  font-weight: 300;
+  font-stretch: 115%;
   color: var(--color-secondary);
 
   @media (min-width: 1024px) {
@@ -17,6 +20,11 @@
       color: var(--color-secondary);
     }
   }
+}
+
+:lang(ru) .backButton {
+  font-family: var(--font-secondary);
+  font-weight: 400;
 }
 
 .backIcon {

@@ -1,43 +1,69 @@
 export const propylaeum = {
   slug: 'propylaeum',
 
-  title: 'propylaeum',
+  title: {
+    en: 'propylaeum',
+    ru: 'пропилеи'
+  },
 
-  subtitle: 'on the outskirts of Moscow',
+  description: {
+    en: `
+      type: family house
+      date of completion: 2009
+      location: Moscow Region, Russia
+      building area: 1300 sqm
+      land area: 0.25 ha
+      photography: Ivan Shalmin
+      text: Nadejda Plotnikova
+    `,
+    ru: `
+      тип: дом для семьи 
+      год постройки: 2009
+      локация: Московская область
+      общая площадь: 1300 кв.м
+      площадь участка: 0,25 га 
+      фото: Иван Шалмин
+      текст: Надежда Плотникова
+    `
+  },
 
-  description: `
-    type: family house
-    date of completion: 2009
-    location: Moscow Region, Russia
-    building area: 1300 sqm
-    land area: 0.25 ha
-    photography: Ivan Shalmin
-    text: Nadejda Plotnikova
-  `,
+  tagline: {
+    en: 'The intersection of two volumes of different textures blurs the boundaries between the interior and the exterior. The walls dissolve.',
+    ru: 'Пересечение двух объемов разных фактур стирает границы между внешним и внутренним. Стены растворяются.'
+  },
 
-  tagline: `
-    The intersection of two volumes of different textures blurs the boundaries between the interior and the exterior. 
-    
-    The walls dissolve.
-  `,
+  text: {
+    en: `
+      In this project, Ivan Shalmin reinterprets the idea of the ancient greek propylaeum. The main space — the propylaeum, is formed at the intersection of the two main volumes and manifests itself as a large double height living area [around 6 m in height]. This architectural motif can also be seen in other areas of the project. For example, on the outside gates and in the window frames. Just like in antiquity, the structural principle is turned into a consistent theme that can be seen throughout the project.
 
-  text: `
-    In this project, Ivan Shalmin reinterprets the idea of the ancient greek propylaeum. The main space — the propylaeum, is formed at the intersection of the two main volumes and manifests itself as a large double height living area [around 6 m in height]. This architectural motif can also be seen in other areas of the project. For example, on the outside gates and in the window frames. Just like in antiquity, the structural principle is turned into a consistent theme that can be seen throughout the project.
+      What’s different about this building is the architect’s philosophy — to eliminate the so-called interim spaces. This modern propylaeum is situated at the intersection of the two main volumes and it forms the main living area, the heart of the project. One of the key practical tasks was to keep all the trees on the land and so the architect designed a form that reflects its surroundings as well as itself. In this way, two volumes appeared, one clad in clinker brick, the other in wood and the intersection between them has turned into glass. More specifically, Plainbel Grey, a specialist type of glass that gives a one-way mirror effect.
 
-    What’s different about this building is the architect’s philosophy — to eliminate the so-called interim spaces. This modern propylaeum is situated at the intersection of the two main volumes and it forms the main living area, the heart of the project. One of the key practical tasks was to keep all the trees on the land and so the architect designed a form that reflects its surroundings as well as itself. In this way, two volumes appeared, one clad in clinker brick, the other in wood and the intersection between them has turned into glass. More specifically, Plainbel Grey, a specialist type of glass that gives a one-way mirror effect.
+      As a result, the inside and the outside have merged together. The surroundings have visually flooded the building through the reflections caused by the glass. Activated by the changes in natural and artificial lighting, these reflections start to overlap and intersect, always creating new imagery and thereby transforming the entire space.
 
-    As a result, the inside and the outside have merged together. The surroundings have visually flooded the building through the reflections caused by the glass. Activated by the changes in natural and artificial lighting, these reflections start to overlap and intersect, always creating new imagery and thereby transforming the entire space.
+      Another key element of this house is the custom open staircase in the living area, made up of self-supporting steps; identical units made up of a rust-proof steel frame that carries a piece of Planibel Grey. When bolted together to overlap with one another, these units become self-supporting and therefore structural. Each step, due to its transparency, evokes an illusion of weightlessness. But there’s more; as the spectator moves across the stairs, their viewing angle changes. Thus, every step becomes an additional device to further activate the ongoing play between those ever-changing reflections.
 
-    Another key element of this house is the custom open staircase in the living area, made up of self-supporting steps; identical units made up of a rust-proof steel frame that carries a piece of Planibel Grey. When bolted together to overlap with one another, these units become self-supporting and therefore structural. Each step, due to its transparency, evokes an illusion of weightlessness. But there’s more; as the spectator moves across the stairs, their viewing angle changes. Thus, every step becomes an additional device to further activate the ongoing play between those ever-changing reflections.
+      The architect used ‘dense’ cladding materials — dark wood and black clinker brick, specifically to further blend the building into the surroundings. ‘Had the house been clad in different materials, it would have been an eye-sore; but this way the building dissolves into the pine forest’. And it also has its own transparent volume — the propylaeum.
 
-    The architect used ‘dense’ cladding materials — dark wood and black clinker brick, specifically to further blend the building into the surroundings. ‘Had the house been clad in different materials, it would have been an eye-sore; but this way the building dissolves into the pine forest’. And it also has its own transparent volume — the propylaeum.
+      The concept of the propylaeum was so successful that with few alterations, this project has since been built on another 6 sites.
+    `,
+    ru: `
+      В этом проекте Иван Шалмин интерпретирует идею античных пропилей. Главное пространство — пропилеи — образуется на пересечении двух основных объемов и представляет собой огромный двусветный зал [высота потолков около 6 метров]. Мотив прослеживается на наружных воротах и в обрамлении окон. Как и в далекой античности, строительная конструкция здесь превращена в образ.
 
-    The concept of the propylaeum was so successful that with few alterations, this project has since been built on another 6 sites.
-  `,
+      Особенность этого проекта — отказ от так называемого промежуточного пространства. Современные пропилеи помещены на пересечении двух основных объемов постройки. Одной из практических задач была сохранение деревьев, поэтому “была найдена такая форма, которая отражает все окружение и отражается сама в себе”. Так и возникли две фактуры, а точнее, два объема из разных фактур. Непринципиально, что один сделан из клинкера, другой из дерева, главное, что фактуры разные. Промежуточным материалом стало тонированное стекло Planibel Grey, которое дает эффект “глубокого зеркала”.
+
+      В результате произошло смешение внутреннего и внешнего. Окружение за пределами дома визуально оказалось внутри него — благодаря отражениям, а на всех плоскостях в интерьере началась игра постоянно изменяющихся “картинок” [например, на поверхности шкафа в прихожей отражаются фасады]. Благодаря игре света и бликов, сталкивающихся и пересекающихся, создается дополнительный рисунок, постоянно меняющийся и каждый раз придающий интерьеру новый облик.
+
+      Еще один яркий элемент — открытая парадная лестница в светлом зале. В ее конструкции реализован принцип самонесущих ступеней. Одинаковые элементы были изготовлены на заводе, а затем при помощи болтовых соединений конструкцию превратили в жесткую. Металлические ступени выполнены из полированной нержавейки, а сверху положено стекло Planibel Grey. Каждая ступень благодаря общей прозрачности как бы приподнимает стоящего на ней, он словно находится в невесомости, и каждый следующий шаг меняет его восприятие окружающего пространства благодаря дополнительным бликам, поддерживающим общую игру отражений.
+
+      Вписывая дом в окружающий лес, будучи ограничен площадью участка 0,5 га с одной стороны и отнюдь не маленькими размерами дома с другой, архитектор использовал “плотные” отделочные материалы: не белое дерево, а темное, черный клинкер. “Если бы дом сделали из других материалов, он был бы как бельмо в глазу, а в таком виде здание растворяется в сосновом лесу”. И при этом имеет еще и сквозной просвет — пропилеи.
+
+      Концепция пропилеев оказалась настолько удачной, что с небольшими поправками была реализована на шести объектах.
+    `
+  },
 
   more: '/architecture/publications/domus',
 
-  gallery: [ 
+  gallery: [
     {
       id: 1,
       src: '/images/projects/propylaeum/original/propylaeum-1.webp',
@@ -69,7 +95,7 @@ export const propylaeum = {
       ],
     },
     {
-      id: 3, 
+      id: 3,
       src: '/images/projects/propylaeum/original/propylaeum-3.webp',
       srcSet: [
         { src: '/images/projects/propylaeum/original/propylaeum-3.webp', width: 2362 },

@@ -12,6 +12,11 @@
   line-height: 1.1;
 }
 
+:lang(ru) .paintingTitle {
+  font-family: var(--font-secondary);
+  font-weight: 300;
+}
+
 .paintingDescription {
   font-size: clamp(1.2rem, 2vw, 2.5rem);
   font-weight: 300;

@@ -8,6 +8,18 @@ export default function Header({ setMenuOpen }) {
   const isRu = location.pathname === '/ru' || location.pathname.startsWith('/ru/')
   const base = isRu ? '/ru' : ''
 
+  const mainNav = isRu 
+    ? {
+        architecture: 'архитектура',
+        paintings: 'живопись',
+        about: 'о петровиче',
+      }
+    : {
+        architecture: 'architecture',
+        paintings: 'paintings',
+        about: 'about',
+      }
+
   const isHome = location.pathname === base + '/'
 
   const activeMain = {
@@ -26,12 +38,21 @@ export default function Header({ setMenuOpen }) {
   return (
     <header className={styles.header}>
       <div className={styles.headerWrapper}>
-        <Link
+        <div className={styles.logoWrapper}>
+          <Link
           to={base + '/'}
           className={`${styles.logo} ${isHome ? styles.logoHome : ''}`}
         >
           Ivan Shalmin
         </Link>
+        <Link
+          to={switchLangPath}
+          className={`${styles.langSwitch} ${isHome ? styles.langHome : ''}`}
+          aria-label='Switch language'
+        >
+          {isRu ? 'en' : 'ru'}
+        </Link>
+        </div>
         <div>
           {!isHome && (
             <nav className={styles.mainNav}>
@@ -39,38 +60,29 @@ export default function Header({ setMenuOpen }) {
                 to={`${base}/architecture`}
                 className={styles.mainNavLink}
                 style={({ isActive }) => isActive ? activeMain : null}>
-                architecture
+                {mainNav.architecture}
               </NavLink>
               <NavLink
                 to={`${base}/paintings`}
                 className={styles.mainNavLink}
                 style={({ isActive }) => isActive ? activeMain : null}>
-                paintings
+                {mainNav.paintings}
               </NavLink>
               <NavLink
-                to={`${base}/paintings`}
+                to={`${base}/about`}
                 className={styles.mainNavLink} style={({ isActive }) => isActive ? activeMain : null}>
-                about
+                {mainNav.about}
               </NavLink>
             </nav>
           )}
-          <div className={styles.buttonWrapper}>
-            <Link
-              to={switchLangPath}
-              className={`${styles.langSwitch} ${isHome ? styles.langHome : ''}`}
-              aria-label='Switch language'
-            >
-              {isRu ? 'en' : 'ru'}
-            </Link>
-            <button
-              className={styles.burger}
-              onClick={() => setMenuOpen(true)}
-              aria-label="Open menu"
-              type='button'
-            >
-              <img src={burgerIcon} alt='' />
-            </button>
-          </div>
+          <button
+            className={styles.burger}
+            onClick={() => setMenuOpen(true)}
+            aria-label='Open menu'
+            type='button'
+          >
+            <img src={burgerIcon} alt='' />
+          </button>
         </div>
       </div>
     </header>

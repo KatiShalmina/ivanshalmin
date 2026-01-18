@@ -1,7 +1,25 @@
-import { Outlet, NavLink } from 'react-router-dom'
+import { Outlet, NavLink, useLocation } from 'react-router-dom'
 import styles from '../SectionLayout.module.scss'
 
 export default function ArchitectureLayout() {
+  const location = useLocation()
+
+  const isRu =
+    location.pathname === '/ru' ||
+    location.pathname.startsWith('/ru/')
+
+  const subnav = isRu
+    ? {
+        projects: 'проекты',
+        laconism: 'лаконизм',
+        publications: 'публикации',
+      }
+    : {
+        projects: 'projects',
+        laconism: 'laconism',
+        publications: 'publications',
+      }
+
   const activeStyle = {
     fontWeight: '600',
     border: '1px solid var(--color-secondary)',
@@ -18,7 +36,7 @@ export default function ArchitectureLayout() {
               className={styles.subnavLink}
               style={({ isActive }) => isActive ? activeStyle : null}
             >
-              projects
+              {subnav.projects}
             </NavLink>
           </li>
           <li className={styles.subnavItem}>
@@ -27,7 +45,7 @@ export default function ArchitectureLayout() {
               className={styles.subnavLink}
               style={({ isActive }) => isActive ? activeStyle : null}
             >
-              laconism
+              {subnav.laconism}
             </NavLink>
           </li>
           <li className={styles.subnavItem}>
@@ -36,7 +54,7 @@ export default function ArchitectureLayout() {
               className={styles.subnavLink}
               style={({ isActive }) => isActive ? activeStyle : null}
             >
-              publications
+              {subnav.publications}
             </NavLink>
           </li>
         </ul>

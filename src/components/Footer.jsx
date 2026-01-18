@@ -4,12 +4,58 @@ import { NavLink, useLocation } from 'react-router-dom'
 export default function Footer() {
   const { pathname } = useLocation()
 
-  const isArch = pathname.startsWith('/architecture')
-  const isPaintings = pathname.startsWith('/paintings')
-  const isAbout = pathname.startsWith('/about')
+  const isRu = pathname === '/ru' || pathname.startsWith('/ru/')
+  const base = isRu ? '/ru' : ''
+
+  const normalizedPath = isRu ? pathname.replace(/^\/ru/, '') || '/' : pathname
+
+  const isArch = normalizedPath.startsWith('/architecture')
+  const isPaintings = normalizedPath.startsWith('/paintings')
+  const isAbout = normalizedPath.startsWith('/about')
 
   const unitClass = isActive =>
     `${styles.footerUnit} ${isActive ? styles.footerUnitActive : ''}`
+
+  const footer = isRu
+    ? {
+        architecture: 'архитектура',
+        projects: 'проекты',
+        laconism: 'лаконизм',
+        publications: 'публикации',
+
+        paintings: 'живопись',
+        collections: 'коллекции',
+        exhibitions: 'выставки',
+        videoArt: 'видео-арт',
+
+        about: 'о петровиче',
+        bio: 'биография',
+        contact: 'контакты',
+
+        rights: '©IvanShalmin. Все права защищены.',
+      }
+    : {
+        architecture: 'architecture',
+        projects: 'projects',
+        laconism: 'laconism',
+        publications: 'publications',
+
+        paintings: 'paintings',
+        collections: 'collections',
+        exhibitions: 'exhibitions',
+        videoArt: 'video art',
+
+        about: 'about',
+        bio: 'bio',
+        contact: 'contact',
+
+        rights: '© IvanShalmin. All rights reserved.',
+      }
+
+  const subLinkClass = ({ isActive }) =>
+    isActive
+      ? `${styles.footerSubLink} ${styles.footerSubLinkActive}`
+      : styles.footerSubLink
 
   return (
     <footer className={styles.footer}>
@@ -17,132 +63,100 @@ export default function Footer() {
         <nav className={styles.footerNav}>
           <div className={unitClass(isArch)}>
             <NavLink
-              to='/architecture'
+              to={`${base}/architecture`}
               className={styles.footerMainLink}
             >
-              architecture
+              {footer.architecture}
             </NavLink>
             <ul className={styles.footerList}>
               <li>
                 <NavLink
-                  to='/architecture/projects'
-                  className={({ isActive }) =>
-                    isActive
-                      ? `${styles.footerSubLink} ${styles.footerSubLinkActive}`
-                      : styles.footerSubLink
-                  }
+                  to={`${base}/architecture/projects`}
+                  className={subLinkClass}
                 >
-                  projects
+                  {footer.projects}
                 </NavLink>
               </li>
               <li>
                 <NavLink
-                  to='/architecture/laconism'
-                  className={({ isActive }) =>
-                    isActive
-                      ? `${styles.footerSubLink} ${styles.footerSubLinkActive}`
-                      : styles.footerSubLink
-                  }
+                  to={`${base}/architecture/laconism`}
+                  className={subLinkClass}
                 >
-                  laconism
+                  {footer.laconism}
                 </NavLink>
               </li>
               <li>
                 <NavLink
-                  to='/architecture/publications'
-                  className={({ isActive }) =>
-                    isActive
-                      ? `${styles.footerSubLink} ${styles.footerSubLinkActive}`
-                      : styles.footerSubLink
-                  }
+                  to={`${base}/architecture/publications`}
+                  className={subLinkClass}
                 >
-                  publications
+                  {footer.publications}
                 </NavLink>
               </li>
             </ul>
           </div>
           <div className={unitClass(isPaintings)}>
             <NavLink
-              to='/paintings'
+              to={`${base}/paintings`}
               className={styles.footerMainLink}
             >
-              paintings
+              {footer.paintings}
             </NavLink>
             <ul className={styles.footerList}>
               <li>
                 <NavLink
-                  to='/paintings/collections'
-                  className={({ isActive }) =>
-                    isActive
-                      ? `${styles.footerSubLink} ${styles.footerSubLinkActive}`
-                      : styles.footerSubLink
-                  }
+                  to={`${base}/paintings/collections`}
+                  className={subLinkClass}
                 >
-                  collections
+                  {footer.collections}
                 </NavLink>
               </li>
               <li>
                 <NavLink
-                  to='/paintings/exhibitions'
-                  className={({ isActive }) =>
-                    isActive
-                      ? `${styles.footerSubLink} ${styles.footerSubLinkActive}`
-                      : styles.footerSubLink
-                  }
+                  to={`${base}/paintings/exhibitions`}
+                  className={subLinkClass}
                 >
-                  exhibitions
+                  {footer.exhibitions}
                 </NavLink>
               </li>
               <li>
                 <NavLink
-                  to='/paintings/video-art'
-                  className={({ isActive }) =>
-                    isActive
-                      ? `${styles.footerSubLink} ${styles.footerSubLinkActive}`
-                      : styles.footerSubLink
-                  }
+                  to={`${base}/paintings/video-art`}
+                  className={subLinkClass}
                 >
-                  video art
+                  {footer.videoArt}
                 </NavLink>
               </li>
             </ul>
           </div>
           <div className={unitClass(isAbout)}>
             <NavLink
-              to='/about'
+              to={`${base}/about`}
               className={styles.footerMainLink}
             >
-              about
+              {footer.about}
             </NavLink>
             <ul className={styles.footerList}>
               <li>
                 <NavLink
-                  to='/about/bio'
-                  className={({ isActive }) =>
-                    isActive
-                      ? `${styles.footerSubLink} ${styles.footerSubLinkActive}`
-                      : styles.footerSubLink
-                  }
+                  to={`${base}/about/bio`}
+                  className={subLinkClass}
                 >
-                  bio
+                  {footer.bio}
                 </NavLink>
               </li>
               <li>
                 <NavLink
-                  to='/about/contact'
-                  className={({ isActive }) =>
-                    isActive
-                      ? `${styles.footerSubLink} ${styles.footerSubLinkActive}`
-                      : styles.footerSubLink
-                  }
+                  to={`${base}/about/contact`}
+                  className={subLinkClass}
                 >
-                  contact
+                  {footer.contact}
                 </NavLink>
               </li>
             </ul>
           </div>
         </nav>
-        <p className={styles.copyright}>© IvanShalmin. All rights reserved.</p>
+        <p className={styles.copyright}>{footer.rights}</p>
       </div>
     </footer>
   )

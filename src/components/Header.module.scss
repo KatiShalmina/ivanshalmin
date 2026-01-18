@@ -44,6 +44,10 @@
   color: var(--color-secondary);
 }
 
+:lang(ru) .logo {
+  font-family: var(--font-en);
+}
+
 .mainNav {
   display: none;
 
@@ -71,10 +75,12 @@
 
 :lang(ru) .mainNavLink {
   font-family: var(--font-secondary);
+  font-weight: 400;
 }
 
-.buttonWrapper {
+.logoWrapper {
   display: flex;
+  gap: clamp(1rem, 2vw, 2rem);
 }
 
 .langSwitch {
@@ -98,6 +104,16 @@
 
 .langHome {
   color: var(--color-secondary);
+  transition: color 0.4s ease;
+
+  &:hover,
+  &:focus-visible {
+    color: var(--color-highlight);
+  }
+}
+
+:lang(ru) .langSwitch {
+  font-family: var(--font-en);
 }
 
 .burger {

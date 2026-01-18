@@ -1,15 +1,33 @@
-import { Link } from 'react-router-dom'
+import { Link, useLocation } from 'react-router-dom'
 import styles from './Card.module.scss'
 
 export default function Card({ to, state, title, cover }) {
+  const location = useLocation()
+
   if (!cover) return null;
+
+  const isRu =
+    location.pathname === '/ru' ||
+    location.pathname.startsWith('/ru/')
+
+  const base = isRu ? '/ru' : ''
+
+  const resolvedTo =
+    typeof to === 'string'
+      ? `${base}${to.startsWith('/') ? to : `/${to}`}`
+      : to
+
+  const resolvedTitle =
+    typeof title === 'string'
+      ? title
+      : title?.[isRu ? 'ru' : 'en'] ?? title?.en ?? ''
 
   const isPaintingsCover = Boolean(cover.src || cover.srcSet)
 
   return (
     <div className={styles.card}>
       <Link 
-        to={to}
+        to={resolvedTo}
         state={state} 
         className={styles.cardLink}
         data-painting-slug={state?.focusSlug}
@@ -20,7 +38,7 @@ export default function Card({ to, state, title, cover }) {
             src={cover.src}
             srcSet={cover.srcSet}
             sizes={cover.sizes ?? '100vw'}
-            alt={title}
+            alt={resolvedTitle}
             loading='lazy'
           />
         ) : (
@@ -34,13 +52,13 @@ export default function Card({ to, state, title, cover }) {
               src={cover.mobile.src}
               srcSet={cover.mobile.srcSet}
               sizes={cover.mobile.sizes ?? '100vw'}
-              alt={title}
+              alt={resolvedTitle}
               loading='lazy'
             />
           </picture>
         )}
         <div className={styles.cardInfo}>
-          <h2 className={styles.cardTitle}>{title}</h2>
+          <h2 className={styles.cardTitle}>{resolvedTitle}</h2>
         </div>
       </Link>
     </div >

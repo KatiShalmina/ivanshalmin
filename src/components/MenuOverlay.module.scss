@@ -40,10 +40,20 @@
   font-stretch: 115%;
 }
 
+:lang(ru) .overlayMainLink {
+  font-family: var(--font-secondary);
+  font-weight: 400;
+}
+
 .overlaySubLink {
   display: inline-block;
   margin: 0 0 8px;
   font-size: 1.2rem;
   font-weight: 300;
   font-stretch: 115%;
+}
+
+:lang(ru) .overlaySubLink {
+  font-family: var(--font-secondary);
+  font-weight: 400;
 }

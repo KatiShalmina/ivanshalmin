@@ -1,7 +1,23 @@
-import { Outlet, NavLink } from 'react-router-dom'
+import { Outlet, NavLink, useLocation } from 'react-router-dom'
 import styles from '../SectionLayout.module.scss'
 
 export default function AboutLayout() {
+  const location = useLocation()
+
+  const isRu =
+    location.pathname === '/ru' ||
+    location.pathname.startsWith('/ru/')
+
+  const subnav = isRu
+    ? {
+        bio: 'биография',
+        contact: 'контакты',
+      }
+    : {
+        bio: 'bio',
+        contact: 'contact',
+      }
+
   const activeStyle = {
     fontWeight: '600',
     border: '1px solid var(--color-secondary)',
@@ -18,7 +34,7 @@ export default function AboutLayout() {
               className={styles.subnavLink}
               style={({ isActive }) => isActive ? activeStyle : null}
             >
-              bio
+              {subnav.bio}
             </NavLink>
           </li>
           <li className={styles.subnavItem}>
@@ -27,7 +43,7 @@ export default function AboutLayout() {
               className={styles.subnavLink}
               style={({ isActive }) => isActive ? activeStyle : null}
             >
-              contact
+              {subnav.contact}
             </NavLink>
           </li>
         </ul>
