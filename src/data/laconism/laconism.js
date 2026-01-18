@@ -72,7 +72,7 @@ export const laconismContent = {
           },
           {
             type: 'highlight',
-            text: 'But the most important phrase, that modern architecture <q>should open like a flower,</q> although met with many smiles was not yet understood by the audience. Only 40 years later did I begin to fully comprehend the meaning of that phrase.'
+            text: 'But the most important phrase, that modern architecture should open like a flower, although met with many smiles was not yet understood by the audience. Only 40 years later did I begin to fully comprehend the meaning of that phrase.'
           }
         ]
       },
@@ -154,7 +154,7 @@ export const laconismContent = {
           },
           {
             type: 'quote',
-            text: 'Functionality, durability, beauty.',
+            text: '‘Functionality, durability, beauty.’',
             author: 'Vitruvius'
           },
           {
@@ -185,7 +185,7 @@ export const laconismContent = {
           },
           {
             type: 'p',
-            text: 'Propylaeum [2010]. The intersection of two volumes of different textures blurs the boundaries between the interior and the exterior. The walls dissolve...'
+            text: 'Suburban Moscow Propylaeum [2010]. The intersection of two volumes of different textures blurs the boundaries between the interior and the exterior. The walls dissolve...'
           },
           {
             type: 'more',
@@ -271,16 +271,16 @@ export const laconismContent = {
           {
             type: 'ol',
             items: [
-              'Green design and sustainable technologies. [These are just materials.]',
-              'Smart and automated houses. [This is technological progress, not architecture.]',
-              'The kitchen as the main course. [Not new — F.L. Wright.]',
-              'The bathroom as a space for relaxation. [Already done — in palaces.]',
-              'The development of an industrial style. [This is plain stupidity, not a style.]',
-              'A new minimalism. [Laconism.]',
-              'Reformation and restoration of historic and industrial buildings. [Not new — loft.]',
-              'Less noise, more light. [Not new.]',
-              'Development of outdoor spaces, landscaping. [Interim spaces have always been there.]',
-              'The passive house. [Not new — energy efficiency.]'
+              'Green design and sustainable technologies [these are just materials].',
+              'Smart and automated houses [this is technological progress, not architecture].',
+              'The kitchen as the main course [not new — F.L. Wright].',
+              'The bathroom as a space for relaxation [already done — in palaces].',
+              'The development of an industrial style [this is plain stupidity, not a style].',
+              'A new minimalism [laconism].',
+              'Reformation and restoration of historic and industrial buildings [not new — loft].',
+              'Less noise, more light [not new].',
+              'Development of outdoor spaces, landscaping [interim spaces have always been there].',
+              'The passive house [not new — energy efficiency].'
             ]
           }
         ]
@@ -291,7 +291,7 @@ export const laconismContent = {
         blocks: [
           {
             type: 'quote',
-            text: 'The devil showed us fashion and went down under, lashing.',
+            text: '‘The devil showed us fashion and went down under, lashing.’',
             author: 'my grandma, may she rest in peace'
           },
           {
@@ -328,7 +328,7 @@ export const laconismContent = {
           },
           {
             type: 'highlight',
-            text: 'Life next to the wall is the homeless. Life behind the wall is what everyone dreams about. In truth, the wall is inside our lives. [1985—2020].'
+            text: 'Life next to the wall is the homeless. Life behind the wall is what everyone dreams about. In truth, the wall is inside our lives [1985—2020].'
           },
           {
             type: 'p',
@@ -358,8 +358,8 @@ export const laconismContent = {
         title: 'the art of sufficient necessity',
         blocks: [
           {
-            type: 'highlight',
-            text: 'The client is always wrong.'
+            type: 'p',
+            text: 'The client is always wrong!'
           },
           {
             type: 'p',
@@ -388,7 +388,7 @@ export const laconismContent = {
         title: 'project economics',
         blocks: [
           {
-            type: 'highlight',
+            type: 'p',
             text: 'Correct distribution of investor’s funds for maximum result.'
           },
           {
@@ -409,16 +409,12 @@ export const laconismContent = {
         title: 'the principles of site surveillance',
         blocks: [
           {
-            type: 'p',
-            text: '[Everything is to be executed strictly according to technical drawings as well as adopted rules and principles.]'
-          },
-          {
             type: 'ol',
             items: [
               'Development and agreement of all technical processes on site, in advance, with the general contractor.',
               'Execution.',
               'Amendment of technical drawings if necessary.',
-              'Strict and regular surveillance of all works at all stages, with zero compromise.'
+              'Strict and regular surveillance of all works at all stages, with zero compromise [everything is to be executed strictly according to technical drawings as well as adopted rules and principles].'
             ]
           }
         ]
@@ -458,21 +454,21 @@ export const laconismContent = {
             items: [
               'Publications [online and physical].',
               'Exhibitions.',
-              'Lectures',
+              'Lectures.',
               'Competitions. [In recent years, everything became internet-based, including the voting process. This is not right.]'
             ]
           },
           {
             type: 'p',
-            text: 'We should return to having physical exhibitions, so that the participants and the spectators can see all the works in the same format, on one wall. It would be best to have presentations to introduce the projects and then discussions.'
+            text: 'We should return to having physical exhibitions, so that the participants and the spectators can see all the works in the same format, on one wall. It would be best to have presentations to introduce the projects and then discussions. Judging should also be done within the gallery.'
           },
           {
             type: 'highlight',
-            text: 'Judging should also be done within the gallery.'
+            text: 'The jury: 1—5 [not more] professionals — active architects.'
           },
           {
             type: 'p',
-            text: 'The jury: 1—5 [not more] professionals — active architects. Otherwise, as often is the case, the jury consists of more than 40 people. This means it’s impossible to judge the work properly and their verdict starts to equate to public opinion.'
+            text: 'Otherwise, as often is the case, the jury consists of more than 40 people. This means it’s impossible to judge the work properly and their verdict starts to equate to public opinion.'
           }
         ]
       },
@@ -506,6 +502,12 @@ export const laconismContent = {
             type: 'p',
             text: 'Architecture always has and always will develop according to the needs of man and society, with a caring attitude towards nature.'
           },
+        ]
+      },
+      {
+        id: 'video',
+        title: 'a film on laconism',
+        blocks: [
           {
             type: 'video',
             videoId: 'kUtD1xkwEjI',
@@ -531,7 +533,7 @@ export const laconismContent = {
               ],
               [
                 'Architecture = functionality + durability + beauty.',
-                ' Architectural space = the hole in the centre of a ring doughnut.'
+                'Architectural space = the hole in the centre of a ring doughnut.'
               ],
               [
                 'Laconism [as a style] = living within what is necessarily sufficient.',
@@ -574,16 +576,16 @@ export const laconismContent = {
           },
           {
             type: 'quote',
-            text: 'If you can’t build, you should write.',
+            text: '‘If you can’t build, you should write.’',
             author: 'A.E. Gutnov'
           },
           {
-            type: 'p',
-            text: 'If you don’t want to have a heart attack or go insane, you should paint. Paper is patient, the canvas can take anything, For me, there is no difference between figurative and abstract art.'
+            type: 'highlight',
+            text: 'If you don’t want to have a heart attack or go insane, you should paint. Paper is patient, the canvas can take anything.'
           },
           {
             type: 'p',
-            text: 'The art is either there or it is not.'
+            text: 'For me, there is no difference between figurative and abstract art. The art is either there or it is not.'
           },
           {
             type: 'more',
@@ -599,7 +601,599 @@ export const laconismContent = {
     sections: [
       {
         id: 'awards',
-
+        title: 'победы в конкурсах',
+        blocks: [
+          {
+            type: 'awards',
+            items: [
+              {
+                title: 'международный архитектурный фестиваль “зодчество” 2020',
+                lines: ['лауреат'],
+              },
+              {
+                title: 'международный фестиваль архитектуры и дизайна интерьера',
+                lines: [
+                  '2019: третье место',
+                  '2018: первое место',
+                  '2009: первое место',
+                  '2008: первое место',
+                  '2007: первое место',
+                  '2006: второе место',
+                  '2005: второе место',
+                  '2003: первое место, третье место',
+                  '2002: первое место',
+                  '2001: третье место',
+                ],
+              },
+              {
+                title: 'азбука загородного строительства 2003',
+                lines: ['первое место'],
+              },
+            ],
+          },
+        ],
+      },
+      {
+        id: 'beginning',
+        title: 'начало',
+        blocks: [
+          {
+            type: 'p',
+            text: 'Отец и мать были геологами. С дошкольного возраста они учили понимать природу. Каждое лето нас со старшим братом отправляли на дачу — 60 км вниз по Оби от Новосибирска, где мы принадлежали себе под присмотром деда. Строили шалаши, сараи и так далее. Это был первый опыт стройки.'
+          },
+          {
+            type: 'highlight',
+            text: 'Причем даже тогда мы понимали, что без эскиза строить очень сложно. Это был первый опыт проектирования и понимания технологии строительства.'
+          },
+          {
+            type: 'p',
+            text: 'Строили в максимально возможных размерах для детского возраста. Первый шалаш [с третьей попытки] имел высоту 4 метра.'
+          },
+          {
+            type: 'p',
+            text: 'Моим первым учителем был старший брат [старше меня на 3 года]. В детстве он больше рисовал. Я больше лепил из пластилина и моделировал.'
+          }
+        ]
+      },
+      {
+        id: 'preparation',
+        title: 'подготовка',
+        blocks: [
+          {
+            type: 'p',
+            text: 'Так, без раздумий, я пошел за старшим братом на подготовительные курсы по рисунку.'
+          },
+          {
+            type: 'p',
+            text: 'Помню первую лекцию — “Введение в архитектурное проектирование”. Читал Николай Кузьмин [соратник архитекторов Моисея Гинзбурга и Эля Лисицкого]. Он много говорил об архитектурных образах. Прекрасно рисовал мелом на доске пейзажи. Объяснял происхождение шатровых храмов. Что есть доминанта в композиции застройки и так далее.'
+          },
+          {
+            type: 'highlight',
+            text: 'Но главная фраза — что современная архитектура должна раскрываться, как живой цветок, — была непонятна и вызывала только улыбки у слушателей. Лишь спустя 40 лет я начал понимать смысл этого высказывания.'
+          }
+        ]
+      },
+      {
+        id: 'university',
+        title: 'институт',
+        blocks: [
+          {
+            type: 'p',
+            text: 'До третьего курса я черпал знания об архитектуре не только из лекций преподавателей, но и от старшекурсников. В спорах они побеждали. Но вскоре наши интересы разошлись. Я увлекся математическими моделями градоведов.'
+          },
+          {
+            type: 'highlight',
+            text: 'Появилась уверенность, что город, как живой организм, развивается по своим законам.'
+          },
+          {
+            type: 'p',
+            text: 'Это заслуга матушки: она тогда занималась экономико-географическими прогнозами регионов СССР. Моя дипломная работа [и 60% кандидатской — руководитель А. Э. Гутнов] называлась “Закономерности территориального роста городов”.'
+          },
+          {
+            type: 'p',
+            text: 'мы тогда и представить себе не могли, что появится возможность строить по своим проектам. И удовлетворяли собственное любопытство за государственный счет [диссертация].'
+          },
+          {
+            type: 'p',
+            text: 'это было вперемешку с участием во всевозможных конкурсах, в том числе в японских. С целью разбудить серую безликую среду обитания, заполненную массовизмом совка. Тренинг концептов. К сожалению, сегодня это понятие затаскали до такой степени, что оно потеряло первоначальный смысл.'
+          }
+        ]
+      },
+      {
+        id: 'joke',
+        title: 'анекдот',
+        blocks: [
+          {
+            type: 'p',
+            text: 'Вася в дупель с позывами вваливается домой. Жена на пороге: “Васенька! Васенька! Что с тобой? Подожди, я сейчас! Сейчас тазик принесу!” Бежит.'
+          },
+          {
+            type: 'highlight',
+            text: 'Вася — в догон: “Дорогая, концепция поменялась! Я обосрался!”'
+          }
+        ]
+      },
+      {
+        id: 'modern-art',
+        title: 'современное искусство',
+        blocks: [
+          {
+            type: 'p',
+            text: 'Авторам современного искусства удалось формализовать этот анекдот в баночках с дерьмом, бананчиках на самоклейке — концепт жеста — глубокая мысль!'
+          },
+          {
+            type: 'p',
+            text: 'Только в архитектуре жестами ничего не получится. Не получится поставить манекен, который будет объяснять гениальную концепцию плохого строения.'
+          }    
+        ]
+      },
+      {
+        id: 'concept',
+        title: 'концепция',
+        blocks: [
+          {
+            type: 'highlight',
+            text: 'Это система понимания или система путей решения задачи. В архитектурной деятельности — это скорее дополнительные ограничения, которые помогают автору яснее выразить архитектурную идею.'
+          },
+          {
+            type: 'p',
+            text: 'Появляется ощущение, что люди забыли, что такое хорошо и что такое плохо. Речь идет об эстетическом начале всех искусств как второй природе, сотворенной человеком.'
+          }
+        ]
+      },
+      {
+        id: 'architecture',
+        title: 'архитектура',
+        blocks: [
+          {
+            type: 'p',
+            text: 'Так что же такое архитектура? — Искусство и наука строить.'
+          },
+          {
+            type: 'quote',
+            text: '“Польза, прочность, красота”.',
+            author: 'Витрувий'
+          },
+          {
+            type: 'p',
+            text: 'Что является главной, неотъемлемой частью архитектуры? — Архитектура — это дырка от бублика. То есть пространство, которое мы создаем и создавали стенами и другими архитектурными элементами, для жизнедеятельности человека и общества.'
+          }
+        ]
+      },
+      {
+        id: 'notes',
+        title: 'три ноты',
+        blocks: [
+          {
+            type: 'p',
+            text: 'Во все времена у архитектора было только три ноты, три типа пространства:'
+          },
+          {
+            type: 'ol',
+            items: [
+              'Внешнее — гора — экстерьер.',
+              'Внутреннее — пещера — интерьер.',
+              'Промежуточное — лес — окружение.'
+            ]
+          },
+          {
+            type: 'highlight',
+            text: 'Соотношение и взаимосвязь этих пространств передают архитектурные образы, вызывающие эмоции, а затем и чувства. Это как в живописи: при помощи композиции цветовых соотношений художник описывает — передает — образы.'
+          },
+          {
+            type: 'p',
+            text: 'Подмосковные пропилеи [2010]. Пересечение двух объемов разных фактур стирает границы между внешним и внутренним. Стены растворяются.'
+          },
+          {
+            type: 'more',
+            to: '/architecture/projects/propylaeum',
+            label: 'подробнее о пропилеях',
+          }
+        ]
+      },
+      {
+        id: 'definitions',
+        title: 'определения',
+        blocks: [
+          {
+            type: 'p',
+            text: 'Живопись — это передача образов через нанесение красок на плоскость. И если опустить ремесленную составляющую, то:'
+          },
+          {
+            type: 'p',
+            text: 'Живопись — это выплеск эмоций художника на плоскость.'
+          },
+          {
+            type: 'p',
+            text: 'Скульптура — это выплеск эмоций скульптора на глыбу.'
+          },
+          {
+            type: 'p',
+            text: 'Архитектура — это выплеск эмоций архитектора на стены, образующие пространство.'
+          }
+        ]
+      },
+      {
+        id: 'space',
+        title: 'пространство',
+        blocks: [
+          {
+            type: 'p',
+            text: 'С чем мы чаще всего встречаемся, контактируем, что чаще видим? Живопись?'
+          },
+          {
+            type: 'p',
+            text: 'Нет. На плохую картину можно не смотреть. Да и скульптуру можно в чулан убрать. А архитектуру не спрячешь, потому что мы в ней живем. В этом суть архитектуры как матери всех искусств.'
+          },
+          {
+            type: 'highlight',
+            text: 'Предположим, что бублик съели. Куда делось пространство? Растворилось в бесконечности. То есть пространство не существует без стен.'
+          }
+        ]
+      },
+      {
+        id: 'wall',
+        title: 'стена',
+        blocks: [
+          {
+            type: 'p',
+            text: 'Стена — это самый меняющийся элемент архитектуры. Пройдя сквозь тысячелетия, она сильно изменилась. Невозможно сегодня построить монолитную стену толще расчетных значений [экономика].'
+          },
+          {
+            type: 'p',
+            text: 'Стена стала тоньше, разделилась на каркас, утеплитель и отделку и стала недолговечной. Современные материалы, например бетон, даже если и простоят более 100—500 лет, то остальные слои — утеплитель и отделка — сползут с него через 50—75 лет. Металл тоже стареет за 100—200 лет. Стекло течет, даже закаленное, и прослужит 150–400 лет. Дерево — 25—50 лет. Не говоря уже об уплотнениях и так далее.'
+          },
+          {
+            type: 'highlight',
+            text: 'В современном мире вечность приобрела другой смысл. Вечность сравнялась с потребой дня. И, в сравнении с древними шедеврами, архитектура стала одноразовой.'
+          },
+          {
+            type: 'p',
+            text: 'Это не говорит нам о том, что домик Ниф-Нифа завладел архитектурными умами. И люди не пойдут жить в гофкоробки. Все-таки 200 лет — приличный срок для передачи наследия потомкам для переосмысления.'
+          },
+          {
+            type: 'p',
+            text: 'Речь идет о честности к самой архитектуре, к ее пространственной структуре, точно отвечающей на запросы общества.   '
+          }
+        ]
+      },
+      {
+        id: 'trends',
+        title: 'тренды',
+        blocks: [
+          {
+            type: 'p',
+            text: 'Топ-10 мировых трендов дизайна и архитектуры 2020—2021:'
+          },
+          {
+            type: 'ol',
+            items: [
+              'Развитие зелёного дизайна и экологически чистых технологий [это материалы].',
+              'Умные и автоматизированные дома [это не арх-, а техпрогресс бытия].',
+              'Кухня — главный герой [это было — Ф. Л. Райт].',
+              'Ванная комната как место релаксации [это было во дворцах].',
+              'Развитие индустриального стиля [это глупость, а не стиль].',
+              'Новый минимализм [лаконизм].',
+              'Реформация и восстановление исторических зданий и промышленных помещений [было — лофт].',
+              'Меньше шума, больше света [было].',
+              'Развитие outdoor. Максимальное внимание к обустройству пространства на открытом воздухе [всегда были промежуточные пространства].',
+              'Пассивный дом [было — энергосбережение].'
+            ]
+          }
+        ]
+      },
+      {
+        id: 'fashion',
+        title: 'архитектура, мода, стиль',
+        blocks: [
+          {
+            type: 'quote',
+            text: '“Показал черт моду и ушел в воду”.',
+            author: 'моя бабуля, царство ей небесное'
+          },
+          {
+            type: 'p',
+            text: 'Мода, как капризное дитя, имеет только неосознанное восклицание “Хочу!” Посыл моды в основе нигилистический, нацеленный изменить устоявшийся стиль.'
+          },
+          {
+            type: 'p',
+            text: 'Архитектура как произведение выражает определенный стиль. Искусство образа жизни. Если автор неосознанно начинает жонглировать модными элементами, рождается “перестиль” [зачастую это ужасное зрелище], который в последствии может [откинув все ненужное] перевоплотиться в новый стиль.'
+          },
+          {
+            type: 'p',
+            text: 'Таким образом, новый стиль не может существовать без моды [но мода всегда его портит]. Мода — поиски нового стиля.'
+          }
+        ]
+      },
+      {
+        id: 'overstyle',
+        title: '“перестиль” в архитектуре',
+        blocks: [
+          {
+            type: 'p',
+            text: 'Чем ужасен перестиль в архитектуре? — Тем, что архитектура — это не одежда на сезон, а оболочка жизни общества. И ее не выкинешь, как неудобный башмак, на помойку. Она будет стоять и портить жизнь.'
+          }
+        ]
+      },
+      {
+        id: 'ghost',
+        title: 'призрак [2020]',
+        blocks: [
+          {
+            type: 'p',
+            text: 'Всю жизнь человек строил себе стены, которые ему мешают, но без которых он не может жить.'
+          },
+          {
+            type: 'highlight',
+            text: 'Жизнь у стены — бомжи. Жизнь за стеной — все мечтают об этом. А на самом деле: стена в жизни [1985—2020].'
+          },
+          {
+            type: 'p',
+            text: 'Этот текст был написан совместно с Костей Вронским, когда мы работали над японским конкурсом “Бастион сопротивления”. Но графическая формализация не получилась, что вместе, что порознь.'
+          },
+          {
+            type: 'p',
+            text: 'Прошло 33 года, и, работая над загородным домом в селе Ильинское, я понял, как его построить.'
+          },
+          {
+            type: 'p',
+            text: 'Так выглядят взаимосвязи между промежуточным и внешним, внутренним и промежуточными пространствами. Как единое целое.'
+          },
+          {
+            type: 'p',
+            text: '[надпись на слайде] Пространство жизнедеятельности не ограничивается стенами дома, а распространяется на весь участок.'
+          },
+          {
+            type: 'gallery',
+            slides: 'presentation'
+          },
+          {
+            type: 'more',
+            to: '/architecture/projects/ghost',
+            label: 'подробнее о призраке'
+          }
+        ]
+      },
+      {
+        id: 'necessity',
+        title: 'искусство необходимой достаточности',
+        blocks: [
+          {
+            type: 'p',
+            text: 'Клиент всегда неправ!'
+          },
+          {
+            type: 'p',
+            text: 'По определению. Потому что он пришел к профессионалу. [В противном случае ему архитектор не нужен, он сам может построить.]'
+          },
+          {
+            type: 'p',
+            text: 'Он знает, что он хочет. Но он не знает, что ему нужно. Нужно найти единственное правильное решение для конкретного случая. Делай правильно — это и будет красиво.'
+          },
+          {
+            type: 'highlight',
+            text: 'Чтобы составить ТЗ на проектирование, необходимо собрать все “хочухи” и постепенно их исключать. То есть оставить только те, без которых он не может. Это и будет сбалансированное ТЗ.'
+          },
+          {
+            type: 'p',
+            text: 'Основные принципы взаимодействия с заказчиком основываются на взаимопонимании, доверии и ответственности с обеих сторон.'
+          },
+          {
+            type: 'p',
+            text: 'Подрядчик — это исполнитель части произведения. Не зная все произведение, он плохо исполнит его часть. Поэтому невозможно работать с подрядчиками, которые не понимают и не любят произведение целиком.'
+          }
+        ]
+      },
+      {
+        id: 'economics',
+        title: 'экономика проекта',
+        blocks: [
+          {
+            type: 'p',
+            text: 'Правильно распределять средства инвестора для достижения результата.'
+          },
+          {
+            type: 'p',
+            text: 'Проектирование включает два основных этапа:'
+          },
+          {
+            type: 'ol',
+            items: [
+              'Концепция + эскизный проект + экономическое обоснование для определения бюджета [что мы собираемся строить].',
+              'Рабочая документация + смета + сроки [как мы будем строить].'
+            ]
+          }
+        ]
+      },
+      {
+        id: 'surveillance',
+        title: 'принципы авторского надзора',
+        blocks: [
+          {
+            type: 'ol',
+            items: [
+              'Совместная разработка с подрядчиком всех технологических процессов на стройке.',
+              'Исполнение.',
+              'Корректировка рабочей документации.',
+              'Бескомпромиссное отслеживание на всех этапах строительства [все строго по чертежам и принятым алгоритмам].'
+            ]
+          }
+        ]
+      },
+      {
+        id: 'players',
+        title: 'главные участники',
+        blocks: [
+          {
+            type: 'ol',
+            items: [
+              'Заказчик-девелопер-инвестор [в одном лице].',
+              'Автор-архитектор [в одном лице].',
+              'Подрядчик-генподрядчик [в одном лице] + субподрядчики.'
+            ]
+          },
+          {
+            type: 'highlight',
+            text: 'Такой треугольник работает, как автомат Калашникова. При условии, что первые два на одном уровне, а подрядчик на ступень ниже.'
+          },
+          {
+            type: 'p',
+            text: 'Такую схему я использовал и за рубежем. Правда, встречались неприятные нюансы. Некоторые подрядчики любят отдыхать, а не работать. Иногда приходилось привозить своих исполнителей.'
+          }
+        ]
+      },
+      {
+        id: 'exhibitions',
+        title: 'выставки',
+        blocks: [
+          {
+            type: 'p',
+            text: 'Профессиональные коммуникации:'
+          },
+          {
+            type: 'ol',
+            items: [
+              'Публикации [в твердом виде и в интернете].',
+              'Выставки.',
+              'Лекции.',
+              'Участие в конкурсах. [Правда, в последнее время все ушло в интернет-голосования. Это неправильно.]'
+            ]
+          },
+          {
+            type: 'p',
+            text: 'Надо вернуть в залы открытые выставки, конкурсные просмотры, чтобы участники и зрители могли видеть в одном формате, на одной стене все представленные работы. Желательно также проводить обсуждения и защиты проектов прямо в галерее.'
+          },
+          {
+            type: 'highlight',
+            text: 'Жюри: от одного до пяти [не более] профессионалов — действующих архитекторов.'
+          },
+          {
+            type: 'p',
+            text: 'В противном случае [если, как это часто сейчас бывает, состав жюри превышает 40 человек] адекватно оценить работы архитекторов невозможно.'
+          }
+        ]
+      },
+      {
+        id: 'business',
+        title: 'бизнес',
+        blocks: [
+          {
+            type: 'p',
+            text: 'Деятельность, направленная на систематическое получение прибыли. Или направленная на то, чтобы с минимальными затратами получать максимальную прибыль.'
+          },
+          {
+            type: 'highlight',
+            text: 'Это не соответствует архитектуре как искусству.'
+          },
+          {
+            type: 'p',
+            text: 'Если автор не является заказчиком-инвестором сам для себя и в результате не выставляет произведение на рынок, существующие модели архитектурного бизнеса обречены на потерю качества и неудачу автора, потому что он работает в конторе за зарплату.'
+          }
+        ]
+      },
+      {
+        id: 'art',
+        title: 'архитектура — это искусство, а не бизнес',
+        blocks: [
+          {
+            type: 'p',
+            text: 'Если говорить о прибыли, искусство — это минус, бизнес — это плюс.'
+          },
+          {
+            type: 'p',
+            text: 'Архитектура всегда развивалась и будет развиваться в соответствии с развитием потребностей человека и общества, с бережным отношением к природе.'
+          },
+        ]
+      },
+      {
+        id: 'video',
+        title: 'фильм о лаконизме',
+        blocks: [
+          {
+            type: 'video',
+            videoId: 'kUtD1xkwEjI',
+            cover: {
+              original: '/images/video-covers/original/laconism.webp',
+              cover1024: '/images/video-covers/1024/laconism1024.webp',
+              cover480: '/images/video-covers/480/laconism480.webp'
+            }
+          }
+        ]
+      },
+      {
+        id: 'short',
+        title: 'лаконизм [коротко]',
+        blocks: [
+          {
+            type: 'ol',
+            className: 'laconismShortList',
+            items: [
+              [
+                'Cтиль = искусство образа жизни.',
+                'Мода = поиски нового стиля.',
+              ],
+              [
+                'Архитектура = польза + прочность + красота.',
+                'Архитектурное пространство = дырка от бублика.'
+              ],
+              [
+                'Стиль лаконизм = искусство необходимой  достаточности в образе жизни.',
+                'Стиль лаконизм [в архитектуре] = необходимая достаточность пользы + прочности + красоты.'
+              ],
+              [
+                'Живопись = выплеск эмоций художника на плоскость.',
+                'Скульптура = выплеск эмоций художника на глыбу.',
+                'Архитектура = выплеск эмоций архитектора на стены, образующие пространство.'
+              ]
+            ]
+          }
+        ]
+      },
+      {
+        id: 'artist',
+        title: 'архитектор и художник',
+        blocks: [
+          {
+            type: 'p',
+            text: 'Всю жизнь человек строил себе стены, которые ему мешают, но без которых он не может жить.'
+          },
+          {
+            type: 'p',
+            text: 'Если основная задача искусства заключается в передаче образов, то задача архитектора — создавать пространственные образы для жизнедеятельности человека.'
+          },
+          {
+            type: 'highlight',
+            text: 'Архитектор создает пространство стенами. Художник, расписывая стену, создает в этой стене свое пространство. Таким образом, художник разрушает эту стену.'
+          }
+        ]
+      },
+      {
+        id: 'paintings',
+        title: 'цифровая живопись',
+        blocks: [
+          {
+            type: 'p',
+            text: 'Это выплеск эмоций архитектора на плоскость как защита от двуногой безголовой нечисти, которая пытается все испортить, окружает со всех сторон, взрывает мозг и самонаслаждается, выпучив глаза от самоудивления.'
+          },
+          {
+            type: 'quote',
+            text: '“Не можешь строить? Пиши книги”.',
+            author: 'А. Э. Гутнов'
+          },
+          {
+            type: 'highlight',
+            text: 'Не хочешь получить инфаркт, или сойти с ума? Пиши картины, бумага все стерпит.'
+          },
+          {
+            type: 'p',
+            text: 'Для меня не существует разницы между предметным и беспредметным искусством. Оно или есть, или его нет.'
+          },
+          {
+            type: 'more',
+            to: '/paintings/collections',
+            label: 'подробнее о живописи',
+          }
+        ]
       }
     ]
   }

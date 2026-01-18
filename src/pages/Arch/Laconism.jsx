@@ -61,12 +61,14 @@ export default function Laconism() {
 
     if (block.type === 'quote') {
       return (
-        <p className={styles.laconismHighlight}>
-          <q>{block.text}</q>{' '}
-          <cite className={styles.quoteAuthor}>
+        <figure className={styles.laconismQuote}>
+          <blockquote>
+            {block.text}
+          </blockquote>
+          <figcaption className={styles.quoteAuthor}>
             [{block.author}]
-          </cite>
-        </p>
+          </figcaption>
+        </figure>
       )
     }
 

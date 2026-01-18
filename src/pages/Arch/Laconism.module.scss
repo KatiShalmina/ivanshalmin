@@ -19,7 +19,7 @@
 
 :lang(ru) .laconismTitle {
   font-family: var(--font-secondary);
-  font-weight: 300;
+  font-weight: 400;
 }
 
 .laconismUnit p {
@@ -43,7 +43,7 @@
 
 :lang(ru) .awardsTitle {
   font-family: var(--font-secondary);
-  font-weight: 300;
+  font-weight: 400;
 }
 
 .awardsUnit p {
@@ -71,6 +71,14 @@
 }
 
 .laconismHighlight {
+  text-transform: uppercase;
+}
+
+.laconismQuote {
+  margin-top: 0;
+  margin-right: 0;
+  margin-bottom: clamp(1rem, 4vw, 1.7rem);
+  margin-left: 0;
   text-transform: uppercase;
 }
 
