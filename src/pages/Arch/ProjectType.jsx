@@ -8,13 +8,13 @@ import MoreButton from '../../components/MoreButton'
 import Video from '../../components/Video'
 
 export default function ProjectType() {
-  const { slug } = useParams()
-  const location = useLocation()
+  const { pathname } = useLocation()
 
   const isRu =
-    location.pathname === '/ru' ||
-    location.pathname.startsWith('/ru/')
+    pathname === '/ru' ||
+    pathname.startsWith('/ru/')
 
+  const { slug } = useParams()
   const type = types.find(p => p.slug === slug)
 
   const [open, setOpen] = useState(false)

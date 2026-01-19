@@ -5,6 +5,7 @@ export default function Footer() {
   const { pathname } = useLocation()
 
   const isRu = pathname === '/ru' || pathname.startsWith('/ru/')
+  
   const base = isRu ? '/ru' : ''
 
   const normalizedPath = isRu ? pathname.replace(/^\/ru/, '') || '/' : pathname

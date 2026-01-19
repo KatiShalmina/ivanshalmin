@@ -13,14 +13,10 @@ export default function PaintingDetail() {
 
   if (!painting) return <p>Not found</p>
 
-  const backTo = location.state?.from ?? '/paintings/collections'
-  const focusSlug = location.state?.focusSlug
-
   return (
     <section className={styles.paintingDetail}>
       <BackButton
-        to={backTo}
-        state={focusSlug ? { focusSlug } : null}
+        to='/paintings/collections'
       >
         all collections
       </BackButton>
@@ -62,12 +58,12 @@ export default function PaintingDetail() {
       <BuyButton>buy this painting</BuyButton>
       <div className={styles.paintingVideoLink}>
         {painting.link && (
-          <MoreButton 
+          <MoreButton
             to={painting.link}
             external
           >
             view painting in motion
-          </MoreButton>    
+          </MoreButton>
         )}
       </div>
     </section>

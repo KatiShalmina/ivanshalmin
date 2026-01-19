@@ -12,10 +12,20 @@
   font-stretch: 115%;
 }
 
+:lang(ru) .pubTitle {
+  font-family: var(--font-secondary);
+  font-weight: 400;
+}
+
 .pubSubtitle {
   font-size: clamp(1.2rem, 3vw, 2.5rem);
   text-transform: uppercase;
   margin-bottom: clamp(1.7rem, 4vw, 3rem);
+}
+
+:lang(ru) .pubSubtitle {
+  font-family: var(--font-secondary);
+  font-weight: 400;
 }
 
 .pubTagline {

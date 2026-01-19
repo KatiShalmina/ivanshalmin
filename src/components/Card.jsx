@@ -1,14 +1,14 @@
 import { Link, useLocation } from 'react-router-dom'
 import styles from './Card.module.scss'
 
-export default function Card({ to, state, title, cover }) {
-  const location = useLocation()
+export default function Card({ to, title, cover }) {
+  const { pathname } = useLocation()
 
   if (!cover) return null;
 
   const isRu =
-    location.pathname === '/ru' ||
-    location.pathname.startsWith('/ru/')
+    pathname === '/ru' ||
+    pathname.startsWith('/ru/')
 
   const base = isRu ? '/ru' : ''
 
@@ -28,9 +28,7 @@ export default function Card({ to, state, title, cover }) {
     <div className={styles.card}>
       <Link 
         to={resolvedTo}
-        state={state} 
         className={styles.cardLink}
-        data-painting-slug={state?.focusSlug}
       >
         {isPaintingsCover ? (
           <img

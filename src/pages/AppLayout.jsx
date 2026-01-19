@@ -1,20 +1,22 @@
-import { useState } from 'react'
-import { Outlet, useLocation } from 'react-router-dom'
+import { useState, useEffect } from 'react'
+import { Outlet, useLocation, ScrollRestoration } from 'react-router-dom'
 import styles from './AppLayout.module.scss'
 import Header from '../components/Header'
 import Footer from '../components/Footer'
 import MenuOverlay from '../components/MenuOverlay'
-import ScrollRestoration from '../components/ScrollRestoration'
-import { useEffect } from 'react'
 
 export default function AppLayout() {
   const [menuOpen, setMenuOpen] = useState(false)
-  const location = useLocation()
+  const { pathname } = useLocation()
 
-  const isRu = location.pathname === '/ru' || location.pathname.startsWith('/ru/')
+  const isRu = 
+    pathname === '/ru' || 
+    pathname.startsWith('/ru/')
 
-  const isHome = location.pathname === '/' || location.pathname === '/ru' ||
-  location.pathname === '/ru/'
+  const isHome = 
+    pathname === '/' || 
+    pathname === '/ru' || 
+    pathname === '/ru/'
 
   useEffect(() => {
     document.documentElement.lang = isRu ? 'ru' : 'en'
@@ -25,7 +27,7 @@ export default function AppLayout() {
       <ScrollRestoration />
       <Header setMenuOpen={setMenuOpen} />
       <MenuOverlay menuOpen={menuOpen} setMenuOpen={setMenuOpen} />
-      <main className={isHome ? styles.mainHome : null}>
+      <main className={isHome ? styles.mainHome : undefined}>
         {isHome ? (
           <Outlet />
         ) : (

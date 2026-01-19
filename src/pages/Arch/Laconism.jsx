@@ -14,6 +14,7 @@ export default function Laconism() {
   const { pathname } = useLocation()
 
   const isRu = pathname === '/ru' || pathname.startsWith('/ru/')
+  
   const base = isRu ? '/ru' : ''
   const lang = isRu ? 'ru' : 'en'
 

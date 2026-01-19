@@ -7,7 +7,7 @@ import Projects from './pages/Arch/Projects'
 import ProjectType from './pages/Arch/ProjectType'
 import Laconism from './pages/Arch/Laconism'
 import Publications from './pages/Arch/Publications'
-import PublicationObject from './pages/Arch/PublicationObject'
+import PublicationDetail from './pages/Arch/PublicationDetail'
 
 import PaintingsLayout from './pages/Art/PaintingsLayout'
 import Collections from './pages/Art/Collections'
@@ -35,7 +35,7 @@ const routes = [
       { path: 'laconism', element: <Laconism /> },
 
       { path: 'publications', element: <Publications /> },
-      { path: 'publications/:slug', element: <PublicationObject /> },
+      { path: 'publications/:slug', element: <PublicationDetail /> },
     ]
   },
 

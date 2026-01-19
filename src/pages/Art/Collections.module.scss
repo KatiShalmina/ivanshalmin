@@ -1,8 +1,18 @@
 .cardsList {
   display: flex;
   flex-direction: column;
-  gap: clamp(10px, 2vw, 1.4rem);
+  gap: 10px;
   margin-bottom: clamp(1.7rem, 4vw, 3rem);
+
+  @media (min-width: 1024px) {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  @media (min-width: 1280px) {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1rem;
+  }
 }
 
 .filterList {

@@ -1,4 +1,4 @@
-import { useMemo, useLayoutEffect } from 'react'
+import { useMemo } from 'react'
 import { useLocation, useSearchParams } from 'react-router-dom'
 import { COLLECTIONS, COLLECTION_TEXT, PAINTINGS } from '../../data/paintings/paintings'
 import Card from '../../components/Card'
@@ -15,14 +15,6 @@ export default function Collections() {
     if (filter === 'all') return PAINTINGS
     return PAINTINGS.filter(p => p.collections.includes(filter))
   }, [filter])
-
-  useLayoutEffect(() => {
-    const focusSlug = location.state?.focusSlug
-    if (!focusSlug) return
-
-    const el = document.querySelector(`[data-painting-slug='${focusSlug}']`)
-    if (el) el.scrollIntoView({ block: 'center' })
-  }, [location.state])
 
   const setFilter = (next) => {
     if (next === 'all') {
@@ -58,10 +50,6 @@ export default function Collections() {
             to={`/paintings/collections/${p.slug}`}
             title={p.title}
             cover={p.cover}
-            state={{
-              from: `${location.pathname}${location.search}`,
-              focusSlug: p.slug,
-            }}
           />
         ))}
       </div>
@@ -69,8 +57,8 @@ export default function Collections() {
         <div className={styles.colTextWrapper}>
           <p className={styles.colTagline}>
             {COLLECTION_TEXT[filter]?.tagline}
-          </p>    
-          <div className={styles.colText}>     
+          </p>
+          <div className={styles.colText}>
             {COLLECTION_TEXT[filter]?.body
               .trim()
               .split(/\n\s*\n/)
@@ -81,7 +69,7 @@ export default function Collections() {
               ))}
           </div>
           <div className={styles.authorWrapper}>
-            <p className={styles.authorName}><span >Kirill Svetlyakov,</span></p> 
+            <p className={styles.authorName}><span >Kirill Svetlyakov,</span></p>
             <p>art expert and critic, responsible for the latest trends and developments at the Tretiyakov Art Gallery, Moscow, Russia</p>
           </div>
         </div>

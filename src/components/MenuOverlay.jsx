@@ -3,11 +3,11 @@ import styles from './MenuOverlay.module.scss'
 import closeIcon from '../assets/icons/close.svg'
 
 export default function MenuOverlay({ menuOpen, setMenuOpen }) {
-  const location = useLocation()
+  const { pathname } = useLocation()
 
   const isRu =
-    location.pathname === '/ru' ||
-    location.pathname.startsWith('/ru/')
+    pathname === '/ru' ||
+    pathname.startsWith('/ru/')
 
   const base = isRu ? '/ru' : ''
 

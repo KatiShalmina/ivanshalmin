@@ -4,11 +4,11 @@ import styles from './Home.module.scss'
 
 export default function Home() {
   const [activeBg, setActiveBg] = useState(null)
-  const location = useLocation()
+  const { pathname } = useLocation()
 
   const isRu =
-    location.pathname === '/ru' ||
-    location.pathname.startsWith('/ru/')
+    pathname === '/ru' ||
+    pathname.startsWith('/ru/')
 
   const base = isRu ? '/ru' : ''
 

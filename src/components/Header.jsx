@@ -3,9 +3,10 @@ import styles from './Header.module.scss'
 import burgerIcon from '../assets/icons/burger.svg'
 
 export default function Header({ setMenuOpen }) {
-  const location = useLocation()
+  const { pathname, search } = useLocation()
 
-  const isRu = location.pathname === '/ru' || location.pathname.startsWith('/ru/')
+  const isRu = pathname === '/ru' || pathname.startsWith('/ru/')
+  
   const base = isRu ? '/ru' : ''
 
   const mainNav = isRu 
@@ -20,7 +21,7 @@ export default function Header({ setMenuOpen }) {
         about: 'about',
       }
 
-  const isHome = location.pathname === base + '/'
+  const isHome = pathname === base + '/'
 
   const activeMain = {
     color: 'var(--color-secondary)'
@@ -28,11 +29,11 @@ export default function Header({ setMenuOpen }) {
 
   const switchLangPath = (() => {
     if (isRu) {
-      const withoutRu = location.pathname.replace(/^\/ru/, '') || '/'
-      return withoutRu + location.search
+      const withoutRu = pathname.replace(/^\/ru/, '') || '/'
+      return `${withoutRu}${search}`
     }
 
-    return '/ru' + location.pathname + location.search
+    return `/ru${pathname}${search}`
   })()
 
   return (

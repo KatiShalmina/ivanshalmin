@@ -2,11 +2,10 @@ import { Link } from 'react-router-dom'
 import ArrowBack from '../assets/icons/arrow.svg?react'
 import styles from './BackButton.module.scss'
 
-export default function BackButton({ children, to = '..', state }) {
+export default function BackButton({ children, to = '..' }) {
   return (
     <Link 
-      to={to} 
-      state={state} 
+      to={to}  
       relative='path'
       className={styles.backButton}
     >

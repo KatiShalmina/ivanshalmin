@@ -48,8 +48,17 @@
   font-weight: 300;
 }
 
+:lang(ru) .pubCardTitle {
+  font-family: var(--font-secondary);
+  font-weight: 400;
+}
+
 .pubCardSubtitle {
   font-size: clamp(1.2rem, 2vw, 1.7rem);
   text-transform: uppercase;
 }
 
+:lang(ru) .pubCardSubtitle {
+  font-family: var(--font-secondary);
+  font-weight: 400;
+}
