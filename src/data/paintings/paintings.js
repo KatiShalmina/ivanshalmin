@@ -498,33 +498,6 @@ export const PAINTINGS = [
     }
   },
   {
-    slug: 'headache',
-    title: {
-      en: 'headache',
-      ru: 'головная боль'
-    },
-    description: {
-      en: `
-        1500 mm x 1000 mm
-        price: $ 1470
-      `,
-      ru: `
-        1500 мм x 1000 мм
-        цена: $ 1470
-      `
-    },
-    collections: ['portraits'],
-    cover: {
-      src: '/images/paintings/480/headache.webp',
-      srcSet: `
-        /images/paintings/480/headache.webp 480w,
-        /images/paintings/1024/headache.webp 1024w,
-        /images/paintings/original/headache.webp 1754w
-        `,
-        sizes: '1440px',
-    }
-  },
-  {
     slug: 'brain',
     title: {
       en: 'brain',
@@ -547,6 +520,33 @@ export const PAINTINGS = [
         /images/paintings/480/brain.webp 480w,
         /images/paintings/1024/brain.webp 1024w,
         /images/paintings/original/brain.webp 1754w
+        `,
+        sizes: '1440px',
+    }
+  },
+  {
+    slug: 'headache',
+    title: {
+      en: 'headache',
+      ru: 'головная боль'
+    },
+    description: {
+      en: `
+        1500 mm x 1000 mm
+        price: $ 1470
+      `,
+      ru: `
+        1500 мм x 1000 мм
+        цена: $ 1470
+      `
+    },
+    collections: ['portraits'],
+    cover: {
+      src: '/images/paintings/480/headache.webp',
+      srcSet: `
+        /images/paintings/480/headache.webp 480w,
+        /images/paintings/1024/headache.webp 1024w,
+        /images/paintings/original/headache.webp 1754w
         `,
         sizes: '1440px',
     }

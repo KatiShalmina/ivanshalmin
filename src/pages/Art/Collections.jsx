@@ -26,9 +26,11 @@ export default function Collections() {
     }
   }
 
+  const mainTitleHidden = isRu ? 'Коллекции' : 'Collections'
+
   return (
     <section className={styles.collections}>
-      <h1 className='visuallyHidden'>Collections</h1>
+      <h1 className='visuallyHidden'>{mainTitleHidden}</h1>
       <div>
         <ul className={styles.filterList}>
           {COLLECTIONS.map(c => (
@@ -49,7 +51,7 @@ export default function Collections() {
         {filteredPaintings.map(p => (
           <ColCard
             key={p.slug}
-            to={`/paintings/collections/${p.slug}`}
+            to={`/paintings/collections/${p.slug}?filter=${filter}`}
             title={p.title}
             description={p.description}
             cover={p.cover}

@@ -4,10 +4,12 @@ import styles from './Bio.module.scss'
 import { bio } from '../../data/bio'
 import GalleryLightbox from '../../components/GalleryLightbox'
 import MoreButton from '../../components/MoreButton'
+import useI18n from '../../hooks/useI18n'
 
 export default function Bio() {
   const [open, setOpen] = useState(false)
   const [index, setIndex] = useState(0)
+  const { isRu, lang } = useI18n()
 
   return (
     <section className={styles.bio}>
@@ -26,7 +28,7 @@ export default function Bio() {
           <h2 className={styles.bioTitle}>university</h2>
           <p>Born on 18 June 1959 in Novosibirsk, into a family of geologists. Graduated from the Novosibirsk Engineering and Construction Institute (NISU), Faculty of Architecture, Department of Urban Planning.</p>
           <blockquote>
-            <p>We were taught primarily academic drawing and painting skills. This was done in order to develop motor skills and form a connection between what you have in mind and the hand that embodies your idea.</p>
+            <p>Ivan Shalmin: We were taught primarily academic drawing and painting skills. This was done in order to develop motor skills and form a connection between what you have in mind and the hand that embodies your idea.</p>
           </blockquote>
           <p>In the 1980s, Ivan was an active participant in the Novosibirsk branch of the paper architecture movement. His works have travelled around the world and have been exhibited in Amsterdam, Paris, London, Milan, Berlin, Cologne, Stockholm, Frankfurt, Brussels, Zurich, New Orleans, Austin, Jerusalem, Helsinki and other cities. Two of them are now part of the collection of The Museum of Modern Art (MoMA) in New York.</p>
           <blockquote>

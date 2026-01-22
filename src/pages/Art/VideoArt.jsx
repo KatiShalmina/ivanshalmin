@@ -1,11 +1,31 @@
 import styles from './VideoArt.module.scss'
 import Video from '../../components/Video'
 import MoreButton from '../../components/MoreButton'
+import useI18n from '../../hooks/useI18n'
+import { videoArtContent } from '../../data/video-art'
+import { Fragment } from 'react'
 
 export default function VideoArt() {
+  const { isRu, lang } = useI18n()
+
+  const content = videoArtContent?.[lang] ?? videoArtContent?.en
+
+  const moreVideoArtLabel = isRu ? 'другие видео картины' : 'more video art'
+  const moreSashaLabel = isRu ? 'другие сашины картины' : 'more sasha’s art'
+  const mainTitleHidden = isRu ? 'Видео арт' : 'Video Art'
+
+  const renderBlock = (block) => {
+    if (block.type === 'p') return <p>{block.text}</p>
+
+    if (block.type === 'highlight') {
+      return <p className={styles.videoArtHighlight}>{block.text}</p>
+    }
+    return null
+  }
+
   return (
     <section className={styles.videoArt}>
-      <h1 className='visuallyHidden'>Video Art</h1>
+      <h1 className='visuallyHidden'>{mainTitleHidden}</h1>
       <div className={styles.videoWrapper}>
         <Video
           videoId='JMBw_RcDbEQ'
@@ -43,27 +63,25 @@ export default function VideoArt() {
           cover1024='/images/paintings/1024/at-6-am.webp'
           cover480='/images/paintings/480/at-6-am.webp'
         />
-        <MoreButton 
+        <MoreButton
           to='https://www.youtube.com/@sashashalmina'
           external
         >
-          more video art
+          {moreVideoArtLabel}
         </MoreButton>
       </div>
       <div className={styles.videoArtText}>
-        <p>Ivan Shalmin’s daughter, Sasha — an artist and graphic designer — was deeply influenced by his digital abstract paintings. She was drawn to their emotive, hidden imagery and to the strong sense of movement embedded within works that were, materially, static. Motivated by this tension, she began experimenting with animation and sound, extending his paintings into short moving-image works that brought their internal rhythms and implied motion to the surface.</p>
-        <p>Ivan immediately recognised the conceptual and experiential potential of this dialogue between stillness and motion, and chose to exhibit the animated works alongside his original canvases at art fairs in London [2021], and in Amsterdam and Paris [2022]. Audience responses consistently highlighted how the addition of movement and sound intensified the emotional resonance of the originals, enabling a deeper engagement with the imagery.</p>
-        <blockquote>
-          <p>All my works are quite dynamic. I tried to create dynamics in frozen statics, but real animation complements the image. In video paintings, images change, they become truly alive, filled with movement and sound.</p>
-          <p>My beloved daughter Sasha, who is skilled in animation techniques and always does an excellent job, helps me with this. I highly recommend you take a look! <cite>— [Ivan Shalmin]</cite></p>
-        </blockquote>
-        <p>Building on this exploration, Sasha and Ivan began developing plans for an immersive VR-based video installation, conceived as a fully embodied extension of his practice. The project was never realised following Ivan’s passing in 2022.</p>
+        {content.blocks.map((block, i) => (
+          <Fragment key={`${block.type}-${i}`}>
+            {renderBlock(block)}
+          </Fragment>
+        ))}
       </div>
-      <MoreButton 
+      <MoreButton
         to='https://www.sashashalmina.com/'
         external
       >
-        more sasha’s art
+        {moreSashaLabel}
       </MoreButton>
     </section>
   )

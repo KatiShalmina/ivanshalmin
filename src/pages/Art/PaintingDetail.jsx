@@ -1,10 +1,14 @@
-import { useParams } from 'react-router-dom'
+import { useMemo } from 'react'
+import { useParams, useSearchParams } from 'react-router-dom'
 import BackButton from '../../components/BackButton'
 import BuyButton from '../../components/BuyButton'
 import styles from './PaintingDetail.module.scss'
+import { PAINTINGS } from '../../data/paintings/paintings'
 import { paintingDetail } from '../../data/paintings/painting-detail'
 import MoreButton from '../../components/MoreButton'
 import useI18n from '../../hooks/useI18n'
+import PrevButton from '../../components/PrevButton'
+import NextButton from '../../components/NextButton'
 
 const BACK_LABELS = {
   landscapes: { en: 'all landscapes', ru: 'все пейзажи' },
@@ -18,6 +22,7 @@ export default function PaintingDetail() {
   const { t, isRu, lang } = useI18n()
 
   const { slug } = useParams()
+  const [searchParams] = useSearchParams()
 
   const painting = paintingDetail.find(p => p.slug === slug)
 
@@ -25,6 +30,20 @@ export default function PaintingDetail() {
 
   const collections = painting.collections ?? []
   const primaryCollection = collections[0] ?? 'landscapes'
+
+  const filterFromUrl = searchParams.get('filter')
+  const filter = filterFromUrl ?? primaryCollection
+
+  const list = useMemo(() => {
+    if (filter === 'all') return PAINTINGS
+    return PAINTINGS.filter(p => (p.collections ?? p.collectionscollections ?? []).includes(filter))
+  }, [filter])
+
+  const currentIndex = list.findIndex(p => p.slug === slug)
+  const prev = currentIndex > 0 ? list[currentIndex - 1] : null
+  const next = currentIndex >= 0 && currentIndex < list.length - 1 ? list[currentIndex + 1] : null
+
+  const makeTo = (targetSlug) => `/paintings/collections/${targetSlug}?filter=${filter}`
 
   const backTo =
     primaryCollection === 'landscapes'
@@ -38,9 +57,10 @@ export default function PaintingDetail() {
   const tDescription = t(painting.description)
   const tQuote = t(painting.quote)
 
-  const moreLabel = isRu ? 'смотреть анимацию' : 'view painting in motion'
+  const prevLabel = isRu ? 'предыдущая' : 'previous'
+  const nextLabel = isRu ? 'следующая' : 'next'
+  const moreLabel = isRu ? 'смотреть анимацию' : 'view animation'
   const buyLabel = isRu ? 'купить картину' : 'buy this painting'
-  const cite = isRu ? 'Иван Шалмин' : 'Ivan Shalmin'
 
   return (
     <section className={styles.paintingDetail}>
@@ -71,16 +91,26 @@ export default function PaintingDetail() {
           />
         </picture>
       </div>
-      <blockquote className={styles.paintingQuote}>
+      <div className={styles.prevNext}>
+        {prev && (
+          <PrevButton to={makeTo(prev.slug)}>
+            {prevLabel}
+          </PrevButton>
+        )}
+        {next && (
+          <NextButton to={makeTo(next.slug)}>
+            {nextLabel}
+          </NextButton>
+        )}
+      </div>
+      <div className={styles.paintingQuote}>
         {tQuote
           .trim()
           .split(/\n\s*\n/)
           .map((p, i) => (
             <p key={i}>{p.trim()}</p>
           ))}
-        <cite>{cite}</cite>
-      </blockquote>
-      <BuyButton>{buyLabel}</BuyButton>
+      </div>
       <div className={styles.paintingVideoLink}>
         {painting.link && (
           <MoreButton to={painting.link}>
@@ -88,6 +118,7 @@ export default function PaintingDetail() {
           </MoreButton>
         )}
       </div>
+      <BuyButton>{buyLabel}</BuyButton>
     </section>
   )
 }

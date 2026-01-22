@@ -2,7 +2,7 @@ import { Link } from 'react-router-dom';
 import styles from './MoreButton.module.scss';
 import useI18n from '../hooks/useI18n';
 
-export default function MoreButton({ to, children, ...props }) {
+export default function MoreButton({ to, children, external, ...props }) {
   const { to: toPath } = useI18n()
 
   const href =
@@ -13,9 +13,8 @@ export default function MoreButton({ to, children, ...props }) {
   if (!href) return null
 
   const isExternal =
-    typeof to === 'object'
-      ? Boolean(to.external)
-      : /^https?:\/\//.test(href)
+    external === true ||
+    /^https?:\/\//.test(href)
 
   if (isExternal) {
     return (

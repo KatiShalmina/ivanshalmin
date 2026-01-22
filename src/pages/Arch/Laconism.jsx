@@ -13,7 +13,7 @@ export default function Laconism() {
   const isDesktop = useMediaQuery('(min-width: 1024px)')
   const { lang } = useI18n()
 
-  const content = laconismContent[lang]
+  const content = laconismContent?.[lang] ?? laconismContent?.en
 
   const renderBlock = (block) => {
     if (block.type === 'p') return <p>{block.text}</p>
@@ -101,12 +101,10 @@ export default function Laconism() {
   return (
     <section className={styles.laconism}>
       <h1 className='visuallyHidden'>{content.pageTitle}</h1>
-
       <div className={styles.laconismWrapper}>
         {content.sections.map((section) => (
           <div className={styles.laconismUnit} key={section.id}>
             <h2 className={styles.laconismTitle}>{section.title}</h2>
-
             {section.blocks.map((block, i) => (
               <Fragment key={`${section.id}-${block.type}-${i}`}>
                 {renderBlock(block)}

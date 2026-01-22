@@ -9,6 +9,8 @@ export default function Contact() {
   const isDesktop = useMediaQuery('(min-width: 1024px)')
   const { isRu } = useI18n()
 
+  const mainTitleHidden = isRu ? 'Контакты' : 'Contact'
+
   const message = isRu ? 'Eсли вы хотите купить картину, пожалуйста, свяжитесь с Сашей Шалминой' : 'For sales, please contact Sasha Shalmina'
 
   const text = isRu
@@ -25,7 +27,7 @@ export default function Contact() {
 
   return (
     <section className={styles.contact}>
-      <h1 className='visuallyHidden'>Contact</h1>
+      <h1 className='visuallyHidden'>{mainTitleHidden}</h1>
       <p className={styles.contactMessage}>{message}</p>
       <div className={styles.contactLinkWrapper}>
         <a className={styles.contactLink} href='mailto:sasha.shalmina@gmail.com' target='_blank' rel='noopener noreferrer'>
