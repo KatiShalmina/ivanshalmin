@@ -1,9 +1,25 @@
-.contactTitle {
-  margin-bottom: clamp(1.7rem, 4vw, 3rem);
-  font-size: clamp(2rem, 10vw, 4.3rem);
-  font-weight: 300;
-  font-stretch: 115%;
-  line-height: 1.1;
+.contactMessage {
+  margin-bottom: 1.4rem;
+  font-size: clamp(1.4rem, 2vw, 1.7rem);
+}
+
+.contactText {
+  margin-bottom: 2rem;
+
+  @media (min-width: 1024px) {
+    margin-bottom: 0;
+  }
+}
+
+.contactText p {
+  max-width: 64ch;
+  margin-bottom: clamp(1rem, 4vw, 1.7rem);
+  font-size: clamp(1.2rem, 2vw, 1.4rem);
+}
+
+:lang(ru) .contactTitle {
+  font-family: var(--font-secondary);
+  font-weight: 400;
 }
 
 .contactLinkWrapper {
@@ -16,11 +32,10 @@
   margin-bottom: 1rem;
   padding: 4px 0;
   font-size: 1.2rem;
-  color: var(--color-secondary);
+  color: var(--color-highlight);
 
   @media (min-width: 1024px) {
     font-size: 1.4rem;
-    color: var(--color-highlight);
     transition: color .4s ease;
 
     &:hover,

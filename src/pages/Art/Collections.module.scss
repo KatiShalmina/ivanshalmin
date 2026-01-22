@@ -1,16 +1,10 @@
 .cardsList {
   display: flex;
   flex-direction: column;
-  gap: 10px;
+  gap: 3rem;
   margin-bottom: clamp(1.7rem, 4vw, 3rem);
 
-  @media (min-width: 1024px) {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-  }
-
-  @media (min-width: 1280px) {
-    grid-template-columns: repeat(3, 1fr);
+  @media (min-width: 570px) {
     gap: 1rem;
   }
 }
@@ -45,6 +39,11 @@
       border-color: var(--color-highlight);
     }
   }
+}
+
+:lang(ru) .filterButton {
+  font-family: var(--font-secondary);
+  font-weight: 400;
 }
 
 .filterButton[aria-pressed='true'] {

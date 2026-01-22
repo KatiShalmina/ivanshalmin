@@ -148,7 +148,7 @@ export const pubCovers = [
     slug: 'paper',
     title: {
       en: 'architecture — paper and reality: where’s the commission?',
-      ru: 'архитектура — бумага и реалии: где заказ?'
+      ru: 'архитектура — бумага и реалии'
     },
 
     subtitle: {

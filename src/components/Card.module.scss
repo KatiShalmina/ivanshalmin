@@ -1,7 +1,11 @@
 .cardsList {
   display: flex;
   flex-direction: column;
-  gap: clamp(10px, 2vw, 1.4rem);
+  gap: 10px;
+
+  @media (min-width: 1024px) {
+    gap: 1rem;
+  }
 }
 
 .card {
@@ -33,16 +37,22 @@
 }
 
 .cardInfo {
-  position: absolute;
-  bottom: 1rem;
-  left: 1rem;
+  display: flex;
+  gap: 2rem;
+  justify-content: space-between;
   background: var(--color-primary);
-  padding: 8px 1rem;
-  box-shadow: 0 0 0 1px var(--color-secondary);
+  padding: 8px 0;
+  // border-top: 1px solid transparent;
+  // box-shadow: 0 0 0 1px var(--color-secondary);
 
   @media (min-width: 1280px) {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    left: 0;
     opacity: 0;
     visibility: hidden;
+    padding: 10px;
     transform: translate3d(0, 8px, 0);
     transition: 
       opacity .3s ease,
@@ -56,18 +66,25 @@
   @media (min-width: 1280px) {
     opacity: 1;
     visibility: visible;
+    border-top-color: var(--color-secondary);
     transform: translateY(0);
   }
 }
 
 .cardTitle {
-  font-size: clamp(1.4rem, 4vw, 2.5rem);
-  line-height: 1.2;
-  font-weight: 300;
-  font-stretch: 115%;
+  font-size: 1.2rem;
+  font-weight: 400;
+
+  @media (min-width: 1024px) {
+    font-size: 1.4rem;
+  }
 }
 
-:lang(ru) .cardTitle {
-  font-family: var(--font-secondary);
-  font-weight: 400;
+.cardSubtitle {
+  font-size: 1.2rem;
+  text-align: right;
+
+  @media (min-width: 1024px) {
+    font-size: 1.4rem;
+  }
 }

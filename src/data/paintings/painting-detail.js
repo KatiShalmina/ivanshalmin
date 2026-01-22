@@ -1,11 +1,21 @@
 export const paintingDetail = [
   {
     slug: 'discussion',
-    title: 'discussion',
-    description: `
-      2500 mm x 1500 mm
-      price: $ 1790
-    `,
+    collections: ['psychedelics'],
+    title: {
+      en: 'discussion',
+      ru: 'дискуссия'
+    },
+    description: {
+      en: `
+        2500 mm x 1500 mm
+        price: $ 1790
+      `,
+      ru: `
+        2500 мм x 1500 мм
+        цена: $ 1790
+      `
+    },
     src: '/images/paintings/480/discussion.webp',
     srcSet: `
       /images/paintings/480/discussion.webp 480w,
@@ -17,11 +27,21 @@ export const paintingDetail = [
   },
   {
     slug: 'at-6-am',
-    title: 'at 6 am',
-    description: `
-      1100 mm x 750 mm
-      price: $ 1470
-    `,
+    collections: ['landscapes'],
+    title: {
+      en: 'at 6 am',
+      ru: 'в 6 утра'
+    },
+    description: {
+      en: `
+        1100 mm x 750 mm
+        price: $ 1470
+      `,
+      ru: `
+        1100 мм x 750 мм
+        цена: $ 1470
+      `
+    },
     src: '/images/paintings/480/at-6-am.webp',
     srcSet: `
       /images/paintings/480/at-6-am.webp 480w,
@@ -40,11 +60,21 @@ export const paintingDetail = [
   },
   {
     slug: 'blazing-heat',
-    title: 'blazing heat',
-    description: `
-      1100 mm x 750 mm
-      price: $ 1470
-    `,
+    collections: ['landscapes'],
+    title: {
+      en: 'blazing heat',
+      ru: 'зной'
+    },
+    description: {
+      en: `
+        1100 mm x 750 mm
+        price: $ 1470
+      `,
+      ru: `
+        1100 мм x 750 мм
+        цена: $ 1470
+      `
+    },
     src: '/images/paintings/480/blazing-heat.webp',
     srcSet: `
       /images/paintings/480/blazing-heat.webp 480w,
@@ -60,11 +90,21 @@ export const paintingDetail = [
   },
   {
     slug: 'meeting',
-    title: 'the meeting',
-    description: `
-      600 mm x 400 mm
-      price: $ 1190
-    `,
+    collections: ['portraits'],
+    title: {
+      en: 'the meeting',
+      ru: 'совещание'
+    },
+    description: {
+      en: `
+        600 mm x 400 mm
+        price: $ 1190
+      `,
+      ru: `
+        600 мм x 400 мм
+        цена: $ 1190
+      `
+    },
     src: '/images/paintings/480/meeting.webp',
     srcSet: `
       /images/paintings/480/meeting.webp 480w,
@@ -84,11 +124,21 @@ export const paintingDetail = [
   },
   {
     slug: 'dusk',
-    title: 'dusk',
-    description: `
-      1500 mm x 1000 mm
-      price: $ 1470
-    `,
+    collections: ['landscapes'],
+    title: {
+      en: 'dusk',
+      ru: 'сумерки'
+    },
+    description: {
+      en: `
+        1500 mm x 1000 mm
+        price: $ 1470
+      `,
+      ru: `
+        1500 мм x 1000 мм
+        цена: $ 1470
+      `
+    },
     src: '/images/paintings/480/dusk.webp',
     srcSet: `
       /images/paintings/480/dusk.webp 480w,
@@ -107,11 +157,21 @@ export const paintingDetail = [
   },
   {
     slug: 'fears',
-    title: 'fears',
-    description: `
-      1500 mm x 1000 mm
-      price: $ 1470
-    `,
+    collections: ['portraits'],
+    title: {
+      en: 'fears',
+      ru: 'страхи'
+    },
+    description: {
+      en: `
+        1500 mm x 1000 mm
+        price: $ 1470
+      `,
+      ru: `
+        1500 мм x 1000 мм
+        цена: $ 1470
+      `
+    },
     src: '/images/paintings/480/fears.webp',
     srcSet: `
       /images/paintings/480/fears.webp 480w,
@@ -128,11 +188,21 @@ export const paintingDetail = [
   },
   {
     slug: 'iron-man',
-    title: 'the iron man',
-    description: `
-      1500 mm x 900 mm
-      price: $ 1470
-    `,
+    collections: ['portraits'],
+    title: {
+      en: 'the iron man',
+      ru: 'железный человек'
+    },
+    description: {
+      en: `
+        1500 mm x 900 mm
+        price: $ 1470
+      `,
+      ru: `
+        1500 мм x 900 мм
+        цена: $ 1470
+      `
+    },
     src: '/images/paintings/480/iron-man.webp',
     srcSet: `
       /images/paintings/480/iron-man.webp 480w,
@@ -150,11 +220,21 @@ export const paintingDetail = [
   },
   {
     slug: 'race',
-    title: 'the race',
-    description: `
-      1100 mm x 750 mm
-      price: $ 1470
-    `,
+    collections: ['portraits'],
+    title: {
+      en: 'the race',
+      ru: 'гонка'
+    },
+    description: {
+      en: `
+        1100 mm x 750 mm
+        price: $ 1470
+      `,
+      ru: `
+        1100 мм x 750 мм
+        цена: $ 1470
+      `
+    },
     src: '/images/paintings/480/race.webp',
     srcSet: `
       /images/paintings/480/race.webp 480w,
@@ -171,11 +251,21 @@ export const paintingDetail = [
   },
   {
     slug: 'gwynplaine',
-    title: 'gwynplaine',
-    description: `
-      1100 mm x 750 mm
-      price: $ 1470
-    `,
+    collections: ['portraits'],
+    title: {
+      en: 'gwynplaine',
+      ru: 'гуинплен'
+    },
+    description: {
+      en: `
+        1100 mm x 750 mm
+        price: $ 1470
+      `,
+      ru: `
+        1100 мм x 750 мм
+        цена: $ 1470
+      `
+    },
     src: '/images/paintings/480/gwynplaine.webp',
     srcSet: `
       /images/paintings/480/gwynplaine.webp 480w,
@@ -192,34 +282,22 @@ export const paintingDetail = [
     `
   },
   {
-    slug: 'gwynplaine',
-    title: 'gwynplaine',
-    description: `
-      1100 mm x 750 mm
-      price: $ 1470
-    `,
-    src: '/images/paintings/480/gwynplaine.webp',
-    srcSet: `
-      /images/paintings/480/gwynplaine.webp 480w,
-      /images/paintings/1024/gwynplaine.webp 1024w,
-      /images/paintings/original/gwynplaine.webp 1754w
-    `,
-    sizes: '1440px',
-    quote: `
-    ‘Gwynplaine’, ‘Secret’, ‘Ghoul’, and ‘The Race’ are a series of paintings that break the well-known rules and techniques of composition.
-
-    As we know, warm colours are in the foreground and cool colours are in the background. In the paintings ‘Gwynplaine’, ‘Secret’ and ‘Ghoul’, we see the exact opposite. The red, which should be in the foreground, has fallen deep into the background. 
-
-    And while ‘Gwynplaine’ has sharpness in the centre and blurred edges, in ‘Secret’, ‘Ghoul’ and ‘The Race’ it is the opposite — they have come to the fore. There should have been a reversal of space, but the composition still holds.
-    `
-  },
-  {
     slug: 'secret',
-    title: 'secret',
-    description: `
-      1100 mm x 750 mm
-      price: $ 1470
-    `,
+    collections: ['portraits'],
+    title: {
+      en: 'secret',
+      ru: 'тайна'
+    },
+    description: {
+      en: `
+        1100 mm x 750 mm
+        price: $ 1470
+      `,
+      ru: `
+        1100 мм x 750 мм
+        цена: $ 1470
+      `
+    },
     src: '/images/paintings/480/secret.webp',
     srcSet: `
       /images/paintings/480/secret.webp 480w,
@@ -237,11 +315,21 @@ export const paintingDetail = [
   },
   {
     slug: 'ghoul',
-    title: 'ghoul',
-    description: `
-      1100 mm x 750 mm
-      price: $ 1470
-    `,
+    collections: ['portraits'],
+    title: {
+      en: 'ghoul',
+      ru: 'упырь'
+    },
+    description: {
+      en: `
+        1100 mm x 750 mm
+        price: $ 1470
+      `,
+      ru: `
+        1100 мм x 750 мм
+        цена: $ 1470
+      `
+    },
     src: '/images/paintings/480/ghoul.webp',
     srcSet: `
       /images/paintings/480/ghoul.webp 480w,
@@ -262,11 +350,21 @@ export const paintingDetail = [
   },
   {
     slug: 'faculty',
-    title: 'faculty',
-    description: `
-      1500 mm x 1000 mm
-      price: $ 1470
-    `,
+    collections: ['landscapes'],
+    title: {
+      en: 'faculty',
+      ru: 'факультет'
+    },
+    description: {
+      en: `
+        1500 mm x 1000 mm
+        price: $ 1470
+      `,
+      ru: `
+        1500 мм x 1000 мм
+        цена: $ 1470
+      `
+    },
     src: '/images/paintings/480/faculty.webp',
     srcSet: `
       /images/paintings/480/faculty.webp 480w,
@@ -282,11 +380,21 @@ export const paintingDetail = [
   },
   {
     slug: 'tree',
-    title: 'tree',
-    description: `
-      600 mm x 400 mm
-      price: $ 1190
-    `,
+    collections: ['landscapes'],
+    title: {
+      en: 'tree',
+      ru: 'дерево'
+    },
+    description: {
+      en: `
+        600 mm x 400 mm
+        price: $ 1190
+      `,
+      ru: `
+        600 мм x 400 мм
+        цена: $ 1190
+      `
+    },
     src: '/images/paintings/480/tree.webp',
     srcSet: `
       /images/paintings/480/tree.webp 480w,
@@ -298,11 +406,21 @@ export const paintingDetail = [
   },
   {
     slug: 'small-yard',
-    title: 'a small yard in n-sk',
-    description: `
-      600 mm x 400 mm
-      price: $ 1190
-    `,
+    collections: ['landscapes'],
+    title: {
+      en: 'a small yard in n-sk',
+      ru: 'дворик в н-ске'
+    },
+    description: {
+      en: `
+        600 mm x 400 mm
+        price: $ 1190
+      `,
+      ru: `
+        600 мм x 400 мм
+        цена: $ 1190
+      `
+    },
     src: '/images/paintings/480/small-yard.webp',
     srcSet: `
       /images/paintings/480/small-yard.webp 480w,
@@ -314,11 +432,21 @@ export const paintingDetail = [
   },
   {
     slug: 'headache',
-    title: 'headache',
-    description: `
-      1500 mm x 1000 mm
-      price: $ 1470
-    `,
+    collections: ['portraits'],
+    title: {
+      en: 'headache',
+      ru: 'головная боль'
+    },
+    description: {
+      en: `
+        1500 mm x 1000 mm
+        price: $ 1470
+      `,
+      ru: `
+        1500 мм x 1000 мм
+        цена: $ 1470
+      `
+    },
     src: '/images/paintings/480/headache.webp',
     srcSet: `
       /images/paintings/480/headache.webp 480w,
@@ -334,11 +462,21 @@ export const paintingDetail = [
   },
   {
     slug: 'brain',
-    title: 'brain',
-    description: `
-      1500 mm x 1000 mm
-      price: $ 1470
-    `,
+    collections: ['portraits'],
+    title: {
+      en: 'brain',
+      ru: 'мозг'
+    },
+    description: {
+      en: `
+        1500 mm x 1000 mm
+        price: $ 1470
+      `,
+      ru: `
+        1500 мм x 1000 мм
+        цена: $ 1470
+      `
+    },
     src: '/images/paintings/480/brain.webp',
     srcSet: `
       /images/paintings/480/brain.webp 480w,
@@ -354,11 +492,21 @@ export const paintingDetail = [
   },
   {
     slug: 'blood-drop',
-    title: 'a drop of blood',
-    description: `
-      2500 mm x 1500 mm
-      price: $ 1790
-    `,
+    collections: ['psychedelics'],
+    title: {
+      en: 'a drop of blood',
+      ru: 'капля крови'
+    },
+    description: {
+      en: `
+        2500 mm x 1500 mm
+        price: $ 1790
+      `,
+      ru: `
+        2500 мм x 1500 мм
+        цена: $ 1790
+      `
+    },
     src: '/images/paintings/480/blood-drop.webp',
     srcSet: `
       /images/paintings/480/blood-drop.webp 480w,
@@ -382,11 +530,21 @@ export const paintingDetail = [
   },
   {
     slug: 'decadence',
-    title: 'decadence',
-    description: `
-      2500 mm x 1500 mm
-      price: $ 1790
-    `,
+    collections: ['psychedelics'],
+    title: {
+      en: 'decadence',
+      ru: 'декаданс'
+    },
+    description: {
+      en: `
+        2500 mm x 1500 mm
+        price: $ 1790
+      `,
+      ru: `
+        2500 мм x 1500 мм
+        цена: $ 1790
+      `
+    },
     src: '/images/paintings/480/decadence.webp',
     srcSet: `
       /images/paintings/480/decadence.webp 480w,
@@ -402,11 +560,21 @@ export const paintingDetail = [
   },
   {
     slug: 'splash',
-    title: 'the splash',
-    description: `
-      1500 mm x 900 mm
-      price: $ 1470
-    `,
+    collections: ['psychedelics'],
+    title: {
+      en: 'the splash',
+      ru: 'всплеск'
+    },
+    description: {
+      en: `
+        1500 mm x 900 mm
+        price: $ 1470
+      `,
+      ru: `
+        1500 мм x 900 мм
+        цена: $ 1470
+      `
+    },
     src: '/images/paintings/480/splash.webp',
     srcSet: `
       /images/paintings/480/splash.webp 480w,
@@ -422,11 +590,21 @@ export const paintingDetail = [
   },
   {
     slug: 'summer',
-    title: 'the summer',
-    description: `
-      570 mm x 410 mm
-      price: $ 1190
-    `,
+    collections: ['psychedelics'],
+    title: {
+      en: 'the summer',
+      ru: 'лето'
+    },
+    description: {
+      en: `
+        570 mm x 410 mm
+        price: $ 1190
+      `,
+      ru: `
+        570 мм x 410 мм
+        цена: $ 1190
+      `
+    },
     src: '/images/paintings/480/summer.webp',
     srcSet: `
       /images/paintings/480/summer.webp 480w,
@@ -444,11 +622,21 @@ export const paintingDetail = [
   },
   {
     slug: 'journey',
-    title: 'the journey',
-    description: `
-      1100 mm x 750 mm
-      price: $ 1470
-    `,
+    collections: ['structures'],
+    title: {
+      en: 'the journey',
+      ru: 'путь'
+    },
+    description: {
+      en: `
+        1100 mm x 750 mm
+        price: $ 1470
+      `,
+      ru: `
+        1100 мм x 750 мм
+        цена: $ 1470
+      `
+    },
     src: '/images/paintings/480/journey.webp',
     srcSet: `
       /images/paintings/480/journey.webp 480w,
@@ -460,11 +648,21 @@ export const paintingDetail = [
   },
   {
     slug: 'madam',
-    title: 'madam',
-    description: `
-      1500 mm x 1000 mm
-      price: $ 1470
-    `,
+    collections: ['portraits'],
+    title: {
+      en: 'madam',
+      ru: 'мадам'
+    },
+    description: {
+      en: `
+        1500 mm x 1000 mm
+        price: $ 1470
+      `,
+      ru: `
+        1500 мм x 1000 мм
+        цена: $ 1470
+      `
+    },
     src: '/images/paintings/480/madam.webp',
     srcSet: `
       /images/paintings/480/madam.webp 480w,
@@ -480,11 +678,21 @@ export const paintingDetail = [
   },
   {
     slug: 'by-the-river',
-    title: 'by the river',
-    description: `
-      1500 mm x 1000 mm
-      price: $ 1470
-    `,
+    collections: ['landscapes'],
+    title: {
+      en: 'by the river',
+      ru: 'а у реки'
+    },
+    description: {
+      en: `
+        1500 mm x 1000 mm
+        price: $ 1470
+      `,
+      ru: `
+        1500 мм x 1000 мм
+        цена: $ 1470
+      `
+    },
     src: '/images/paintings/480/by-the-river.webp',
     srcSet: `
       /images/paintings/480/by-the-river.webp 480w,
@@ -500,11 +708,21 @@ export const paintingDetail = [
   },
   {
     slug: 'autumn',
-    title: 'autumn',
-    description: `
-      1500 mm x 1000 mm
-      price: $ 1470
-    `,
+    collections: ['landscapes'],
+    title: {
+      en: 'autumn',
+      ru: 'осень'
+    },
+    description: {
+      en: `
+        1500 mm x 1000 mm
+        price: $ 1470
+      `,
+      ru: `
+        1500 мм x 1000 мм
+        цена: $ 1470
+      `
+    },
     src: '/images/paintings/480/autumn.webp',
     srcSet: `
       /images/paintings/480/autumn.webp 480w,
@@ -524,11 +742,21 @@ export const paintingDetail = [
   },
   {
     slug: 'structure',
-    title: 'structure',
-    description: `
-      1100 mm x 750 mm
-      price: $ 1470
-    `,
+    collections: ['structures'],
+    title: {
+      en: 'structure',
+      ru: 'структура'
+    },
+    description: {
+      en: `
+        1100 mm x 750 mm
+        price: $ 1470
+      `,
+      ru: `
+        1100 мм x 750 мм
+        цена: $ 1470
+      `
+    },
     src: '/images/paintings/480/structure.webp',
     srcSet: `
       /images/paintings/480/structure.webp 480w,
@@ -544,11 +772,21 @@ export const paintingDetail = [
   },
   {
     slug: 'city',
-    title: 'city',
-    description: `
-      1100 mm x 750 mm
-      price: $ 1470
-    `,
+    collections: ['structures'],
+    title: {
+      en: 'city',
+      ru: 'город'
+    },
+    description: {
+      en: `
+        1100 mm x 750 mm
+        price: $ 1470
+      `,
+      ru: `
+        1100 мм x 750 мм
+        цена: $ 1470
+      `
+    },
     src: '/images/paintings/480/city.webp',
     srcSet: `
       /images/paintings/480/city.webp 480w,
@@ -566,11 +804,21 @@ export const paintingDetail = [
   },
   {
     slug: 'contact',
-    title: 'contact',
-    description: `
-      900 mm x 600 mm
-      price: $ 1190
-    `,
+    collections: ['portraits'],
+    title: {
+      en: 'contact',
+      ru: 'контакт'
+    },
+    description: {
+      en: `
+        900 mm x 600 mm
+        price: $ 1190
+      `,
+      ru: `
+        900 мм x 600 мм
+        цена: $ 1190
+      `
+    },
     src: '/images/paintings/480/contact.webp',
     srcSet: `
       /images/paintings/480/contact.webp 480w,
@@ -587,11 +835,21 @@ export const paintingDetail = [
   },
   {
     slug: 'crazy-color',
-    title: 'a crazy color',
-    description: `
-      600 mm x 400 mm
-      price: $ 1190
-    `,
+    collections: ['landscapes'],
+    title: {
+      en: 'a crazy color',
+      ru: 'дикий'
+    },
+    description: {
+      en: `
+        600 mm x 400 mm
+        price: $ 1190
+      `,
+      ru: `
+        600 мм x 400 мм
+        цена: $ 1190
+      `
+    },
     src: '/images/paintings/480/crazy-color.webp',
     srcSet: `
       /images/paintings/480/crazy-color.webp 480w,
@@ -607,11 +865,21 @@ export const paintingDetail = [
   },
   {
     slug: 'damn',
-    title: 'don’t give a damn',
-    description: `
-      1500 mm x 1000 mm
-      price: $ 1470
-    `,
+    collections: ['landscapes'],
+    title: {
+      en: 'don’t give a damn',
+      ru: 'похрену мороз'
+    },
+    description: {
+      en: `
+        1500 mm x 1000 mm
+        price: $ 1470
+      `,
+      ru: `
+        1500 мм x 1000 мм
+        цена: $ 1470
+      `
+    },
     src: '/images/paintings/480/damn.webp',
     srcSet: `
       /images/paintings/480/damn.webp 480w,
@@ -627,11 +895,21 @@ export const paintingDetail = [
   },
   {
     slug: 'deep-forest',
-    title: 'deep forest',
-    description: `
-      1200 mm x 800 mm
-      price: $ 1470
-    `,
+    collections: ['landscapes'],
+    title: {
+      en: 'deep forest',
+      ru: 'лес густой'
+    },
+    description: {
+      en: `
+        1200 mm x 800 mm
+        price: $ 1470
+      `,
+      ru: `
+        1200 мм x 800 мм
+        цена: $ 1470
+      `
+    },
     src: '/images/paintings/480/deep-forest.webp',
     srcSet: `
       /images/paintings/480/deep-forest.webp 480w,
@@ -647,11 +925,21 @@ export const paintingDetail = [
   },
   {
     slug: 'demons',
-    title: 'demons',
-    description: `
-      600 mm x 400 mm
-      price: $ 1190
-    `,
+    collections: ['portraits'],
+    title: {
+      en: 'demons',
+      ru: 'демоны'
+    },
+    description: {
+      en: `
+        600 mm x 400 mm
+        price: $ 1190
+      `,
+      ru: `
+        600 мм x 400 мм
+        цена: $ 1190
+      `
+    },
     src: '/images/paintings/480/demons.webp',
     srcSet: `
       /images/paintings/480/demons.webp 480w,
@@ -668,11 +956,21 @@ export const paintingDetail = [
   },
   {
     slug: 'dream',
-    title: 'dream',
-    description: `
-      1500 mm x 1000 mm
-      price: $ 1470
-    `,
+    collections: ['landscapes'],
+    title: {
+      en: 'dream',
+      ru: 'мечта'
+    },
+    description: {
+      en: `
+        1500 mm x 1000 mm
+        price: $ 1470
+      `,
+      ru: `
+        1500 мм x 1000 мм
+        цена: $ 1470
+      `
+    },
     src: '/images/paintings/480/dream.webp',
     srcSet: `
       /images/paintings/480/dream.webp 480w,
@@ -688,11 +986,21 @@ export const paintingDetail = [
   },
   {
     slug: 'drowning',
-    title: 'who’s drowning over there?',
-    description: `
-      2500 mm x 1500 mm
-      price: $ 1790
-    `,
+    collections: ['psychedelics'],
+    title: {
+      en: 'who’s drowning over there?',
+      ru: 'кто там тонет?'
+    },
+    description: {
+      en: `
+        2500 mm x 1500 mm
+        price: $ 1790
+      `,
+      ru: `
+        2500 мм x 1500 мм
+        цена: $ 1790
+      `
+    },
     src: '/images/paintings/480/drowning.webp',
     srcSet: `
       /images/paintings/480/drowning.webp 480w,
@@ -710,11 +1018,21 @@ export const paintingDetail = [
   },
   {
     slug: 'fright',
-    title: 'a fright',
-    description: `
-      750 mm x 600 mm
-      price: $ 1190
-    `,
+    collections: ['portraits'],
+    title: {
+      en: 'a fright',
+      ru: 'испуг'
+    },
+    description: {
+      en: `
+        750 mm x 600 mm
+        price: $ 1190
+      `,
+      ru: `
+        750 мм x 600 мм
+        цена: $ 1190
+      `
+    },
     src: '/images/paintings/480/fright.webp',
     srcSet: `
       /images/paintings/480/fright.webp 480w,
@@ -730,11 +1048,21 @@ export const paintingDetail = [
   },
   {
     slug: 'first-snow',
-    title: 'first snow',
-    description: `
-      1500 mm x 1000 mm
-      price: $ 1470
-    `,
+    collections: ['landscapes'],
+    title: {
+      en: 'first snow',
+      ru: 'первый снег'
+    },
+    description: {
+      en: `
+        1500 mm x 1000 mm
+        price: $ 1470
+      `,
+      ru: `
+        1500 мм x 1000 мм
+        цена: $ 1470
+      `
+    },
     src: '/images/paintings/480/first-snow.webp',
     srcSet: `
       /images/paintings/480/first-snow.webp 480w,
@@ -750,11 +1078,21 @@ export const paintingDetail = [
   },
   {
     slug: 'hallucination',
-    title: 'hallucination',
-    description: `
-      1100 mm x 750 mm
-      price: $ 1470
-    `,
+    collections: ['portraits'],
+    title: {
+      en: 'hallucination',
+      ru: 'глюкоген'
+    },
+    description: {
+      en: `
+        1100 mm x 750 mm
+        price: $ 1470
+      `,
+      ru: `
+        1100 мм x 750 мм
+        цена: $ 1470
+      `
+    },
     src: '/images/paintings/480/hallucination.webp',
     srcSet: `
       /images/paintings/480/hallucination.webp 480w,
@@ -766,11 +1104,21 @@ export const paintingDetail = [
   },
   {
     slug: 'hungover',
-    title: 'hungover',
-    description: `
-      750 mm x 600 mm
-      price: $ 1190
-    `,
+    collections: ['portraits'],
+    title: {
+      en: 'hungover',
+      ru: 'с бодуна'
+    },
+    description: {
+      en: `
+        750 mm x 600 mm
+        price: $ 1190
+      `,
+      ru: `
+        750 мм x 600 мм
+        цена: $ 1190
+      `
+    },
     src: '/images/paintings/480/hungover.webp',
     srcSet: `
       /images/paintings/480/hungover.webp 480w,
@@ -786,11 +1134,21 @@ export const paintingDetail = [
   },
   {
     slug: 'lightness-of-being',
-    title: 'the unbearable lightness of being',
-    description: `
-      1500 mm x 1000 mm
-      price: $ 1470
-    `,
+    collections: ['landscapes'],
+    title: {
+      en: 'the unbearable lightness of being',
+      ru: 'невыносимая легкость бытия'
+    },
+    description: {
+      en: `
+        1500 mm x 1000 mm
+        price: $ 1470
+      `,
+      ru: `
+        1500 мм x 1000 мм
+        цена: $ 1470
+      `
+    },
     src: '/images/paintings/480/lightness-of-being.webp',
     srcSet: `
       /images/paintings/480/lightness-of-being.webp 480w,
@@ -806,11 +1164,21 @@ export const paintingDetail = [
   },
   {
     slug: 'look',
-    title: 'the look',
-    description: `
-      750 mm x 600 mm
-      price: $ 1190
-    `,
+    collections: ['portraits'],
+    title: {
+      en: 'the look',
+      ru: 'взгляд'
+    },
+    description: {
+      en: `
+        750 mm x 600 mm
+        price: $ 1190
+      `,
+      ru: `
+        750 мм x 600 мм
+        цена: $ 1190
+      `
+    },
     src: '/images/paintings/480/look.webp',
     srcSet: `
       /images/paintings/480/look.webp 480w,
@@ -826,11 +1194,21 @@ export const paintingDetail = [
   },
   {
     slug: 'mountain',
-    title: 'mountain',
-    description: `
-      1100 mm x 750 mm
-      price: $ 1470
-    `,
+    collections: ['landscapes'],
+    title: {
+      en: 'mountain',
+      ru: 'гора'
+    },
+    description: {
+      en: `
+        1100 mm x 750 mm
+        price: $ 1470
+      `,
+      ru: `
+        1100 мм x 750 мм
+        цена: $ 1470
+      `
+    },
     src: '/images/paintings/480/mountain.webp',
     srcSet: `
       /images/paintings/480/mountain.webp 480w,
@@ -848,11 +1226,21 @@ export const paintingDetail = [
   },
   {
     slug: 'oceania',
-    title: 'oceania',
-    description: `
-      2500 mm x 1500 mm
-      price: $ 1790
-    `,
+    collections: ['psychedelics'],
+    title: {
+      en: 'oceania',
+      ru: 'океания'
+    },
+    description: {
+      en: `
+        2500 mm x 1500 mm
+        price: $ 1790
+      `,
+      ru: `
+        2500 мм x 1500 мм
+        цена: $ 1790
+      `
+    },
     src: '/images/paintings/480/oceania.webp',
     srcSet: `
         /images/paintings/480/oceania.webp 480w,
@@ -864,11 +1252,21 @@ export const paintingDetail = [
   },
   {
     slug: 'wave',
-    title: 'wave',
-    description: `
-      2500 mm x 1500 mm
-      price: $ 1790
-    `,
+    collections: ['psychedelics'],
+    title: {
+      en: 'wave',
+      ru: ''
+    },
+    description: {
+      en: `
+        2500 mm x 1500 mm
+        price: $ 1790
+      `,
+      ru: `
+        2500 мм x 1500 мм
+        цена: $ 1790
+      `
+    },
     src: '/images/paintings/480/wave.webp',
     srcSet: `
       /images/paintings/480/wave.webp 480w,
@@ -886,11 +1284,21 @@ export const paintingDetail = [
   },
   {
     slug: 'wet-conversation',
-    title: 'a wet conversation',
-    description: `
-      2500 mm x 1500 mm
-      price: $ 1470
-    `,
+    collections: ['psychedelics'],
+    title: {
+      en: 'a wet conversation',
+      ru: 'мокрый разговор'
+    },
+    description: {
+      en: `
+        2500 mm x 1500 mm
+        price: $ 1470
+      `,
+      ru: `
+        2500 мм x 1500 мм
+        цена: $ 1470
+      `
+    },
     src: '/images/paintings/480/wet-conversation.webp',
     srcSet: `
       /images/paintings/480/wet-conversation.webp 480w,
@@ -908,11 +1316,21 @@ export const paintingDetail = [
   },
   {
     slug: 'still-life-1',
-    title: 'still life 1',
-    description: `
-      600 mm x 400 mm
-      price: $ 1190
-    `,
+    collections: ['stillLife'],
+    title: {
+      en: 'still life 1',
+      ru: 'натюрморт 1'
+    },
+    description: {
+      en: `
+        600 mm x 400 mm
+        price: $ 1190
+      `,
+      ru: `
+        600 мм x 400 мм
+        цена: $ 1190
+      `
+    },
     src: '/images/paintings/480/still-life-1.webp',
     srcSet: `
       /images/paintings/480/still-life-1.webp 480w,
@@ -928,11 +1346,21 @@ export const paintingDetail = [
   },
   {
     slug: 'still-life-2',
-    title: 'still life 2',
-    description: `
-      900 mm x 600 mm
-      price: $ 1190
-    `,
+    collections: ['stillLife'],
+    title: {
+      en: 'still life 2',
+      ru: 'натюрморт 2'
+    },
+    description: {
+      en: `
+        900 mm x 600 mm
+        price: $ 1190
+      `,
+      ru: `
+        900 мм x 600 мм
+        цена: $ 1190
+      `
+    },
     src: '/images/paintings/480/still-life-2.webp',
     srcSet: `
       /images/paintings/480/still-life-2.webp 480w,
@@ -948,11 +1376,21 @@ export const paintingDetail = [
   },
   {
     slug: 'still-life-3',
-    title: 'still life 3',
-    description: `
-      600 mm x 400 mm
-      price: $ 1190
-    `,
+    collections: ['stillLife'],
+    title: {
+      en: 'still life 3',
+      ru: 'натюрморт 3'
+    },
+    description: {
+      en: `
+        600 mm x 400 mm
+        price: $ 1190
+      `,
+      ru: `
+        600 мм x 400 мм
+        цена: $ 1190
+      `
+    },
     src: '/images/paintings/480/still-life-3.webp',
     srcSet: `
       /images/paintings/480/still-life-3.webp 480w,
@@ -968,11 +1406,21 @@ export const paintingDetail = [
   },
   {
     slug: 'roses',
-    title: 'roses',
-    description: `
-      570 mm x 410 mm
-      price: $ 1190
-    `,
+    collections: ['stillLife'],
+    title: {
+      en: 'roses',
+      ru: 'розы'
+    },
+    description: {
+      en: `
+        570 mm x 410 mm
+        price: $ 1190
+      `,
+      ru: `
+        570 мм x 410 мм
+        цена: $ 1190
+      `
+    },
     src: '/images/paintings/480/roses.webp',
     srcSet: `
       /images/paintings/480/roses.webp 480w,
@@ -991,11 +1439,21 @@ export const paintingDetail = [
   },
   {
     slug: 'leaf',
-    title: 'leaf',
-    description: `
-      570 mm x 410 mm
-      price: $ 1190
-    `,
+    collections: ['stillLife'],
+    title: {
+      en: 'leaf',
+      ru: 'лист'
+    },
+    description: {
+      en: `
+        570 mm x 410 mm
+        price: $ 1190
+      `,
+      ru: `
+        570 мм x 410 мм
+        цена: $ 1190
+      `
+    },
     src: '/images/paintings/480/leaf.webp',
     srcSet: `
       /images/paintings/480/leaf.webp 480w,
@@ -1013,11 +1471,21 @@ export const paintingDetail = [
   },
   {
     slug: 'sea',
-    title: 'the sea',
-    description: `
-      570 mm x 410 mm
-      price: $ 1190
-    `,
+    collections: ['stillLife'],
+    title: {
+      en: 'the sea',
+      ru: 'море'
+    },
+    description: {
+      en: `
+        570 mm x 410 mm
+        price: $ 1190
+      `,
+      ru: `
+        570 мм x 410 мм
+        цена: $ 1190
+      `
+    },
     src: '/images/paintings/480/sea.webp',
     srcSet: `
       /images/paintings/480/sea.webp 480w,
@@ -1033,11 +1501,21 @@ export const paintingDetail = [
   },
   {
     slug: 'mountains',
-    title: 'mountains',
-    description: `
-      570 mm x 410 mm
-      price: $ 1190
-    `,
+    collections: ['stillLife'],
+    title: {
+      en: 'mountains',
+      ru: 'горы'
+    },
+    description: {
+      en: `
+        570 mm x 410 mm
+        price: $ 1190
+      `,
+      ru: `
+        570 мм x 410 мм
+        цена: $ 1190
+      `
+    },
     src: '/images/paintings/480/mountains.webp',
     srcSet: `
       /images/paintings/480/mountains.webp 480w,
@@ -1053,11 +1531,21 @@ export const paintingDetail = [
   },
   {
     slug: 'party',
-    title: 'party',
-    description: `
-      570 mm x 410 mm
-      price: $ 1190
-    `,
+    collections: ['stillLife'],
+    title: {
+      en: 'party',
+      ru: 'вечеринка'
+    },
+    description: {
+      en: `
+        570 mm x 410 mm
+        price: $ 1190
+      `,
+      ru: `
+        570 мм x 410 мм
+        цена: $ 1190
+      `
+    },
     src: '/images/paintings/480/party.webp',
     srcSet: `
       /images/paintings/480/party.webp 480w,
@@ -1069,11 +1557,21 @@ export const paintingDetail = [
   },
   {
     slug: 'electricity',
-    title: 'electricity',
-    description: `
-      570 mm x 410 mm
-      price: $ 1190
-    `,
+    collections: ['psychedelics'],
+    title: {
+      en: 'electricity',
+      ru: 'электричество'
+    },
+    description: {
+      en: `
+        570 mm x 410 mm
+        price: $ 1190
+      `,
+      ru: `
+        570 мм x 410 мм
+        цена: $ 1190
+      `
+    },
     src: '/images/paintings/480/electricity.webp',
     srcSet: `
       /images/paintings/480/electricity.webp 480w,
@@ -1085,11 +1583,21 @@ export const paintingDetail = [
   },
   {
     slug: 'fish',
-    title: 'fish',
-    description: `
-      570 mm x 410 mm
-      price: $ 1190
-    `,
+    collections: ['psychedelics'],
+    title: {
+      en: 'fish',
+      ru: 'рыба'
+    },
+    description: {
+      en: `
+        570 mm x 410 mm
+        price: $ 1190
+      `,
+      ru: `
+        570 мм x 410 мм
+        цена: $ 1190
+      `
+    },
     src: '/images/paintings/480/fish.webp',
     srcSet: `
       /images/paintings/480/fish.webp 480w,
@@ -1107,11 +1615,21 @@ export const paintingDetail = [
   },
   {
     slug: 'vine',
-    title: 'the vine',
-    description: `
-      1500 mm x 1000 mm
-      price: $ 1470
-    `,
+    collections: ['landscapes'],
+    title: {
+      en: 'the vine',
+      ru: 'лоза'
+    },
+    description: {
+      en: `
+        1500 mm x 1000 mm
+        price: $ 1470
+      `,
+      ru: `
+        1500 мм x 1000 мм
+        цена: $ 1470
+      `
+    },
     src: '/images/paintings/480/vine.webp',
     srcSet: `
       /images/paintings/480/vine.webp 480w,
@@ -1127,11 +1645,21 @@ export const paintingDetail = [
   },
   {
     slug: 'wasted-day',
-    title: 'a wasted day',
-    description: `
-      1500 mm x 900 mm
-      price: $ 1470
-    `,
+    collections: ['landscapes'],
+    title: {
+      en: 'a wasted day',
+      ru: 'потерянный день'
+    },
+    description: {
+      en: `
+        1500 mm x 900 mm
+        price: $ 1470
+      `,
+      ru: `
+        1500 мм x 900 мм
+        цена: $ 1470
+      `
+    },
     src: '/images/paintings/480/wasted-day.webp',
     srcSet: `
       /images/paintings/480/wasted-day.webp 480w,
@@ -1147,11 +1675,21 @@ export const paintingDetail = [
   },
   {
     slug: 'fishing',
-    title: 'night time fishing',
-    description: `
-      570 mm x 410 mm
-      price: $ 1190
-    `,
+    collections: ['landscapes'],
+    title: {
+      en: 'night time fishing',
+      ru: 'ночная рыбалка'
+    },
+    description: {
+      en: `
+        570 mm x 410 mm
+        price: $ 1190
+      `,
+      ru: `
+        570 мм x 410 мм
+        цена: $ 1190
+      `
+    },
     ssrc: '/images/paintings/480/fishing.webp',
     srcSet: `
       /images/paintings/480/fishing.webp 480w,
@@ -1171,11 +1709,21 @@ export const paintingDetail = [
   },
   {
     slug: 'hearth',
-    title: 'the hearth',
-    description: `
-      1500 mm x 900 mm
-      price: $ 1470
-    `,
+    collections: ['landscapes'],
+    title: {
+      en: 'the hearth',
+      ru: 'очаг'
+    },
+    description: {
+      en: `
+        1500 mm x 900 mm
+        price: $ 1470
+      `,
+      ru: `
+        1500 мм x 900 мм
+        цена: $ 1470
+      `
+    },
     src: '/images/paintings/480/hearth.webp',
     srcSet: `
       /images/paintings/480/hearth.webp 480w,
@@ -1192,11 +1740,21 @@ export const paintingDetail = [
   },
   {
     slug: 'waterfall',
-    title: 'waterfall',
-    description: `
-      570 mm x 410 mm
-      price: $ 1190
-    `,
+    collections: ['landscapes'],
+    title: {
+      en: 'waterfall',
+      ru: 'водопад'
+    },
+    description: {
+      en: `
+        570 mm x 410 mm
+        price: $ 1190
+      `,
+      ru: `
+        570 мм x 410 мм
+        цена: $ 1190
+      `
+    },
     src: '/images/paintings/480/waterfall.webp',
     srcSet: `
       /images/paintings/480/waterfall.webp 480w,
@@ -1213,11 +1771,21 @@ export const paintingDetail = [
   },
   {
     slug: 'grail',
-    title: 'the grail',
-    description: `
-      570 mm x 410 mm
-      price: $ 1190
-    `,
+    collections: ['landscapes'],
+    title: {
+      en: 'the grail',
+      ru: 'грааль'
+    },
+    description: {
+      en: `
+        570 mm x 410 mm
+        price: $ 1190
+      `,
+      ru: `
+        570 мм x 410 мм
+        цена: $ 1190
+      `
+    },
     src: '/images/paintings/480/grail.webp',
     srcSet: `
       /images/paintings/480/grail.webp 480w,
@@ -1235,11 +1803,21 @@ export const paintingDetail = [
   },
   {
     slug: 'whisper',
-    title: 'whisper',
-    description: `
-      750 mm x 600 mm
-      price: $ 1190
-    `,
+    collections: ['portraits'],
+    title: {
+      en: 'whisper',
+      ru: 'шепот'
+    },
+    description: {
+      en: `
+        750 mm x 600 mm
+        price: $ 1190
+      `,
+      ru: `
+        750 мм x 600 мм
+        цена: $ 1190
+      `
+    },
     src: '/images/paintings/480/whisper.webp',
     srcSet: `
       /images/paintings/480/whisper.webp 480w,

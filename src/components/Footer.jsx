@@ -1,14 +1,14 @@
 import styles from './Footer.module.scss'
 import { NavLink, useLocation } from 'react-router-dom'
+import useI18n from '../hooks/useI18n'
 
 export default function Footer() {
   const { pathname } = useLocation()
+  const { isRu, to } = useI18n()
 
-  const isRu = pathname === '/ru' || pathname.startsWith('/ru/')
-  
-  const base = isRu ? '/ru' : ''
-
-  const normalizedPath = isRu ? pathname.replace(/^\/ru/, '') || '/' : pathname
+  const normalizedPath = isRu
+    ? pathname.replace(/^\/ru/, '') || '/'
+    : pathname
 
   const isArch = normalizedPath.startsWith('/architecture')
   const isPaintings = normalizedPath.startsWith('/paintings')
@@ -17,46 +17,46 @@ export default function Footer() {
   const unitClass = isActive =>
     `${styles.footerUnit} ${isActive ? styles.footerUnitActive : ''}`
 
-  const footer = isRu
-    ? {
-        architecture: 'архитектура',
-        projects: 'проекты',
-        laconism: 'лаконизм',
-        publications: 'публикации',
-
-        paintings: 'живопись',
-        collections: 'коллекции',
-        exhibitions: 'выставки',
-        videoArt: 'видео-арт',
-
-        about: 'о петровиче',
-        bio: 'биография',
-        contact: 'контакты',
-
-        rights: '©IvanShalmin. Все права защищены.',
-      }
-    : {
-        architecture: 'architecture',
-        projects: 'projects',
-        laconism: 'laconism',
-        publications: 'publications',
-
-        paintings: 'paintings',
-        collections: 'collections',
-        exhibitions: 'exhibitions',
-        videoArt: 'video art',
-
-        about: 'about',
-        bio: 'bio',
-        contact: 'contact',
-
-        rights: '© IvanShalmin. All rights reserved.',
-      }
-
   const subLinkClass = ({ isActive }) =>
     isActive
       ? `${styles.footerSubLink} ${styles.footerSubLinkActive}`
       : styles.footerSubLink
+
+  const footer = isRu
+    ? {
+      architecture: 'архитектура',
+      projects: 'проекты',
+      laconism: 'лаконизм',
+      publications: 'публикации',
+
+      paintings: 'живопись',
+      collections: 'коллекции',
+      exhibitions: 'выставки',
+      videoArt: 'видео-арт',
+
+      about: 'о петровиче',
+      bio: 'биография',
+      contact: 'контакты',
+
+      rights: '©IvanShalmin. Все права защищены.',
+    }
+    : {
+      architecture: 'architecture',
+      projects: 'projects',
+      laconism: 'laconism',
+      publications: 'publications',
+
+      paintings: 'paintings',
+      collections: 'collections',
+      exhibitions: 'exhibitions',
+      videoArt: 'video art',
+
+      about: 'about',
+      bio: 'bio',
+      contact: 'contact',
+
+      rights: '© IvanShalmin. All rights reserved.',
+    }
 
   return (
     <footer className={styles.footer}>
@@ -64,7 +64,7 @@ export default function Footer() {
         <nav className={styles.footerNav}>
           <div className={unitClass(isArch)}>
             <NavLink
-              to={`${base}/architecture`}
+              to={to('/architecture')}
               className={styles.footerMainLink}
             >
               {footer.architecture}
@@ -72,7 +72,7 @@ export default function Footer() {
             <ul className={styles.footerList}>
               <li>
                 <NavLink
-                  to={`${base}/architecture/projects`}
+                  to={to('/architecture/projects')}
                   className={subLinkClass}
                 >
                   {footer.projects}
@@ -80,7 +80,7 @@ export default function Footer() {
               </li>
               <li>
                 <NavLink
-                  to={`${base}/architecture/laconism`}
+                  to={to('/architecture/laconism')}
                   className={subLinkClass}
                 >
                   {footer.laconism}
@@ -88,7 +88,7 @@ export default function Footer() {
               </li>
               <li>
                 <NavLink
-                  to={`${base}/architecture/publications`}
+                  to={to('/architecture/publications')}
                   className={subLinkClass}
                 >
                   {footer.publications}
@@ -98,7 +98,7 @@ export default function Footer() {
           </div>
           <div className={unitClass(isPaintings)}>
             <NavLink
-              to={`${base}/paintings`}
+              to={to('/paintings')}
               className={styles.footerMainLink}
             >
               {footer.paintings}
@@ -106,7 +106,7 @@ export default function Footer() {
             <ul className={styles.footerList}>
               <li>
                 <NavLink
-                  to={`${base}/paintings/collections`}
+                  to={to('/paintings/collections')}
                   className={subLinkClass}
                 >
                   {footer.collections}
@@ -114,7 +114,7 @@ export default function Footer() {
               </li>
               <li>
                 <NavLink
-                  to={`${base}/paintings/exhibitions`}
+                  to={to('/paintings/exhibitions')}
                   className={subLinkClass}
                 >
                   {footer.exhibitions}
@@ -122,7 +122,7 @@ export default function Footer() {
               </li>
               <li>
                 <NavLink
-                  to={`${base}/paintings/video-art`}
+                  to={to('/paintings/video-art')}
                   className={subLinkClass}
                 >
                   {footer.videoArt}
@@ -132,7 +132,7 @@ export default function Footer() {
           </div>
           <div className={unitClass(isAbout)}>
             <NavLink
-              to={`${base}/about`}
+              to={to('/about')}
               className={styles.footerMainLink}
             >
               {footer.about}
@@ -140,7 +140,7 @@ export default function Footer() {
             <ul className={styles.footerList}>
               <li>
                 <NavLink
-                  to={`${base}/about/bio`}
+                  to={to('/about/bio')}
                   className={subLinkClass}
                 >
                   {footer.bio}
@@ -148,7 +148,7 @@ export default function Footer() {
               </li>
               <li>
                 <NavLink
-                  to={`${base}/about/contact`}
+                  to={to('/about/contact')}
                   className={subLinkClass}
                 >
                   {footer.contact}

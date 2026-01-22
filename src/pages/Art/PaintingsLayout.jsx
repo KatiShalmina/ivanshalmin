@@ -1,12 +1,9 @@
-import { Outlet, NavLink, useLocation } from 'react-router-dom'
+import { Outlet, NavLink } from 'react-router-dom'
 import styles from '../SectionLayout.module.scss'
+import useI18n from '../../hooks/useI18n'
 
 export default function PaintingsLayout() {
-  const location = useLocation()
-
-  const isRu =
-    location.pathname === '/ru' ||
-    location.pathname.startsWith('/ru/')
+  const { isRu } = useI18n()
 
   const subnav = isRu
     ? {

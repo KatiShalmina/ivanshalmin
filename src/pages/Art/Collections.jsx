@@ -1,15 +1,17 @@
 import { useMemo } from 'react'
-import { useLocation, useSearchParams } from 'react-router-dom'
+import { useSearchParams } from 'react-router-dom'
 import { COLLECTIONS, COLLECTION_TEXT, PAINTINGS } from '../../data/paintings/paintings'
-import Card from '../../components/Card'
+import ColCard from '../../components/ColCard'
 import styles from './Collections.module.scss'
 import BuyButton from '../../components/BuyButton'
+import useI18n from '../../hooks/useI18n'
 
 export default function Collections() {
-  const location = useLocation()
+  const { t, isRu } = useI18n()
+
   const [searchParams, setSearchParams] = useSearchParams()
 
-  const filter = searchParams.get('filter') ?? 'all'
+  const filter = searchParams.get('filter') ?? 'landscapes'
 
   const filteredPaintings = useMemo(() => {
     if (filter === 'all') return PAINTINGS
@@ -17,7 +19,7 @@ export default function Collections() {
   }, [filter])
 
   const setFilter = (next) => {
-    if (next === 'all') {
+    if (next === 'landscapes') {
       setSearchParams({}, { replace: true })
     } else {
       setSearchParams({ filter: next }, { replace: true })
@@ -37,7 +39,7 @@ export default function Collections() {
                 aria-pressed={filter === c.key}
                 className={styles.filterButton}
               >
-                {c.label}
+                {t(c.label)}
               </button>
             </li>
           ))}
@@ -45,10 +47,11 @@ export default function Collections() {
       </div>
       <div className={styles.cardsList}>
         {filteredPaintings.map(p => (
-          <Card
+          <ColCard
             key={p.slug}
             to={`/paintings/collections/${p.slug}`}
             title={p.title}
+            description={p.description}
             cover={p.cover}
           />
         ))}
@@ -56,10 +59,10 @@ export default function Collections() {
       {filter !== 'all' && (
         <div className={styles.colTextWrapper}>
           <p className={styles.colTagline}>
-            {COLLECTION_TEXT[filter]?.tagline}
+            {t(COLLECTION_TEXT[filter]?.tagline)}
           </p>
           <div className={styles.colText}>
-            {COLLECTION_TEXT[filter]?.body
+            {t(COLLECTION_TEXT[filter]?.body)
               .trim()
               .split(/\n\s*\n/)
               .map((paragraph, i) => (
@@ -69,12 +72,22 @@ export default function Collections() {
               ))}
           </div>
           <div className={styles.authorWrapper}>
-            <p className={styles.authorName}><span >Kirill Svetlyakov,</span></p>
-            <p>art expert and critic, responsible for the latest trends and developments at the Tretiyakov Art Gallery, Moscow, Russia</p>
+            <p className={styles.authorName}>
+              <span>
+                {isRu ? 'Кирилл Светляков,' : 'Kirill Svetlyakov,'}
+              </span>
+            </p>
+            <p>
+              {isRu
+                ? 'исскуствовед, заведующий отделом новейших течений Третьяковской галереи'
+                : 'art expert and critic, responsible for the latest trends and developments at the Tretiyakov Art Gallery, Moscow, Russia'}
+            </p>
           </div>
         </div>
       )}
-      <BuyButton>buy a painting</BuyButton>
+      <BuyButton>
+        {isRu ? 'купить картину' : 'buy a painting'}
+      </BuyButton>
     </section>
   )
 }

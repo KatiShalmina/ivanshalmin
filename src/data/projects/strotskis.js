@@ -15,7 +15,7 @@ export const strotskis = {
     en: `
       type: business centre
       date of completion: 2014—2021
-      location: New Moscow, Russia
+      location: New Moscow, Shcherbinka, Russia
       building area: 45 000 sqm
       land area: 1.3 ha
       constructor: Uninova Construction

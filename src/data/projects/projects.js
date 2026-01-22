@@ -1,10 +1,11 @@
 export const projects = [
   {
     slug: 'propylaeum',
-    title: {
-      en: 'propylaeum',
-      ru: 'пропилеи',
+    titleParts: {
+      en: ['PROPYLAEUM | Moscow Region | ', '1300 sqm |'],
+      ru: ['ПРОПИЛЕИ | Московская область | ', '1300 кв. м |']
     },
+    subtitle: '2009',
     cover: {
       mobile: {
         src: '/images/projects/propylaeum/480/propylaeum480-4.webp',
@@ -24,10 +25,11 @@ export const projects = [
   },
   {
     slug: 'dinosaur',
-    title: {
-      en: 'dinosaur',
-      ru: 'динозавр',
+    titleParts: {
+      en: ['DINOSAUR | Moscow Region, Ysovo | ', '1800 sqm |'],
+      ru: ['ДИНОЗАВР | Московская область, Усово | ', '1800 кв. м |']
     },
+    subtitle: '2013',
     cover: {
       mobile: {
         src: '/images/projects/dinosaur/480/dinosaur480-5.webp',
@@ -47,10 +49,11 @@ export const projects = [
   },
   {
     slug: 'glabrous',
-    title: {
-      en: 'glabrous',
-      ru: 'лысые',
+    titleParts: {
+      en: ['GLABROUS | Chekhov Region, Meshcherskoe | ', '210 sqm |'],
+      ru: ['ЛЫСЫЕ | Чеховский район, Мещерское | ', '210 кв. м |']
     },
+    subtitle: '2015',
     cover: {
       mobile: {
         src: '/images/projects/glabrous/480/glabrous480-3.webp',
@@ -70,10 +73,11 @@ export const projects = [
   },
   {
     slug: 'ghost',
-    title: {
-      en: 'ghost',
-      ru: 'призрак',
+    titleParts: {
+      en: ['GHOST | Moscow Region | ', '1500 sqm |'],
+      ru: ['ПРИЗРАК | Московская область | ', '1500 кв. м |']
     },
+    subtitle: '2021',
     cover: {
       mobile: {
         src: '/images/projects/ghost/480/ghost480-29.webp',
@@ -93,10 +97,11 @@ export const projects = [
   },
   {
     slug: 'strotskis',
-    title: {
-      en: 'strotskis',
-      ru: 'строцкис',
+    titleParts: {
+      en: ['STROTSKIS | New Moscow, Shcherbinka | ', '45 000 sqm |'],
+      ru: ['СТРОЦКИС | Московская область, Щербинка | ', '45 000 кв. м |']
     },
+    subtitle: '2021',
     cover: {
       mobile: {
         src: '/images/projects/strotskis/480/strotskis480-8.webp',

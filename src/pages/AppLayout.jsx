@@ -4,19 +4,18 @@ import styles from './AppLayout.module.scss'
 import Header from '../components/Header'
 import Footer from '../components/Footer'
 import MenuOverlay from '../components/MenuOverlay'
+import useI18n from '../hooks/useI18n'
 
 export default function AppLayout() {
   const [menuOpen, setMenuOpen] = useState(false)
   const { pathname } = useLocation()
 
-  const isRu = 
-    pathname === '/ru' || 
-    pathname.startsWith('/ru/')
+  const { isRu, base } = useI18n()
 
   const isHome = 
     pathname === '/' || 
-    pathname === '/ru' || 
-    pathname === '/ru/'
+    pathname === `${base}/` || 
+    pathname === base
 
   useEffect(() => {
     document.documentElement.lang = isRu ? 'ru' : 'en'

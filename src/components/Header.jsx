@@ -1,27 +1,27 @@
 import { Link, NavLink, useLocation } from 'react-router-dom'
 import styles from './Header.module.scss'
 import burgerIcon from '../assets/icons/burger.svg'
+import useI18n from '../hooks/useI18n'
 
 export default function Header({ setMenuOpen }) {
   const { pathname, search } = useLocation()
+  const { isRu, base, to } = useI18n()
 
-  const isRu = pathname === '/ru' || pathname.startsWith('/ru/')
-  
-  const base = isRu ? '/ru' : ''
-
-  const mainNav = isRu 
+  const mainNav = isRu
     ? {
-        architecture: 'архитектура',
-        paintings: 'живопись',
-        about: 'о петровиче',
-      }
+      architecture: 'архитектура',
+      paintings: 'живопись',
+      about: 'о петровиче',
+    }
     : {
-        architecture: 'architecture',
-        paintings: 'paintings',
-        about: 'about',
-      }
+      architecture: 'architecture',
+      paintings: 'paintings',
+      about: 'about',
+    }
 
-  const isHome = pathname === base + '/'
+  const isHome =
+    pathname === base ||
+    pathname === `${base}/`
 
   const activeMain = {
     color: 'var(--color-secondary)'
@@ -29,7 +29,8 @@ export default function Header({ setMenuOpen }) {
 
   const switchLangPath = (() => {
     if (isRu) {
-      const withoutRu = pathname.replace(/^\/ru/, '') || '/'
+      const withoutRu =
+        pathname.replace(/^\/ru/, '') || '/'
       return `${withoutRu}${search}`
     }
 
@@ -41,36 +42,36 @@ export default function Header({ setMenuOpen }) {
       <div className={styles.headerWrapper}>
         <div className={styles.logoWrapper}>
           <Link
-          to={base + '/'}
-          className={`${styles.logo} ${isHome ? styles.logoHome : ''}`}
-        >
-          Ivan Shalmin
-        </Link>
-        <Link
-          to={switchLangPath}
-          className={`${styles.langSwitch} ${isHome ? styles.langHome : ''}`}
-          aria-label='Switch language'
-        >
-          {isRu ? 'en' : 'ru'}
-        </Link>
+            to={to('/')}
+            className={styles.logo}
+          >
+            Ivan Shalmin
+          </Link>
+          <Link
+            to={switchLangPath}
+            className={styles.langSwitch}
+            aria-label={isRu ? 'Переключить язык на английский' : 'Switch language to Russian'}
+          >
+            {isRu ? 'en' : 'ru'}
+          </Link>
         </div>
         <div>
           {!isHome && (
             <nav className={styles.mainNav}>
               <NavLink
-                to={`${base}/architecture`}
+                to={to('/architecture')}
                 className={styles.mainNavLink}
                 style={({ isActive }) => isActive ? activeMain : null}>
                 {mainNav.architecture}
               </NavLink>
               <NavLink
-                to={`${base}/paintings`}
+                to={to('/paintings')}
                 className={styles.mainNavLink}
                 style={({ isActive }) => isActive ? activeMain : null}>
                 {mainNav.paintings}
               </NavLink>
               <NavLink
-                to={`${base}/about`}
+                to={to('/about')}
                 className={styles.mainNavLink} style={({ isActive }) => isActive ? activeMain : null}>
                 {mainNav.about}
               </NavLink>
@@ -79,7 +80,7 @@ export default function Header({ setMenuOpen }) {
           <button
             className={styles.burger}
             onClick={() => setMenuOpen(true)}
-            aria-label='Open menu'
+            aria-label={isRu ? 'Открыть меню' : 'Open menu'}
             type='button'
           >
             <img src={burgerIcon} alt='' />

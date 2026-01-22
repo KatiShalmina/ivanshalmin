@@ -1,16 +1,12 @@
 import { useState } from 'react'
-import { Link, useLocation } from 'react-router-dom'
+import { Link } from 'react-router-dom'
 import styles from './Home.module.scss'
+import useI18n from '../hooks/useI18n'
 
 export default function Home() {
   const [activeBg, setActiveBg] = useState(null)
-  const { pathname } = useLocation()
-
-  const isRu =
-    pathname === '/ru' ||
-    pathname.startsWith('/ru/')
-
-  const base = isRu ? '/ru' : ''
+  
+const { isRu, to } = useI18n()
 
   const text = isRu
     ? {
@@ -35,7 +31,7 @@ export default function Home() {
       <h1 className='visuallyHidden'>{text.title}</h1>
       <div className={styles.heroWrapper}>
         <Link
-          to={`${base}/architecture/projects`}
+          to={to('/architecture/projects')}
           className={styles.heroLink}
           onMouseEnter={() => setActiveBg('architect')}
           onMouseLeave={() => setActiveBg(null)}
@@ -43,7 +39,7 @@ export default function Home() {
           {text.architect}
         </Link>
         <Link
-          to={`${base}/paintings/collections`}
+          to={to('/paintings/collections')}
           className={styles.heroLink}
           onMouseEnter={() => setActiveBg('artist')}
           onMouseLeave={() => setActiveBg(null)}

@@ -1,5 +1,4 @@
 import { Fragment } from 'react'
-import { useLocation } from 'react-router-dom'
 import styles from './Laconism.module.scss'
 import { laconismContent } from '../../data/laconism/laconism'
 import MoreButton from '../../components/MoreButton.jsx'
@@ -8,15 +7,11 @@ import GallerySwiper from '../../components/GallerySwiper.jsx'
 import MobTabSlides from '../../components/MobTabSlides.jsx'
 import { presentation } from '../../data/laconism/presentation'
 import useMediaQuery from '../../hooks/useMediaQuery'
+import useI18n from '../../hooks/useI18n.js'
 
 export default function Laconism() {
   const isDesktop = useMediaQuery('(min-width: 1024px)')
-  const { pathname } = useLocation()
-
-  const isRu = pathname === '/ru' || pathname.startsWith('/ru/')
-  
-  const base = isRu ? '/ru' : ''
-  const lang = isRu ? 'ru' : 'en'
+  const { lang } = useI18n()
 
   const content = laconismContent[lang]
 
@@ -75,7 +70,7 @@ export default function Laconism() {
 
     if (block.type === 'more') {
       return (
-        <MoreButton to={`${base}${block.to}`}>
+        <MoreButton to={block.to}>
           {block.label}
         </MoreButton>
       )

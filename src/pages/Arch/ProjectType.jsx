@@ -1,18 +1,15 @@
 import { useState } from 'react'
-import { useParams, useLocation } from 'react-router-dom'
+import { useParams } from 'react-router-dom'
 import GalleryLightbox from '../../components/GalleryLightbox'
 import { types } from '../../data/projects/project-types'
 import styles from './ProjectType.module.scss'
 import BackButton from '../../components/BackButton'
 import MoreButton from '../../components/MoreButton'
 import Video from '../../components/Video'
+import useI18n from '../../hooks/useI18n'
 
 export default function ProjectType() {
-  const { pathname } = useLocation()
-
-  const isRu =
-    pathname === '/ru' ||
-    pathname.startsWith('/ru/')
+  const { t, isRu } = useI18n()
 
   const { slug } = useParams()
   const type = types.find(p => p.slug === slug)
@@ -22,23 +19,20 @@ export default function ProjectType() {
 
   if (!type) return <p>Not found</p>
 
-  const pick = value =>
-    typeof value === 'string'
-      ? value
-      : value?.[isRu ? 'ru' : 'en'] ?? value?.en ?? ''
-
-  const tTitle = pick(type.title)
-  const tSubtitle = pick(type.subtitle)
-  const tDescription = pick(type.description)
-  const tTagline = pick(type.tagline)
-  const tText = pick(type.text)
+  const tTitle = t(type.title)
+  const tSubtitle = t(type.subtitle)
+  const tDescription = t(type.description)
+  const tTagline = t(type.tagline)
+  const tText = t(type.text)
 
   const moreLabel = isRu ? 'узнать больше' : 'find out more'
   const backLabel = isRu ? 'все проекты' : 'all projects'
 
   return (
     <section className={styles.type}>
-      <BackButton>{backLabel}</BackButton>
+      <BackButton to='/architecture/projects'>
+        {backLabel}        
+      </BackButton>
       <h1 className={styles.typeTitle}>{tTitle}</h1>
       <p className={styles.typeSubtitle}>{tSubtitle}</p>
       <div className={styles.typeDescription}>
@@ -64,7 +58,7 @@ export default function ProjectType() {
                 .join(', ')
               }
               sizes='(max-width: 1023px) 360px, 720px'
-              alt={`${type.title} photo ${img.id}`}
+              alt={`${tTitle} photo ${img.id}`}
               onClick={() => {
                 setIndex(i)
                 setOpen(true)
@@ -95,10 +89,7 @@ export default function ProjectType() {
             ))
           }
         </div>
-        <MoreButton
-          to={typeof type.more === 'string' ? type.more : type.more.href}
-          external={typeof type.more === 'object' && type.more.external}
-        >
+        <MoreButton to={type.more}>
           {moreLabel}
         </MoreButton>
       </div>

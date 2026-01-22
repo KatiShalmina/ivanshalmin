@@ -1,15 +1,10 @@
-import { Link, useLocation } from 'react-router-dom'
+import { Link } from 'react-router-dom'
 import styles from './MenuOverlay.module.scss'
 import closeIcon from '../assets/icons/close.svg'
+import useI18n from '../hooks/useI18n'
 
 export default function MenuOverlay({ menuOpen, setMenuOpen }) {
-  const { pathname } = useLocation()
-
-  const isRu =
-    pathname === '/ru' ||
-    pathname.startsWith('/ru/')
-
-  const base = isRu ? '/ru' : ''
+  const { isRu, to } = useI18n()
 
   const nav = isRu
     ? {
@@ -50,7 +45,7 @@ export default function MenuOverlay({ menuOpen, setMenuOpen }) {
       <nav className={styles.overlayNav}>
         <div className={styles.overlayNavUnit}>
           <Link
-            to={`${base}/architecture`}
+            to={to('/architecture')}
             className={styles.overlayMainLink}
             onClick={close}>            
             {nav.architecture}
@@ -58,21 +53,21 @@ export default function MenuOverlay({ menuOpen, setMenuOpen }) {
           <ul className={styles.overlaySubList}>
             <li>
               <Link
-                to={`${base}/architecture/projects`}
+                to={to('/architecture/projects')}
                 className={styles.overlaySubLink}
                 onClick={close}
               >{nav.projects}</Link>
             </li>
             <li>
               <Link
-                to={`${base}/architecture/laconism`}
+                to={to('/architecture/laconism')}
                 className={styles.overlaySubLink}
                 onClick={close}
               >{nav.laconism}</Link>
             </li>
             <li>
               <Link
-                to={`${base}/architecture/publications`}
+                to={to('/architecture/publications')}
                 className={styles.overlaySubLink}
                 onClick={close}
               >{nav.publications}</Link>
@@ -81,7 +76,7 @@ export default function MenuOverlay({ menuOpen, setMenuOpen }) {
         </div>
         <div className={styles.overlayNavUnit}>
           <Link
-            to={`${base}/paintings`}
+            to={to('/paintings')}
             className={styles.overlayMainLink}
             onClick={close}>
             {nav.paintings}
@@ -89,21 +84,21 @@ export default function MenuOverlay({ menuOpen, setMenuOpen }) {
           <ul className={styles.overlaySubList}>
             <li>
               <Link
-                to={`${base}/paintings/collections`}
+                to={to('/paintings/collections')}
                 className={styles.overlaySubLink}
                 onClick={close}
               >{nav.collections}</Link>
             </li>
             <li>
               <Link
-                to={`${base}/paintings/exhibitions`}
+                to={to('/paintings/exhibitions')}
                 className={styles.overlaySubLink}
                 onClick={close}
               >{nav.exhibitions}</Link>
             </li>
             <li>
               <Link
-                to={`${base}/paintings/video-art`}
+                to={to('/paintings/video-art')}
                 className={styles.overlaySubLink}
                 onClick={close}
               >{nav.videoArt}</Link>
@@ -112,7 +107,7 @@ export default function MenuOverlay({ menuOpen, setMenuOpen }) {
         </div>
         <div className={styles.overlayNavUnit}>
           <Link
-            to='/about'
+            to={to('/about')}
             className={styles.overlayMainLink}
             onClick={close}>
             {nav.about}
@@ -120,14 +115,14 @@ export default function MenuOverlay({ menuOpen, setMenuOpen }) {
           <ul className={styles.overlaySubList}>
             <li>
               <Link
-                to={`${base}/about`}
+                to={to('/about/bio')}
                 className={styles.overlaySubLink}
                 onClick={close}
               >{nav.bio}</Link>
             </li>
             <li>
               <Link
-                to={`${base}/about/bio`}
+                to={to('/about/contact')}
                 className={styles.overlaySubLink}
                 onClick={close}
               >{nav.contact}</Link>
@@ -138,7 +133,7 @@ export default function MenuOverlay({ menuOpen, setMenuOpen }) {
       <button
         className={styles.closeButton}
         onClick={close}
-        aria-label='Close menu'
+         aria-label={isRu ? 'Закрыть меню' : 'Close menu'}
         type='button'
       >
         <img src={closeIcon} alt='' />

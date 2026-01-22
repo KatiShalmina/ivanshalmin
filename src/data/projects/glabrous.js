@@ -15,7 +15,7 @@ export const glabrous = {
     en: `
       type: family house
       date of completion: 2015
-      location: Chekhov Region, Russia
+      location: Chekhov Region, Meshcherskoe, Russia
       building area: 210 sqm
       photography: Ivan Shalmin, Olga Alexeyenko
       text: Nadejda Plotnikova

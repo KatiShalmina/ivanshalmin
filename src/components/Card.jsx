@@ -1,33 +1,21 @@
-import { Link, useLocation } from 'react-router-dom'
+import { Link } from 'react-router-dom'
 import styles from './Card.module.scss'
+import useI18n from '../hooks/useI18n';
 
-export default function Card({ to, title, cover }) {
-  const { pathname } = useLocation()
+export default function Card({ to, slug, titleParts, subtitle, cover }) {
+  const { t, lang, to: toPath } = useI18n()
 
   if (!cover) return null;
 
-  const isRu =
-    pathname === '/ru' ||
-    pathname.startsWith('/ru/')
-
-  const base = isRu ? '/ru' : ''
-
-  const resolvedTo =
-    typeof to === 'string'
-      ? `${base}${to.startsWith('/') ? to : `/${to}`}`
-      : to
-
-  const resolvedTitle =
-    typeof title === 'string'
-      ? title
-      : title?.[isRu ? 'ru' : 'en'] ?? title?.en ?? ''
+  const [main = '', tail = ''] = titleParts?.[lang] ?? titleParts?.en ?? ['', '']
+  const tSubtitle = t(subtitle)
 
   const isPaintingsCover = Boolean(cover.src || cover.srcSet)
 
   return (
     <div className={styles.card}>
-      <Link 
-        to={resolvedTo}
+      <Link
+        to={toPath(to)}
         className={styles.cardLink}
       >
         {isPaintingsCover ? (
@@ -36,7 +24,7 @@ export default function Card({ to, title, cover }) {
             src={cover.src}
             srcSet={cover.srcSet}
             sizes={cover.sizes ?? '100vw'}
-            alt={resolvedTitle}
+            alt={slug}
             loading='lazy'
           />
         ) : (
@@ -50,13 +38,17 @@ export default function Card({ to, title, cover }) {
               src={cover.mobile.src}
               srcSet={cover.mobile.srcSet}
               sizes={cover.mobile.sizes ?? '100vw'}
-              alt={resolvedTitle}
+              alt={slug}
               loading='lazy'
             />
           </picture>
         )}
         <div className={styles.cardInfo}>
-          <h2 className={styles.cardTitle}>{resolvedTitle}</h2>
+          <h2 className={styles.cardTitle}>
+            {main}
+            <span className='nowrap'>{tail}</span>
+          </h2>
+          <p className={styles.cardSubtitle}>{tSubtitle}</p>
         </div>
       </Link>
     </div >
