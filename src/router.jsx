@@ -13,6 +13,7 @@ import PaintingsLayout from './pages/Art/PaintingsLayout'
 import Collections from './pages/Art/Collections'
 import PaintingDetail from './pages/Art/PaintingDetail'
 import Exhibitions from './pages/Art/Exhibitions'
+import ExhibitionDetail from './pages/Art/ExhibitionDetail'
 import ExhibitionPhotos from './pages/Art/ExhibitionPhotos'
 import VideoArt from './pages/Art/VideoArt'
 
@@ -48,7 +49,8 @@ const routes = [
       { path: 'collections/:slug', element: <PaintingDetail /> },
 
       { path: 'exhibitions', element: <Exhibitions /> },
-      { path: 'exhibitions/:slug', element: <ExhibitionPhotos /> },
+      { path: 'exhibitions/:slug', element: <ExhibitionDetail /> },
+      { path: 'exhibitions/:slug/photos', element: <ExhibitionPhotos /> },
 
       { path: 'video-art', element: <VideoArt /> },
     ]

@@ -21,7 +21,7 @@ export default function PubCard({ to, title, subtitle, cover }) {
           src={cover.src}
           srcSet={cover.srcSet}
           sizes={cover.sizes ?? '400px'}
-          alt={title}
+          alt={tTitle}
           loading='lazy'
         />
         <div className={styles.pubCardInfo}>

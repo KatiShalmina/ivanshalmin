@@ -9,8 +9,6 @@
 .bioSubtitle {
   margin-bottom: clamp(2rem, 4vw, 4.3rem);
   font-size: clamp(1.2rem, 2vw, 2.5rem);
-  font-weight: 300;
-  font-stretch: 115%;
 }
 
 .videoWrapper {
@@ -30,20 +28,12 @@
   }
 }
 
-.bioTextUnit {
+.bioText {
   grid-column: 1;
   grid-row: auto;
-}
-
-.bioTextUnit p,
-.bioTextUnit q {
-  max-width: 64ch;
-  margin-bottom: clamp(1rem, 4vw, 1.7rem);
-  font-size: clamp(1.2rem, 2vw, 1.4rem);
-}
-
-.bioTextUnit blockquote {
-  text-transform: uppercase;
+  display: flex;
+  flex-direction: column;
+  gap: clamp(2rem, 4vw, 4.3rem);
 }
 
 .bioTitle {
@@ -52,6 +42,21 @@
   line-height: 1.1;
   font-weight: 300;
   font-stretch: 115%;
+}
+
+:lang(ru) .bioTitle {
+  font-family: var(--font-secondary);
+  font-weight: 400;
+}
+
+.bioText p {
+  max-width: 64ch;
+  margin-bottom: clamp(1rem, 4vw, 1.7rem);
+  font-size: clamp(1.2rem, 2vw, 1.4rem);
+}
+
+.bioHighlight {
+  text-transform: uppercase;
 }
 
 .bioGallery {

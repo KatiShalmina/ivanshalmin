@@ -3,7 +3,6 @@ import Video from '../../components/Video'
 import MoreButton from '../../components/MoreButton'
 import useI18n from '../../hooks/useI18n'
 import { videoArtContent } from '../../data/video-art'
-import { Fragment } from 'react'
 
 export default function VideoArt() {
   const { isRu, lang } = useI18n()
@@ -14,11 +13,11 @@ export default function VideoArt() {
   const moreSashaLabel = isRu ? 'другие сашины картины' : 'more sasha’s art'
   const mainTitleHidden = isRu ? 'Видео арт' : 'Video Art'
 
-  const renderBlock = (block) => {
-    if (block.type === 'p') return <p>{block.text}</p>
+  const renderBlock = (block, key) => {
+    if (block.type === 'p') return <p key={key}>{block.text}</p>
 
     if (block.type === 'highlight') {
-      return <p className={styles.videoArtHighlight}>{block.text}</p>
+      return <p key={key} className={styles.videoArtHighlight}>{block.text}</p>
     }
     return null
   }
@@ -71,11 +70,9 @@ export default function VideoArt() {
         </MoreButton>
       </div>
       <div className={styles.videoArtText}>
-        {content.blocks.map((block, i) => (
-          <Fragment key={`${block.type}-${i}`}>
-            {renderBlock(block)}
-          </Fragment>
-        ))}
+        {content.blocks.map((block, i) => 
+          renderBlock(block, `${block.type}-${i}`)
+        )}
       </div>
       <MoreButton
         to='https://www.sashashalmina.com/'

@@ -1,60 +1,35 @@
-.exhibitions {
+.exhCardsList {
   display: flex;
   flex-direction: column;
-  gap: clamp(4.3rem, 7vw, 7.4rem);
-}
+  gap: 4.3rem;
+  margin-bottom: 4.3rem;
 
-.exhUnit {
-  display: flex;
-  flex-direction: column;
-  gap: clamp(2rem, 10vw, 4.3rem);
+  @media (min-width: 520px) {
+    gap: 1rem;
+  }
 }
 
 .exhTitle {
-  margin-bottom: clamp(2rem, 4vw, 3rem);
-  font-size: clamp(2.5rem, 7vw, 7.4rem);
+  margin-bottom: clamp(1.7rem, 4vw, 2.5rem);
+  font-size: clamp(2rem, 4vw, 3.6rem);
   line-height: 1.1;
-  font-weight: 300;
   font-stretch: 115%;
+  font-weight: 300;
 }
 
 :lang(ru) .exhTitle {
   font-family: var(--font-secondary);
-  font-weight: 300;
-}
-
-.exhSubtitle {
-  margin-bottom: clamp(4px, 4vw, 1rem);
-  font-size: clamp(1.2rem, 2vw, 2.5rem);
-  font-weight: 300;
-  font-stretch: 115%;
-}
-
-:lang(ru) .exhSubtitle {
-  font-family: var(--font-secondary);
-  font-weight: 300;
+  font-weight: 400;
 }
 
 .exhDescription {
-  max-width: 64ch;
-  margin-bottom: clamp(1.7rem, 4vw, 3rem);
-  font-size: clamp(1.2rem, 2vw, 2rem);
+  margin-bottom: 2rem;
+  font-size: clamp(1.2rem, 2vw, 1.4rem);
   text-transform: uppercase;
 }
 
 .exhDescription p {
   margin-bottom: 10px;
-}
-
-.videoWrapper {
-  display: flex;
-  flex-direction: column;
-  gap: clamp(10px, 2vw, 1.4rem);
-
-  @media (min-width: 1024px) {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(600px, 1fr));
-  }
 }
 
 .exhPdfLink {

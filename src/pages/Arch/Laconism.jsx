@@ -1,4 +1,3 @@
-import { Fragment } from 'react'
 import styles from './Laconism.module.scss'
 import { laconismContent } from '../../data/laconism/laconism'
 import MoreButton from '../../components/MoreButton.jsx'
@@ -15,16 +14,16 @@ export default function Laconism() {
 
   const content = laconismContent?.[lang] ?? laconismContent?.en
 
-  const renderBlock = (block) => {
-    if (block.type === 'p') return <p>{block.text}</p>
+  const renderBlock = (block, key) => {
+    if (block.type === 'p') return <p key={key}>{block.text}</p>
 
     if (block.type === 'highlight') {
-      return <p className={styles.laconismHighlight}>{block.text}</p>
+      return <p key={key} className={styles.laconismHighlight}>{block.text}</p>
     }
 
     if (block.type === 'awards') {
       return (
-        <div className={styles.awardsWrapper}>
+        <div key={key} className={styles.awardsWrapper}>
           {block.items.map((award, idx) => (
             <div className={styles.awardsUnit} key={idx}>
               <h3 className={styles.awardsTitle}>{award.title}</h3>
@@ -43,7 +42,7 @@ export default function Laconism() {
         : styles.laconismList
 
       return (
-        <ol className={listClass}>
+        <ol key={key} className={listClass}>
           {block.items.map((item, idx) => (
             <li key={idx} className={styles.laconismItem}>
               {Array.isArray(item)
@@ -57,7 +56,7 @@ export default function Laconism() {
 
     if (block.type === 'quote') {
       return (
-        <figure className={styles.laconismQuote}>
+        <figure key={key} className={styles.laconismQuote}>
           <blockquote>
             {block.text}
           </blockquote>
@@ -70,7 +69,7 @@ export default function Laconism() {
 
     if (block.type === 'more') {
       return (
-        <MoreButton to={block.to}>
+        <MoreButton key={key} to={block.to}>
           {block.label}
         </MoreButton>
       )
@@ -79,6 +78,7 @@ export default function Laconism() {
     if (block.type === 'video') {
       return (
         <Video
+          key={key}
           videoId={block.videoId}
           coverOriginal={block.cover.original}
           cover1024={block.cover.cover1024}
@@ -89,9 +89,9 @@ export default function Laconism() {
 
     if (block.type === 'gallery') {
       return isDesktop ? (
-        <GallerySwiper slides={presentation.slides} />
+        <GallerySwiper key={key} slides={presentation.slides} />
       ) : (
-        <MobTabSlides slides={presentation.slides} />
+        <MobTabSlides key={key} slides={presentation.slides} />
       )
     }
 
@@ -105,11 +105,8 @@ export default function Laconism() {
         {content.sections.map((section) => (
           <div className={styles.laconismUnit} key={section.id}>
             <h2 className={styles.laconismTitle}>{section.title}</h2>
-            {section.blocks.map((block, i) => (
-              <Fragment key={`${section.id}-${block.type}-${i}`}>
-                {renderBlock(block)}
-              </Fragment>
-            ))}
+            {section.blocks.map((block, i) => renderBlock(block, `${section.id}-${block.type}-${i}`)
+            )}
           </div>
         ))}
       </div>
