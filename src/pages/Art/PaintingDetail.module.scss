@@ -6,27 +6,16 @@
 
 .paintingTitle {
   margin-bottom: clamp(1rem, 4vw, 2rem);
+  font-family: var(--font-ui);
   font-size: clamp(2.5rem, 7vw, 8.9rem);
-  font-weight: 300;
-  font-stretch: 115%;
   line-height: 1.1;
-}
-
-:lang(ru) .paintingTitle {
-  font-family: var(--font-secondary);
   font-weight: 400;
 }
 
 .paintingDescription {
+  font-family: var(--font-ui);
   font-size: clamp(1.2rem, 2vw, 2.5rem);
-  font-weight: 300;
-  font-stretch: 115%;
   margin-bottom: clamp(1.7rem, 4vw, 3rem);
-}
-
-:lang(ru) .paintingDescription {
-  font-family: var(--font-secondary);
-  font-weight: 400;
 }
 
 .paintingDescription p {
@@ -41,6 +30,7 @@
   display: flex;
   justify-content: space-between;
   margin-bottom: 2rem;
+  font-family: var(--font-ui);
 }
 
 .paintingQuote {

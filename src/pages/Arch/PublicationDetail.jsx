@@ -26,7 +26,7 @@ export default function PublicationDetail() {
 
   const originalLabel = isRu ? 'оригинал' : 'original publication'
   const backLabel = isRu ? 'все публикации' : 'all publications'
-  const paperCatalog = isRu ? 'каталог бумажной архитектуры' : 'paper architecture catalogue'
+  const paperCatalog = isRu ? 'полный бумажный каталог' : 'full paper catalogue'
 
   return (
     <section className={styles.pub}>

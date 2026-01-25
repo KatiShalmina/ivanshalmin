@@ -6,26 +6,17 @@
 
 .pubTitle {
   margin-bottom: clamp(1rem, 4vw, 4.3rem);
+  font-family: var(--font-ui);
   font-size: clamp(2.5rem, 10vw, 8.9rem);
   line-height: 1.1;
-  font-weight: 300;
-  font-stretch: 115%;
-}
-
-:lang(ru) .pubTitle {
-  font-family: var(--font-secondary);
   font-weight: 400;
 }
 
 .pubSubtitle {
+  font-family: var(--font-ui);
   font-size: clamp(1.2rem, 3vw, 2.5rem);
   text-transform: uppercase;
   margin-bottom: clamp(1.7rem, 4vw, 3rem);
-}
-
-:lang(ru) .pubSubtitle {
-  font-family: var(--font-secondary);
-  font-weight: 400;
 }
 
 .pubTagline {
@@ -49,6 +40,7 @@
   display: block;
   width: max-content;
   padding: 8px 0;
+  font-family: var(--font-ui);
   font-size: 1.2rem;
   color: var(--color-highlight);
 

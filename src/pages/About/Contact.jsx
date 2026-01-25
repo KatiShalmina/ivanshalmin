@@ -15,16 +15,23 @@ export default function Contact() {
 
   const text = isRu
     ? `
-      При покупке вы получаете работу в высоком разрешении, подходящем для крупноформатной печати и цифрового использования.
+      Мы всегда рады помочь вам выбрать идеальное произведение искусства для вашего интерьера. Просто отправьте нам фотографию помещения, в котором будет висеть картина, и мы подготовим мокапы, показывающие, как работа будет смотреться в интерьере, а также дадим рекомендации по наиболее подходящему цветовому решению и размеру.
 
-      Мы будем рады помочь вам с выбором картины для вашего интерьера.
+      При заказе доступны разные варианты обрамления, включая остекление, позволяющие легко ухаживать за картиной и долго наслаждаться ее яркими, свежими красками.
+
+      Мы можем организовать профессиональную печать и доставку по указанному адресу или проконтролировать производство арт-объекта в удобной для вас типографии или студии в вашем регионе.
+
+      Будем рады ответить на любые ваши вопросы.
     `
     : `
-      Upon purchase, you receive the artwork in high resolution, suitable for large-format printing and digital use.
+      We’re always happy to help you select the perfect piece for your interior. Simply send us an image of your space and we can create visual mock-ups showing how the painting would look in situ, along with guidance on the most suitable artwork and ideal size.
 
-      We will be happy to help you choose a painting for your interior.
+      Custom framing and glazing options are available to ensure the finished piece integrates beautifully within your setting.
+
+      We can arrange professional printing and shipping directly to you, or coordinate production with a trusted local printer and framing studio in your area — overseeing the entire process for a seamless, stress-free experience.
+
+      If you have any questions, please don’t hesitate to get in touch.
     `
-
   return (
     <section className={styles.contact}>
       <h1 className='visuallyHidden'>{mainTitleHidden}</h1>

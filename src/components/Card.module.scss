@@ -42,8 +42,6 @@
   justify-content: space-between;
   background: var(--color-primary);
   padding: 8px 0;
-  // border-top: 1px solid transparent;
-  // box-shadow: 0 0 0 1px var(--color-secondary);
 
   @media (min-width: 1280px) {
     position: absolute;
@@ -73,7 +71,7 @@
 
 .cardTitle {
   font-size: 1.2rem;
-  font-weight: 400;
+  font-weight: 300;
 
   @media (min-width: 1024px) {
     font-size: 1.4rem;

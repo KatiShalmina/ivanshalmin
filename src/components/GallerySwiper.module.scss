@@ -19,9 +19,7 @@
   height: 55px;
   padding: 8px;
   color: var(--color-secondary);
-  background:rgba(67, 67, 67, 0.5);
-  backdrop-filter: blur(4px);     
-  -webkit-backdrop-filter: blur(4px);
+  background: var(--color-primary);
 
   @media (max-width: 1023px) {
     display: none;

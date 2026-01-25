@@ -26,9 +26,8 @@
 .subnavLink {
   width: max-content;
   padding: 8px;
+  font-family: var(--font-ui);
   font-size: 1.2rem;
-  font-weight: 300;
-  font-stretch: 115%;
   border: 1px solid transparent;
 
   @media (min-width: 1024px) {
@@ -41,7 +40,3 @@
   }
 }
 
-:lang(ru) .subnavLink {
-  font-family: var(--font-secondary);
-  font-weight: 400;
-}

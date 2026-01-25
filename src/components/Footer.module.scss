@@ -47,10 +47,9 @@
 
 .footerMainLink {
   @media (min-width: 1024px) {
+    font-family: var(--font-ui);
     font-size: 3rem;
-    line-height: 1;
-    font-weight: 300;
-    font-stretch: 115%;
+    line-height: 1.1;
     color: var(--unit-color);
     transition: color 0.4s ease;
 
@@ -59,11 +58,6 @@
       color: var(--color-secondary);
     }
   }
-}
-
-:lang(ru) .footerMainLink {
-  font-family: var(--font-secondary);
-  font-weight: 400;
 }
 
 .footerList {
@@ -76,9 +70,8 @@
 .footerSubLink {
   @media (min-width: 1024px) {
     padding: 8px;
+    font-family: var(--font-ui);
     font-size: 1.2rem;
-    font-weight: 300;
-    font-stretch: 115%;
     color: var(--unit-color);
     border: 1px solid transparent;
     transition: 
@@ -89,11 +82,6 @@
       border-color: var(--color-highlight);
     }
   }
-}
-
-:lang(ru) .footerSubLink {
-  font-family: var(--font-secondary);
-  font-weight: 400;
 }
 
 .footerSubLinkActive {

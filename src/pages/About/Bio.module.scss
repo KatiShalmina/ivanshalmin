@@ -1,13 +1,15 @@
 .bioMainTitle {
   margin-bottom: clamp(4px, 4vw, 2rem);
+  font-family: var(--font-ui);
   font-size: clamp(2rem, 10vw, 8.9rem);
-  font-weight: 400;
   line-height: 1.1;
+  font-weight: 400;
   text-transform: uppercase;
 }
 
 .bioSubtitle {
   margin-bottom: clamp(2rem, 4vw, 4.3rem);
+  font-family: var(--font-ui);
   font-size: clamp(1.2rem, 2vw, 2.5rem);
 }
 
@@ -38,14 +40,9 @@
 
 .bioTitle {
   margin-bottom: clamp(1rem, 4vw, 3rem);
+  font-family: var(--font-ui);
   font-size: clamp(2.5rem, 10vw, 8.9rem);
   line-height: 1.1;
-  font-weight: 300;
-  font-stretch: 115%;
-}
-
-:lang(ru) .bioTitle {
-  font-family: var(--font-secondary);
   font-weight: 400;
 }
 

@@ -11,14 +11,9 @@
 
 .laconismTitle {
   margin-bottom: clamp(1rem, 4vw, 3rem);
+  font-family: var(--font-ui);
   font-size: clamp(2.5rem, 10vw, 8.9rem);
   line-height: 1.1;
-  font-weight: 300;
-  font-stretch: 115%;
-}
-
-:lang(ru) .laconismTitle {
-  font-family: var(--font-secondary);
   font-weight: 400;
 }
 
@@ -35,14 +30,9 @@
 
 .awardsTitle {
   margin-bottom: clamp(1rem, 4vw, 2.5rem);
+  font-family: var(--font-ui);
   font-size: clamp(1.7rem, 10vw, 4.3rem);
   line-height: 1.1;
-  font-weight: 300;
-  font-stretch: 115%;
-}
-
-:lang(ru) .awardsTitle {
-  font-family: var(--font-secondary);
   font-weight: 400;
 }
 

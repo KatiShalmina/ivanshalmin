@@ -3,10 +3,6 @@
   --color-secondary: #ffffff;
   --color-highlight: #999999;
 
-  --font-en: 'ArchivoVariable', system-ui, sans-serif;
-}
-
-:lang(ru) {
-  --font-primary: 'InterVariable', system-ui, sans-serif;
-  --font-secondary: 'MontserratVariable', monospace;
+  --font-body: 'InterVariable', system-ui, sans-serif;
+  --font-ui: 'IBM Plex Mono', system-ui, monospace;
 }

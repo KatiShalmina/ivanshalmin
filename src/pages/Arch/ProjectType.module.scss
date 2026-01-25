@@ -10,39 +10,29 @@
 
 .typeTitle {
   margin-bottom: clamp(4px, 4vw, 1rem);
+  font-family: var(--font-ui);
   font-size: clamp(3rem, 10vw, 10.7rem);
-  font-weight: 300;
-  font-stretch: 115%;
   line-height: 1.1;
+  font-weight: 400;
 
   @media (min-width: 1024px) {
     grid-column: 1 / 3;
   }
-}
-
-:lang(ru) .typeTitle {
-  font-family: var(--font-secondary);
-  font-weight: 400;
 }
 
 .typeSubtitle {
+  font-family: var(--font-ui);
   margin-bottom: clamp(2rem, 4vw, 3rem);
   font-size: clamp(1.2rem, 2vw, 2.5rem);
-  font-weight: 300;
-  font-stretch: 115%;
 
   @media (min-width: 1024px) {
     grid-column: 1 / 3;
   }
-}
-
-:lang(ru) .typeSubtitle {
-  font-family: var(--font-secondary);
-  font-weight: 400;
 }
 
 .typeDescription {
   margin-bottom: clamp(1.7rem, 4vw, 3rem);
+  font-family: var(--font-ui);
   font-size: clamp(1.2rem, 2vw, 1.4rem);
   text-transform: uppercase;
 
