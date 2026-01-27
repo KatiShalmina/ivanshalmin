@@ -1,7 +1,7 @@
 import { useMemo } from 'react'
 import { useSearchParams } from 'react-router-dom'
 import { COLLECTIONS, COLLECTION_TEXT, PAINTINGS } from '../../data/paintings/paintings'
-import ColCard from '../../components/ColCard'
+import Card from '../../components/Card'
 import styles from './Collections.module.scss'
 import BuyButton from '../../components/BuyButton'
 import useI18n from '../../hooks/useI18n'
@@ -49,11 +49,11 @@ export default function Collections() {
       </div>
       <div className={styles.cardsList}>
         {filteredPaintings.map(p => (
-          <ColCard
+          <Card
             key={p.slug}
             to={`/paintings/collections/${p.slug}?filter=${filter}`}
-            title={p.title}
-            description={p.description}
+            titleParts={p.titleParts}
+            subtitle={p.subtitle}
             cover={p.cover}
           />
         ))}

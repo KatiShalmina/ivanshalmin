@@ -10,6 +10,7 @@
 
 .footerWrapper {
   @media (min-width: 1024px) {
+    position: relative;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
@@ -25,7 +26,14 @@
 
 .copyright {
   @media (min-width: 1024px) {
+    position: absolute;
+    right: 1.2rem;
+    bottom: 2rem;
     font-size: 0.8rem;
+  }
+
+  @media (min-width: 1070px) {
+    position: static;
     text-align: right;
   }
 }
@@ -69,7 +77,8 @@
 
 .footerSubLink {
   @media (min-width: 1024px) {
-    padding: 8px;
+    display: block;
+    padding: 8px 10px;
     font-family: var(--font-ui);
     font-size: 1.2rem;
     color: var(--unit-color);

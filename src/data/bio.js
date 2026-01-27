@@ -450,48 +450,6 @@ export const PHOTOS = {
         { src: '/images/bio/160/bio-16.webp', width: 160 },
         { src: '/images/bio/320/bio-16.webp', width: 320 },
       ],
-    },
-    {
-      id: 17,
-      src: '/images/bio/original/bio-17.webp',
-      srcSet: [
-        { src: '/images/bio/original/bio-17.webp', width: 2000 },
-        { src: '/images/bio/1024/bio-17.webp', width: 1024 },
-        { src: '/images/bio/480/bio-17.webp', width: 480 },
-      ],
-      thumbnail: '/images/bio/160/bio-17.webp',
-      thumbSet: [
-        { src: '/images/bio/160/bio-17.webp', width: 160 },
-        { src: '/images/bio/320/bio-17.webp', width: 320 },
-      ],
-    },
-    {
-      id: 18,
-      src: '/images/bio/original/bio-18.webp',
-      srcSet: [
-        { src: '/images/bio/original/bio-18.webp', width: 2500 },
-        { src: '/images/bio/1024/bio-18.webp', width: 1024 },
-        { src: '/images/bio/480/bio-18.webp', width: 480 },
-      ],
-      thumbnail: '/images/bio/160/bio-18.webp',
-      thumbSet: [
-        { src: '/images/bio/160/bio-18.webp', width: 160 },
-        { src: '/images/bio/320/bio-18.webp', width: 320 },
-      ],
-    },
-    {
-      id: 19,
-      src: '/images/bio/original/bio-19.webp',
-      srcSet: [
-        { src: '/images/bio/original/bio-19.webp', width: 2500 },
-        { src: '/images/bio/1024/bio-19.webp', width: 1024 },
-        { src: '/images/bio/480/bio-19.webp', width: 480 },
-      ],
-      thumbnail: '/images/bio/160/bio-19.webp',
-      thumbSet: [
-        { src: '/images/bio/160/bio-19.webp', width: 160 },
-        { src: '/images/bio/320/bio-19.webp', width: 320 },
-      ],
-    },
+    }
   ]
 }

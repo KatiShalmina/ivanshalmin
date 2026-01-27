@@ -21,11 +21,20 @@ export default function AppLayout() {
     document.documentElement.lang = isRu ? 'ru' : 'en'
   }, [isRu])
 
+  useEffect(() => {
+    setMenuOpen(false)
+  }, [pathname])
+
   return (
     <div className={styles.page}>
       <ScrollRestoration />
       <Header setMenuOpen={setMenuOpen} />
-      <MenuOverlay menuOpen={menuOpen} setMenuOpen={setMenuOpen} />
+      {menuOpen && (
+        <MenuOverlay 
+          menuOpen={menuOpen} 
+          setMenuOpen={setMenuOpen} 
+        />
+      )}
       <main className={isHome ? styles.mainHome : undefined}>
         {isHome ? (
           <Outlet />

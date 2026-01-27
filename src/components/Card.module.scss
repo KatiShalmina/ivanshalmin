@@ -29,8 +29,8 @@
 
 .card:hover .cardCover img,
 .card:hover .cardImg,
-.card:focus-visible .cardCover img,
-.card:focus-visible .cardImg {
+.card:focus-within .cardCover img,
+.card:focus-within .cardImg {
   @media (min-width: 1280px) {
     transform: scale(1.02);         
   }
@@ -60,7 +60,7 @@
 }
 
 .card:hover .cardInfo,
-.card:focus-visible .cardInfo {
+.card:focus-within .cardInfo {
   @media (min-width: 1280px) {
     opacity: 1;
     visibility: visible;

@@ -22,6 +22,8 @@ export default function Contact() {
       Мы можем организовать профессиональную печать и доставку по указанному адресу или проконтролировать производство арт-объекта в удобной для вас типографии или студии в вашем регионе.
 
       Будем рады ответить на любые ваши вопросы.
+
+      Все цены указаны без учета стоимости обрамления и остекления.
     `
     : `
       We’re always happy to help you select the perfect piece for your interior. Simply send us an image of your space and we can create visual mock-ups showing how the painting would look in situ, along with guidance on the most suitable artwork and ideal size.
@@ -31,6 +33,8 @@ export default function Contact() {
       We can arrange professional printing and shipping directly to you, or coordinate production with a trusted local printer and framing studio in your area — overseeing the entire process for a seamless, stress-free experience.
 
       If you have any questions, please don’t hesitate to get in touch.
+
+      Please note that all prices exclude framing and glazing.
     `
   return (
     <section className={styles.contact}>

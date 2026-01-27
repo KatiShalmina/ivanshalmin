@@ -48,7 +48,7 @@ export default function Card({ to, slug, titleParts, subtitle, cover }) {
             {main}
             <span className='nowrap'>{tail}</span>
           </h2>
-          <p className={styles.cardSubtitle}>{tSubtitle}</p>
+          <p className={`${'nowrap'} ${styles.cardSubtitle}`}>{tSubtitle}</p>
         </div>
       </Link>
     </div >
