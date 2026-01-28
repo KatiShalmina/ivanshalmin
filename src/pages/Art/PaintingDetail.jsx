@@ -57,8 +57,8 @@ export default function PaintingDetail() {
   const tDescription = t(painting.description)
   const tQuote = t(painting.quote)
 
-  const prevLabel = isRu ? 'предыдущая' : 'previous'
-  const nextLabel = isRu ? 'следующая' : 'next'
+  const prevLabel = isRu ? 'предыдущая картина' : 'previous painting'
+  const nextLabel = isRu ? 'следующая картина' : 'next painting'
   const moreLabel = isRu ? 'смотреть анимацию' : 'view animation'
   const buyLabel = isRu ? 'купить картину' : 'buy this painting'
 
@@ -67,14 +67,23 @@ export default function PaintingDetail() {
       <BackButton to={backTo}>
         {backLabel}
       </BackButton>
-      <h1 className={styles.paintingTitle}>{tTitle}</h1>
-      <div className={styles.paintingDescription}>
-        {tDescription
-          .trim()
-          .split('\n')
-          .map((line, i) => (
-            <p key={i}>{line.trim()}</p>
-          ))}
+      <div className={styles.prevNext}>
+        {prev && (
+          <PrevButton 
+            to={makeTo(prev.slug)}
+            className={styles.prevButton}
+          >
+            {prevLabel}
+          </PrevButton>
+        )}
+        {next && (
+          <NextButton 
+            to={makeTo(next.slug)}
+            className={styles.nextButton}
+          >
+            {nextLabel}
+          </NextButton>
+        )}
       </div>
       <div className={styles.paintingPicture}>
         <picture key={painting.slug}>
@@ -91,17 +100,14 @@ export default function PaintingDetail() {
           />
         </picture>
       </div>
-      <div className={styles.prevNext}>
-        {prev && (
-          <PrevButton to={makeTo(prev.slug)}>
-            {prevLabel}
-          </PrevButton>
-        )}
-        {next && (
-          <NextButton to={makeTo(next.slug)}>
-            {nextLabel}
-          </NextButton>
-        )}
+      <h1 className={styles.paintingTitle}>{tTitle}</h1>
+      <div className={styles.paintingDescription}>
+        {tDescription
+          .trim()
+          .split('\n')
+          .map((line, i) => (
+            <p key={i}>{line.trim()}</p>
+          ))}
       </div>
       <div className={styles.paintingQuote}>
         {tQuote

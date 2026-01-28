@@ -3,11 +3,14 @@ import ArrowBack from '../assets/icons/arrow-back.svg?react'
 import styles from './PrevNextButton.module.scss'
 import useI18n from '../hooks/useI18n'
 
-export default function NextButton({ to, children }) {
+export default function NextButton({ to, children, className }) {
   const { to: toPath } = useI18n()
 
   return (
-    <Link to={toPath(to)} className={styles.button}>
+    <Link 
+      to={toPath(to)} 
+      className={`${styles.button} ${styles.nextButton}`}
+    >
       {children}
       <ArrowBack className={`${styles.icon} ${styles.rotate}`} />
     </Link>

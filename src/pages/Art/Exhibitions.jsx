@@ -8,7 +8,7 @@ export default function Exhibitions() {
 
   const tDescription = t(EXHIBITION_PAPER)
 
-  const paperCatalog = isRu ? 'каталог бумажной архитектуры' : 'paper architecture catalogue'
+  const paperCatalog = isRu ? 'каталог бумажной архитектуры' : 'full paper catalogue'
   const mainTitleHidden = isRu ? 'Выставки' : 'Exhibitions'
   const unitTitle = isRu ? 'выставки бумажной архитектуры' : 'the paper architecture movement'
 
