@@ -521,7 +521,7 @@ export const laconismContent = {
       },
       {
         id: 'short',
-        title: 'laconism [in short]',
+        title: 'in short',
         blocks: [
           {
             type: 'ol',
@@ -1122,7 +1122,7 @@ export const laconismContent = {
       },
       {
         id: 'short',
-        title: 'лаконизм [коротко]',
+        title: 'коротко о лаконизме',
         blocks: [
           {
             type: 'ol',

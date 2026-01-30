@@ -15,6 +15,10 @@
   font-size: clamp(2.5rem, 10vw, 8.9rem);
   line-height: 1.1;
   font-weight: 400;
+
+  @media (min-width: 1024px) {
+    letter-spacing: -4px;
+  }
 }
 
 .laconismUnit p {
@@ -34,9 +38,14 @@
   font-size: clamp(1.7rem, 10vw, 4.3rem);
   line-height: 1.1;
   font-weight: 400;
+
+  @media (min-width: 1024px) {
+    letter-spacing: -2px;
+  }
 }
 
 .awardsUnit p {
+  font-family: var(--font-ui);
   margin-bottom: 10px;
   font-size: clamp(1.2rem, 2vw, 1.7rem);
   text-transform: uppercase;

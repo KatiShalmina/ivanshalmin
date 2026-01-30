@@ -15,9 +15,14 @@
   font-size: clamp(2rem, 4vw, 3.6rem);
   line-height: 1.1;
   font-weight: 400;
+
+  @media (min-width: 1024px) {
+    letter-spacing: -1px;
+  }
 }
 
 .exhDescription {
+  font-family: var(--font-ui);
   margin-bottom: 2rem;
   font-size: clamp(1.2rem, 2vw, 1.4rem);
   text-transform: uppercase;

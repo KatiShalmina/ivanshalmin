@@ -44,6 +44,10 @@
   font-size: clamp(2.5rem, 10vw, 8.9rem);
   line-height: 1.1;
   font-weight: 400;
+
+  @media (min-width: 1024px) {
+    letter-spacing: -4px;
+  }
 }
 
 .bioText p {

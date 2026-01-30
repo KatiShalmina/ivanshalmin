@@ -47,6 +47,10 @@
   font-size: clamp(2rem, 4vw, 3.6rem);
   line-height: 1.1;
   font-weight: 400;
+
+  @media (min-width: 1024px) {
+    letter-spacing: -1px;
+  }
 }
 
 .pubCardSubtitle {

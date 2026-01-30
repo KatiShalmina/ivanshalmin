@@ -11,7 +11,7 @@ export default function Contact() {
 
   const mainTitleHidden = isRu ? 'Контакты' : 'Contact'
 
-  const message = isRu ? 'Eсли вы хотите купить картину, пожалуйста, свяжитесь с Сашей Шалминой' : 'For sales, please contact Sasha Shalmina'
+  const message = isRu ? 'Eсли вы хотите купить картину, пожалуйста, свяжитесь с Сашей Шалминой:' : 'For sales, please contact Sasha Shalmina:'
 
   const text = isRu
     ? `
