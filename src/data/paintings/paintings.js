@@ -1,68 +1,131 @@
 export const COLLECTIONS = [
-  { key: 'all', label: 'all paintings' },
-  { key: 'landscapes', label: 'landscapes' },
-  { key: 'psychedelics', label: 'psychedelics' },
-  { key: 'portraits', label: 'portraits' },
-  { key: 'still-life', label: 'still life' },
-  { key: 'structures', label: 'structures' },
+  { key: 'landscapes', label: { en: 'landscapes', ru: 'пейзажи' } },
+  { key: 'psychedelics', label: { en: 'psychedelics', ru: 'психоделика' } },
+  { key: 'portraits', label: { en: 'portraits', ru: 'портреты' } },
+  { key: 'stillLife', label: { en: 'still life', ru: 'натюрморты' } },
+  { key: 'structures', label: { en: 'structures', ru: 'структуры' } },
+  { key: 'all', label: {en: 'all paintings', ru: 'все картины' } }
 ]
 
 export const COLLECTION_TEXT = {
   landscapes: { 
-    tagline: 'The genre of landscape in shalmin’s art is more of an association than a genre, because the basis of the paintings is formed not through observing nature, but rather through the use of geometric modules. As the artist begins to develop and work on these building blocks or modules, they eventually transform into landscapes.', 
+    tagline: {
+      en: 'The genre of landscape in shalmin’s art is more of an association than a genre, because the basis of the paintings is formed not through observing nature, but rather through the use of geometric modules. As the artist begins to develop and work on these building blocks or modules, they eventually transform into landscapes.',
 
-    body: `
-      These are more like internal landscapes, the landscapes of memories. Memories of places previously seen by the artist, as well as memories of other artist’s landscapes, for example William Turner and Claude Monet. In the realm of digital painting, these compositions start to inherit the qualities of ‘hyper landscapes’, where there is no such thing as a plan or a set of coordinates to describe the space, no static or substantial vision or an internal or an external space. As the viewer begins to examine the paintings, they may at first perceive these works as three dimensional and in perspective, but the layers soon merge into one, forming a two dimensional plane. As you continue to examine the painting, it appears to remain in a state of flux, gently changing between a two dimensional plane and a three dimensional space.
+      ru: 'Пейзажный жанр в искусстве Шалмина — это в большей степени ассоциация, чем собственно жанр, поскольку в основе композиций лежат не натурные наблюдения, а геометрические модули, которые в процессе работы над картинами могут быть доведены пейзажного состояния.'
+    }, 
+
+    body: {
+      en: `
+        These are more like internal landscapes, the landscapes of memories. Memories of places previously seen by the artist, as well as memories of other artist’s landscapes, for example William Turner and Claude Monet. In the realm of digital painting, these compositions start to inherit the qualities of ‘hyper landscapes’, where there is no such thing as a plan or a set of coordinates to describe the space, no static or substantial vision or an internal or an external space. As the viewer begins to examine the paintings, they may at first perceive these works as three dimensional and in perspective, but the layers soon merge into one, forming a two dimensional plane. As you continue to examine the painting, it appears to remain in a state of flux, gently changing between a two dimensional plane and a three dimensional space.
       
-      The plan view, or the view from above is a dominant theme in the artist’s work, much like in the late works of Claude Monet. It is precisely this view point, the view from above that allows Shalmin to depart from the surface of the Earth and to travel to greater heights, out into open space and into the realm of interstellar compositions and landscapes.
-    `
+        The plan view, or the view from above is a dominant theme in the artist’s work, much like in the late works of Claude Monet. It is precisely this view point, the view from above that allows Shalmin to depart from the surface of the Earth and to travel to greater heights, out into open space and into the realm of interstellar compositions and landscapes.
+      `,
+      ru: `
+        Это скорее “внутренние ландшафты”, пейзажи воспоминаний — о местах, когда-либо увиденных художником, и пейзажных картинах других художников, например Уильяма Тернера или Клода Моне. В условиях цифровой живописи композиции приобретают качество гиперпейзажа, где уже не существует четких пространственных планов, системы координат, категорий дальнего и ближнего видения, состояний “внутри” и “снаружи”. Погружаясь в эти композиции, зритель легко меняет дистанции и свободен в перемещениях взгляда. Сначала композиции могут восприниматься как пространственные “дали”, но потом они опрокидываются на плоскость, и взгляд скользит по поверхности, прежде чем вновь устремиться в глубину. 
+
+        Одна из главных доминант — вид сверху, как во многих пейзажах позднего Клода Моне. Именно вид сверху позволяет Шалмину оторваться от пейзажного мотива и развивать его на разных высотах — от незначительно отрыва от поверхности Земли до выхода на околоземную орбиту — уровень планетарного пейзажа.
+      `
+    }
   },
 
   psychedelics: { 
-    tagline: 'The classification of Shalmin’s paintings into ‘landscape’ and ‘psychedelics’ is notional because his psychedelic paintings often arise from the landscapes as the next level of their perception and interpretation.', 
-    body: `
-      In a traditional sense, psychedelic art assumes the use of psychedelics within the creative process or at the very least, the artist usually produces their works within an altered state of consciousness. 
+    tagline: {
+      en: 'The classification of Shalmin’s paintings into ‘landscape’ and ‘psychedelics’ is notional because his psychedelic paintings often arise from the landscapes as the next level of their perception and interpretation.',
+
+      ru: 'Подразделение картин Шалмина на “пейзажи” и “психоделику” отчасти условно, поскольку психоделические опыты нередко вырастают из пейзажных композиций как следующий уровень их восприятия и интерпретации.'
+    },
+
+    body: {
+      en: `
+        In a traditional sense, psychedelic art assumes the use of psychedelics within the creative process or at the very least, the artist usually produces their works within an altered state of consciousness. 
       
-      In the context of digital art and more specifically in the context of Shalmin’s paintings, we see psychedelia of a different kind. The artist is not using psychedelics; it is his life experiences and consequently his emotions towards them that serve as the mind-altering substances. In this case, the artist gets pulled into the painting, dissolves into it and sometimes temporarily loses control over its creation. To an extent, he denounces his ego and gives into his intuition, his internal impulses. 
+        In the context of digital art and more specifically in the context of Shalmin’s paintings, we see psychedelia of a different kind. The artist is not using psychedelics; it is his life experiences and consequently his emotions towards them that serve as the mind-altering substances. In this case, the artist gets pulled into the painting, dissolves into it and sometimes temporarily loses control over its creation. To an extent, he denounces his ego and gives into his intuition, his internal impulses. 
       
-      As a result, in these psychedelic compositions, the image becomes softer in focus and a wider sense of perception opens up, discerned not only through the eyes but also through the rest of the body. This process of perception is reminiscent of a dream, when an ability to see with the eyes closed is acquired. A process where the body reacts to the images that arise in the subconscious mind.
-    ` 
+        As a result, in these psychedelic compositions, the image becomes softer in focus and a wider sense of perception opens up, discerned not only through the eyes but also through the rest of the body. This process of perception is reminiscent of a dream, when an ability to see with the eyes closed is acquired. A process where the body reacts to the images that arise in the subconscious mind.
+      `,
+      ru: `
+        В традиционном понимании психоделическое искусство предполагает использование и участие в творческом процессе психоактивных веществ или, по крайней мере, подразумевает работу в условиях измененного сознания. 
+        
+        В условиях цифровой живописи художник неизбежно втягивается в картину, растворяясь в ней и периодически теряя контроль над созданием картины. В некоторой степени он отказывается от своего эго и отдается внутреннему импульсу. 
+        
+        Как результат, в психоделических композициях уровень резкости изображений ослабевает, и на смену видению картины приходит более расширенное восприятие, в котором задействованы не только глаза, но и телесная моторика. Это процесс восприятия напоминает сновидение, когда человек обретает способность видеть с закрытыми глазами, а его тело может реагировать на образы, возникающие из подсознания.
+      `
+    }
   },
 
   portraits: { 
-    tagline: 'Shalmin’s portraits are not literal depictions of specific people, but rather illustrations of archetypes as well as the artist’s emotional response towards the archetype itself.', 
-    body: `
-      ‘Emotions’, ‘temperament’, ‘feelings’ — all these are popular subjects of paintings that prevailed during the baroque era, often associated with portraits, but not connected to them directly. For example, depictions of a young man holding a glass in Dutch paintings of the 17th century are allegories of taste. In this way, through a specific symbol, the artists were attempting to convey emotions and sensations of a general order.
+    tagline: {
+      en: 'Shalmin’s portraits are not literal depictions of specific people, but rather illustrations of archetypes as well as the artist’s emotional response towards the archetype itself.',
+
+      ru: '“Портреты” Шалмина  невозможно идентифицировать с конкретными персонами, но они, как правило, имеют прототипы и предполагают выражение авторских эмоций по поводу персоны.'
+    },
+
+    body: {
+      en: `
+        ‘Emotions’, ‘temperament’, ‘feelings’ — all these are popular subjects of paintings that prevailed during the baroque era, often associated with portraits, but not connected to them directly. For example, depictions of a young man holding a glass in Dutch paintings of the 17th century are allegories of taste. In this way, through a specific symbol, the artists were attempting to convey emotions and sensations of a general order.
       
-      In this digital age and daily social media interaction full of avatars, the portrait genre has become increasingly more abstract and is more predisposed to anonymity and concealment, rather than the exposure of personality. In this way, Shalmin’s art sees the formation of a new genre of the ‘anonymous portrait’ with a plethora of collective, rather than individual emotions.
-    ` 
+        In this digital age and daily social media interaction full of avatars, the portrait genre has become increasingly more abstract and is more predisposed to anonymity and concealment, rather than the exposure of personality. In this way, Shalmin’s art sees the formation of a new genre of the ‘anonymous portrait’ with a plethora of collective, rather than individual emotions.
+      `,
+      ru: `
+        “Эмоции”, “темпераменты”, “чувства” — это популярный живописный жанр эпохи барокко, часто сопряженный с портретированием, но не связанный с ним напрямую. Так, например, изображения мальчиков с бокалами в голландских картинах XVII века — это аллегории вкуса. Таким образом через конкретную персону художники пытались выразить эмоции или ощущения общего порядка.
+        
+        В эпоху цифровых технологий и бытования в социальных сетях многочисленных аватаров  портретный жанр более чем условен и скорее располагает к анонимности, то есть сокрытию, а не раскрытию личности. Так в искусстве Шалмина формируется своеобразный жанр “анонимного портрета” с целым комплексом скорее уже коллективных, а не индивидуальных эмоций.
+      ` 
+    }      
   },
 
-  'still-life': {
-    tagline: 'In contrast to his landscapes — substantial vision works, Shalmin’s ‘still life’ series are static vision works. The modules or building blocks that make up his still life pieces are larger here than his landscapes. The number of layers also decreases and the shapes start to look as though they are opening up and sliding off into the surrounding space.', 
-    body: `
-      These digital paintings take the cubist still life principles, namely the relationship between the different components and take them to a new level. 
+  stillLife: {
+    tagline: {
+      en: 'In contrast to his landscapes — substantial vision works, Shalmin’s ‘still life’ series are static vision works. The modules or building blocks that make up his still life pieces are larger here than his landscapes. The number of layers also decreases and the shapes start to look as though they are opening up and sliding off into the surrounding space.',
+
+      ru: 'В композициях серии “натюрморты” Шалмин практикует опыт ближнего видения и поэтому, в отличие от своих пейзажей, сохраняет большие модули. Количество живописных слоев при этом уменьшается, и “натюрмортные” формы легко могут соскальзывать в пространство и раскрываться в нем.'
+    },
+
+    body: {
+      en: `
+        These digital paintings take the cubist still life principles, namely the relationship between the different components and take them to a new level. However, when the image is already non-representational, the artist doesn’t need to disassemble the object within an illusory space the way the cubists did at the beginning of the 20th century. Thus, Shalmin’s works are quite the opposite, the forms begin to cluster and compress within the digital space that they inhabit. 
       
-      However, when the image is already non-representational, the artist doesn’t need to disassemble the object within an illusory space the way the cubists did at the beginning of the 20th century. Thus, Shalmin’s works are quite the opposite, the forms begin to cluster and compress within the digital space that they inhabit. 
+        It’s also important to note that within the realm of digital painting, the light comes from within the picture frame itself, which inevitably affects the perception and interpretation of the objects depicted.
+      `,
+      ru: `
+        В аспекте взаимоотношений пространственных форм цифровая живопись Шалмина на новом уровне развивает традиции кубистических натюрмортов. Но в условиях, когда изображение в своей основе уже фиктивно, художнику не нужно совершать операции развеществления предметов в иллюзорном пространстве, как это делали кубисты начала ХХ века. Скорее наоборот, формы уплотняются из виртуального пространства.
       
-      It’s also important to note that within the realm of digital painting, the light comes from within the picture frame itself, which inevitably affects the perception and interpretation of the objects depicted.
-    ` 
+        Здесь важно учитывать, что в цифровой живописи источник света всегда существует внутри картинного поля, что неизбежно влияет на характер интерпретации и восприятия предметных форм.
+      `
+    } 
   },
 
   structures: {
-    tagline: 'The ‘structure’ series is the most architectural. It’s linked with the traditions of geometric abstraction and the technique of endlessly replicating a single building block or module.',
-    body: `
-      At the start of the 20th century, the French cubists were striving to conquer the inertia of physical objects, by developing the idea of looking directly through the object and aiming to perceive it in its entirety, as well as creating a multidimensional space by capturing different viewpoints within the same piece of work. Throughout this journey, they have made several new discoveries, including the effect of ‘pop-up windows’, which are now so familiar to the contemporary audience following the advent of computers and virtual reality.
+    tagline: {
+      en: 'The ‘structure’ series is the most architectural. It’s linked with the traditions of geometric abstraction and the technique of endlessly replicating a single building block or module.',
+
+      ru: 'Серия “структуры” — наиболее архитектурная и связанная с традициями геометрической абстракции, темой удвоения и бесконечного умножения модулей.'
+    },
+
+    body: {
+      en: `
+        At the start of the 20th century, the French cubists were striving to conquer the inertia of physical objects, by developing the idea of looking directly through the object and aiming to perceive it in its entirety, as well as creating a multidimensional space by capturing different viewpoints within the same piece of work. Throughout this journey, they have made several new discoveries, including the effect of ‘pop-up windows’, which are now so familiar to the contemporary audience following the advent of computers and virtual reality.
       
-      Multiplying the same module over and over again, whilst changing its size allows the artist to create new spatial illusions. The geometric structures also begin to resemble the connections between cells and microorganisms. In this way, the ‘structure’ series can also be classified as visual experiments in the field of biotechnology.
-    ` 
+        Multiplying the same module over and over again, whilst changing its size allows the artist to create new spatial illusions. The geometric structures also begin to resemble the connections between cells and microorganisms. In this way, the ‘structure’ series can also be classified as visual experiments in the field of biotechnology.
+      `,
+      ru: `
+        Еще в начале ХХ века французские кубисты в стремлении преодолеть инертность предметных форм развивали идею сквозного видения и многомерного пространства. На этом пути они сделали несколько базовых открытий, в том числе эффект “всплывающих окон”, которые сейчас стали уже привычными в условиях виртуальной компьютерной реальности. 
+        
+        Прием постоянного умножения моделей разного масштаба позволяет Шалмину создавать в одной картине все новые и новые пространственные иллюзии и придавать геометрическим структурам характер органических клеточных соединений. Поэтому “структуры” Шалмина можно отнести к опытам в области техноорганики.
+      ` 
+    }
   },
 }
 
 export const PAINTINGS = [
   {
     slug: 'discussion',
-    title: 'discussion',
+    titleParts: {
+      en: ['DISCUSSION | ', '2500 mm x 1500 mm |'],
+      ru: ['ДИСКУССИЯ | ', '2500 мм x 1500 мм |']
+    },
+    subtitle: '$ 1790',
     collections: ['psychedelics'],
     cover: {
       src: '/images/paintings/480/discussion.webp',
@@ -76,7 +139,11 @@ export const PAINTINGS = [
   },
   {
     slug: 'at-6-am',
-    title: 'at 6 am',
+    titleParts: {
+      en: ['AT 6 AM | ', '1100 mm x 750 mm |'],
+      ru: ['В 6 УТРА | ', '1100 мм x 750 мм |']
+    },
+    subtitle: '$ 1470',
     collections: ['landscapes'],
     cover: {
       src: '/images/paintings/480/at-6-am.webp',
@@ -90,7 +157,11 @@ export const PAINTINGS = [
   },
   {
     slug: 'blazing-heat',
-    title: 'blazing heat',
+    titleParts: {
+      en: ['BLAZING HEAT | ', '1100 mm x 750 mm |'],
+      ru: ['ЗНОЙ | ', '1100 мм x 750 мм |']
+    },
+    subtitle: '$ 1470',
     collections: ['landscapes'],
     cover: {
       src: '/images/paintings/480/blazing-heat.webp',
@@ -104,7 +175,11 @@ export const PAINTINGS = [
   },
   {
     slug: 'meeting',
-    title: 'the meeting',
+    titleParts: {
+      en: ['THE MEETING | ', '600 mm x 400 mm |'],
+      ru: ['СОВЕЩАНИЕ | ', '600 мм x 400 мм |']
+    },
+    subtitle: '$ 1190',
     collections: ['portraits'],
     cover: {
       src: '/images/paintings/480/meeting.webp',
@@ -118,7 +193,11 @@ export const PAINTINGS = [
   },
   {
     slug: 'dusk',
-    title: 'dusk',
+    titleParts: {
+      en: ['DUSK | ', '1500 mm x 1000 mm |'],
+      ru: ['СУМЕРКИ | ', '1500 мм x 1000 мм |']
+    },
+    subtitle: '$ 1470',
     collections: ['landscapes'],
     cover: {
       src: '/images/paintings/480/dusk.webp',
@@ -132,7 +211,11 @@ export const PAINTINGS = [
   },
   {
     slug: 'fears',
-    title: 'fears',
+    titleParts: {
+      en: ['FEARS | ', '1500 mm x 1000 mm |'],
+      ru: ['СТРАХИ | ', '1500 мм x 1000 мм |']
+    },
+    subtitle: '$ 1470',
     collections: ['portraits'],
     cover: {
       src: '/images/paintings/480/fears.webp',
@@ -146,7 +229,11 @@ export const PAINTINGS = [
   },
   {
     slug: 'iron-man',
-    title: 'the iron man',
+    titleParts: {
+      en: ['THE IRON MAN | ', '1500 mm x 900 mm |'],
+      ru: ['ЖЕЛЕЗНЫЙ ЧЕЛОВЕК | ', '1500 мм x 900 мм |']
+    },
+    subtitle: '$ 1470',
     collections: ['portraits'],
     cover: {
       src: '/images/paintings/480/iron-man.webp',
@@ -160,7 +247,11 @@ export const PAINTINGS = [
   },
   {
     slug: 'race',
-    title: 'the race',
+    titleParts: {
+      en: ['THE RACE | ', '1100 mm x 750 mm |'],
+      ru: ['ГОНКА | ', '1100 мм x 750 мм |']
+    },
+    subtitle: '$ 1470',
     collections: ['portraits'],
     cover: {
       src: '/images/paintings/480/race.webp',
@@ -174,7 +265,11 @@ export const PAINTINGS = [
   },
   {
     slug: 'gwynplaine',
-    title: 'gwynplaine',
+    titleParts: {
+      en: ['GWYNPLAINE | ', '1100 mm x 750 mm |'],
+      ru: ['ГУИНПЛЕН | ', '1100 мм x 750 мм |']
+    },
+    subtitle: '$ 1470',
     collections: ['portraits'],
     cover: {
       src: '/images/paintings/480/gwynplaine.webp',
@@ -188,7 +283,11 @@ export const PAINTINGS = [
   },
   {
     slug: 'secret',
-    title: 'secret',
+    titleParts: {
+      en: ['SECRET | ', '1100 mm x 750 mm |'],
+      ru: ['ТАЙНА | ', '1100 мм x 750 мм |']
+    },
+    subtitle: '$ 1470',
     collections: ['portraits'],
     cover: {
       src: '/images/paintings/480/secret.webp',
@@ -202,7 +301,11 @@ export const PAINTINGS = [
   },
   {
     slug: 'ghoul',
-    title: 'ghoul',
+    titleParts: {
+      en: ['GHOUL | ', '1100 mm x 750 mm |'],
+      ru: ['УПЫРЬ | ', '1100 мм x 750 мм |']
+    },
+    subtitle: '$ 1470',
     collections: ['portraits'],
     cover: {
       src: '/images/paintings/480/ghoul.webp',
@@ -216,7 +319,11 @@ export const PAINTINGS = [
   },
   {
     slug: 'faculty',
-    title: 'faculty',
+    titleParts: {
+      en: ['FACULTY | ', '1500 mm x 1000 mm |'],
+      ru: ['ФАКУЛЬТЕТ | ', '1500 мм x 1000 мм |']
+    },
+    subtitle: '$ 1470',
     collections: ['landscapes'],
     cover: {
       src: '/images/paintings/480/faculty.webp',
@@ -230,7 +337,11 @@ export const PAINTINGS = [
   },
   {
     slug: 'tree',
-    title: 'tree',
+    titleParts: {
+      en: ['TREE | ', '600 mm x 400 mm |'],
+      ru: ['ДЕРЕВО | ', '600 мм x 400 мм |']
+    },
+    subtitle: '$ 1190',
     collections: ['landscapes'],
     cover: {
       src: '/images/paintings/480/tree.webp',
@@ -244,7 +355,11 @@ export const PAINTINGS = [
   },
   {
     slug: 'small-yard',
-    title: 'a small yard in n-sk',
+    titleParts: {
+      en: ['SMALL YARD IN N-SK | ', '600 mm x 400 mm |'],
+      ru: ['ДВОРИК В Н-СКЕ | ', '600 мм x 400 мм |']
+    },
+    subtitle: '$ 1190',
     collections: ['landscapes'],
     cover: {
       src: '/images/paintings/480/small-yard.webp',
@@ -257,22 +372,12 @@ export const PAINTINGS = [
     }
   },
   {
-    slug: 'headache',
-    title: 'headache',
-    collections: ['portraits'],
-    cover: {
-      src: '/images/paintings/480/headache.webp',
-      srcSet: `
-        /images/paintings/480/headache.webp 480w,
-        /images/paintings/1024/headache.webp 1024w,
-        /images/paintings/original/headache.webp 1754w
-        `,
-        sizes: '1440px',
-    }
-  },
-  {
     slug: 'brain',
-    title: 'brain',
+    titleParts: {
+      en: ['BRAIN | ', '1500 mm x 1000 mm |'],
+      ru: ['МОЗГ | ', '1500 мм x 1000 мм |']
+    },
+    subtitle: '$ 1470',
     collections: ['portraits'],
     cover: {
       src: '/images/paintings/480/brain.webp',
@@ -285,8 +390,30 @@ export const PAINTINGS = [
     }
   },
   {
+    slug: 'headache',
+    titleParts: {
+      en: ['HEADACHE | ', '1500 mm x 1000 mm |'],
+      ru: ['ГОЛОВНАЯ БОЛЬ | ', '1500 мм x 1000 мм |']
+    },
+    subtitle: '$ 1470',
+    collections: ['portraits'],
+    cover: {
+      src: '/images/paintings/480/headache.webp',
+      srcSet: `
+        /images/paintings/480/headache.webp 480w,
+        /images/paintings/1024/headache.webp 1024w,
+        /images/paintings/original/headache.webp 1754w
+        `,
+        sizes: '1440px',
+    }
+  },
+  {
     slug: 'blood-drop',
-    title: 'a drop of blood',
+    titleParts: {
+      en: ['A DROP OF BLOOD | ', '2500 mm x 1500 mm |'],
+      ru: ['КАПЛЯ КРОВИ | ', '2500 мм x 1500 мм |']
+    },
+    subtitle: '$ 1790',
     collections: ['psychedelics'],
     cover: {
       src: '/images/paintings/480/blood-drop.webp',
@@ -300,7 +427,11 @@ export const PAINTINGS = [
   },
   {
     slug: 'decadence',
-    title: 'decadence',
+    titleParts: {
+      en: ['DECADENCE | ', '2500 mm x 1500 mm |'],
+      ru: ['ДЕКАДАНС | ', '2500 мм x 1500 мм |']
+    },
+    subtitle: '$ 1790',
     collections: ['psychedelics'],
     cover: {
       src: '/images/paintings/480/decadence.webp',
@@ -314,7 +445,11 @@ export const PAINTINGS = [
   },
   {
     slug: 'splash',
-    title: 'the splash',
+    titleParts: {
+      en: ['THE SPLASH | ', '1500 mm x 900 mm |'],
+      ru: ['ВСПЛЕСК | ', '1500 мм x 900 мм |']
+    },
+    subtitle: '$ 1470',
     collections: ['psychedelics'],
     cover: {
       src: '/images/paintings/480/splash.webp',
@@ -328,7 +463,11 @@ export const PAINTINGS = [
   },
   {
     slug: 'summer',
-    title: 'summer',
+    titleParts: {
+      en: ['SUMMER | ', '570 mm x 410 mm |'],
+      ru: ['ЛЕТО | ', '570 мм x 410 мм |']
+    },
+    subtitle: '$ 1190',
     collections: ['psychedelics'],
     cover: {
       src: '/images/paintings/480/summer.webp',
@@ -342,7 +481,11 @@ export const PAINTINGS = [
   },
   {
     slug: 'journey',
-    title: 'journey',
+    titleParts: {
+      en: ['JOURNEY | ', '1100 mm x 750 mm |'],
+      ru: ['ПУТЬ | ', '1100 мм x 750 мм |']
+    },
+    subtitle: '$ 1470',
     collections: ['structures'],
     cover: {
       src: '/images/paintings/480/journey.webp',
@@ -356,7 +499,11 @@ export const PAINTINGS = [
   },
   {
     slug: 'madam',
-    title: 'madam',
+    titleParts: {
+      en: ['MADAM | ', '1500 mm x 1000 mm |'],
+      ru: ['МАДАМ | ', '1500 мм x 1000 мм |']
+    },
+    subtitle: '$ 1470',
     collections: ['portraits'],
     cover: {
       src: '/images/paintings/480/madam.webp',
@@ -370,7 +517,11 @@ export const PAINTINGS = [
   },
   {
     slug: 'by-the-river',
-    title: 'by the river',
+    titleParts: {
+      en: ['BY THE RIVER | ', '1500 mm x 1000 mm |'],
+      ru: ['А У РЕКИ | ', '1500 мм x 1000 мм |']
+    },
+    subtitle: '$ 1470',
     collections: ['landscapes'],
     cover: {
       src: '/images/paintings/480/by-the-river.webp',
@@ -384,7 +535,11 @@ export const PAINTINGS = [
   },
   {
     slug: 'autumn',
-    title: 'autumn',
+    titleParts: {
+      en: ['AUTUMN | ', '1500 mm x 1000 mm |'],
+      ru: ['ОСЕНЬ | ', '1500 мм x 1000 мм |']
+    },
+    subtitle: '$ 1470',
     collections: ['landscapes'],
     cover: {
       src: '/images/paintings/480/autumn.webp',
@@ -398,7 +553,11 @@ export const PAINTINGS = [
   },
   {
     slug: 'structure',
-    title: 'structure',
+    titleParts: {
+      en: ['STRUCTURE | ', '1100 mm x 750 mm |'],
+      ru: ['СТРУКТУРА | ', '1100 мм x 750 мм |']
+    },
+    subtitle: '$ 1470',
     collections: ['structures'],
     cover: {
       src: '/images/paintings/480/structure.webp',
@@ -412,7 +571,11 @@ export const PAINTINGS = [
   },
   {
     slug: 'city',
-    title: 'city',
+    titleParts: {
+      en: ['CITY | ', '1100 mm x 750 mm |'],
+      ru: ['ГОРОД | ', '1100 мм x 750 мм |']
+    },
+    subtitle: '$ 1470',
     collections: ['structures'],
     cover: {
       src: '/images/paintings/480/city.webp',
@@ -426,7 +589,11 @@ export const PAINTINGS = [
   },
   {
     slug: 'contact',
-    title: 'contact',
+    titleParts: {
+      en: ['CONTACT | ', '900 mm x 600 mm |'],
+      ru: ['КОНТАКТ | ', '900 мм x 600 мм |']
+    },
+    subtitle: '$ 1190',
     collections: ['portraits'],
     cover: {
       src: '/images/paintings/480/contact.webp',
@@ -440,7 +607,12 @@ export const PAINTINGS = [
   },
   {
     slug: 'crazy-color',
-    title: 'a crazy color',
+    titleParts: {
+      en: ['A CRAZY COLOUR | ', '600 mm x 400 mm |'],
+      ru: ['ДИКИЙ | ', '600 мм x 400 мм |']
+    },
+    subtitle: '$ 1190',
+
     collections: ['landscapes'],
     cover: {
       src: '/images/paintings/480/crazy-color.webp',
@@ -454,7 +626,11 @@ export const PAINTINGS = [
   },
   {
     slug: 'damn',
-    title: 'don’t give a damn',
+    titleParts: {
+      en: ['DON’T GIVE A DAMN | ', '1500 mm x 1000 mm |'],
+      ru: ['ПОХРЕНУ МОРОЗ | ', '1500 мм x 1000 мм |']
+    },
+    subtitle: '$ 1470',
     collections: ['landscapes'],
     cover: {
       src: '/images/paintings/480/damn.webp',
@@ -468,7 +644,11 @@ export const PAINTINGS = [
   },
   {
     slug: 'deep-forest',
-    title: 'deep forest',
+    titleParts: {
+      en: ['DEEP FOREST | ', '1200 mm x 800 mm |'],
+      ru: ['ЛЕС ГУСТОЙ | ', '1200 мм x 800 мм |']
+    },
+    subtitle: '$ 1470',
     collections: ['landscapes'],
     cover: {
       src: '/images/paintings/480/deep-forest.webp',
@@ -482,7 +662,11 @@ export const PAINTINGS = [
   },
   {
     slug: 'demons',
-    title: 'demons',
+    titleParts: {
+      en: ['DEMONS | ', '600 mm x 400 mm |'],
+      ru: ['ДЕМОНЫ | ', '600 мм x 400 мм |']
+    },
+    subtitle: '$ 1190',
     collections: ['portraits'],
     cover: {
       src: '/images/paintings/480/demons.webp',
@@ -496,7 +680,11 @@ export const PAINTINGS = [
   },
   {
     slug: 'dream',
-    title: 'dream',
+    titleParts: {
+      en: ['DREAM | ', '1500 mm x 1000 mm |'],
+      ru: ['МЕЧТА | ', '1500 мм x 1000 мм |']
+    },
+    subtitle: '$ 1470',
     collections: ['landscapes'],
     cover: {
       src: '/images/paintings/480/dream.webp',
@@ -510,7 +698,11 @@ export const PAINTINGS = [
   },
   {
     slug: 'drowning',
-    title: 'drowning',
+    titleParts: {
+      en: ['WHO’S DROWNING OVER THERE? | ', '2500 mm x 1500 mm |'],
+      ru: ['КТО ТАМ ТОНЕТ? | ', '2500 мм x 1500 мм |']
+    },
+    subtitle: '$ 1790',
     collections: ['psychedelics'],
     cover: {
       src: '/images/paintings/480/drowning.webp',
@@ -524,7 +716,11 @@ export const PAINTINGS = [
   },
   {
     slug: 'fright',
-    title: 'a fright',
+    titleParts: {
+      en: ['A FRIGHT | ', '750 mm x 600 mm |'],
+      ru: ['ИСПУГ | ', '750 мм x 600 мм |']
+  },
+    subtitle: '$ 1190',
     collections: ['portraits'],
     cover: {
       src: '/images/paintings/480/fright.webp',
@@ -538,7 +734,11 @@ export const PAINTINGS = [
   },
   {
     slug: 'first-snow',
-    title: 'first snow',
+    titleParts: {
+      en: ['FIRST SNOW | ', '1500 mm x 1000 mm |'],
+      ru: ['ПЕРВЫЙ СНЕГ | ', '1500 мм x 1000 мм |']
+    },
+    subtitle: '$ 1470',
     collections: ['landscapes'],
     cover: {
       src: '/images/paintings/480/first-snow.webp',
@@ -552,7 +752,11 @@ export const PAINTINGS = [
   },
   {
     slug: 'hallucination',
-    title: 'hallucination',
+    titleParts: {
+      en: ['HALLUCINATION | ', '1100 mm x 750 mm |'],
+      ru: ['ГЛЮКОГЕН | ', '1100 мм x 750 мм |']
+    },
+    subtitle: '$ 1470',
     collections: ['portraits'],
     cover: {
       src: '/images/paintings/480/hallucination.webp',
@@ -566,7 +770,11 @@ export const PAINTINGS = [
   },
   {
     slug: 'hungover',
-    title: 'hungover',
+    titleParts: {
+      en: ['HUNGOVER | ', '750 mm x 600 mm |'],
+      ru: ['С БОДУНА | ', '750 мм x 600 мм |']
+    },
+    subtitle: '$ 1190',
     collections: ['portraits'],
     cover: {
       src: '/images/paintings/480/hungover.webp',
@@ -580,7 +788,11 @@ export const PAINTINGS = [
   },
   {
     slug: 'lightness-of-being',
-    title: 'lightness of being',
+    titleParts: {
+      en: ['THE UNBEARABLE LIGHTNESS OF BEING | ', '1500 mm x 1000 mm |'],
+      ru: ['НЕВЫНОСИМАЯ ЛЕГКОСТЬ БЫТИЯ | ', '1500 мм x 1000 мм |']
+    },
+    subtitle: '$ 1470',
     collections: ['landscapes'],
     cover: {
       src: '/images/paintings/480/lightness-of-being.webp',
@@ -594,7 +806,11 @@ export const PAINTINGS = [
   },
   {
     slug: 'look',
-    title: 'the look',
+    titleParts: {
+      en: ['THE LOOK | ', '750 mm x 600 mm |'],
+      ru: ['ВЗГЛЯД | ', '750 мм x 600 мм |']
+    },
+    subtitle: '$ 1190',
     collections: ['portraits'],
     cover: {
       src: '/images/paintings/480/look.webp',
@@ -608,7 +824,11 @@ export const PAINTINGS = [
   },
   {
     slug: 'mountain',
-    title: 'mountain',
+    titleParts: {
+      en: ['MOUNTAIN | ', '1100 mm x 750 mm |'],
+      ru: ['ГОРА | ', '1100 мм x 750 мм |']
+    },
+    subtitle: '$ 1470',
     collections: ['landscapes'],
     cover: {
       src: '/images/paintings/480/mountain.webp',
@@ -622,7 +842,11 @@ export const PAINTINGS = [
   },
   {
     slug: 'oceania',
-    title: 'oceania',
+    titleParts: {
+      en: ['OCEANIA | ', '2500 mm x 1500 mm |'],
+      ru: ['ОКЕАНИЯ | ', '2500 мм x 1500 мм |']
+    },
+    subtitle: '$ 1790',
     collections: ['psychedelics'],
     cover: {
       src: '/images/paintings/480/oceania.webp',
@@ -636,7 +860,11 @@ export const PAINTINGS = [
   },
   {
     slug: 'wave',
-    title: 'wave',
+    titleParts: {
+      en: ['WAVE | ', '2500 mm x 1500 mm |'],
+      ru: ['ВОЛНА | ', '2500 мм x 1500 мм |']
+    },
+    subtitle: '$ 1790',
     collections: ['psychedelics'],
     cover: {
       src: '/images/paintings/480/wave.webp',
@@ -650,7 +878,11 @@ export const PAINTINGS = [
   },
   {
     slug: 'wet-conversation',
-    title: 'a wet conversation',
+    titleParts: {
+      en: ['A WET CONVERSATION | ', '2500 mm x 1500 mm |'],
+      ru: ['МОКРЫЙ РАЗГОВОР | ', '2500 мм x 1500 мм |']
+    },
+    subtitle: '$ 1790',
     collections: ['psychedelics'],
     cover: {
       src: '/images/paintings/480/wet-conversation.webp',
@@ -664,8 +896,12 @@ export const PAINTINGS = [
   },
   {
     slug: 'still-life-1',
-    title: 'still life 1',
-    collections: ['still-life'],
+    titleParts: {
+      en: ['STILL LIFE 1 | ', '600 mm x 400 mm |'],
+      ru: ['НАТЮРМОРТ 1 | ', '600 мм x 400 мм |']
+    },
+    subtitle: '$ 1190',
+    collections: ['stillLife'],
     cover: {
       src: '/images/paintings/480/still-life-1.webp',
       srcSet: `
@@ -678,8 +914,12 @@ export const PAINTINGS = [
   },
   {
     slug: 'still-life-2',
-    title: 'still life 2',
-    collections: ['still-life'],
+    titleParts: {
+      en: ['STILL LIFE 2 | ', '900 mm x 600 mm |'],
+      ru: ['НАТЮРМОРТ 2 | ', '900 мм x 600 мм |']
+    },
+    subtitle: '$ 1190',
+    collections: ['stillLife'],
     cover: {
       src: '/images/paintings/480/still-life-2.webp',
       srcSet: `
@@ -692,8 +932,12 @@ export const PAINTINGS = [
   },
   {
     slug: 'still-life-3',
-    title: 'still life 3',
-    collections: ['still-life'],
+    titleParts: {
+      en: ['STILL LIFE 3 | ', '600 mm x 400 mm |'],
+      ru: ['НАТЮРМОРТ 3 | ', '600 мм x 400 мм |']
+    },
+    subtitle: '$ 1190',
+    collections: ['stillLife'],
     cover: {
       src: '/images/paintings/480/still-life-3.webp',
       srcSet: `
@@ -706,7 +950,11 @@ export const PAINTINGS = [
   },
   {
     slug: 'roses',
-    title: 'roses',
+    titleParts: {
+      en: ['ROSES | ', '570 mm x 410 mm |'],
+      ru: ['РОЗЫ | ', '570 мм x 410 мм |']
+    },
+    subtitle: '$ 1190',
     collections: ['still-life'],
     cover: {
       src: '/images/paintings/480/roses.webp',
@@ -720,8 +968,12 @@ export const PAINTINGS = [
   },
   {
     slug: 'leaf',
-    title: 'leaf',
-    collections: ['still-life'],
+    titleParts: {
+      en: ['LEAF | ', '570 mm x 410 mm |'],
+      ru: ['ЛИСТ | ', '570 мм x 410 мм |']
+    },
+    subtitle: '$ 1190',
+    collections: ['stillLife'],
     cover: {
       src: '/images/paintings/480/leaf.webp',
       srcSet: `
@@ -734,8 +986,12 @@ export const PAINTINGS = [
   },
   {
     slug: 'sea',
-    title: 'the sea',
-    collections: ['still-life'],
+    titleParts: {
+      en: ['THE SEA | ', '570 mm x 410 mm |'],
+      ru: ['МОРЕ | ', '570 мм x 410 мм |']
+    },
+    subtitle: '$ 1190',
+    collections: ['stillLife'],
     cover: {
       src: '/images/paintings/480/sea.webp',
       srcSet: `
@@ -748,8 +1004,12 @@ export const PAINTINGS = [
   },
   {
     slug: 'mountains',
-    title: 'mountains',
-    collections: ['still-life'],
+    titleParts: {
+      en: ['MOUNTAINS | ', '570 mm x 410 mm |'],
+      ru: ['ГОРЫ | ', '570 мм x 410 мм |']
+    },
+    subtitle: '$ 1190',
+    collections: ['stillLife'],
     cover: {
       src: '/images/paintings/480/mountains.webp',
       srcSet: `
@@ -762,8 +1022,12 @@ export const PAINTINGS = [
   },
   {
     slug: 'party',
-    title: 'party',
-    collections: ['still-life'],
+    titleParts: {
+      en: ['PARTY | ', '570 mm x 410 mm |'],
+      ru: ['ВЕЧЕРИНКА | ', '570 мм x 410 мм |']
+    },
+    subtitle: '$ 1190',
+    collections: ['stillLife'],
     cover: {
       src: '/images/paintings/480/party.webp',
       srcSet: `
@@ -776,7 +1040,11 @@ export const PAINTINGS = [
   },
   {
     slug: 'electricity',
-    title: 'electricity',
+    titleParts: {
+      en: ['ELECTRICITY | ', '750 mm x 410 mm |'],
+      ru: ['ЭЛЕКТРИЧЕСТВО | ', '750 мм x 410 мм |']
+    },
+    subtitle: '$ 1190',
     collections: ['psychedelics'],
     cover: {
       src: '/images/paintings/480/electricity.webp',
@@ -790,7 +1058,11 @@ export const PAINTINGS = [
   },
   {
     slug: 'fish',
-    title: 'fish',
+    titleParts: {
+      en: ['FISH | ', '570 mm x 410 mm |'],
+      ru: ['РЫБА | ', '570 мм x 410 мм |']
+    },
+    subtitle: '$ 1190',
     collections: ['psychedelics'],
     cover: {
       src: '/images/paintings/480/fish.webp',
@@ -804,7 +1076,11 @@ export const PAINTINGS = [
   },
   {
     slug: 'vine',
-    title: 'the vine',
+    titleParts: {
+      en: ['THE VINE | ', '1500 mm x 1000 mm |'],
+      ru: ['ЛОЗА | ', '1500 мм x 1000 мм |']
+    },
+    subtitle: '$ 1470',
     collections: ['landscapes'],
     cover: {
       src: '/images/paintings/480/vine.webp',
@@ -818,7 +1094,11 @@ export const PAINTINGS = [
   },
   {
     slug: 'wasted-day',
-    title: 'a wasted day',
+    titleParts: {
+      en: ['A WASTED DAY | ', '1500 mm x 900 mm |'],
+      ru: ['ПОТЕРЯННЫЙ ДЕНЬ | ', '1500 мм x 900 мм |']
+    },
+    subtitle: '$ 1470',
     collections: ['landscapes'],
     cover: {
       src: '/images/paintings/480/wasted-day.webp',
@@ -832,7 +1112,11 @@ export const PAINTINGS = [
   },
   {
     slug: 'fishing',
-    title: 'night time fishing',
+    titleParts: {
+      en: ['NIGHT TIME FISHING | ', '570 mm x 410 mm |'],
+      ru: ['НОЧНАЯ РЫБАЛКА | ', '570 мм x 410 мм |']
+    },
+    subtitle: '$ 1190',
     collections: ['landscapes'],
     cover: {
       src: '/images/paintings/480/fishing.webp',
@@ -846,7 +1130,11 @@ export const PAINTINGS = [
   },
   {
     slug: 'hearth',
-    title: 'the hearth',
+    titleParts: {
+      en: ['THE HEARTH | ', '1500 mm x 900 mm |'],
+      ru: ['ОЧАГ | ', '1500 мм x 900 мм |']
+    },
+    subtitle: '$ 1470',
     collections: ['landscapes'],
     cover: {
       src: '/images/paintings/480/hearth.webp',
@@ -860,7 +1148,11 @@ export const PAINTINGS = [
   },
   {
     slug: 'waterfall',
-    title: 'waterfall',
+    titleParts: {
+      en: ['WATERFALL | ', '570 mm x 410 mm |'],
+      ru: ['ВОДОПАД | ', '570 мм x 410 мм |']
+    },
+    subtitle: '$ 1190',
     collections: ['landscapes'],
     cover: {
       src: '/images/paintings/480/waterfall.webp',
@@ -874,7 +1166,11 @@ export const PAINTINGS = [
   },
   {
     slug: 'grail',
-    title: 'the grail',
+    titleParts: {
+      en: ['THE GRAIL | ', '570 mm x 410 mm |'],
+      ru: ['ГРААЛЬ | ', '570 мм x 410 мм |']
+    },
+    subtitle: '$ 1190',
     collections: ['landscapes'],
     cover: {
       src: '/images/paintings/480/grail.webp',
@@ -888,7 +1184,11 @@ export const PAINTINGS = [
   },
   {
     slug: 'whisper',
-    title: 'whisper',
+    titleParts: {
+      en: ['WHISPER | ', '750 mm x 600 mm |'],
+      ru: ['ШЕПОТ | ', '750 мм x 600 мм |']
+    },
+    subtitle: '$ 1190',
     collections: ['portraits'],
     cover: {
       src: '/images/paintings/480/whisper.webp',

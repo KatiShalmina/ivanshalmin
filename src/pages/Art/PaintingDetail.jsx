@@ -1,37 +1,89 @@
-import { useParams, useLocation } from 'react-router-dom'
+import { useMemo } from 'react'
+import { useParams, useSearchParams } from 'react-router-dom'
 import BackButton from '../../components/BackButton'
 import BuyButton from '../../components/BuyButton'
 import styles from './PaintingDetail.module.scss'
+import { PAINTINGS } from '../../data/paintings/paintings'
 import { paintingDetail } from '../../data/paintings/painting-detail'
 import MoreButton from '../../components/MoreButton'
+import useI18n from '../../hooks/useI18n'
+import PrevButton from '../../components/PrevButton'
+import NextButton from '../../components/NextButton'
+
+const BACK_LABELS = {
+  landscapes: { en: 'all landscapes', ru: 'все пейзажи' },
+  psychedelics: { en: 'all psychedelics', ru: 'вся психоделика' },
+  portraits: { en: 'all portraits', ru: 'все портреты' },
+  stillLife: { en: 'all still life', ru: 'все натюрморты' },
+  structures: { en: 'all structures', ru: 'все структуры' },
+}
 
 export default function PaintingDetail() {
+  const { t, isRu, lang } = useI18n()
+
   const { slug } = useParams()
-  const location = useLocation()
+  const [searchParams] = useSearchParams()
 
   const painting = paintingDetail.find(p => p.slug === slug)
 
   if (!painting) return <p>Not found</p>
 
-  const backTo = location.state?.from ?? '/paintings/collections'
-  const focusSlug = location.state?.focusSlug
+  const collections = painting.collections ?? []
+  const primaryCollection = collections[0] ?? 'landscapes'
+
+  const filterFromUrl = searchParams.get('filter')
+  const filter = filterFromUrl ?? primaryCollection
+
+  const list = useMemo(() => {
+    if (filter === 'all') return PAINTINGS
+    return PAINTINGS.filter(p => (p.collections ?? p.collectionscollections ?? []).includes(filter))
+  }, [filter])
+
+  const currentIndex = list.findIndex(p => p.slug === slug)
+  const prev = currentIndex > 0 ? list[currentIndex - 1] : null
+  const next = currentIndex >= 0 && currentIndex < list.length - 1 ? list[currentIndex + 1] : null
+
+  const makeTo = (targetSlug) => `/paintings/collections/${targetSlug}?filter=${filter}`
+
+  const backTo =
+    primaryCollection === 'landscapes'
+      ? '/paintings/collections'
+      : `/paintings/collections?filter=${primaryCollection}`
+
+  const backLabel =
+    BACK_LABELS[primaryCollection]?.[lang]
+
+  const tTitle = t(painting.title)
+  const tDescription = t(painting.description)
+  const tQuote = t(painting.quote)
+
+  const prevLabel = isRu ? 'предыдущая картина' : 'previous painting'
+  const nextLabel = isRu ? 'следующая картина' : 'next painting'
+  const moreLabel = isRu ? 'смотреть анимацию' : 'view animation'
+  const buyLabel = isRu ? 'купить картину' : 'buy this painting'
 
   return (
     <section className={styles.paintingDetail}>
-      <BackButton
-        to={backTo}
-        state={focusSlug ? { focusSlug } : null}
-      >
-        all collections
+      <BackButton to={backTo}>
+        {backLabel}
       </BackButton>
-      <h1 className={styles.paintingTitle}>{painting.title}</h1>
-      <div className={styles.paintingDescription}>
-        {painting.description
-          .trim()
-          .split('\n')
-          .map((line, i) => (
-            <p key={i}>{line.trim()}</p>
-          ))}
+      <div className={styles.prevNext}>
+        {prev && (
+          <PrevButton 
+            to={makeTo(prev.slug)}
+            className={styles.prevButton}
+          >
+            {prevLabel}
+          </PrevButton>
+        )}
+        {next && (
+          <NextButton 
+            to={makeTo(next.slug)}
+            className={styles.nextButton}
+          >
+            {nextLabel}
+          </NextButton>
+        )}
       </div>
       <div className={styles.paintingPicture}>
         <picture key={painting.slug}>
@@ -48,28 +100,31 @@ export default function PaintingDetail() {
           />
         </picture>
       </div>
-      <blockquote className={styles.paintingQuote}>
-        {painting.quote
+      <h1 className={styles.paintingTitle}>{tTitle}</h1>
+      <div className={styles.paintingDescription}>
+        {tDescription
+          .trim()
+          .split('\n')
+          .map((line, i) => (
+            <p key={i}>{line.trim()}</p>
+          ))}
+      </div>
+      <div className={styles.paintingQuote}>
+        {tQuote
           .trim()
           .split(/\n\s*\n/)
           .map((p, i) => (
             <p key={i}>{p.trim()}</p>
           ))}
-        <cite>Ivan Shalmin</cite>
-      </blockquote>
-      <p className={styles.paintingWarning}>*The final artwork is delivered in high resolution, suitable for large-format printing or digital use.
-      </p>
-      <BuyButton>buy this painting</BuyButton>
+      </div>
       <div className={styles.paintingVideoLink}>
         {painting.link && (
-          <MoreButton 
-            to={painting.link}
-            external
-          >
-            view painting in motion
-          </MoreButton>    
+          <MoreButton to={painting.link}>
+            {moreLabel}
+          </MoreButton>
         )}
       </div>
+      <BuyButton>{buyLabel}</BuyButton>
     </section>
   )
 }

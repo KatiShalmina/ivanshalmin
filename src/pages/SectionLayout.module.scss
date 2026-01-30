@@ -1,10 +1,5 @@
 .subnav {
-  margin: 0 0 1.7rem;
-  padding: 8px 0;
-
-  @media (min-width: 1024px) {
-    margin: 0 0 2rem;
-  }
+  margin: 4px 0 1.7rem;
 }
 
 .subnavList {
@@ -24,11 +19,11 @@
 }
 
 .subnavLink {
+  display: block;
   width: max-content;
-  padding: 8px;
+  padding: 8px 10px;
+  font-family: var(--font-ui);
   font-size: 1.2rem;
-  font-weight: 300;
-  font-stretch: 115%;
   border: 1px solid transparent;
 
   @media (min-width: 1024px) {

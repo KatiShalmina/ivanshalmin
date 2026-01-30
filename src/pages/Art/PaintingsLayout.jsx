@@ -1,7 +1,23 @@
 import { Outlet, NavLink } from 'react-router-dom'
 import styles from '../SectionLayout.module.scss'
+import useI18n from '../../hooks/useI18n'
 
 export default function PaintingsLayout() {
+  const { isRu } = useI18n()
+
+  const subnav = isRu
+    ? {
+        collections: 'коллекции',
+        exhibitions: 'выставки',
+        videoArt: 'видео-арт',
+      }
+    : {
+        collections: 'collections',
+        exhibitions: 'exhibitions',
+        videoArt: 'video art',
+      }
+
+
   const activeStyle = {
     fontWeight: '600',
     border: '1px solid var(--color-secondary)',
@@ -18,7 +34,7 @@ export default function PaintingsLayout() {
               className={styles.subnavLink}
               style={({ isActive }) => isActive ? activeStyle : null}
             >
-              collections
+              {subnav.collections}
             </NavLink>
           </li>
           <li className={styles.subnavItem}>
@@ -27,7 +43,7 @@ export default function PaintingsLayout() {
               className={styles.subnavLink}
               style={({ isActive }) => isActive ? activeStyle : null}
             >
-              exhibitions
+              {subnav.exhibitions}
             </NavLink>
           </li>
           <li className={styles.subnavItem}>
@@ -36,7 +52,7 @@ export default function PaintingsLayout() {
               className={styles.subnavLink}
               style={({ isActive }) => isActive ? activeStyle : null}
             >
-              video art
+              {subnav.videoArt}
             </NavLink>
           </li>
         </ul>

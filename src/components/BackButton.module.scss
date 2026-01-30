@@ -1,15 +1,18 @@
 .backButton {
   display: flex;
+  flex-wrap: wrap;
   align-items: center;
   gap: 4px;
-  width: max-content;
-  margin-bottom: clamp(2rem, 4vw, 4.3rem);
-  padding: 4px 0;
-  font-size: clamp(1rem, 2vw, 1.2rem);
-  color: var(--color-secondary);
+  max-width: max-content;
+  margin-bottom: clamp(1.4rem, 4vw, 4.3rem);
+  padding: 8px 0;
+  font-family: var(--font-ui);
+  font-size: 1.2rem;
+  line-height: 1.1;
+  color: var(--color-highlight);
 
   @media (min-width: 1024px) {
-    color: var(--color-highlight);
+    font-size: 1.4rem;
     transition: color .4s ease;
 
     &:hover,
@@ -20,9 +23,8 @@
 }
 
 .backIcon {
-  width: 14px;
-  height: 14px;
-  transform: rotate(90deg);
+  width: 16px;
+  height: 16px;
 
   @media (min-width: 1024px) {
     width: 20px;

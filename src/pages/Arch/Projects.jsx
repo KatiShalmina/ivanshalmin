@@ -9,7 +9,8 @@ export default function Projects() {
         <Card
           key={p.slug}
           to={`/architecture/projects/${p.slug}`}
-          title={p.title}
+          titleParts={p.titleParts}
+          subtitle={p.subtitle}
           cover={p.cover}
         />
       ))}

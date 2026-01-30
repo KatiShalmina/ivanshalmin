@@ -1,7 +1,11 @@
 .cardsList {
   display: flex;
   flex-direction: column;
-  gap: clamp(10px, 2vw, 1.4rem);
+  gap: 10px;
+
+  @media (min-width: 1024px) {
+    gap: 1rem;
+  }
 }
 
 .card {
@@ -25,26 +29,29 @@
 
 .card:hover .cardCover img,
 .card:hover .cardImg,
-.card:focus-visible .cardCover img,
-.card:focus-visible .cardImg {
+.card:focus-within .cardCover img,
+.card:focus-within .cardImg {
   @media (min-width: 1280px) {
     transform: scale(1.02);         
   }
 }
 
 .cardInfo {
-  position: absolute;
-  bottom: 1rem;
-  left: 1rem;
-  background: rgba(0, 0, 0, 0.4);
-  backdrop-filter: blur(4px);     
-  -webkit-backdrop-filter: blur(4px);
-  padding: 8px 1rem;
+  display: flex;
+  gap: 2rem;
+  justify-content: space-between;
+  background: var(--color-primary);
+  padding: 8px 0;
 
   @media (min-width: 1280px) {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    left: 0;
     opacity: 0;
     visibility: hidden;
-    transform: translateY(8px);
+    padding: 10px;
+    transform: translate3d(0, 8px, 0);
     transition: 
       opacity .3s ease,
       visibility .3s ease,
@@ -53,17 +60,29 @@
 }
 
 .card:hover .cardInfo,
-.card:focus-visible .cardInfo {
+.card:focus-within .cardInfo {
   @media (min-width: 1280px) {
     opacity: 1;
     visibility: visible;
+    border-top-color: var(--color-secondary);
     transform: translateY(0);
   }
 }
 
 .cardTitle {
-  font-size: clamp(1.4rem, 4vw, 2.5rem);
-  line-height: 1.2;
+  font-size: 1.2rem;
   font-weight: 300;
-  font-stretch: 115%;
+
+  @media (min-width: 1024px) {
+    font-size: 1.4rem;
+  }
+}
+
+.cardSubtitle {
+  font-size: 1.2rem;
+  text-align: right;
+
+  @media (min-width: 1024px) {
+    font-size: 1.4rem;
+  }
 }

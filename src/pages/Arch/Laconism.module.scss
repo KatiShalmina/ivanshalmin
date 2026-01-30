@@ -11,17 +11,14 @@
 
 .laconismTitle {
   margin-bottom: clamp(1rem, 4vw, 3rem);
+  font-family: var(--font-ui);
   font-size: clamp(2.5rem, 10vw, 8.9rem);
   line-height: 1.1;
-  font-weight: 300;
-  font-stretch: 115%;
-}
+  font-weight: 400;
 
-.laconismSubtitle {
-  margin-bottom: clamp(4px, 4vw, 1rem);
-  font-size: clamp(1.2rem, 2vw, 2.5rem);
-  font-weight: 300;
-  font-stretch: 115%;
+  @media (min-width: 1024px) {
+    letter-spacing: -4px;
+  }
 }
 
 .laconismUnit p {
@@ -37,13 +34,18 @@
 
 .awardsTitle {
   margin-bottom: clamp(1rem, 4vw, 2.5rem);
+  font-family: var(--font-ui);
   font-size: clamp(1.7rem, 10vw, 4.3rem);
   line-height: 1.1;
-  font-weight: 300;
-  font-stretch: 115%;
+  font-weight: 400;
+
+  @media (min-width: 1024px) {
+    letter-spacing: -2px;
+  }
 }
 
 .awardsUnit p {
+  font-family: var(--font-ui);
   margin-bottom: 10px;
   font-size: clamp(1.2rem, 2vw, 1.7rem);
   text-transform: uppercase;
@@ -59,15 +61,23 @@
   margin-bottom: 1rem;
 }
 
-.laconismShortItem {
+.laconismShortList li {
   margin-bottom: clamp(1.7rem, 4vw, 3rem);
 }
 
-.laconismShortItem p {
+.laconismShortList li p {
   margin-bottom: clamp(10px, 4vw, 1rem);
 }
 
 .laconismHighlight {
+  text-transform: uppercase;
+}
+
+.laconismQuote {
+  margin-top: 0;
+  margin-right: 0;
+  margin-bottom: clamp(1rem, 4vw, 1.7rem);
+  margin-left: 0;
   text-transform: uppercase;
 }
 

@@ -1,0 +1,66 @@
+.pub {
+  @media (min-width: 1024px) {
+    margin-top: -70px;
+  }
+}
+
+.pubTitle {
+  margin-bottom: clamp(1rem, 4vw, 4.3rem);
+  font-family: var(--font-ui);
+  font-size: clamp(2.5rem, 10vw, 8.9rem);
+  line-height: 1.1;
+  font-weight: 400;
+
+  @media (min-width: 1024px) {
+    letter-spacing: -4px;
+  }
+}
+
+.pubSubtitle {
+  font-family: var(--font-ui);
+  font-size: clamp(1.2rem, 3vw, 2.5rem);
+  text-transform: uppercase;
+  margin-bottom: clamp(1.7rem, 4vw, 3rem);
+}
+
+.pubTagline {
+  max-width: 57ch;
+  margin-bottom: clamp(3rem, 4vw, 4.3rem);
+  font-size: clamp(1.4rem, 2vw, 2rem);
+}
+
+.pubText {
+  margin-bottom: clamp(10px, 4vw, 1.7rem);
+}
+
+.pubAuthor {
+  margin-bottom: clamp(1.7rem, 4vw, 2.5rem);
+  font-size: clamp(1.2rem, 2vw, 1.7rem);
+  text-transform: uppercase;
+}
+
+.pubOriginalLink,
+.pubPdfLink {
+  display: block;
+  max-width: max-content;
+  padding: 8px 0;
+  font-family: var(--font-ui);
+  font-size: 1.2rem;
+  color: var(--color-highlight);
+
+  @media (min-width: 1024px) {
+    font-size: 1.4rem;
+    transition: color .4s ease;
+
+    &:hover,
+    &:focus-visible {
+      color: var(--color-secondary);
+    }
+  }
+}
+
+.pubPdfLink {
+  @media (min-width: 1440px) {
+    margin-bottom: 2rem;
+  }
+}

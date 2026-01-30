@@ -1,35 +1,50 @@
 import { useState } from 'react'
 import { Link } from 'react-router-dom'
 import styles from './Home.module.scss'
+import useI18n from '../hooks/useI18n'
 
 export default function Home() {
   const [activeBg, setActiveBg] = useState(null)
+  
+const { isRu, to } = useI18n()
+
+  const text = isRu
+    ? {
+        title: 'Иван Шалмин — архитектор и художник',
+        architect: 'архитектор',
+        artist: 'художник',
+      }
+    : {
+        title: 'Ivan Shalmin — Architect and Artist',
+        architect: 'architect',
+        artist: 'artist',
+      }
 
   return (
-    <section 
+    <section
       className={`
         ${styles.hero} 
         ${activeBg ? styles.heroVisible : ''} 
         ${activeBg ? styles[`show_${activeBg}`] : ''}
       `}
     >
-      <h1 className='visuallyHidden'>Ivan Shalmin — Architect and Artist</h1>
+      <h1 className='visuallyHidden'>{text.title}</h1>
       <div className={styles.heroWrapper}>
         <Link
-          to='/architecture/projects'
+          to={to('/architecture/projects')}
           className={styles.heroLink}
           onMouseEnter={() => setActiveBg('architect')}
           onMouseLeave={() => setActiveBg(null)}
         >
-          architect
+          {text.architect}
         </Link>
         <Link
-          to='/paintings/collections'
+          to={to('/paintings/collections')}
           className={styles.heroLink}
           onMouseEnter={() => setActiveBg('artist')}
           onMouseLeave={() => setActiveBg(null)}
         >
-          artist
+          {text.artist}
         </Link>
       </div>
     </section>

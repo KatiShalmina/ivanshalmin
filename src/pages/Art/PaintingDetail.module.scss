@@ -6,25 +6,39 @@
 
 .paintingTitle {
   margin-bottom: clamp(1rem, 4vw, 2rem);
-  font-size: clamp(2.5rem, 7vw, 8.9rem);
-  font-weight: 300;
-  font-stretch: 115%;
+  font-family: var(--font-ui);
+  font-size: clamp(2.5rem, 7vw, 7.4rem);
   line-height: 1.1;
+  font-weight: 400;
+
+  @media (min-width: 1024px) {
+    letter-spacing: -4px;
+  }
 }
 
 .paintingDescription {
+  font-family: var(--font-ui);
   font-size: clamp(1.2rem, 2vw, 2.5rem);
-  font-weight: 300;
-  font-stretch: 115%;
   margin-bottom: clamp(1.7rem, 4vw, 3rem);
+}
+
+.paintingDescription p {
+  margin-bottom: 8px;
 }
 
 .paintingPicture {
-  margin-bottom: clamp(1.7rem, 4vw, 3rem);
+  margin-bottom: clamp(10px, 4vw, 1.4rem);
+}
+
+.prevNext {
+  display: flex;
+  gap: 3rem;
+  margin-bottom: 1.4rem;
+  font-family: var(--font-ui);
 }
 
 .paintingQuote {
-  margin-bottom: clamp(1.7rem, 4vw, 3rem);
+  margin-bottom: 1.7rem;
   margin-left: 0;
   font-size: clamp(1.2rem, 2vw, 1.7rem);
 }
@@ -34,18 +48,6 @@
   margin-bottom: clamp(1rem, 4vw, 1.7rem);
 }
 
-.paintingQuote cite {
-  display: block;
-  padding-top: 1rem;
-  font-style: normal;
-  text-transform: uppercase;
-}
-
-.paintingWarning {
-  margin-bottom: 2rem;
-  font-size: 1rem;
-}
-
 .paintingVideoLink {
-  margin-top: clamp(1.7rem, 4vw, 2.5rem);
+  margin-bottom: clamp(2rem, 4vw, 3rem);
 }

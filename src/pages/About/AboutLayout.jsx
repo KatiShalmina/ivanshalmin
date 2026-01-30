@@ -1,7 +1,20 @@
 import { Outlet, NavLink } from 'react-router-dom'
 import styles from '../SectionLayout.module.scss'
+import useI18n from '../../hooks/useI18n'
 
 export default function AboutLayout() {
+  const { isRu } = useI18n()
+
+  const subnav = isRu
+    ? {
+        bio: 'биография',
+        contact: 'контакты',
+      }
+    : {
+        bio: 'bio',
+        contact: 'contact',
+      }
+
   const activeStyle = {
     fontWeight: '600',
     border: '1px solid var(--color-secondary)',
@@ -18,7 +31,7 @@ export default function AboutLayout() {
               className={styles.subnavLink}
               style={({ isActive }) => isActive ? activeStyle : null}
             >
-              bio
+              {subnav.bio}
             </NavLink>
           </li>
           <li className={styles.subnavItem}>
@@ -27,7 +40,7 @@ export default function AboutLayout() {
               className={styles.subnavLink}
               style={({ isActive }) => isActive ? activeStyle : null}
             >
-              contact
+              {subnav.contact}
             </NavLink>
           </li>
         </ul>

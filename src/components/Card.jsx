@@ -1,18 +1,22 @@
 import { Link } from 'react-router-dom'
 import styles from './Card.module.scss'
+import useI18n from '../hooks/useI18n';
 
-export default function Card({ to, state, title, cover }) {
+export default function Card({ to, slug, titleParts, subtitle, cover }) {
+  const { t, lang, to: toPath } = useI18n()
+
   if (!cover) return null;
+
+  const [main = '', tail = ''] = titleParts?.[lang] ?? titleParts?.en ?? ['', '']
+  const tSubtitle = t(subtitle)
 
   const isPaintingsCover = Boolean(cover.src || cover.srcSet)
 
   return (
     <div className={styles.card}>
-      <Link 
-        to={to}
-        state={state} 
+      <Link
+        to={toPath(to)}
         className={styles.cardLink}
-        data-painting-slug={state?.focusSlug}
       >
         {isPaintingsCover ? (
           <img
@@ -20,7 +24,7 @@ export default function Card({ to, state, title, cover }) {
             src={cover.src}
             srcSet={cover.srcSet}
             sizes={cover.sizes ?? '100vw'}
-            alt={title}
+            alt={slug}
             loading='lazy'
           />
         ) : (
@@ -34,13 +38,17 @@ export default function Card({ to, state, title, cover }) {
               src={cover.mobile.src}
               srcSet={cover.mobile.srcSet}
               sizes={cover.mobile.sizes ?? '100vw'}
-              alt={title}
+              alt={slug}
               loading='lazy'
             />
           </picture>
         )}
         <div className={styles.cardInfo}>
-          <h2 className={styles.cardTitle}>{title}</h2>
+          <h2 className={styles.cardTitle}>
+            {main}
+            <span className='nowrap'>{tail}</span>
+          </h2>
+          <p className={`${'nowrap'} ${styles.cardSubtitle}`}>{tSubtitle}</p>
         </div>
       </Link>
     </div >

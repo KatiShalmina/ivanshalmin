@@ -1,7 +1,22 @@
 import { Outlet, NavLink } from 'react-router-dom'
 import styles from '../SectionLayout.module.scss'
+import useI18n from '../../hooks/useI18n'
 
 export default function ArchitectureLayout() {
+  const { isRu } = useI18n()
+
+  const subnav = isRu
+    ? {
+        projects: 'проекты',
+        laconism: 'лаконизм',
+        publications: 'публикации',
+      }
+    : {
+        projects: 'projects',
+        laconism: 'laconism',
+        publications: 'publications',
+      }
+
   const activeStyle = {
     fontWeight: '600',
     border: '1px solid var(--color-secondary)',
@@ -18,7 +33,7 @@ export default function ArchitectureLayout() {
               className={styles.subnavLink}
               style={({ isActive }) => isActive ? activeStyle : null}
             >
-              projects
+              {subnav.projects}
             </NavLink>
           </li>
           <li className={styles.subnavItem}>
@@ -27,7 +42,7 @@ export default function ArchitectureLayout() {
               className={styles.subnavLink}
               style={({ isActive }) => isActive ? activeStyle : null}
             >
-              laconism
+              {subnav.laconism}
             </NavLink>
           </li>
           <li className={styles.subnavItem}>
@@ -36,7 +51,7 @@ export default function ArchitectureLayout() {
               className={styles.subnavLink}
               style={({ isActive }) => isActive ? activeStyle : null}
             >
-              publications
+              {subnav.publications}
             </NavLink>
           </li>
         </ul>

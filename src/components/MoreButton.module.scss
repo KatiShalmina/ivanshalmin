@@ -1,8 +1,10 @@
 .moreButton {
   display: block;
-  width: max-content;
+  max-width: max-content;
   padding: 8px 0;
+  font-family: var(--font-ui);
   font-size: 1.2rem;
+  line-height: 1.1;
   color: var(--color-highlight);
 
   @media (min-width: 1024px) {

@@ -1,22 +1,41 @@
-import { useState } from 'react'
-import { Outlet, useLocation } from 'react-router-dom'
+import { useState, useEffect } from 'react'
+import { Outlet, useLocation, ScrollRestoration } from 'react-router-dom'
 import styles from './AppLayout.module.scss'
 import Header from '../components/Header'
 import Footer from '../components/Footer'
 import MenuOverlay from '../components/MenuOverlay'
-import ScrollRestoration from '../components/ScrollRestoration'
+import useI18n from '../hooks/useI18n'
 
 export default function AppLayout() {
   const [menuOpen, setMenuOpen] = useState(false)
-  const location = useLocation()
-  const isHome = location.pathname === '/'
+  const { pathname } = useLocation()
+
+  const { isRu, base } = useI18n()
+
+  const isHome = 
+    pathname === '/' || 
+    pathname === `${base}/` || 
+    pathname === base
+
+  useEffect(() => {
+    document.documentElement.lang = isRu ? 'ru' : 'en'
+  }, [isRu])
+
+  useEffect(() => {
+    setMenuOpen(false)
+  }, [pathname])
 
   return (
     <div className={styles.page}>
       <ScrollRestoration />
       <Header setMenuOpen={setMenuOpen} />
-      <MenuOverlay menuOpen={menuOpen} setMenuOpen={setMenuOpen} />
-      <main className={isHome ? styles.mainHome : null}>
+      {menuOpen && (
+        <MenuOverlay 
+          menuOpen={menuOpen} 
+          setMenuOpen={setMenuOpen} 
+        />
+      )}
+      <main className={isHome ? styles.mainHome : undefined}>
         {isHome ? (
           <Outlet />
         ) : (

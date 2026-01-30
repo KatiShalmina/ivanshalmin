@@ -1,16 +1,16 @@
-import { publicationsList } from '../../data/publications/publications'
-import Card from '../../components/Card'
-import styles from '../../components/Card.module.scss'
+import { pubCovers } from '../../data/publications/pub-covers'
+import PubCard from '../../components/PubCard'
+import styles from '../../components/PubCard.module.scss'
 
 export default function Publications() {
   return (
-    <div className={styles.cardsList}>
-      {publicationsList.map(p => (
-        <Card
+    <div className={styles.pubCardsList}>
+      {pubCovers.map(p => (
+        <PubCard
           key={p.slug}
           to={`/architecture/publications/${p.slug}`}
           title={p.title}
-          // year={p.year}
+          subtitle={p.subtitle}
           cover={p.cover}
         />
       ))}

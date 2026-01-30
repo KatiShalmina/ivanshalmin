@@ -6,8 +6,11 @@ import styles from './ProjectType.module.scss'
 import BackButton from '../../components/BackButton'
 import MoreButton from '../../components/MoreButton'
 import Video from '../../components/Video'
+import useI18n from '../../hooks/useI18n'
 
 export default function ProjectType() {
+  const { t, isRu } = useI18n()
+
   const { slug } = useParams()
   const type = types.find(p => p.slug === slug)
 
@@ -16,28 +19,31 @@ export default function ProjectType() {
 
   if (!type) return <p>Not found</p>
 
+  const tTitle = t(type.title)
+  const tSubtitle = t(type.subtitle)
+  const tDescription = t(type.description)
+  const tTagline = t(type.tagline)
+  const tText = t(type.text)
+
+  const moreLabel = isRu ? 'узнать больше' : 'find out more'
+  const backLabel = isRu ? 'все проекты' : 'all projects'
+
   return (
     <section className={styles.type}>
-      <BackButton>all projects</BackButton>
-      <h1 className={styles.typeTitle}>{type.title}</h1>
-      <p className={styles.typeSubtitle}>{type.subtitle}</p>
+      <BackButton to='/architecture/projects'>
+        {backLabel}        
+      </BackButton>
+      <h1 className={styles.typeTitle}>{tTitle}</h1>
+      <p className={styles.typeSubtitle}>{tSubtitle}</p>
       <div className={styles.typeDescription}>
-        {type.description
+        {tDescription
           .trim()
           .split('\n')
           .map((line, i) => (
             <p key={i}>{line.trim()}</p>
           ))}
       </div>
-      <div className={styles.typeTagline}>
-        {type.tagline
-          .trim()
-          .split('\n')
-          .map((line, i) => (
-            <p key={i}>{line.trim()}</p>
-          ))
-        }
-      </div>
+      <p className={styles.typeTagline}>{tTagline}</p>
       <div className={styles.typeGallery}>
         {type.gallery.map((img, i) => {
           const img480 = img.srcSet.find(pic => pic.width === 480)
@@ -52,7 +58,7 @@ export default function ProjectType() {
                 .join(', ')
               }
               sizes='(max-width: 1023px) 360px, 720px'
-              alt={`${type.title} photo ${img.id}`}
+              alt={`${tTitle} photo ${img.id}`}
               onClick={() => {
                 setIndex(i)
                 setOpen(true)
@@ -73,7 +79,7 @@ export default function ProjectType() {
       </div>
       <div className={styles.textWrapper}>
         <div className={styles.typeText}>
-          {type.text
+          {tText
             .trim()
             .split('\n\n')
             .map((paragraph, i) => (
@@ -83,14 +89,16 @@ export default function ProjectType() {
             ))
           }
         </div>
-        <MoreButton to={type.more}>find out more</MoreButton>
+        <MoreButton to={type.more}>
+          {moreLabel}
+        </MoreButton>
       </div>
       <GalleryLightbox
         open={open}
         index={index}
         onClose={() => setOpen(false)}
         gallery={type.gallery}
-        title={type.title}
+        title={tTitle}
       />
     </section>
   )

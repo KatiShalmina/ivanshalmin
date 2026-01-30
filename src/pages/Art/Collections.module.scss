@@ -1,8 +1,12 @@
 .cardsList {
   display: flex;
   flex-direction: column;
-  gap: clamp(10px, 2vw, 1.4rem);
+  gap: 10px;
   margin-bottom: clamp(1.7rem, 4vw, 3rem);
+
+  @media (min-width: 1024px) {
+    gap: 1rem;
+  }
 }
 
 .filterList {
@@ -24,7 +28,7 @@
 
 .filterButton {
   padding: 8px;
-  font-stretch: 115%;
+  font-family: var(--font-ui);
   background-color: var(--primary-color);
   border: 1px solid transparent;
   transition: border-color .4s ease;
