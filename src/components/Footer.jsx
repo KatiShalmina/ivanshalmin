@@ -37,8 +37,6 @@ export default function Footer() {
       about: 'о петровиче',
       bio: 'биография',
       contact: 'контакты',
-
-      rights: '©IvanShalmin. Все права защищены.',
     }
     : {
       architecture: 'architecture',
@@ -54,8 +52,6 @@ export default function Footer() {
       about: 'about',
       bio: 'bio',
       contact: 'contact',
-
-      rights: '© IvanShalmin. All rights reserved.',
     }
 
   return (
@@ -157,7 +153,7 @@ export default function Footer() {
             </ul>
           </div>
         </nav>
-        <p className={styles.copyright}>{footer.rights}</p>
+        <p className={styles.copyright}>© all rights reserved | website by kati shalmina</p>
       </div>
     </footer>
   )

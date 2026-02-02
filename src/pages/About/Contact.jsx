@@ -11,7 +11,7 @@ export default function Contact() {
 
   const mainTitleHidden = isRu ? 'Контакты' : 'Contact'
 
-  const message = isRu ? 'Eсли вы хотите купить картину, пожалуйста, свяжитесь с Сашей Шалминой:' : 'For sales, please contact Sasha Shalmina:'
+  const message = isRu ? 'если вы хотите купить картину, пожалуйста, свяжитесь с сашей шалминой:' : 'for sales, please contact sasha shalmina:'
 
   const text = isRu
     ? `
@@ -41,11 +41,29 @@ export default function Contact() {
       <h1 className='visuallyHidden'>{mainTitleHidden}</h1>
       <p className={styles.contactMessage}>{message}</p>
       <div className={styles.contactLinkWrapper}>
-        <a className={styles.contactLink} href='mailto:sasha.shalmina@gmail.com' target='_blank' rel='noopener noreferrer'>
+        <a className={styles.contactLink}
+          href='mailto:sasha.shalmina@gmail.com'
+          target='_blank' 
+          rel='noopener noreferrer'
+        >
           sasha.shalmina@gmail.com
         </a>
-        <a className={styles.contactLink} href='tel:+447472063877'>
+        <a className={styles.contactLink} 
+          href='tel:+447472063877'
+        >
           +44 747 206 38 77
+        </a>
+        <a className={styles.contactLink}
+          href='https://wa.me/447472063877' target='_blank' 
+          rel='noopener noreferrer'
+        >
+          whatsapp
+        </a>  
+        <a className={styles.contactLink}
+          href='https://t.me/+447472063877' target='_blank' 
+          rel='noopener noreferrer'
+        >
+          telegram
         </a>
       </div>
       <div className={styles.contactText}>

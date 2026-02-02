@@ -10,11 +10,6 @@
 
 .footerWrapper {
   @media (min-width: 1024px) {
-    position: relative;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    align-items: end;
     max-width: 1440px;
     margin: 0 auto;
     padding-top: 2rem;
@@ -26,21 +21,16 @@
 
 .copyright {
   @media (min-width: 1024px) {
-    position: absolute;
-    right: 1.2rem;
-    bottom: 2rem;
-    font-size: 0.8rem;
-  }
-
-  @media (min-width: 1070px) {
-    position: static;
     text-align: right;
+    font-family: var(--font-ui);
+    font-size: 0.8rem;
   }
 }
 
 .footerUnit {
   @media (min-width: 1024px) {
     display: flex;
+    flex-wrap: wrap;
     align-items: end;
     gap: clamp(1.7rem, 2vw, 3rem);
     --unit-color: var(--color-highlight);

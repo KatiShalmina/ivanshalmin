@@ -10,7 +10,7 @@ export default function VideoArt() {
   const content = videoArtContent?.[lang] ?? videoArtContent?.en
 
   const moreVideoArtLabel = isRu ? 'еще видео картины' : 'view more video art'
-  const moreSashaLabel = isRu ? 'другие сашины работы' : 'explore sasha’s work'
+  const moreSashaLabel = isRu ? 'смотреть сашин сайт' : 'visit sasha’s website'
   const mainTitleHidden = isRu ? 'Видео арт' : 'Video Art'
 
   const renderBlock = (block, key) => {
