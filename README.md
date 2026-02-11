@@ -1,16 +1,16 @@
-## Artist & Architect Portfolio with Art Sales
-# Overview
+# Artist & Architect Portfolio with Art Sales
+## Overview
 
 Custom portfolio website for an architect and multidisciplinary artist, showcasing architecture projects, paintings, and video art. The platform includes functionality for presenting and offering original artworks for sale.
 
-# Role & Responsibilities
+## Role & Responsibilities
 
 - Designed the UI and information architecture
 - Structured content hierarchy for different artistic disciplines
 - Focused on clear navigation and responsive layouts
 - Optimized presentation of large visual content
 
-# Technical Implementation
+## Technical Implementation
 
 - Built from scratch using React and Vite
 - Client-side routing with React Router
