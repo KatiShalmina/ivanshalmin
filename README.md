@@ -1,16 +1,19 @@
-# React + Vite
+## Artist & Architect Portfolio with Art Sales
+# Overview
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Custom portfolio website for an architect and multidisciplinary artist, showcasing architecture projects, paintings, and video art. The platform includes functionality for presenting and offering original artworks for sale.
 
-Currently, two official plugins are available:
+# Role & Responsibilities
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- Designed the UI and information architecture
+- Structured content hierarchy for different artistic disciplines
+- Focused on clear navigation and responsive layouts
+- Optimized presentation of large visual content
 
-## React Compiler
+# Technical Implementation
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
-
-## Expanding the ESLint configuration
-
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+- Built from scratch using React and Vite
+- Client-side routing with React Router
+- Styled with SCSS using modular structure
+- Integrated image galleries using Yet Another React Lightbox and Swiper
+- Responsive design for mobile and desktop devices
