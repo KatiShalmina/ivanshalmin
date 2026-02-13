@@ -157,7 +157,6 @@ export const EXHIBITION_SLIDES = {
   nsk: nsk.slides,
 }
 
-
 export const EXHIBITION_PHOTOS = {
   cube: cubePhotos,
   nsk: nskPhotos,
