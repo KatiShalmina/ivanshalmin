@@ -67,13 +67,13 @@ export default function MenuOverlay({ menuOpen, setMenuOpen }) {
             </li>
             <li>
               <Link
-                to={to('/architecture/publications')}
+                  to={to('/architecture/publications')}
                 className={styles.overlaySubLink}
                 onClick={close}
               >{nav.publications}</Link>
             </li>
           </ul>
-        </div>
+          </div>
         <div className={styles.overlayNavUnit}>
           <Link
             to={to('/paintings')}
